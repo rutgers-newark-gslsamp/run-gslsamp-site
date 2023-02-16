@@ -1,0 +1,25 @@
+nav {
+    padding: 3px 10px;
+}
+
+.top-nav-container {
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;align-items: center;
+}
+.nav-logo {
+    display: flex;
+    justify-self: flex-start;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.nav-search {
+    display: flex;
+    justify-content: flex-ow;
+}
