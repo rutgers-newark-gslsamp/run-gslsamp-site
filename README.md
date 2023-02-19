@@ -1,5 +1,5 @@
 # run-gslsamp-site
-##🚧UNDER-CONSTRUCTION🚧
+## 🚧UNDER-CONSTRUCTION🚧
 
 Official Rutgers University–Newark GS-LSAMP website maintained by its student-run web development team.
 ***
