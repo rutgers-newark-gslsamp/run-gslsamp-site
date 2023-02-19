@@ -2,7 +2,12 @@
 .landing-about-container {
     display: flex;
 }
-
+.landing-about-body {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #F9F9F9;
+}
 
 /* ALLIANCE */
 

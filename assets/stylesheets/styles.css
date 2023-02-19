@@ -57,7 +57,7 @@ nav {
 /* FOOTER */
 footer {
     /* something is wrong where it doesn't stay at the bottom*/
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
