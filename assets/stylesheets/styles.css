@@ -38,3 +38,17 @@ nav {
     text-decoration: none;  
     color: #FFFFFF;
 }
+
+
+/* FOOTER */
+footer {
+    display: block;
+    text-align: center;
+    align-items: end;
+    margin-top: 50px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #646464;
+    color: #FFFFFF;
+}
+
