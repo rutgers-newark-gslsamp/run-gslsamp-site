@@ -10,4 +10,16 @@
 }
 
 /* ALLIANCE */
-
+.alliance-card {
+    display: flex;
+    margin: 72px;
+    padding: 16px;
+    width: 222px;
+    height: 222px;    
+    background: #FFFFFF;
+    box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.4);
+}
+.alliance-university, .alliance-university-name {
+    font-size: 13px;
+    text-align: center;
+}
