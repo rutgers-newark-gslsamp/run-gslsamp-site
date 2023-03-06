@@ -12,8 +12,8 @@ nav {
     flex-direction: column;
     padding: 5px 10px;
     margin-bottom: 20px;
-    background-color: #FFFFFF;
     width: 100%;
+    background-color: #FFFFFF;
 }
 .top-nav-container {
     display: flex;
