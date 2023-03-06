@@ -7,6 +7,10 @@
     width: 150px;
 }
 
+.landing-about-title{
+
+}
+
 .landing-about-body {
     margin: 20px;
     padding: 20px;
@@ -21,6 +25,10 @@
 }
 
 /* ALLIANCE */
+.lsamp-alliance-header {
+    font-size: 40px;
+    font-weight: bolder;
+}
 .alliance-card {
     display: flex;
     margin: 72px;
