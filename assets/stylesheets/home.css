@@ -8,7 +8,9 @@
 }
 
 .landing-about-title{
-
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .landing-about-body {
@@ -28,6 +30,7 @@
 .lsamp-alliance-header {
     font-size: 40px;
     font-weight: bolder;
+    text-transform: uppercase
 }
 .alliance-card {
     display: flex;
