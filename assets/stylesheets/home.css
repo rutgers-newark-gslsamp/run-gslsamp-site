@@ -1,3 +1,13 @@
+/* HERO */
+.cta-headline {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+}
+.cta-button {
+    text-transform: uppercase;
+}
+
 /* ABOUT */
 .landing-about-container {
     display: flex;
