@@ -12,7 +12,7 @@
 .cta-headline {
     display: flex;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     text-align: left;
     margin-right: 15%;
     color: white;
@@ -26,10 +26,33 @@
 .cta-button {
     display: flex;
     justify-content: center;
+    font-weight: bold;
     width: 35%;
     height:50px;
     text-transform: uppercase;
 }
+
+#learn-more-button {
+    background: #9D1739;
+    border: 5px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+#learn-more-anchor {
+    color: white;
+}
+
+#join-now-button {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+#join-now-anchor {
+    color:black;
+}
+
 
 /* ABOUT */
 .landing-about-container {
