@@ -29,6 +29,9 @@ nav {
     font-size: 20px;
     font-weight: 100;
 }
+.nav-logo {
+    height: 35px;
+}
 .nav-search{
     border-radius: 5px;
 }
