@@ -59,6 +59,8 @@
 /* ABOUT */
 .landing-about-container {
     display: flex;
+    align-items: center;
+    margin: 30px 30px;
 }
 .landing-about-logo {
     height: 150px;
@@ -71,7 +73,7 @@
     text-transform: uppercase;
 }
 
-.landing-about-body {
+.landing-about-card {
     margin: 20px;
     padding: 20px;
     border-radius: 20px;
@@ -79,7 +81,10 @@
 }
 
 #landing-about-button {
+    display: flex;
+    justify-content: center;
     width: 150px;
+    height: 50px;
     background: #FFFFFF;
     opacity: 0.4;
     border: 4px solid #D7D7D7;
