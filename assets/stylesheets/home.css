@@ -59,8 +59,9 @@
 /* ABOUT */
 .landing-about-container {
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 30px 30px;
+    margin: 30px 20px;
 }
 .landing-about-logo {
     height: 150px;
@@ -70,12 +71,14 @@
 .landing-about-title{
     font-size: 38px;
     font-weight: bold;
+    padding-top: 10px;
     text-transform: uppercase;
 }
 
 .landing-about-card {
+    width:600px;
+    height: 350px;
     margin: 20px;
-    padding: 20px;
     border-radius: 20px;
     background-color: #F9F9F9;
 }
