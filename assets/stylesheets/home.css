@@ -98,6 +98,7 @@
 .landing-video {
     display: flex;
     justify-content: center;
+    margin: 40px 30px;
 }
 
 /* ALLIANCE */
