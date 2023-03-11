@@ -88,12 +88,20 @@
     font-weight: bolder;
     text-transform: uppercase
 }
+.alliance-container {
+    display: flex;
+    flex-wrap: wrap;
+} 
+   
 .alliance-card {
     display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
     margin: 72px;
     padding: 16px;
-    height: 222px;    
-    width: 222px;
+    height: 200px;    
+    width: 200px;
     background: #FFFFFF;
     box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.4);
 }
