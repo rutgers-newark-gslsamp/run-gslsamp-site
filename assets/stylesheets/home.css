@@ -25,6 +25,7 @@
 }
 .cta-button {
     display: flex;
+    align-items: center;
     justify-content: center;
     font-weight: bold;
     width: 35%;
@@ -38,21 +39,20 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
-
-#cta-learn-more-anchor {
+.cta-learn-more-anchor {
     color: white;
+    font-weight: 600;
 }
-
-#join-now-button {
+#cta-join-now-button {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
-
-.landing-about-anchor {
-    color:black;
-    font-weight: 700;
+.cta-join-now-anchor {
+    color: black;
+    font-weight: 600;
 }
+
 
 
 /* ABOUT */
@@ -94,6 +94,13 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.landing-about-anchor {
+    color:black;
+    font-weight: 700;
+}
+
+
+
 /* VIDEO */
 .landing-video {
     display: flex;
