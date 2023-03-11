@@ -110,16 +110,14 @@
 .alliance-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 } 
-   
+
 .alliance-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 72px;
-    padding: 16px;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 20px;
     width: 200px;
     height: 200px;    
     border-radius: 5px;
@@ -127,12 +125,26 @@
     box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.4);
 }
 
+/* FIX PICTURE SIZE AND CONTENT MARGIN/PADDING */
 .alliance-university-logo {
-    object-fit: contain;
-    width: 90px;
-    max-height: 90px; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 50%;
 }
-.alliance-university, .alliance-university-name {
+
+.alliance-university-logo img {
+    display: flex;
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%; 
+}
+
+.alliance-university-content {
+    height: 50%;
+}
+
+.alliance-university-content, .alliance-university-name {
     font-size: 13px;
     text-align: center;
 }
