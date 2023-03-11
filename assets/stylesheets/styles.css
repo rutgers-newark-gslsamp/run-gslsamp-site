@@ -33,8 +33,17 @@ nav {
 .nav-logo {
     height: 35px;
 }
-.nav-search{
+
+.search {
+    height: 25px;
+    width: 300px;
+    
+    margin-right: 25px;
     border-radius: 5px;
+    background-color: #EDEDED;
+}
+.search::placeholder {
+    font-weight: 500;
 }
 
 /* Bottom Nav */
