@@ -27,8 +27,9 @@ nav {
     display: flex;
     margin-left: 15px;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 400;
 }
+/* This needs to be centered */
 .nav-logo {
     height: 35px;
 }
@@ -51,6 +52,7 @@ nav {
     list-style-type: none;
     text-decoration: none;  
     color: #FFFFFF;
+    font-weight: 500;
 }
 .page-nav-list   a:hover {
     background-color: #9a2542;

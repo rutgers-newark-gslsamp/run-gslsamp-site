@@ -12,7 +12,7 @@
 .cta-headline {
     display: flex;
     font-size: 20px;
-    font-weight: bolder;
+    font-weight: 700;
     text-align: left;
     margin-right: 15%;
     color: white;
@@ -49,10 +49,9 @@
     border-radius: 5px;
 }
 
-.black-anchor {
-    /* This class affects both the "Learn More" button in the landing-about section, and the join-now button in the landing-hero*/
+.landing-about-anchor {
     color:black;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 
@@ -125,6 +124,7 @@
 }
 .alliance-card-container {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -132,7 +132,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 50px;
+    margin: 30px;
     padding: 20px;
     width: 200px;
     height: 200px;    
