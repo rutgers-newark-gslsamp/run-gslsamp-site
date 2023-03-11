@@ -32,14 +32,14 @@
     text-transform: uppercase;
 }
 
-#learn-more-button {
+#cta-learn-more-button {
     background: #9D1739;
     border: 5px solid #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
 
-#learn-more-anchor {
+#cta-learn-more-anchor {
     color: white;
 }
 
@@ -49,14 +49,19 @@
     border-radius: 5px;
 }
 
-#join-now-anchor {
+.black-anchor {
+    /* This class affects both the "Learn More" button in the landing-about section, and the join-now button in the landing-hero*/
     color:black;
+    font-weight: bold;
 }
 
 
 /* ABOUT */
 .landing-about-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px;
 }
 .landing-about-logo {
     height: 150px;
@@ -66,20 +71,34 @@
 .landing-about-title{
     font-size: 38px;
     font-weight: bold;
+    padding-top: 10px;
     text-transform: uppercase;
 }
 
-.landing-about-body {
+.landing-about-card {
+    width:600px;
+    height: 350px;
     margin: 20px;
-    padding: 20px;
     border-radius: 20px;
     background-color: #F9F9F9;
 }
 
+#landing-about-button {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    background: #FFFFFF;
+    opacity: 0.4;
+    border: 4px solid #D7D7D7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
 /* VIDEO */
 .landing-video {
     display: flex;
     justify-content: center;
+    margin: 40px 30px;
 }
 
 /* ALLIANCE */
