@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
     <link rel="icon" href="../assets/images/rutgers-logos/ru-n_logo.png">
 </head>
+
+<!--Nav Bar-->
 <body>
     <nav>
         <div class="top-nav-container">
@@ -31,5 +33,46 @@
             </ul>
         </div>
     </nav>
+
+
+    <main>
+        <!--Page Header-->
+        <header>
+            Contact Us!
+        </header>
+
+        <!--canvas backgound of form-->
+        <canvas id="formBackground"></canvas>
+
+        <!--Form-->
+        <form action="" method="POST">
+            <label for="first_name">First Name*</label>
+            <input type="text" id="first_name" name="first_name">
+            
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name">
+            <br>
+            <label for="email">Email*</label>
+            <input type="text" id="email" name="email">
+
+            <label for="inquiry*">inquiry*</label>
+            <input type="text" id="inquiry" name="inquiry">
+            <br>
+            <label for="message">Message*</label>
+            <textarea id="message" name="message" rows="5" cols="30"></textarea>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+
+    </main>
+
+    <div id="faq-link">
+        <a id="faq" href="frequently-asked-questions.html" target="_blank">Frequently Asked Questions</a>
+    </div>
+
+    <footer>
+        <p>Copyright ©2023, Rutgers, The State University of New Jersey</p>
+    </footer>
+
 </body>
 </html>

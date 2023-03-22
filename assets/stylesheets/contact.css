@@ -1,0 +1,28 @@
+#faq {
+    color: black;
+    text-decoration-line: underline;
+}
+
+#faq:hover {
+    color:blue;
+    text-decoration: none;
+
+}
+
+header {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+form {
+    font-size: 25px;
+    font-family: 'poppins';
+    text-align: left;
+    font-weight: medium;
+    display: block;
+}
+
+form label{
+    position: relative;
+}
