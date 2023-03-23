@@ -2,6 +2,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+ 
 }
 
 
@@ -10,7 +12,7 @@ body {
 nav {
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 5px 10px; /* this padding needs to be corrected; results in unwanted white space*/
     margin-bottom: 20px;
     width: 100%;
     background-color: #FFFFFF;
@@ -28,13 +30,23 @@ nav {
     display: flex;
     margin-left: 15px;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 400;
 }
+/* This needs to be centered */
 .nav-logo {
     height: 35px;
 }
-.nav-search{
+
+.search {
+    height: 25px;
+    width: 300px;
+    
+    margin-right: 25px;
     border-radius: 5px;
+    background-color: #EDEDED;
+}
+.search::placeholder {
+    font-weight: 500;
 }
 
 /* Bottom Nav */
@@ -52,6 +64,7 @@ nav {
     list-style-type: none;
     text-decoration: none;  
     color: #FFFFFF;
+    font-weight: 500;
 }
 .page-nav-list   a:hover {
     background-color: #9a2542;
