@@ -1,6 +1,8 @@
 #faq {
     color: black;
     text-decoration-line: underline;
+    display: inline-block;
+    
 }
 
 #faq:hover {
@@ -8,6 +10,7 @@
     text-decoration: none;
 
 }
+
 
 header {
     font-size: 50px;
@@ -19,10 +22,11 @@ form {
     font-size: 25px;
     font-family: 'poppins';
     text-align: left;
-    font-weight: medium;
+    font-weight: 500;
     display: block;
+    background-color: #b9b7b7;
 }
 
 form label{
-    position: relative;
+    display: block;
 }
