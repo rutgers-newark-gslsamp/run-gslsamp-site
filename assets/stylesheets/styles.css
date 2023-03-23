@@ -14,6 +14,7 @@ nav {
     margin-bottom: 20px;
     width: 100%;
     background-color: #FFFFFF;
+    position: sticky;
 }
 .top-nav-container {
     display: flex;
