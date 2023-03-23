@@ -33,7 +33,30 @@
             </ul>
         </div>
     </nav>
+    <?php
+    //Display if there is an error with form
+    $feedback="";
+    $success = "<h2>Thank you for your submission, we'll get back to you soon!</h2";
+    $error = "<h2 style='color:red; font-weight:bold;'>* There was a problem with your submission. Please try again.</h2>";
+    //form variables
+    $first_name="";
+    $last_name="";
+    $email="";
+    $inquiry="";
+    $message="";
 
+    //check if form submitted and store variables
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
+        $first_name=$_POST["first_name"];
+        $last_name=$_POST["last_name"];
+        $email=$_POST["email"];
+        $inquiry=$_POST["inquiry"];
+        $message=$_POST["message"];
+
+        //validating fields
+
+    }
+    ?>
 
     <main>
         <!--Page Header-->
@@ -41,33 +64,36 @@
             Contact Us!
         </header>
 
-        <!--canvas backgound of form-->
-        <canvas id="formBackground" height="10" width="10"></canvas>
-
         <!--Form-->
         <!--requires php file-->
         <form action="" method="POST">
             <label for="first_name">First Name*</label>
-            <input type="text" id="first_name" name="first_name" value="">
+            <input type="text" id="first_name" name="first_name" value="<?= $first_name;?>">
             
             <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="last_name" value="">
+            <input type="text" id="last_name" name="last_name" value="<?= $last_name;?>">
             <br>
             <label for="email">Email*</label>
-            <input type="text" id="email" name="email" value="">
+            <input type="text" id="email" name="email" value="<?= $email;?>">
 
             <label for="inquiry">inquiry*</label>
-            <select id="inquiry" name="Inquiry">
+            <select name="inquiry" value="<?= $inquiry;?>">
+                <option value="invalid">--- Select Option ---</option>
                 <option value="general question">General Question</option>
                 <option value="looking for opportunities">Looking for Opportunities</option>
                 <option value="faculty looking to assist">Faculty Looking to Assist</option>
             </select>
             <br>
             <label for="message">Message*</label>
-            <textarea id="message" name="message" rows="5" cols="30" value=""></textarea>
+            <textarea id="message" name="message" rows="5" cols="30" value="<?= $message;?>"></textarea>
             <br>
             <input type="submit" value="Submit">
         </form>
+        
+
+
+
+
 
     </main>
 
