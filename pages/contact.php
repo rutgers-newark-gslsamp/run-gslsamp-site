@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -47,11 +47,11 @@
 
     //check if form submitted and store variables
     if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $first_name=$_POST["first_name"];
-        $last_name=$_POST["last_name"];
-        $email=$_POST["email"];
-        $inquiry=$_POST["inquiry"];
-        $message=$_POST["message"];
+        $first_name= $_POST["first_name"];
+        $last_name= $_POST["last_name"];
+        $email= $_POST["email"];
+        $inquiry= $_POST["inquiry"];
+        $message= $_POST["message"];
 
         //validating fields
 
@@ -66,26 +66,26 @@
 
         <!--Form-->
         <!--requires php file-->
-        <form action="" method="POST">
+        <form action="contact.php" method="POST">
             <label for="first_name">First Name*</label>
-            <input type="text" id="first_name" name="first_name" value="<?= $first_name;?>">
+                <input type="text" id="first_name" name="first_name" value="<?= $first_name;?>">
             
             <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="last_name" value="<?= $last_name;?>">
-            <br>
-            <label for="email">Email*</label>
+                <input type="text" id="last_name" name="last_name" value="<?= $last_name;?>">
+                <br>
+                <label for="email">Email*</label>
             <input type="text" id="email" name="email" value="<?= $email;?>">
 
-            <label for="inquiry">inquiry*</label>
-            <select name="inquiry" value="<?= $inquiry;?>">
-                <option value="invalid">--- Select Option ---</option>
-                <option value="general question">General Question</option>
-                <option value="looking for opportunities">Looking for Opportunities</option>
-                <option value="faculty looking to assist">Faculty Looking to Assist</option>
-            </select>
+            <label for="inquiry">Inquiry*</label>
+                <select name="inquiry" value="<?= $inquiry;?>">
+                    <option selected><?= ucwords($inquiry);?></option>
+                    <option value="general question">General Question</option>
+                    <option value="looking for opportunities">Looking for Opportunities</option>
+                    <option value="faculty looking to assist">Faculty Looking to Assist</option>
+                </select>
             <br>
             <label for="message">Message*</label>
-            <textarea id="message" name="message" rows="5" cols="30" value="<?= $message;?>"></textarea>
+                <textarea id="message" name="message" rows="5" cols="30" ><?= $message;?></textarea>
             <br>
             <input type="submit" value="Submit">
         </form>
