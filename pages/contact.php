@@ -53,7 +53,8 @@
         $inquiry= $_POST["inquiry"];
         $message= $_POST["message"];
 
-        //validating fields
+        //check if strings are proper length
+        //first Name 
 
     }
     ?>
@@ -68,16 +69,16 @@
         <!--requires php file-->
         <form action="contact.php" method="POST">
             <label for="first_name">First Name*</label>
-                <input type="text" id="first_name" name="first_name" value="<?= $first_name;?>">
+                <input required type="text" id="first_name" name="first_name" value="<?= $first_name;?>">
             
             <label for="last_name">Last Name</label>
                 <input type="text" id="last_name" name="last_name" value="<?= $last_name;?>">
                 <br>
                 <label for="email">Email*</label>
-            <input type="text" id="email" name="email" value="<?= $email;?>">
+            <input required type="text" id="email" name="email" value="<?= $email;?>">
 
             <label for="inquiry">Inquiry*</label>
-                <select name="inquiry" value="<?= $inquiry;?>">
+                <select required name="inquiry" value="<?= $inquiry;?>">
                     <option selected><?= ucwords($inquiry);?></option>
                     <option value="general question">General Question</option>
                     <option value="looking for opportunities">Looking for Opportunities</option>
@@ -85,7 +86,7 @@
                 </select>
             <br>
             <label for="message">Message*</label>
-                <textarea id="message" name="message" rows="5" cols="30" ><?= $message;?></textarea>
+                <textarea required id="message" name="message" rows="5" cols="30" ><?= $message;?></textarea>
             <br>
             <input type="submit" value="Submit">
         </form>
