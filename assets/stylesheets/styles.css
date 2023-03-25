@@ -12,9 +12,10 @@ body {
 nav {
     display: flex;
     flex-direction: column;
-    padding: 5px 10px; /* this padding needs to be corrected; results in unwanted white space*/
+    top: 0;
+    width: 100%;    
     margin-bottom: 20px;
-    width: 100%;
+    top: 0;
     background-color: #FFFFFF;
     position: sticky;
 }
@@ -35,13 +36,13 @@ nav {
 /* This needs to be centered */
 .nav-logo {
     height: 35px;
+    padding: 12px 35px;
 }
 
 .search {
     height: 25px;
     width: 300px;
-    
-    margin-right: 25px;
+    margin-right: 35px;
     border-radius: 5px;
     background-color: #EDEDED;
 }
@@ -60,6 +61,7 @@ nav {
 }
 .page-nav-list, a {
     display: flex;
+    flex-wrap: wrap;
     margin: 5px 60px;
     list-style-type: none;
     text-decoration: none;  
