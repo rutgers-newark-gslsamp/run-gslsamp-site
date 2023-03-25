@@ -26,6 +26,7 @@ nav {
 }
 .top-nav-header {
     display: flex;
+    align-items: center;
 }
 .nav-logo {
     display: flex;
@@ -33,7 +34,9 @@ nav {
     padding: 12px 25px;
 }
 .nav-vertical-line {
+    border-left: 1px solid #D9D9D9;
     color: #D9D9D9;
+    height: 3rem;
 }
 .nav-header-title {
     display: flex;
@@ -65,6 +68,8 @@ nav {
 }
 .page-nav-list, a {
     display: flex;
+    justify-content: center;
+
     flex-wrap: wrap;
     margin: 5px 60px;
     list-style-type: none;
