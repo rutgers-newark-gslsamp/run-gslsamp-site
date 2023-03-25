@@ -53,8 +53,9 @@
         $inquiry= $_POST["inquiry"];
         $message= $_POST["message"];
 
-        //check if strings are proper length
-        //first Name 
+        //custom validate each field
+        // names 30 characters max
+        //email: filter_var(email)
 
     }
     ?>
@@ -68,22 +69,28 @@
         <!--Form-->
         <!--requires php file-->
         <form action="contact.php" method="POST">
-            <label for="first_name">First Name*</label>
-                <input required type="text" id="first_name" name="first_name" value="<?= $first_name;?>">
-            
-            <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name" value="<?= $last_name;?>">
-                <br>
-                <label for="email">Email*</label>
-            <input required type="text" id="email" name="email" value="<?= $email;?>">
+            <div class="form-line">
+                <label for="first_name">First Name*</label>
+                    <input required type="text" id="first_name" name="first_name" value="<?= $first_name;?>">
+                
+                <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" value="<?= $last_name;?>">
+            </div>
 
-            <label for="inquiry">Inquiry*</label>
-                <select required name="inquiry" value="<?= $inquiry;?>">
-                    <option selected><?= ucwords($inquiry);?></option>
-                    <option value="general question">General Question</option>
-                    <option value="looking for opportunities">Looking for Opportunities</option>
-                    <option value="faculty looking to assist">Faculty Looking to Assist</option>
-                </select>
+            <br>
+            <div class="form-line">
+                <label for="email">Email*</label>
+                    <input required type="text" id="email" name="email" value="<?= $email;?>">
+
+                <label for="inquiry">Inquiry*</label>
+                    <select required name="inquiry" value="<?= $inquiry;?>">
+                        <option selected><?= ucwords($inquiry);?></option>
+                        <option value="general question">General Question</option>
+                        <option value="looking for opportunities">Looking for Opportunities</option>
+                        <option value="faculty looking to assist">Faculty Looking to Assist</option>
+                    </select>
+            </div>
+
             <br>
             <label for="message">Message*</label>
                 <textarea required id="message" name="message" rows="5" cols="30" ><?= $message;?></textarea>
