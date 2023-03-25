@@ -97,11 +97,6 @@
             <input type="submit" value="Submit">
         </form>
         
-
-
-
-
-
     </main>
 
     <div id="faq-link">
