@@ -67,20 +67,19 @@
         </header>
 
         <!--Form-->
-        <!--requires php file-->
         <form action="contact.php" method="POST">
             <div class="form-line">
                 <label for="first_name">First Name*</label>
-                    <input required type="text" id="first_name" name="first_name" value="<?= $first_name;?>">
+                    <input required type="text" id="first_name" name="first_name" pattern="[A-Za-z]{3,30}]" value="<?= $first_name;?>">
                 
                 <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" value="<?= $last_name;?>">
+                    <input type="text" id="last_name" name="last_name" pattern="[A-Za-z]{3,30}]" value="<?= $last_name;?>">
             </div>
 
             <br>
             <div class="form-line">
                 <label for="email">Email*</label>
-                    <input required type="text" id="email" name="email" value="<?= $email;?>">
+                    <input required type="text" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" value="<?= $email;?>">
 
                 <label for="inquiry">Inquiry*</label>
                     <select required name="inquiry" value="<?= $inquiry;?>">
@@ -93,7 +92,7 @@
 
             <br>
             <label for="message">Message*</label>
-                <textarea required id="message" name="message" rows="5" cols="30" ><?= $message;?></textarea>
+                <textarea required id="message" name="message" rows="5" cols="30" minlength="15" maxlength="250"><?= $message;?></textarea>
             <br>
             <input type="submit" value="Submit">
         </form>
