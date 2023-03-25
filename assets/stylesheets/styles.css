@@ -27,28 +27,32 @@ nav {
 .top-nav-header {
     display: flex;
 }
+.nav-logo {
+    display: flex;
+    height: 35px;
+    padding: 12px 25px;
+}
+.nav-vertical-line {
+    color: #D9D9D9;
+}
 .nav-header-title {
     display: flex;
     margin-left: 15px;
     font-size: 20px;
     font-weight: 400;
 }
-/* This needs to be centered */
-.nav-logo {
-    height: 35px;
-    padding: 12px 35px;
-}
-
 .search {
     height: 25px;
     width: 300px;
-    margin-right: 35px;
+    margin-right: 25px;
     border-radius: 5px;
     background-color: #EDEDED;
 }
 .search::placeholder {
     font-weight: 500;
 }
+
+
 
 /* Bottom Nav */
 .bottom-nav-container {
