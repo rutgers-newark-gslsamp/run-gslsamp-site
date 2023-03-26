@@ -93,3 +93,13 @@ footer {
     background-color: #646464;
     color: #FFFFFF;
 }
+
+
+/* MISC */
+button {
+    /* Centers the content of buttons */
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
