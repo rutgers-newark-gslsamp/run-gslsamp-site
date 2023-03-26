@@ -68,6 +68,7 @@
 }
 
 .landing-about-card {
+    display: flex;
     max-width: 575px;
     padding: 10px 15px;
     margin: 30px;
@@ -80,22 +81,28 @@
     font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0px 0px 2px;
+    padding: 5px 5px 0px;
 }
 .landing-about-content {
-
+    padding: 2px 5px 1px;
 }
 
 .landing-about-button {
-    width: 150px;
-    height: 50px;
+    font-size: 12px;
+    max-width: 125px;
+    max-height: 50px;
     background: #fcfcfc; 
     border: 4px solid #D7D7D7;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.075);
     border-radius: 5px;
+    margin: 10px 5px;
 }
 .landing-about-anchor {
+    font-size: 15px;
     color:black;
     font-weight: 600;
+    text-decoration: underline;
 }
 
 
