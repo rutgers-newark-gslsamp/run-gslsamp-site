@@ -71,8 +71,8 @@
 }
 
 .landing-about-card {
-    max-width:600px;
-    padding: 10px;
+    max-width: 575px;
+    padding: 10px 15px;
     margin: 30px;
     border-radius: 20px; 
     background-color: #F9F9F9;
