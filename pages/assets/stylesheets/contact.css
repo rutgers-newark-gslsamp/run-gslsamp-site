@@ -1,0 +1,37 @@
+#faq {
+    color: black;
+    text-decoration-line: underline;
+    display: inline-block;
+    
+}
+
+#faq:hover {
+    color:blue;
+    text-decoration: none;
+
+}
+
+.form-line {
+    display: table !important;
+}
+
+
+header {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+
+form {
+    font-size: 25px;
+    font-family: 'poppins';
+    text-align: left;
+    font-weight: 500;
+    background-color: #b9b7b7;
+    display: inline;
+}
+
+form label{
+    display: block;
+}
+
