@@ -24,21 +24,17 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
     //Recipients
-    $mail->setFrom($email, $sender_name);
+    $mail->setFrom($email, $email);
     $mail->addAddress($to, $sender_name);     //Add a recipient
         
     //Content
     $mail->isHTML(true);                                 
     $mail->Subject = $email_subject;
-    $mail->Body    = $message; //html format mail
+    $mail->Body    = "Sender email: " . $email . "<br><br>" . $message; //html format mail
     $mail->AltBody = $message; //non-html format mail
         
     $mail->send();
-    $form_status="<p style=''>Thank you for your submission, we'll get back to you soon!</p>";
 } catch (Exception $e) {
     $form_status = "<p style='color:red; font-weight: bold;'>**Message could not be sent. Mailer Error: {$mail->ErrorInfo}**</p>";
 }
-
-        
-
 ?>

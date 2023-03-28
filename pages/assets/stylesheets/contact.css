@@ -12,7 +12,16 @@
 }
 
 .form-line {
-    display: table !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+textarea {
+    font-size: 13px;
+}
+
+.form-line label{
+    background-color: #b9b7b7;
 }
 
 
@@ -28,10 +37,4 @@ form {
     text-align: left;
     font-weight: 500;
     background-color: #b9b7b7;
-    display: inline;
 }
-
-form label{
-    display: block;
-}
-
