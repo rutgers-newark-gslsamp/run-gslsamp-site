@@ -1,4 +1,3 @@
-<!
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,17 +32,14 @@
             </ul>
         </div>
     </nav>
-    <?php
-    //Display if there is an error with form
-    $feedback="";
-    $success = "<h2>Thank you for your submission, we'll get back to you soon!</h2";
-    $error = "<h2 style='color:red; font-weight:bold;'>* There was a problem with your submission. Please try again.</h2>";
+<?php
     //form variables
     $first_name="";
     $last_name="";
     $email="";
     $inquiry="";
     $message="";
+    $form_status="";
 
     //check if form submitted and store variables
     if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -53,12 +49,22 @@
         $inquiry= $_POST["inquiry"];
         $message= $_POST["message"];
 
-        //custom validate each field
-        // names 30 characters max
-        //email: filter_var(email)
+        //composing email elements
 
+        //Fullname
+        $sender_name = $first_name . " " . $last_name;
+
+        //custom email subject
+        $email_subject = $inquiry . ": " . $sender_name;
+
+
+        //$to = "oren.rabinovich@rutgers.edu";
+        $to = "christinobarbosa09@gmail.com";
+
+
+        require 'phpmailer.php';
     }
-    ?>
+?>
 
     <main>
         <!--Page Header-->
@@ -70,16 +76,16 @@
         <form action="contact.php" method="POST">
             <div class="form-line">
                 <label for="first_name">First Name*</label>
-                    <input required type="text" id="first_name" name="first_name" pattern="[A-Za-z]{3,30}]" value="<?= $first_name;?>">
+                    <input required type="text" id="first_name" name="first_name" pattern="^[a-zA-Z]+$" oninvalid="setCustomValidity('Alphabetic characters only')" value="<?= $first_name;?>">
                 
                 <label for="last_name">Last Name</label>
-                    <input type="text" id="last_name" name="last_name" pattern="[A-Za-z]{3,30}]" value="<?= $last_name;?>">
+                    <input type="text" id="last_name" name="last_name" pattern="^[a-zA-Z]+$" oninvalid="setCustomValidity('Alphabetic characters only')" value="<?= $last_name;?>">
             </div>
 
             <br>
             <div class="form-line">
                 <label for="email">Email*</label>
-                    <input required type="text" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" value="<?= $email;?>">
+                    <input required type="text" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" oninvalid="setCustomValidity('Invalid email format')" title="username@email.com" value="<?= $email;?>">
 
                 <label for="inquiry">Inquiry*</label>
                     <select required name="inquiry" value="<?= $inquiry;?>">
@@ -95,6 +101,7 @@
                 <textarea required id="message" name="message" rows="5" cols="30" minlength="15" maxlength="250"><?= $message;?></textarea>
             <br>
             <input type="submit" value="Submit">
+            <?= $form_status?>
         </form>
         
     </main>
