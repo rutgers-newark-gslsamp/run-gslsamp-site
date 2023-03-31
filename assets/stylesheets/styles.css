@@ -16,6 +16,7 @@ nav {
     top: 0;
     background-color: #FFFFFF;
     position: sticky;
+    z-index: 3;
 }
 .top-nav-container {
     display: flex;
