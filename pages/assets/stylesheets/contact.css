@@ -8,21 +8,19 @@
 #faq:hover {
     color:blue;
     text-decoration: none;
-
 }
 
 .form-line {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+}
+.field {
+    display: inline;
 }
 
 textarea {
     font-size: 13px;
 }
 
-.form-line label{
-    background-color: #b9b7b7;
-}
 
 
 header {
