@@ -114,14 +114,17 @@
     border-radius: 5px;
     margin: 0px 5px 5px;
 }
-.landing-about-anchor {
+.landing-about-anchor-button {
     font-size: 15px;
     color:black;
     font-weight: 600;
     text-decoration: underline;
 }
 
-
+.landing-about-anchor-body {
+    color: black;
+    box-shadow: none;
+}
 
 /* VIDEO */
 .landing-video {
