@@ -1,7 +1,11 @@
 /* HERO */
+.landing-hero {
+    position: relative;
+}
 .hero-picture-wrapper{
     max-height: 80vh;
     overflow: hidden;
+    z-index: 1;
 }
 .hero-picture {
     width:100%;
@@ -9,13 +13,17 @@
 }
 
 .hero-cta-block {
-    /* display: ???*/
+    position: absolute;
     max-width: 450px;
     height:300px;
     background: radial-gradient(50% 50% at 50% 50%, #CC0033 0%, #9D1739 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 5px 20px;
+    z-index: 2;
+    top: 50%; /* Position the top of the CTA block to the middle of the hero picture */
+    right: 3%; /* Position the right of the CTA block 3% from the right of the view */
+    margin: 20px;
 }
 
 .cta-headline {
@@ -66,7 +74,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 30px 20px;
+    margin: 100px 20px 30px;
 
 }
 .landing-about-logo {
@@ -119,6 +127,7 @@
     color:black;
     font-weight: 600;
     text-decoration: underline;
+    padding: 3px;
 }
 
 .landing-about-anchor-body {
@@ -176,13 +185,10 @@
     height: 50%;
 }
 
-.alliance-university-content, .alliance-university-name {
+.alliance-university-content, .alliance-university-name, .alliance-university-contact  {
     font-size: 13px;
     text-align: center;
     margin: 0;
-    padding: 1px;
-}
-.alliance-university-contact {
     padding: 1px;
 }
 
