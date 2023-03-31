@@ -52,6 +52,7 @@
         <div class="top-nav-container">
             <div class="top-nav-header">
                 <img class="nav-logo" src="../assets/images/rutgers-logos/Rutgers_University_Newark_logo.png" alt="Rutgers Univesity–Newark Logo">
+                <hr class="nav-vertical-line">
                 <h1 class="nav-header-title">Louis Stokes Alliance for Minority Participation (LSAMP)</h1>  
             </div>
             <div class="top-nav-search">
@@ -59,7 +60,7 @@
             </div>
         </div>
         <div class="bottom-nav-container">
-            <ul class="page-nav-list">
+            <ul class="nav-page-list">
                 <li><a class="nav-page-link" href="index.html">Home</a></li>
                 <li><a class="nav-page-link" href="about.html">About Us</a></li>
                 <li><a class="nav-page-link" href="membership.html">Membership</a></li>
