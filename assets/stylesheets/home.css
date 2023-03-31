@@ -76,7 +76,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 100px 20px 30px;
+    margin: 120px 20px 30px;
 
 }
 .landing-about-logo {
@@ -141,7 +141,7 @@
 .landing-video {
     display: flex;
     justify-content: center;
-    margin: 70px 30px;
+    margin: 100px 30px;
 }
 
 /* ALLIANCE */
