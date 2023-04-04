@@ -2,12 +2,15 @@
     color: black;
     text-decoration-line: underline;
     display: inline-block;
-    
 }
 
 #faq:hover {
     color:blue;
     text-decoration: none;
+}
+
+.form-line {
+    display: table !important;
 }
 
 .form-line {
@@ -21,12 +24,11 @@ textarea {
     font-size: 13px;
 }
 
-
-
-header {
-    font-size: 50px;
+#header h1{
+    font-size: 4 em;
     font-weight: 500;
 }
+
 
 
 form {
@@ -35,4 +37,10 @@ form {
     text-align: left;
     font-weight: 500;
     background-color: #b9b7b7;
+    display: inline;
 }
+
+form label{
+    display: block;
+}
+
