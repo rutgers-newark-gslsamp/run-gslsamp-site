@@ -1,10 +1,15 @@
 .hero-picture-wrapper{
-    max-height: 80vh;
-    overflow: hidden;
+    position: relative;
+    max-height: 30vh; /* adjust the max-height as desired */
+    overflow: hidden; /* crop the image to fit the wrapper */
 }
 .hero-picture {
+    top: 0px; /* this needs to be fixed to move the background up within the wrapper */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
     width:100%;
-    height: auto;
 }
 .main-message{
     padding: 0px 20px;
