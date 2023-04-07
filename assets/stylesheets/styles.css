@@ -20,8 +20,10 @@ nav {
 }
 .top-nav-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    
 }
 .top-nav-header {
     display: flex;
@@ -57,6 +59,22 @@ nav {
     color: #5e5e5e;
 }
 
+@media (max-width: 66.67%) {
+    .top-nav-header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .top-nav-search {
+        flex-basis: 100%;
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+.top-nav-search-centered {
+    justify-content: center;
+    margin: 5px;
+}
 
 
 /* Bottom Nav */
