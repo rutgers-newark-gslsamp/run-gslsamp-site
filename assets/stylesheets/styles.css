@@ -8,7 +8,7 @@ body {
 
 /* NAVIGATION MENU */
 /* Top Nav*/
-header {
+nav {
     display: flex;
     flex-direction: column;
     width: 100%;    
