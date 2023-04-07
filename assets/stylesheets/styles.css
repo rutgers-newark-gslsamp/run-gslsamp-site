@@ -8,7 +8,7 @@ body {
 
 /* NAVIGATION MENU */
 /* Top Nav*/
-nav {
+header {
     display: flex;
     flex-direction: column;
     width: 100%;    
@@ -59,7 +59,9 @@ nav {
     color: #5e5e5e;
 }
 
-@media (max-width: 66.67%) {
+/* Responsive Top Nav */
+
+/* @media (max-width: 66.67%) {
     .top-nav-header {
         flex-wrap: wrap;
         justify-content: center;
@@ -75,6 +77,8 @@ nav {
     justify-content: center;
     margin: 5px;
 }
+*/
+
 
 
 /* Bottom Nav */
