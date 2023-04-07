@@ -159,15 +159,16 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex: 1;
-    margin: 0px 100px 30px;
+    margin: 0px 50px 30px;
 }
 
 .alliance-card {
     display: flex;
+    flex: 1 0 1;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    margin: 20px;
     padding: 20px;
     /* try to make the cards smaller*/
     max-height: 200px;
