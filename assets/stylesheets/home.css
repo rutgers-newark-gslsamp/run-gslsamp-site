@@ -1,7 +1,6 @@
 /* HERO */
 .landing-hero {
-    position: relative;
-}
+    position: relative;}
 .hero-picture-wrapper{
     max-height: 80vh;
     overflow: hidden;
