@@ -9,6 +9,33 @@
     text-decoration: none;
 }
 
+div.header h1{
+    grid-area: 1 / 1 / span 1 / span 3;
+    font-size: 4 em;
+    font-weight: 300;
+}
+
+.fname {
+    grid-area: 2 / 1 / span 1 / span 1;
+     
+}
+
+.lname {
+
+}
+
+.email {
+
+}
+
+.inquiry {
+
+}
+
+.message {
+
+}
+
 .form-line {
     display: table !important;
 }
@@ -24,13 +51,6 @@ textarea {
     font-size: 13px;
 }
 
-#header h1{
-    font-size: 4 em;
-    font-weight: 500;
-}
-
-
-
 form {
     font-size: 25px;
     font-family: 'poppins';
@@ -42,5 +62,11 @@ form {
 
 form label{
     display: block;
+}
+
+main {
+    display: grid;
+    grid-template: repeat(5, 20%)/ repeat(3, 1fr);
+    border: 3px solid #b9b7b7;
 }
 
