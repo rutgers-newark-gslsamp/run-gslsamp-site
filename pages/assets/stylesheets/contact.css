@@ -1,72 +1,198 @@
-#faq {
-    color: black;
-    text-decoration-line: underline;
-    display: inline-block;
-}
-
-#faq:hover {
-    color:blue;
-    text-decoration: none;
-}
-
-div.header h1{
-    grid-area: 1 / 1 / span 1 / span 3;
-    font-size: 4 em;
-    font-weight: 300;
-}
-
-.fname {
-    grid-area: 2 / 1 / span 1 / span 1;
-     
-}
-
-.lname {
-
-}
-
-.email {
-
-}
-
-.inquiry {
-
-}
-
-.message {
-
-}
-
-.form-line {
-    display: table !important;
-}
-
-.form-line {
-    display: flex;
-}
-.field {
-    display: inline;
-}
-
-textarea {
-    font-size: 13px;
-}
-
-form {
-    font-size: 25px;
-    font-family: 'poppins';
-    text-align: left;
-    font-weight: 500;
-    background-color: #b9b7b7;
-    display: inline;
-}
-
-form label{
-    display: block;
+div.title h1{
+    grid-area: title;
+    align-self: center;
+    justify-self: left;
+    text-align: center;
+    font-size: 3.2em;
+    font-weight: 700;
+    width: 10em;
+    margin: .1em;
+    padding-left: 4em;
 }
 
 main {
     display: grid;
-    grid-template: repeat(5, 20%)/ repeat(3, 1fr);
-    border: 3px solid #b9b7b7;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "title title title"
+        "form form figure"
+        "form form figure"
+        "form form figure"
+        "form form  submit"
+        "faq faq faq"
+        "footer footer footer";
+    justify-content: center;
+    width: width;
+    height: 55em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 3px solid red;
+
 }
 
+div.title {
+    padding: 0;
+    margin:0;
+    grid-area:title;
+    height: 6em;
+}
+
+div.figure {
+    grid-area: figure;
+    background-color:  rgb(160, 160, 160);
+    height: 34em;
+}
+
+#form {
+    font-family: 'Poppins';
+    font-weight: 525;
+    font-size: 1.4em;
+    display: grid;
+    grid-area: form;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "fname lname"
+        "email inquiry"
+        "message message"
+        "submit submit";
+    background-color: rgb(160, 160, 160);
+    padding-left: 5em;
+}
+
+div.fname {
+    grid-area: fname;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "flabel"
+        "finput";
+}
+
+div.fname label {
+    grid-area: flabel;
+    padding-top: 1em;
+}
+
+div.fname input {
+    grid-area: finput;
+    width: 22em;
+    border-radius: .7em;
+    font-size: .8em;
+    font-size: 1em;
+    height:2.8em;
+}
+
+div.lname {
+    grid-area: lname;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "llabel"
+        "linput";
+}
+
+div.lname label {
+    grid-area: llabel;
+    padding-top: 1em;
+}
+
+div.lname input {
+    grid-area: linput;
+    width: 22em;
+    border-radius: .7em;
+    font-size: .8em;
+    font-size: 1em;
+    height:2.8em;
+}
+
+div.email {
+    grid-area: email;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "elabel"
+        "einput";
+}
+
+div.email label {
+    grid-area: elabel;
+    padding-top: 1em;
+}
+
+div.email input {
+    grid-area: einput;
+    width: 22em;
+    border-radius: .7em;
+    font-size: .8em;
+    font-size: 1em;
+    height:2.8em;
+}
+
+div.inquiry {
+    grid-area: inquiry;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "ilabel"
+        "iinput";
+}
+
+div.inquiry label {
+    grid-area: ilabel;
+    padding-top: 1em;
+}
+
+div.inquiry select {
+    grid-area: iinput;
+    width: 22em;
+    border-radius: .7em;
+    font-size: .8em;
+    font-size: 1em;
+    height:2.8em;
+}
+
+div.message {
+    grid-area: message;
+    display:grid;
+    grid-template-rows: 3f 1fr;
+    grid-template-areas: 
+        "mlabel"
+        "minput";
+}
+
+div.message label {
+    grid-area: mlabel;
+    padding-top: 1em;
+    margin-bottom: 0em;
+    height:2em;
+}
+
+div.message textarea {
+    grid-area: minput;
+    border-radius: .7em;
+    font-size: .9em;
+    font-size: 1em;
+    height:7em;
+    width: 58.35em;
+}
+
+#submit {
+    grid-area: submit;
+    margin-bottom: 0%;
+}
+
+div.faq {
+    text-decoration-line: underline;
+    grid-area: faq;
+    height: 4em;
+    justify-self: center;
+    align-self: center;
+}
+
+div.faq:hover {
+    text-decoration: none;
+}
+
+footer {
+    grid-area: footer;
+}
