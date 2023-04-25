@@ -23,11 +23,9 @@ main {
         "footer footer footer";
     justify-content: center;
     width: width;
-    height: 55em;
+    height: 40em;
     margin-left: 1em;
     margin-right: 1em;
-    border: 3px solid red;
-
 }
 
 div.title {
@@ -44,9 +42,12 @@ div.figure {
 }
 
 #form {
-    font-family: 'Poppins';
-    font-weight: 525;
-    font-size: 1.4em;
+    --font-size: 1em;
+    --font-family: 'Poppins';
+    --font-weight: 525;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
     display: grid;
     grid-area: form;
     grid-template-columns: repeat(2,1fr);
@@ -57,6 +58,31 @@ div.figure {
         "submit submit";
     background-color: rgb(160, 160, 160);
     padding-left: 5em;
+    perspective:none;
+}
+
+form div{
+}
+
+form div label,
+form div input,
+form div select {
+    display: flex;
+    flex-shrink: 1;
+    min-width: 3fr;
+}
+
+label {
+    padding-top:1em;
+
+}
+
+input, 
+select {
+    width: 22em;
+    border-radius: .7em;
+    height:2.8em;
+    flex: 1 1 2fr;
 }
 
 div.fname {
@@ -70,16 +96,10 @@ div.fname {
 
 div.fname label {
     grid-area: flabel;
-    padding-top: 1em;
 }
 
 div.fname input {
     grid-area: finput;
-    width: 22em;
-    border-radius: .7em;
-    font-size: .8em;
-    font-size: 1em;
-    height:2.8em;
 }
 
 div.lname {
@@ -93,16 +113,10 @@ div.lname {
 
 div.lname label {
     grid-area: llabel;
-    padding-top: 1em;
 }
 
 div.lname input {
     grid-area: linput;
-    width: 22em;
-    border-radius: .7em;
-    font-size: .8em;
-    font-size: 1em;
-    height:2.8em;
 }
 
 div.email {
@@ -116,16 +130,10 @@ div.email {
 
 div.email label {
     grid-area: elabel;
-    padding-top: 1em;
 }
 
 div.email input {
     grid-area: einput;
-    width: 22em;
-    border-radius: .7em;
-    font-size: .8em;
-    font-size: 1em;
-    height:2.8em;
 }
 
 div.inquiry {
@@ -139,16 +147,10 @@ div.inquiry {
 
 div.inquiry label {
     grid-area: ilabel;
-    padding-top: 1em;
 }
 
 div.inquiry select {
     grid-area: iinput;
-    width: 22em;
-    border-radius: .7em;
-    font-size: .8em;
-    font-size: 1em;
-    height:2.8em;
 }
 
 div.message {
@@ -162,7 +164,6 @@ div.message {
 
 div.message label {
     grid-area: mlabel;
-    padding-top: 1em;
     margin-bottom: 0em;
     height:2em;
 }
@@ -173,12 +174,30 @@ div.message textarea {
     font-size: .9em;
     font-size: 1em;
     height:7em;
-    width: 58.35em;
+    width: 47em;
 }
 
-#submit {
+div.submit button{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight)/3;
+    color: white;
     grid-area: submit;
     margin-bottom: 0%;
+    height: 3em;
+    width: 8em;
+    background-color: #28A745;
+    border: none;
+
+}
+
+button {
+    border-radius: 5px;
+
+}
+
+div.submit button:hover {
+    cursor: pointer;
+    background-color: #289441;
 }
 
 div.faq {
@@ -189,7 +208,12 @@ div.faq {
     align-self: center;
 }
 
-div.faq:hover {
+div.faq a#faq {
+    padding-top: .7em;
+    color: black;
+}
+
+div.faq a#faq:hover {
     text-decoration: none;
 }
 
