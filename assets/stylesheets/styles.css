@@ -149,7 +149,12 @@ button {
 
 
 /* MOBILE VERSION */
-nav .mobile-nav {
-    display: none;
-    /* make it hidden */
+nav .mobile-nav, .mobile-nav ul{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    width: 100%; 
+    list-style-type: none;   
 }
