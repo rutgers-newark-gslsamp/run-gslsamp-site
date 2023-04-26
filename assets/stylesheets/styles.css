@@ -5,10 +5,13 @@ body {
     margin: 0px;
 }
 
-
 /* NAVIGATION MENU */
 /* Top Nav*/
-nav {
+nav .mobile-nav {
+    display: none;
+    /* make it hidden */
+}
+nav .desktop-nav {
     display: flex;
     flex-direction: column;
     width: 100%;    
@@ -95,7 +98,7 @@ nav {
     font-size: 16px;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 4px 60px;
+    margin: 4px 50px;
     list-style-type: none;
     text-decoration: none;  
     color: #FFFFFF;
@@ -142,4 +145,11 @@ button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+
+/* MOBILE VERSION */
+nav .mobile-nav {
+    display: none;
+    /* make it hidden */
 }
