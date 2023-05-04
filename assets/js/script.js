@@ -1,5 +1,5 @@
 /* MOBILE HAMBURGER MENU */
-const hamburgerMenu = document.querySelector('..bottom-nav-container-mobile');
+const hamburgerMenu = document.querySelector('.bottom-nav-container-mobile');
 const hamburgerMenuBars = document.querySelector('#hamburger-menu-bars');
 
 const toggleHamburgerMenu = () => {
