@@ -41,6 +41,9 @@ nav .desktop-nav {
     display: flex;
     margin: 0px 5px 0px 15px;
 }
+.nav-logo-mobile, .nav-logo {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.48));
+}
 
 .nav-vertical-line {
     border-left: 1px solid #D9D9D9;
@@ -150,19 +153,18 @@ nav .mobile-nav, .mobile-nav ul{
 
 .top-nav-header-mobile {
     display: flex;
+    padding: 5px 10px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     color: white;
     background: linear-gradient(180deg, #3A0000 0%, #720909 0%, #B7002E 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.nav-logo-mobile, .nav-logo {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.48));
-}
-
 .nav-logo-mobile {
     width: 14vh;
     height: auto;
+    margin: 2px;
 }
