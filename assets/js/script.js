@@ -5,16 +5,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const hamburgerMenuBars = document.querySelector('.hamburger-menu-bars');
     const pageContent = document.querySelector('body > *:not(nav.mobile-nav)'); // all content except nav
 
-    const toggleHamburgerMenu = () => {
+    const ToggleHamburgerMenu = () => {
         if (hamburgerMenu.style.display === 'none') {
-          // makes the hamburger menu visible (hidden by default)
-            hamburgerMenu.style.display = 'flex';
+            // makes the hamburger menu visible (hidden by default)
+            hamburgerMenu.style.display = 'flex'; 
             pageContent.style.filter = 'blur(2px)';
         } else {
-            hamburgerMenu.style.display = 'none';
+            hamburgerMenu.style.display = 'none'; 
             pageContent.style.filter = 'none';
         }
-      };
+    }
     hamburgerMenuBars.addEventListener('click', ToggleHamburgerMenu); 
 
     // Close the hamburger menu when the user clicks outside of it
