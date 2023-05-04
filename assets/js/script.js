@@ -1,13 +1,20 @@
-const navSearchBar = document.querySelector('.top-nav-search');
-const searchMediaQuery = window.matchMedia('(max-width: 66.67%)');
+/* MOBILE HAMBURGER MENU */
+const hamburgerMenu = document.querySelector('..bottom-nav-container-mobile');
+const hamburgerMenuBars = document.querySelector('#hamburger-menu-bars');
 
-function handleMediaQuery(searchMediaQuery) {
-    if (searchMediaQuery.matches) {
-        navSearchBar.classList.add('top-nav-search-centered');
+const toggleHamburgerMenu = () => {
+    if (hamburgerMenu.style.display === 'none') {
+        hamburgerMenu.style.display = 'flex';
+        // makes the hamburger menu visible (hidden by default)
     } else {
-        navSearchBar.classList.remove('top-nav-search-centered');
+        hamburgerMenu.style.display = 'none';
     }
 }
+hamburgerMenuBars.addEventListener('click', toggleHamburgerMenu); 
 
-handleMediaQuery(searchMediaQuery); // Handle the media query on page load
-searchMediaQuery.addListener(handleMediaQuery); // Handle the media query on window resize
+// Close the hamburger menu when the user clicks outside of it
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.mobile-nav')) {
+      hamburgerMenu.style.display = 'none';
+    }
+  });
