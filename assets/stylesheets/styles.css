@@ -197,6 +197,7 @@ nav .mobile-nav, .mobile-nav ul{
     display: flex;
     font-size: 4vh;
     margin: 2px 20px;
+    cursor: pointer;
 }
 .bottom-nav-container-mobile {
     display: none;
