@@ -183,7 +183,8 @@ nav .mobile-nav, .mobile-nav ul{
     font-size: 2vh;
 }
 .bottom-nav-container-mobile {
-    display: flex;
+    display: none;
+    /* display: flex; */
     left: 0;
     margin-top: 0;
     width: 100%;
