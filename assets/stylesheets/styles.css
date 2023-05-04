@@ -172,6 +172,7 @@ nav .mobile-nav, .mobile-nav ul{
     align-items: center;
     width: 100%;
     height: 10vh;
+    margin: 2px 20px;
 }
 .nav-logo-mobile {
     width: auto;
@@ -182,14 +183,20 @@ nav .mobile-nav, .mobile-nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     height: 75%;
     width: auto;
     margin: 2px;
-
 }
 .nav-header-title-mobile {
+    text-align: center;
     font-weight: 500;
     font-size: 2vh;
+}
+.hamburger-menu {
+    display: flex;
+    font-size: 4vh;
+    margin: 2px 20px;
 }
 .bottom-nav-container-mobile {
     display: none;
