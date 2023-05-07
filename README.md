@@ -18,10 +18,10 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
 ## MOCKUPS
 # Screenshots
 <div align="center">
-  <img width="600" src="mockups/run-lsamp-landingpage.png">
+  <img width="600" href="mockups/run-lsamp-landingpage.png">
   <br>
   <p>
-    Designed by <a src="https://github.com/RiosNicholas"> Nicholas Rios.</a>
+    Designed by <a href="https://github.com/RiosNicholas"> Nicholas Rios.</a>
   </p>
   <br>
   
