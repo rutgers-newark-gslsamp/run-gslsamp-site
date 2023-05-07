@@ -18,9 +18,10 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
 ## MOCKUPS
 # Screenshots
 <div align="center">
-  <img width="600" src="mockups/run-lsamp-landingpage.png">
-  <img width="600" src="mockups/run-lsamp-contact.png">
+  <img width="400" src="mockups/run-lsamp-landingpage.png">
+  <img width="400" src="mockups/run-lsamp-contact.png">
 </div>
+
 *** 
   
 # Figma Link
