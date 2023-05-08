@@ -21,13 +21,13 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
   <img width="600" src="mockups/run-lsamp-landingpage.png">
   <br>
   <p>
-    Designed by <a href="https://github.com/RiosNicholas"> Nicholas Rios.</a>
+    Designed by <a href="https://github.com/RiosNicholas"> Nicholas Rios</a>.
   </p>
   <br>
  
   <img width="600" src="mockups/run-lsamp-contact.png">
   <br>
   <p>
-  Designed by <a href="https://github.com/https://github.com/christinolb"> Christino Barbosa.</a>
+  Designed by <a href="https://github.com/https://github.com/christinolb"> Christino Barbosa</a>.
   </p>
 </div>
