@@ -31,10 +31,3 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
   Designed by <a href="https://github.com/https://github.com/christinolb"> Christino Barbosa.</a>
   </p>
 </div>
-
-*** 
-  
-### Figma Link
-<a href="https://www.figma.com/file/XuwGIQVqpsaMo6GDLsNUYA/Untitled?type=design&node-id=0%3A1&t=juxi2oXqHyZzcnLL-1" target="_blank">
-  https://www.figma.com/file/XuwGIQVqpsaMo6GDLsNUYA/Untitled?type=design&node-id=0%3A1&t=juxi2oXqHyZzcnLL-1
-</a>
