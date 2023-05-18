@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-
+    
     /* COPY TO CLIPBOARD */
     function CopyToClipboard() {
         let copyText = document.querySelector('.alliance-university-contact-email').innerHTML;
@@ -47,8 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert('Failed to copy email to clipboard');
             });
       };
-
       const allianceCard = document.querySelector('.alliance-card');
-      allianceCard.addEventListener('click', copyToClipboard);
+      allianceCard.addEventListener('click', CopyToClipboard);
 });
 
