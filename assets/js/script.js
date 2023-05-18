@@ -26,17 +26,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     /* COPY TO CLIPBOARD */
-    function copyToClipboard() {
-        var copyText =  document.getElementById('a1').innerHTML;
+    function CopyToClipboard() {
+        let copyText = document.querySelector('.alliance-university-contact-email').innerHTML;
     
-       document.addEventListener('copy', function(e) {
-          e.clipboardData.setData('text/plain', copyText);
-          e.preventDefault();
-       }, true);
-    
-       document.execCommand('copy');  
-       console.log('copied text : ', copyText);
-       alert('copied text: ' + copyText); 
-    }
+        document.addEventListener('copy', function(event) {
+            // Set the copied text to the clipboard data
+            event.clipboardData.setData('text/plain', copyText);
+            // Prevent the default copy behavior to avoid refreshing
+            event.preventDefault();
+        });
+      
+        // Write the text to the clipboard
+        navigator.clipboard.writeText(copyText)
+            .then(function() {
+                console.log('Copied to clipboard:', copyText);
+                alert('Copied email to clipboard');
+            })
+            .catch(function(error) {
+                console.error('Failed to copy to clipboard:', error);
+                alert('Failed to copy email to clipboard');
+            });
+      };
+
+      const allianceCard = document.querySelector('.alliance-card');
+      allianceCard.addEventListener('click', copyToClipboard);
 });
 
