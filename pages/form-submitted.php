@@ -65,7 +65,7 @@
                 <li><a class="nav-page-link" href="about.html">About Us</a></li>
                 <li><a class="nav-page-link" href="membership.html">Membership</a></li>
                 <li><a class="nav-page-link" href="events.html">Events & Opportunities</a></li>
-                <li><a class="nav-page-link" href="contact.html">Contact Us</a></li>
+                <li><a class="nav-page-link" href="contact.php">Contact Us</a></li>
             </ul>
         </div>
     </nav>
