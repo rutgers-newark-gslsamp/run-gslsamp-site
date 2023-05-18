@@ -5,7 +5,6 @@
 .hero-picture-wrapper{
     max-height: 80vh;
     overflow: hidden;
-    z-index: 0;
 }
 .hero-picture {
     width:100%;
@@ -25,7 +24,6 @@
     padding: 10px 20px;
     top: 50%; /* Position the top of the CTA block to the middle of the hero picture */
     right: 3%; /* Position the right of the CTA block 3% from the right of the view */
-    margin: 20px;
 }
 
 .cta-headline {
@@ -102,7 +100,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 120px 20px 30px;
+    margin: 100px 20px 30px;
 
 }
 .landing-about-logo {

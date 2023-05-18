@@ -19,7 +19,7 @@ nav .desktop-nav {
     top: 0;
     background-color: #FFFFFF;
     position: sticky;
-    z-index: 3;
+    z-index: 5;
 }
 .top-nav-container {
     display: flex;
