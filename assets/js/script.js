@@ -1,53 +1,58 @@
 // Executes JS code after HTML page
 document.addEventListener("DOMContentLoaded", function() {
-    /* MOBILE HAMBURGER MENU */
-    const hamburgerMenu = document.querySelector('.bottom-nav-container-mobile');
-    const hamburgerMenuBars = document.querySelector('.hamburger-menu-bars');
-    const pageContent = document.querySelector('body > *:not(nav.mobile-nav)'); // all content except nav
+    // /* MOBILE HAMBURGER MENU */
+    // const hamburgerMenu = document.querySelector('.bottom-nav-container-mobile');
+    // const hamburgerMenuBars = document.querySelector('.hamburger-menu-bars');
+    // const pageContent = document.querySelector('body > *:not(nav.mobile-nav)'); // all content except nav
 
-    const ToggleHamburgerMenu = () => {
-        if (hamburgerMenu.style.display === 'none') {
-            // makes the hamburger menu visible (hidden by default)
-            hamburgerMenu.style.display = 'flex'; 
-            pageContent.style.filter = 'blur(2px)';
-        } else {
-            hamburgerMenu.style.display = 'none'; 
-            pageContent.style.filter = 'none';
-        }
-    }
-    hamburgerMenuBars.addEventListener('click', ToggleHamburgerMenu); 
+    // const ToggleHamburgerMenu = () => {
+    //     if (hamburgerMenu.style.display === 'none') {
+    //         // makes the hamburger menu visible (hidden by default)
+    //         hamburgerMenu.style.display = 'flex'; 
+    //         pageContent.style.filter = 'blur(2px)';
+    //     } else {
+    //         hamburgerMenu.style.display = 'none'; 
+    //         pageContent.style.filter = 'none';
+    //     }
+    // }
+    // hamburgerMenuBars.addEventListener('click', ToggleHamburgerMenu); 
 
-    // Close the hamburger menu when the user clicks outside of it
-    document.addEventListener('click', (event) => {
-        if (!event.target.closest('.mobile-nav')) {
-        hamburgerMenu.style.display = 'none';
-        }
-    });
+    // // Close the hamburger menu when the user clicks outside of it
+    // document.addEventListener('click', (event) => {
+    //     if (!event.target.closest('.mobile-nav')) {
+    //     hamburgerMenu.style.display = 'none';
+    //     }
+    // });
 
     
     /* COPY TO CLIPBOARD */
-    function CopyToClipboard() {
-        let copyText = document.querySelector('.alliance-university-contact-email').innerHTML;
+    const allianceCards = document.querySelectorAll('.alliance-card');
     
-        document.addEventListener('copy', function(event) {
-            // Set the copied text to the clipboard data
-            event.clipboardData.setData('text/plain', copyText);
-            // Prevent the default copy behavior to avoid refreshing
-            event.preventDefault();
-        });
-      
+    const copyToClipboard = (event) => {
+        let copyText = event.currentTarget.querySelector('.alliance-university-contact-email').innerHTML;
+
+        event.preventDefault();
+
         // Write the text to the clipboard
         navigator.clipboard.writeText(copyText)
-            .then(function() {
+            .then(() => {
                 console.log('Copied to clipboard:', copyText);
-                alert('Copied email to clipboard');
+                event.currentTarget.style.cursor = 'copy'; // Change cursor style to 'copy' for success
+             
             })
-            .catch(function(error) {
+            // Performed if there are any issues with copying the email
+            .catch((error) => {
                 console.error('Failed to copy to clipboard:', error);
-                alert('Failed to copy email to clipboard');
+                event.currentTarget.style.cursor = 'not-allowed'; // Change cursor style to 'not-allowed' for failure
+                setTimeout(() => {
+                    event.currentTarget.style.cursor = 'default'; // Revert cursor style back to default after a brief delay
+                }, 1000);
             });
-      };
-      const allianceCard = document.querySelector('.alliance-card');
-      allianceCard.addEventListener('click', CopyToClipboard);
+    };
+
+    allianceCards.forEach((card) => {
+        card.addEventListener('click', copyToClipboard);
+    });
+
 });
 

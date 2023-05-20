@@ -227,7 +227,7 @@
 }
 .alliance-card:hover {
     background-color: #e7e7e7;
-    cursor: pointer;
+    cursor: copy;
     transition: .5s;
 }
 
