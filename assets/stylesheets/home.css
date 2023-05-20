@@ -183,11 +183,9 @@
     box-shadow: none;
 }
 .landing-about-anchor-body:hover {
-    background-color: #b41a41;
-    color: white;
+    background-color: #cbcbcb;
     transition: .2s;
     border-radius: 3px;
-    padding:1px;
 }
 
 /* VIDEO */
