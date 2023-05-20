@@ -13,11 +13,12 @@
 
 .hero-cta-block {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     position: absolute;
-    max-width: 450px;
-    width: 30%;
+    max-width: 45%;
+    width:30%;
     background: radial-gradient(50% 50% at 50% 50%, #CC0033 0%, #9D1739 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -54,6 +55,10 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
+#cta-learn-more-button:hover {
+    background: #b41a41;
+    transition: .5s;
+}
 .cta-learn-more-anchor {
     color: white;
     font-weight: 800;
@@ -64,6 +69,11 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+}
+
+#cta-join-now-button:hover {
+    background: #ededed;
+    transition: .5s;
 }
 .cta-join-now-anchor {
     color: black;
