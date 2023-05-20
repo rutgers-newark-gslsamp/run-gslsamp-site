@@ -79,7 +79,7 @@ nav .desktop-nav {
 /* Bottom Nav */
 .bottom-nav-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     background: linear-gradient(180deg, #BB002F 0%, #9D1739 100%);
@@ -103,11 +103,9 @@ nav ul li a:hover {
 }
 
 nav ul li a {
-    padding: 0px 5px;
+    padding: 0px 15px;
     border-radius: 3px;
-    height: auto;
-    width: 100%;
-}
+} 
 
 
 /* FOOTER */
