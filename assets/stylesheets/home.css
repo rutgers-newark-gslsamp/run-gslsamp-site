@@ -23,13 +23,25 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 10px 20px;
-    top: 50%; /* Position the top of the CTA block to the middle of the hero picture */
     right: 3%; /* Position the right of the CTA block 3% from the right of the view */
+    transform: translateY(-90%);
+}
+@media (max-width: 768px) {
+    .hero-cta-block {
+        width: 100%;
+        /* no translation */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-cta-block {
+       /* no translation */
+    }
 }
 
 .cta-headline {
     display: flex;
-    font-size: 19px;
+    font-size: 1.25rem;
     font-weight: 700;
     text-align: left;
     margin-right: 10%;
@@ -45,8 +57,16 @@
 }
 .cta-button {
     width: 35%;
-    height:50px;
+    max-width: 100%;
+    height: 3.5rem;
     text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .cta-button {
+        width: 40rem;
+        height: 40px;
+        font-size: 10px;
+    }
 }
 
 #cta-learn-more-button {
@@ -104,6 +124,9 @@
         font-size: 10px;
     }
 }
+
+
+
 /* ABOUT */
 .landing-about-container {
     display: flex;
@@ -271,6 +294,7 @@
     text-overflow: ellipsis; /* Add ellipsis for long text */
     white-space: nowrap; /* Prevent text from wrapping */
 }
+
 
 
 /* MISC */
