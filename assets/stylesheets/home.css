@@ -213,7 +213,7 @@
 
 .alliance-card {
     display: flex;
-    flex: 1 0 14rem;
+    flex: 1 0 1;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -236,9 +236,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    height: 50%;
     object-fit: contain;
-    padding: 2px;
+    padding: 0.2rem;
 }
 
 .alliance-university-content {
@@ -249,7 +249,10 @@
     font-size: 0.8rem;
     text-align: center;
     margin: 0;
-    padding: 1px;
+    padding: 0.1rem;
+    overflow: hidden; /* Add overflow property to contain the text */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
 
 
