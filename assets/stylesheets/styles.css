@@ -183,19 +183,19 @@ button {
     .nav-logo-mobile {
         display: flex;
         width: auto;
-        height: 3.5vh;
+        height: 3vh;
         padding: 2px 5px;
         width: auto;
         margin: 2px;
     }
-    /* .nav-logo-wrapper-mobile {
+    .nav-logo-wrapper-mobile {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         width: auto;
         margin: 2px;
-    } */
+    }
     .nav-header-title-mobile {
         text-align: center;
         font-weight: 500;
