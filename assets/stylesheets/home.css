@@ -197,7 +197,8 @@
 
 /* ALLIANCE */
 .lsamp-alliance-header {
-    font-size: 50px;
+    font-size: 3.5rem;
+    width: 45vw;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
@@ -207,20 +208,20 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex: 1;
-    margin: 0px 50px 30px;
+    margin: 0 3rem 2rem;
 }
 
 .alliance-card {
     display: flex;
-    flex: 1 0 1;
+    flex: 1 0 14rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 1rem;
+    padding: 1rem;
     /* try to make the cards smaller*/
-    max-height: 200px;
-    width: 200px;
+    max-height: 14rem;
+    width: 14rem;
     background: #FFFFFF;
     box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
@@ -245,7 +246,7 @@
 }
 
 .alliance-university-content, .alliance-university-name, .alliance-university-contact  {
-    font-size: 13px;
+    font-size: 0.8rem;
     text-align: center;
     margin: 0;
     padding: 1px;
@@ -263,7 +264,7 @@
     display: flex;
     height: 4px;
     border: none;
-    max-width: 60%;
+    max-width: 65vw;
     background-color: #D9D9D9;
     width: 100%;
     margin: 0;
