@@ -171,7 +171,7 @@ button {
     }
     .top-nav-header-mobile {
         display: flex;
-        padding: 5px 10px;
+        padding: 4px 10px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
