@@ -1,6 +1,7 @@
 /* HERO */
-.landing-hero {
+.landing-hero-container {
     position: relative;
+    margin-bottom: 3rem;
 }
 .hero-picture-wrapper{
     max-height: 80vh;
@@ -133,7 +134,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 100px 20px 30px;
+    margin: 3rem 2rem 3rem;
 
 }
 .landing-about-logo {
@@ -215,7 +216,7 @@
 .landing-video {
     display: flex;
     justify-content: center;
-    margin: 6.25rem 1.875rem
+    margin: 4rem 2rem
 }
 .landing-video iframe {
     width: 65%;
@@ -248,7 +249,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex: 1;
-    margin: 0 3rem 2rem;
+    margin: 3rem 3rem 2rem;
 }
 
 .alliance-card {
