@@ -290,13 +290,20 @@
     margin: 0;
     border: none;
 }
-@media (max-width: 768px) {
+
+/* Section header for smaller screens */
+@media (max-width: 768px) { 
     .section-header {
-        margin: 1rem 1rem 0.5rem; /* Adjust margin values for smaller screens */
+        margin: 1rem 1rem 0.5rem; 
     }
     
     .section-header hr {
-        height: 1px; /* Adjust height for smaller screens */
-        margin: 0.5rem 0 0; /* Adjust margin values for smaller screens */
+        margin: 0.5rem 0 0;
+        max-width: 95vw;
+
+    }
+    .lsamp-alliance-header {
+        font-size: 1.5rem;
+        width: 100%;
     }
 }
