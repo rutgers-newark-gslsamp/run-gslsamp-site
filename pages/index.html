@@ -5,22 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GS-LSAMP | Rutgers–Newark</title>
+    <link rel="icon" href="../assets/images/rutgers-logos/ru-n_logo.png">
     <link rel="stylesheet" href="../assets/stylesheets/styles.css"/>
     <link rel="stylesheet" href="../assets/stylesheets/home.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
-    <link rel="icon" href="../assets/images/rutgers-logos/ru-n_logo.png">
+    <script src="https://kit.fontawesome.com/1127840cdd.js" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
 </head>
 <body>
-    <nav>
+    <nav class="mobile-nav">
+        <div class="top-nav-container-mobile">
+            <div class="hamburger-menu-bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="top-nav-header-mobile">
+                <div class="nav-logo-wrapper-mobile">
+                    <img class="nav-logo-mobile" src="../assets/images/rutgers-logos/Rutgers_University_Newark_logo_border.png" alt="Rutgers University–Newark Logo">
+                    <img class="nav-logo-mobile" src="../assets/images/lsamp-nsf-logos/NSF-clear.png" alt="Rutgers University–Newark Logo">
+                </div>
+                <label class="nav-header-title-mobile">Louis Stokes Alliance for Minority Participation</label>  
+            </div>
+        </div>
+        <div class="bottom-nav-container-mobile">
+            <ul class="mobile-nav-page-list hamburger-menu">
+                <li><a class="nav-page-link-mobile" href="index.html">Home</a></li>
+                <li><a class="nav-page-link-mobile" href="about.html">About Us</a></li>
+                <li><a class="nav-page-link-mobile" href="membership.html">Membership</a></li>
+                <li><a class="nav-page-link-mobile" href="events.html">Events & Opportunities</a></li>
+                <li><a class="nav-page-link-mobile" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav> 
+    <nav class="desktop-nav">
         <div class="top-nav-container">
             <div class="top-nav-header">
-                <img class="nav-logo" src="../assets/images/rutgers-logos/Rutgers_University_Newark_logo.png" alt="Rutgers Univesity–Newark Logo">
+                <div class="nav-logo-wrapper">
+                    <img class="nav-logo" src="../assets/images/rutgers-logos/Rutgers_University_Newark_logo.png" alt="Rutgers Univesity–Newark Logo">
+                    <img class="nav-logo" src="../assets/images/lsamp-nsf-logos/NSF-clear.png" alt="Rutgers University–Newark Logo">
+                </div>
                 <hr class="nav-vertical-line">
-                <h1 class="nav-header-title">Louis Stokes Alliance for Minority Participation (LSAMP)</h1>  
+                <label class="nav-header-title">Louis Stokes Alliance for Minority Participation</label>  
             </div>
-            <div class="top-nav-search">
-                <input class="search" type="text" placeholder="Search RU-N GS-LSAMP">
-            </div>
+            <!-- 
+                <div class="top-nav-search">
+                <form action="#">
+                    <input class="search" type="text" placeholder="Search RU-N GS-LSAMP">
+                </form>
+            -->
         </div>
         <div class="bottom-nav-container">
             <ul class="nav-page-list">
@@ -28,15 +59,14 @@
                 <li><a class="nav-page-link" href="about.html">About Us</a></li>
                 <li><a class="nav-page-link" href="membership.html">Membership</a></li>
                 <li><a class="nav-page-link" href="events.html">Events & Opportunities</a></li>
-                <li><a class="nav-page-link" href="contact.html">Contact Us</a></li>
+                <li><a class="nav-page-link" href="contact.php">Contact Us</a></li>
             </ul>
         </div>
     </nav>
-
-    <main class="landing-hero">
+    <main class="landing-hero-container">
         <!-- Later turn into hero-gallery -->
         <div class="hero-picture-wrapper">
-            <img class="hero-picture" src="../assets/images/event-photos/20221118_091611.jpg" alt="Placeholder image">
+            <img class="hero-picture" src="https://placehold.co/1500x600/png" alt="Placeholder image">
         </div>
         <div class="hero-cta-block">
             <div class="cta-headline">
@@ -44,7 +74,7 @@
             </div>
             <div class="cta-button-wrapper">
                 <button class="cta-button" id="cta-learn-more-button">
-                    <a class="cta-learn-more-anchor" href="about.html">Learn More</a>
+                    <a class="cta-learn-more-anchor" href="membership.html">Eligibility</a>
                 </button>
                 <button class="cta-button" id="cta-join-now-button">
                     <a class="cta-join-now-anchor"href="membership.html">Join Now</a>
@@ -60,18 +90,28 @@
         <div class="landing-about-card">
             <div class="landing-about-content">
                 <h2 class="landing-about-title">What is GS-LSAMP?</h2>
-                <p class="landing-about-body">The Louis Stokes Alliance for Minority Participation (LSAMP) is an <a class="landing-about-anchor-body" href="https://www.nsf.gov/" target="blank"><i>NSF-funded</i></a> program that provides academic support and specialized advising for students from historically underrepresented groups who wish to enter non-medical STEM professions. For students, adjusting to an unfamiliar environment can prove to be a difficult task. However, LSAMP aims to aid students in navigating critical transitions, including those from high school to college, college to graduate school, and eventually towards fulfilling careers.</p>
+                <p class="landing-about-body">
+                    The Louis Stokes Alliance for Minority Participation (LSAMP) is an 
+                    <a class="landing-about-anchor-body" href="https://www.nsf.gov/" target="blank">
+                        <i>NSF-funded</i>
+                    </a> 
+                    program that provides academic support and specialized advising for students from historically underrepresented groups who wish to enter non-medical STEM professions. For students, adjusting to an unfamiliar environment can prove to be a difficult task. However, LSAMP aims to aid students in navigating critical transitions, including those from high school to college, college to graduate school, and eventually towards fulfilling careers.
+                </p>
             </div>    
-            <button class="landing-about-button">
-                <a class="landing-about-anchor-button" href="about.html" alt="Learn more about GS-LSAMP in our About Us Page">Learn More</a>
-            </button>
+            <div class="landing-about-button-container">
+                <button class="landing-about-button" id="landing-about-button-pending">
+                    <!-- How faculty can help LSAMP -->
+                    <a class="landing-about-anchor-button"  alt="Learn more about GS-LSAMP in our About Us Page" onclick="alert('Coming Soon!')">For Faculty</a>
+                </button>
+                <button class="landing-about-button">
+                    <a class="landing-about-anchor-button" href="about.html" alt="Learn more about GS-LSAMP in our About Us Page">Learn More</a>
+                </button>
+            </div>
+            
     </section>
     
     <section class="landing-video">
-        <video width="75%" height="600px" controls alt="Video of Rutgers University–Newark GS-LSAMP conference.">
-            <source src="http://newark.gslsamp.rutgers.edu/media/videos/research_conference.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/TW7sWDVw_wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
     
     <section class="alliance-section">
@@ -86,8 +126,10 @@
                     <h3 class="alliance-university-name">Rutgers University – Newark</h3>
                     <div class="alliance-university-contact">
                         <p>
-                            Oren Rabinovich <br>
-                            oren.rabinovich@rutgers.edu <br>
+                            Oren Rabinovich 
+                            <br>
+                            <span class="alliance-university-contact-email">oren.rabinovich@rutgers.edu</span>
+                            <br>
                             (973) 353-3562
                         </p>
                     </div>
@@ -99,8 +141,10 @@
                     <h3 class="alliance-university-name">Fairleigh Dickinson University</h3>
                     <div class="alliance-university-contact">
                         <p>
-                            Dr. Marion McClary <br>
-                            mcclary@fdu.edu <br>
+                            Dr. Marion McClary 
+                            <br>
+                            <span class="alliance-university-contact-email">mcclary@fdu.edu</span>
+                            <br>
                             (201) 692-2606
                         </p>
                     </div>
@@ -113,8 +157,10 @@
                     <h3 class="alliance-university-name">Montclair State University</h3>
                     <div class="alliance-university-contact">
                         <p>
-                            Dr. Yvonne Gindt <br>
-                            gindty@montclair.edu <br>
+                            Dr. Yvonne Gindt 
+                            <br>
+                            <span class="alliance-university-contact-email">gindty@montclair.edu</span> 
+                            <br>
                             (973) 655-3469
                         </p>
                     </div>
@@ -126,8 +172,10 @@
                     <h3 class="alliance-university-name">William Paterson University</h3>
                     <div class="alliance-university-contact">
                         <p>
-                            Dr. Eliana Antoniou <br>
-                            antonioue@wpunj.edu <br>
+                            Dr. Eliana Antoniou 
+                            <br>
+                            <span class="alliance-university-contact-email">antonioue@wpunj.edu</span>
+                            <br>
                             (973) 720-3715
                         </p>
                     </div>
@@ -139,8 +187,10 @@
                     <h3 class="alliance-university-name">Kean University</h3>
                     <div class="alliance-university-contact">
                         <p>
-                            Dr. Juyoung Ha <br>
-                            haj@kean.edu <br>
+                            Dr. Juyoung Ha 
+                            <br>
+                            <span class="alliance-university-contact-email">haj@kean.edu</span>
+                            <br>
                             (908) 737-3739
                         </p>
                     </div>
@@ -152,7 +202,7 @@
                     <h3 class="alliance-university-name">Essex County College</h3>
                     <div class="alliance-university-contact">
                         <p>
-                            gslsamp@essex.edu
+                            <span class="alliance-university-contact-email">gslsamp@essex.edu</span>
                         </p>
                     </div>
                 </div>
@@ -164,8 +214,10 @@
                         Institute of Technology</h3>
                     <div class="alliance-university-contact">
                         <p>
-                            Dr. Crystal Smith <br>
-                            smithcs@njit.edu <br>
+                            Dr. Crystal Smith 
+                            <br>
+                            <span class="alliance-university-contact-email">smithcs@njit.edu</span>
+                            <br>
                             (973) 596-3690
                         </p>
                     </div>
@@ -178,8 +230,10 @@
                         New Brunswick</h3>
                     <div class="alliance-university-contact">
                         <p>
-                            Dr. Beverely Gaines <br>
-                            bag104@echo.rutgers.edu <br>
+                            Dr. Beverely Gaines 
+                            <br>
+                            <span class="alliance-university-contact-email">bag104@echo.rutgers.edu</span> 
+                            <br>
                             (848) 932-2559
                         </p>
                     </div>
@@ -190,8 +244,19 @@
     </section>
 
     <footer>
-            <p class="footer-copyright-text">Copyright ©2023, Rutgers, The State University of New Jersey</p>
+        <p class="footer-copyright-text">Copyright ©2023, Rutgers, The State University of New Jersey</p>
+        <!-- <img class="footer-logo" src="../assets/images/lsamp-nsf-logos/NSF-clear.png">
+        <img class="footer-logo" src="../assets/images/lsamp-nsf-logos/GSLSAMP-logo-fixed.png"> -->
     </footer>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZG96ZBFYS9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-ZG96ZBFYS9');
+    </script>
 </body>
 </html>

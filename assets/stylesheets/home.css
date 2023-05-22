@@ -1,11 +1,11 @@
 /* HERO */
-.landing-hero {
+.landing-hero-container {
     position: relative;
+    margin-bottom: 3rem;
 }
 .hero-picture-wrapper{
     max-height: 80vh;
     overflow: hidden;
-    z-index: 1;
 }
 .hero-picture {
     width:100%;
@@ -14,38 +14,60 @@
 
 .hero-cta-block {
     display: flex;
+    flex: 1;
     flex-direction: column;
+    justify-content: center;
     position: absolute;
-    max-width: 450px;
-    min-height:300px;
+    max-width: 45%;
+    width:30%;
     background: radial-gradient(50% 50% at 50% 50%, #CC0033 0%, #9D1739 100%);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    padding: 5px 20px;
-    z-index: 2;
-    top: 50%; /* Position the top of the CTA block to the middle of the hero picture */
+    padding: 10px 20px;
     right: 3%; /* Position the right of the CTA block 3% from the right of the view */
-    margin: 20px;
+    transform: translateY(-90%);
+}
+@media (max-width: 768px) {
+    .hero-cta-block {
+        width: 100%;
+        /* no translation */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-cta-block {
+       /* no translation */
+    }
 }
 
 .cta-headline {
     display: flex;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     text-align: left;
-    margin-right: 15%;
+    margin-right: 10%;
     color: white;
+    margin-bottom: 0;
 }
 
 .cta-button-wrapper {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin: 10px;
 }
 .cta-button {
     width: 35%;
-    height:50px;
+    max-width: 100%;
+    height: 3.5rem;
     text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+    .cta-button {
+        width: 40rem;
+        height: 40px;
+        font-size: 10px;
+    }
 }
 
 #cta-learn-more-button {
@@ -53,6 +75,10 @@
     border: 5px solid #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+}
+#cta-learn-more-button:hover {
+    background: #b41a41;
+    transition: .5s;
 }
 .cta-learn-more-anchor {
     color: white;
@@ -65,10 +91,39 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
+
+#cta-join-now-button:hover {
+    background: #ededed;
+    transition: .5s;
+}
 .cta-join-now-anchor {
     color: black;
     font-weight: 800;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .hero-cta-block {
+            width: 50%;
+    }
+}
+  
+@media (max-width: 480px) {
+    .hero-cta-block {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cta-headline {
+        font-size: 14px;
+        margin-right: 0;
+    }
+    .cta-button {
+        width: 30%;
+        height: 40px;
+        font-size: 10px;
+    }
 }
 
 
@@ -79,7 +134,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 120px 20px 30px;
+    margin: 3rem 2rem 3rem;
 
 }
 .landing-about-logo {
@@ -104,6 +159,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 1.15em;
 }
 .landing-about-title {
     display: flex;
@@ -117,6 +173,11 @@
     padding: 1px 5px 0px;
 }
 
+.landing-about-button-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .landing-about-button {
     font-size: 12px;
     max-width: 125px;
@@ -127,6 +188,12 @@
     border-radius: 5px;
     margin: 0px 5px 5px;
 }
+
+#landing-about-button-pending{
+    background: #e6e6e6; 
+    border: 4px solid #e6e6e6;
+}
+
 .landing-about-anchor-button {
     font-size: 15px;
     color:black;
@@ -139,17 +206,40 @@
     color: black;
     box-shadow: none;
 }
+.landing-about-anchor-body:hover {
+    background-color: #cbcbcb;
+    transition: .2s;
+    border-radius: 3px;
+}
 
 /* VIDEO */
 .landing-video {
     display: flex;
     justify-content: center;
-    margin: 100px 30px;
+    margin: 4rem 2rem
 }
+.landing-video iframe {
+    width: 65%;
+    height: 31rem;
+}
+
+@media (max-width: 768px) {
+    .landing-video {
+        flex-direction: column;
+        align-items: center;
+        margin: 3.25rem 0.5rem;
+    }
+  
+    .landing-video iframe {
+        width: 100%;
+        height: 100%;
+    }
+  }
 
 /* ALLIANCE */
 .lsamp-alliance-header {
-    font-size: 50px;
+    font-size: 3rem;
+    width: 45vw;
     font-weight: 700;
     text-transform: uppercase;
     margin: 0;
@@ -159,22 +249,28 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex: 1;
-    margin: 0px 100px 30px;
+    margin: 3rem 3rem 2rem;
 }
 
 .alliance-card {
     display: flex;
+    flex: 1 0 14rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
-    padding: 20px;
+    margin: 1rem;
+    padding: 1rem;
     /* try to make the cards smaller*/
-    max-height: 200px;
-    width: 200px;
+    max-height: 14rem;
+    max-width: 14rem;
     background: #FFFFFF;
     box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+}
+.alliance-card:hover {
+    background-color: #e7e7e7;
+    cursor: copy;
+    transition: .5s;
 }
 
 .alliance-university-logo {
@@ -183,7 +279,7 @@
     align-items: center;
     width: 50%;
     object-fit: contain;
-    padding: 2px;
+    padding: 0.2rem;
 }
 
 .alliance-university-content {
@@ -191,11 +287,15 @@
 }
 
 .alliance-university-content, .alliance-university-name, .alliance-university-contact  {
-    font-size: 13px;
+    font-size: 0.8rem;
     text-align: center;
     margin: 0;
-    padding: 1px;
+    padding: 0.1rem;
+    overflow: hidden; /* Add overflow property to contain the text */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
+    white-space: nowrap; /* Prevent text from wrapping */
 }
+
 
 
 /* MISC */
@@ -203,15 +303,32 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 30px 50px 20px;
+    margin: 2rem 4rem 1rem;
 } 
 .section-header hr {
     display: flex;
     height: 4px;
     border: none;
-    max-width: 60%;
+    max-width: 65vw;
     background-color: #D9D9D9;
     width: 100%;
     margin: 0;
     border: none;
+}
+
+/* Section header for smaller screens */
+@media (max-width: 768px) { 
+    .section-header {
+        margin: 1rem 1rem 0.5rem; 
+    }
+    
+    .section-header hr {
+        margin: 0.5rem 0 0;
+        max-width: 95vw;
+
+    }
+    .lsamp-alliance-header {
+        font-size: 1.5rem;
+        width: 100%;
+    }
 }
