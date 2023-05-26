@@ -1,6 +1,6 @@
 .hero-picture-wrapper{
     position: relative;
-    max-height: 30vh; /* adjust the max-height as desired */
+    max-height: 55vh; /* adjust the max-height as desired */
     overflow: hidden; /* crop the image to fit the wrapper */
 }
 .hero-picture {
@@ -98,8 +98,10 @@ a.inline-link{
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    margin-top: 1.5rem;
+    margin-right: 15px;
+    margin-left: 15px;
+    column-gap: 1.5rem;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -145,4 +147,11 @@ div {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.future-events-link{
+    color: red;
+}
+.future-events-text{
+    size: 15px;
 }
