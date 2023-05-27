@@ -9,6 +9,7 @@ body {
 /* Top Nav*/
 .mobile-nav {
     display: none;
+    position: sticky;
 }
 .desktop-nav {
     display: flex;

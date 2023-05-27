@@ -332,3 +332,10 @@
         width: 100%;
     }
 }
+
+@media (max-width: 600px) {
+    .hero-cta-block {
+        width: 100vw;
+    }
+
+}
