@@ -126,9 +126,6 @@ a.inline-link{
     flex: 1 1 auto;
     padding: 1.25rem;
 }
-div {
-    display: block;
-}
 .card {
     position: relative;
     display: -ms-flexbox;
