@@ -144,7 +144,7 @@ button {
 } 
 .section-header hr {
     display: flex;
-    height: 4px;
+    height: .25rem;
     border: none;
     max-width: 65vw;
     background-color: #D9D9D9;
@@ -159,7 +159,16 @@ button {
     align-items: flex-start;
     margin: 2rem 4rem 0rem;
 }
-
+.section-subheader hr {
+    display: flex;
+    height: .2rem;
+    border: none;
+    max-width: 35vw;
+    background-color: #D9D9D9;
+    width: 100%;
+    margin: 0;
+    border: none;
+}
 
 /* MOBILE VERSION */
 @media only screen and (max-width: 768px) {

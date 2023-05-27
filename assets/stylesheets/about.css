@@ -1,3 +1,19 @@
+/* MISC */
+.about-us-page-title {
+    font-size: 3rem;
+    width: 45vw;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+.about-us-page-subtitle  {
+    font-size: 2.4rem;
+    width: 45vw;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0;
+}
+
 /* HERO SECTION */
 .hero-picture-wrapper{
     position: relative;
@@ -12,23 +28,8 @@
     margin: auto;
     width:100%;
 }
-/* MISC */
-.about-us-page-subtitle  {
-    font-size: 2.5rem;
-    width: 45vw;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-}
 
 /* ABOUT US SECTION */
-.about-us-page-title {
-    font-size: 3rem;
-    width: 45vw;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-}
 .main-message{
     padding: 0px 20px;
 }
