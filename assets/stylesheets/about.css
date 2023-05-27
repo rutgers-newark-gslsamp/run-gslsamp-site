@@ -13,6 +13,10 @@
     text-transform: capitalize;
     margin: 0;
 }
+.subsection-paragraph {
+    font-size: 1.15rem;
+    padding: 0px 5%;
+}
 
 /* HERO SECTION */
 .hero-picture-wrapper{
@@ -30,9 +34,7 @@
 }
 
 /* ABOUT US SECTION */
-.about-paragraph {
-    padding: 0px 5%;
-}
+
 
 
 /* STAFF SECTION */
