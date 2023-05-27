@@ -43,19 +43,21 @@ a.inline-link{
     color: red;
 }
 .staff-container{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .staff-card {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 30px;
     padding: 20px;
     /* try to make the cards smaller*/
-    max-height: 300px;
-    width: 200px;
+    max-height: 18rem;
+    width: auto;
     background: #FFFFFF;
     box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
