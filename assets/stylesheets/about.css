@@ -83,7 +83,7 @@ a.inline-link{
     margin: 0;
     padding: 1px;
 }
-.staff-images{
+.staff-card-wrapper{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
