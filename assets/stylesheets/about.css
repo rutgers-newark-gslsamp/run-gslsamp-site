@@ -103,9 +103,7 @@ a.inline-link{
     margin-left: 15px;
     column-gap: 1.5rem;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
-}
+
 .mb-5, .my-5 {
     margin-bottom: 3rem!important;
 }
