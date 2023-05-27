@@ -111,7 +111,6 @@ nav ul li a {
 /* FOOTER */
 footer {
     /* something is wrong where it doesn't stay at the bottom*/
-    position: relative;
     bottom: 0;
     width: 100%;
     text-align: center;
