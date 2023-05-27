@@ -292,7 +292,7 @@
     margin: 0;
     padding: 0.1rem;
     overflow: hidden; /* Add overflow property to contain the text */
-    text->Oren Rabinovich: ellipsis; /* Add ellipsis for long text */
+    text-overflow: ellipsis; /* Add ellipsis for long text */
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
