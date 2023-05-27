@@ -31,9 +31,15 @@
 
 /* ABOUT US SECTION */
 .about-description-container{
-    padding: 0px 20px;
+    padding: 0px 1%;
 }
 
+.about-paragraph {
+    padding: 0px 5%;
+}
+
+
+/* STAFF SECTION */
 a.inline-link{
     color: red;
 }
