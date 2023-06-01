@@ -38,7 +38,16 @@ div.title {
 div.figure {
     grid-area: figure;
     background-color:  rgb(160, 160, 160);
-    height: 34em;
+    max-height: 40em;
+    max-width: 40em;
+    border: 2px solid red;
+    justify-content: center;
+    align-self: center;
+}
+
+div.figure image {
+    max-width: 20em;
+    max-height: 20em;
 }
 
 #form {
@@ -59,6 +68,7 @@ div.figure {
     background-color: rgb(160, 160, 160);
     padding-left: 5em;
     perspective:none;
+    max-height: 40em;
 }
 
 form div{
