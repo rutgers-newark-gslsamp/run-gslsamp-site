@@ -148,7 +148,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 575px;
+    max-width: 32.5rem;
     padding: 10px 15px;
     margin-left: 40px;
     border-radius: 20px; 
@@ -159,11 +159,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    font-size: 1.15em;
+    font-size: 1rem;
 }
 .landing-about-title {
     display: flex;
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     margin: 1px 0px;
@@ -238,7 +238,7 @@
 
 /* ALLIANCE */
 .lsamp-alliance-header {
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 45vw;
     font-weight: 700;
     text-transform: uppercase;
