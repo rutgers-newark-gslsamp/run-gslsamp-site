@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RU-N GS-LSAMP</title>
+    <link rel="stylesheet" href="../assets/stylesheets/styles.css"/>
+    <link rel="stylesheet" href="../assets/stylesheets/contact.css"/>
+    <link rel="stylesheet" href="../https://fonts.googleapis.com/css?family=Poppins:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+    <link rel="icon" href="../assets/images/rutgers-logos/ru-n_logo.png">
+</head>
+
+<!--Nav Bar-->
+    <body>
+        <nav>
+            <div class="top-nav-container">
+                <div class="top-nav-header">
+                    <img class="nav-logo" src="../assets/images/rutgers-logos/Rutgers_University_Newark_logo.png" alt="Rutgers Univesity–Newark Logo">
+                    <h1 class="nav-header-title">Louis Stokes Alliance for Minority Participation (LSAMP)</h1>  
+                </div>
+                <div class="top-nav-search">
+                    <input class="search" type="text" placeholder="Search RU-N GS-LSAMP">
+                </div>
+            </div>
+            <div class="bottom-nav-container">
+                <ul class="page-nav-list">
+                    <li><a class="nav-page-link" href="index.html">Home</a></li>
+                    <li><a class="nav-page-link" href="about.html">About Us</a></li>
+                    <li><a class="nav-page-link" href="membership.html">Membership</a></li>
+                    <li><a class="nav-page-link" href="events.html">Events & Opportunities</a></li>
+                    <li><a class="nav-page-link" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <!--Page Header-->
+            <div class="title">
+                <h1>Contact Us!</h1>
+            </div>
+
+            <div class="figure">
+                <image src="assets/images/cb-pages-images/mail.jpg" alt="Mail"/>
+            </div>
+            <!--Form-->
+            <form id="form" action="form-submitted.php" method="POST">
+                <div class="fname">
+                    <label for="first_name">First Name*</label>
+                        <input required type="text" id="first_name" name="first_name" pattern="^[a-zA-Z]+$" oninvalid="setCustomValidity('Alphabetic characters only')">
+                </div>
+
+                <div class="lname">
+                    <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" pattern="^[a-zA-Z]+$" oninvalid="setCustomValidity('Alphabetic characters only')">
+                </div>
+
+                <div class="email">
+                    <label for="email">Email*</label>
+                        <input required type="text" id="email" name="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" oninvalid="setCustomValidity('Invalid email format')" title="username@email.com">
+                </div>
+
+                <div class="inquiry">
+                    <label for="inquiry">Inquiry*</label>
+                        <select required aria-label="inquiry">
+                            <option value="" selected></option>
+                            <option value="general question">General Question</option>
+                            <option value="looking for opportunities">Looking for Opportunities</option>
+                            <option value="faculty looking to assist">Faculty Looking to Assist</option>
+                        </select>
+                </div>
+            <div class="message">
+                <label for="message">Message*</label>
+                    <textarea required id="message" name="message" minlength="15" maxlength="250"></textarea>
+            </div>
+            <div class="submit">
+                <!-- <input id="submit" type="submit" value="Submit"> -->
+
+                <button type="button" "submit">Submit</button>
+            </div>
+        </form>
+
+
+        <div class="faq">
+            <a id="faq" href="faq.html" target="_blank">Frequently Asked Questions</a>
+        </div>
+
+        <footer>
+            <p>Copyright ©2023, Rutgers, The State University of New Jersey</p>
+        </footer>
+
+    </body>
+</html>
