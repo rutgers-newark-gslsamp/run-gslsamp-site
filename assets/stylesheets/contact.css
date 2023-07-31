@@ -1,32 +1,232 @@
-#faq {
-    color: black;
+div.title h1{
+    grid-area: title;
+    align-self: center;
+    justify-self: left;
+    text-align: center;
+    font-size: 3.2em;
+    font-weight: 700;
+    width: 10em;
+    margin: .1em;
+    padding-left: 4em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "title title title"
+        "form form figure"
+        "form form figure"
+        "form form figure"
+        "form form  submit"
+        "faq faq faq"
+        "footer footer footer";
+    justify-content: center;
+    width: width;
+    height: 40em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+div.title {
+    padding: 0;
+    margin:0;
+    grid-area:title;
+    height: 6em;
+}
+
+div.figure {
+    grid-area: figure;
+    background-color:  rgb(160, 160, 160);
+    max-height: 40em;
+    max-width: 40em;
+    border: 2px solid red;
+    justify-content: center;
+    align-self: center;
+}
+
+div.figure image {
+    max-width: 20em;
+    max-height: 20em;
+}
+
+#form {
+    --font-size: 1em;
+    --font-family: 'Poppins';
+    --font-weight: 525;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    display: grid;
+    grid-area: form;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        "fname lname"
+        "email inquiry"
+        "message message"
+        "submit submit";
+    background-color: rgb(160, 160, 160);
+    padding-left: 5em;
+    perspective:none;
+    max-height: 40em;
+}
+
+form div{
+}
+
+form div label,
+form div input,
+form div select {
+    display: flex;
+    flex-shrink: 1;
+    min-width: 3fr;
+}
+
+label {
+    padding-top:1em;
+
+}
+
+input, 
+select {
+    width: 22em;
+    border-radius: .7em;
+    height:2.8em;
+    flex: 1 1 2fr;
+}
+
+div.fname {
+    grid-area: fname;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "flabel"
+        "finput";
+}
+
+div.fname label {
+    grid-area: flabel;
+}
+
+div.fname input {
+    grid-area: finput;
+}
+
+div.lname {
+    grid-area: lname;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "llabel"
+        "linput";
+}
+
+div.lname label {
+    grid-area: llabel;
+}
+
+div.lname input {
+    grid-area: linput;
+}
+
+div.email {
+    grid-area: email;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "elabel"
+        "einput";
+}
+
+div.email label {
+    grid-area: elabel;
+}
+
+div.email input {
+    grid-area: einput;
+}
+
+div.inquiry {
+    grid-area: inquiry;
+    display:grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "ilabel"
+        "iinput";
+}
+
+div.inquiry label {
+    grid-area: ilabel;
+}
+
+div.inquiry select {
+    grid-area: iinput;
+}
+
+div.message {
+    grid-area: message;
+    display:grid;
+    grid-template-rows: 3f 1fr;
+    grid-template-areas: 
+        "mlabel"
+        "minput";
+}
+
+div.message label {
+    grid-area: mlabel;
+    margin-bottom: 0em;
+    height:2em;
+}
+
+div.message textarea {
+    grid-area: minput;
+    border-radius: .7em;
+    font-size: .9em;
+    font-size: 1em;
+    height:7em;
+    width: 47em;
+}
+
+div.submit button{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight)/3;
+    color: white;
+    grid-area: submit;
+    margin-bottom: 0%;
+    height: 3em;
+    width: 8em;
+    background-color: #28A745;
+    border: none;
+
+}
+
+button {
+    border-radius: 5px;
+
+}
+
+div.submit button:hover {
+    cursor: pointer;
+    background-color: #289441;
+}
+
+div.faq {
     text-decoration-line: underline;
-    display: inline-block;
-    
+    grid-area: faq;
+    height: 4em;
+    justify-self: center;
+    align-self: center;
 }
 
-#faq:hover {
-    color:blue;
+div.faq a#faq {
+    padding-top: .7em;
+    color: black;
+}
+
+div.faq a#faq:hover {
     text-decoration: none;
-
 }
 
-
-header {
-    font-size: 50px;
-    font-weight: 500;
-}
-
-
-form {
-    font-size: 25px;
-    font-family: 'poppins';
-    text-align: left;
-    font-weight: 500;
-    display: block;
-    background-color: #b9b7b7;
-}
-
-form label{
-    display: block;
+footer {
+    grid-area: footer;
 }
