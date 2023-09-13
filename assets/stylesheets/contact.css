@@ -40,14 +40,14 @@ div.figure {
     background-color:  rgb(160, 160, 160);
     max-height: 40em;
     max-width: 40em;
-    /*border: 2px solid red;*/
+    border: 2px solid red;
     justify-content: center;
     align-self: center;
 }
 
 div.figure image {
-    width: 100px;
-    height: 100px;
+    max-width: 20em;
+    max-height: 20em;
 }
 
 #form {
