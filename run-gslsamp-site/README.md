@@ -14,7 +14,26 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
 - oren.rabinovich@rutgers.edu
 - (973) 353-3562
 ***
-  
+
+## How to use the project
+1. **Run** `git clone <url>` in terminal 
+
+2. **Open folder in vscode**
+
+3. **Open package.json**
+
+4. **Click debug and on the dropdown which follows press dev**
+
+![step-two](https://github.com/rutgers-newark-gslsamp/run-gslsamp-site/assets/49823328/1798f1fc-51d1-4a62-bdb2-8ff1bcfa1f20)
+
+5. **Open new terminal**
+
+7. **Run** `npm install`
+
+8. **Run** `npx tailwindcss init -p`
+
+9. **Run** `npm run dev`
+
 ## MOCKUPS
 ### Screenshots
 <div align="center">
