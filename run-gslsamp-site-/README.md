@@ -24,8 +24,6 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
 
 4. **Click debug and on the dropdown which follows press dev**
 
-![step-two](https://github.com/rutgers-newark-gslsamp/run-gslsamp-site/assets/49823328/1798f1fc-51d1-4a62-bdb2-8ff1bcfa1f20)
-
 5. **Open new terminal**
 
 7. **Run** `npm install`
