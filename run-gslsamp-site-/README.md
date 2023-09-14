@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# run-gslsamp-site
+Official Rutgers University–Newark GS-LSAMP website maintained by its student-run web development team.
+***
 
-## Getting Started
+## 🚧UNDER-CONSTRUCTION🚧
+### About LSAMP
+The Louis Stokes Alliance for Minority Participation (LSAMP) program, funded by the National Science Foundation, is designed to increase the number of professionals from minority groups that are traditionally underrepresented in non-medical STEM fields (science, technology, engineering and math). The program, which now includes over 50 alliances, provides support services at many levels to help interested students be successful in STEM majors and is considered one of the most successful programs of its kind.
 
-First, run the development server:
+Since its inception in 2009, the mission of the Garden State LSAMP has been to increase the interest, retention, graduation and success of students from racial and ethnic groups that are historically underrepresented in STEM fields. Phase II of the program (2014-2019) focused on <i>1) assisting community college students to successfully transfer to four-year programs, 2) preparing and assisting students to matriculate into graduate programs, and 3) increasing student opportunities for international experiences</i>. Phase III (2019-2024) will continue these goals as well as <i>1) increase STEM degrees awarded to underrepresented minority students by 60%, 2) increase the number of LSAMP scholars continuing to graduate school by 25%, and 3) increase international experiences by 25%</i>. 
+***
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### RU-N Advisor Contact Information
+<b>Oren Rabinovich<b>
+- oren.rabinovich@rutgers.edu
+- (973) 353-3562
+***
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to use the project
+1. **Run** `git clone <url>` in terminal 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Open folder in vscode**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Open package.json**
 
-## Learn More
+4. **Click debug and on the dropdown which follows press dev**
 
-To learn more about Next.js, take a look at the following resources:
+![step-two](https://github.com/rutgers-newark-gslsamp/run-gslsamp-site/assets/49823328/1798f1fc-51d1-4a62-bdb2-8ff1bcfa1f20)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Open new terminal**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+7. **Run** `npm install`
 
-## Deploy on Vercel
+8. **Run** `npx tailwindcss init -p`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+9. **Run** `npm run dev`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## MOCKUPS
+### Screenshots
+<div align="center">
+  <img width="600" src="../mockups/run-lsamp-landingpage.png">
+  <br>
+  <p>
+    Designed by <a href="https://github.com/RiosNicholas"> Nicholas Rios</a>.
+  </p>
+  <br>
+ 
+  <img width="600" src="../mockups/run-lsamp-contact.png">
+  <br>
+  <p>
+  Designed by <a href="https://github.com/https://github.com/christinolb"> Christino Barbosa</a>.
+  </p>
+</div>
