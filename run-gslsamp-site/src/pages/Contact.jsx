@@ -6,7 +6,7 @@ function Contact() {
         <MainLayout>
             {/**Insert Page content */}
             <div className="text-xl flex justify-center items-center">
-                Contact
+                Contact Us
             </div>
         </MainLayout>
     );
