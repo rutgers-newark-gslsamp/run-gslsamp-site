@@ -1,7 +1,9 @@
+import Title from '../components/title'
+
 export default function Events() {
     return (
       <>
-        <h1 className="text-2lx underline font-black">Events & Opportunities</h1>
+        <Title title={"Events & Opportunities"} />
       </>
     );
   }
