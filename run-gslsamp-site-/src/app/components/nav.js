@@ -1,0 +1,31 @@
+import Link from "next/link";
+
+{/**tailwind NOT implemented*/}
+export default function Nav() {
+    return (
+      <nav class="desktop-nav">
+        <div class="top-nav-container">
+          <div class="top-nav-header">
+            <div class="nav-logo-wrapper">
+              {/**UPDATE image src */}
+              <img class="nav-logo" src="" alt="Rutgers Univesity–Newark Logo"/>
+              <img class="nav-logo" src="" alt="Rutgers University–Newark Logo"/>
+            </div>
+            <hr class="nav-vertical-line"/>
+            <label class="nav-header-title">Louis Stokes Alliance for Minority Participation</label>
+          </div> 
+        </div>
+        <div class="bottom-nav-container">
+          <ul class="nav-page-list">
+              <li><Link href="/">Home</Link></li>
+              <li><li><Link href="/about">About Us</Link></li></li>
+              <li><Link href="/membership">Membership</Link></li>
+              <li><li><Link href="/events">Events & Opportunities</Link></li></li>
+              <li><Link href="/contact">Contact</Link></li>
+          </ul>
+        </div>
+      </nav>
+        
+    );
+  }
+
