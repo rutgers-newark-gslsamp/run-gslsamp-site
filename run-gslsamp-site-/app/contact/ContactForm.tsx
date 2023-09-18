@@ -21,7 +21,7 @@ export default function ContactForm() {
           fname: String(event.target.fname.value),
           lname: String(event.target.lname.value),
           email: String(event.target.email.value),
-          inquiry: String(event.target.inquiry.options.value),
+          inquiry: String(event.target.inquiry.value),
           message: String(event.target.message.value),
         };
     
@@ -77,9 +77,9 @@ export default function ContactForm() {
                   <div className="flex flex-col p-2 m-2">
                     <label>Inquiry</label>
                       <select className="w-3/4 rounded-lg p-3" required id="inquiry" aria-label="inquiry">
-                        <option value="general question">General Question</option>
-                        <option value="looking for opportunities">Looking for Opportunities</option>
-                        <option value="faculty looking to assist">Faculty Looking to Assist</option>
+                        <option value="General Question">General Question</option>
+                        <option value="Looking for Opportunities">Looking for Opportunities</option>
+                        <option value="Faculty Looking to Assist">Faculty Looking to Assist</option>
                       </select>
                   </div>
                   <div className="flex flex-col p-2 m-2 col-span-2">

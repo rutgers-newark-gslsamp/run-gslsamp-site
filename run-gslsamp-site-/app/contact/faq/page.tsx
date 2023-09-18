@@ -1,5 +1,5 @@
-import Title from "@/app/components/title";
 import question from "/public/question-mark-drop.png"
+import Title from "/wamp64/www/run-gslsamp-site-fork/run-gslsamp-site-/app/components/title.js"
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,56 +1,30 @@
-import nodemailer from "nodemailer"
 import type { NextApiRequest, NextApiResponse } from "next";
-//a
 
-export default async function contact(req: NextApiRequest, res: NextApiResponse) {
-    //data coming in
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
+    res.status(200).json(req.body)    
+
     const {fname, lname, email, inquiry, message } = req.body;
+    
+    //javascript
+    const sgMail = require('@sendgrid/mail')
+    sgMail.setApiKey('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')
+    const msg = {
+        to: `${email}`, // Change to your recipient
+        from: 'chrislorenzo09@gmail.com', // Change to your verified sender
+        subject: `Contact Form GS-LSAMP: ${inquiry}`,
+        html: `
+            <h2>From: ${fname} ${lname}</h2>
+            <h3>Sender Email: ${email}</h3>
 
-
-    const user = "chrislorenzo09@gmail.com";
-    const pass = "lqunjswdpcsxsdy";
-
-    //data validation here
-    const data = {
-        fname,
-        lname, 
-        email, 
-        message, 
-        inquiry,
-    };
-
-    const transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 456,
-        secure: true, //upgrade later with STARTTLS
-        auth: {
-            user: user,
-            pass: pass,
-        },
-    });
-
-    try {
-
-        const mail = await transporter.sendMail({
-            from: user,
-            to: user,
-            replyTo: email,
-            subject: `Contact form submission from ${fname}`,
-            html:`
-            <p>Name: ${fname}</p>
-            <p>Name: ${email}</p>
-            <p>Name: ${inquiry}</p>
-            <p>Name: ${message}</p>
-            `,
-        });
-
-        console.log("Message send: %s,", mail.messageId);
-
-        return res.status(200).json({ message: "success" });
-    } catch (error) {
-        console.log(error);
-        res.status(500).json({
-            message: "Could not send the email. Your message was not sent.",
-        });
+            <p>Message:</p>
+            <p>${message}</p>`,
     }
+    sgMail
+    .send(msg)
+    .then(() => {
+        console.log('Email sent')
+    })
+    .catch((error: any) => {
+        console.error(error)
+    })
 }
