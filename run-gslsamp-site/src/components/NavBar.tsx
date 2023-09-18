@@ -1,11 +1,13 @@
-import React from "react";
+import React from 'react';
+import RutgersLogo from '../../public/images/rutgers-logos/Rutgers_University_Newark_logo.png';
+import NSFLogo from '../../public/images/lsamp-nsf-logos/NSF-clear.png';
 
 const NavBar: React.FC = () => {
     return (
         <nav>
             <div id='top-nav-container'>
-                    <img alt="Rutgers Univesity–Newark Logo" />
-                    <img alt="Rutgers University–Newark Logo" />
+                    <img src={RutgersLogo} alt="Rutgers Univesity–Newark Logo" />
+                    <img src={NSFLogo} alt="Rutgers University–Newark Logo" />
                 <hr id="nav-vertical-line" />
                 <label>Louis Stokes Alliance for Minority Participation</label>  
             </div>

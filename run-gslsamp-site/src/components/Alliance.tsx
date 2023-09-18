@@ -1,6 +1,6 @@
 import React from "react";
 
-const Alliance: React.RC = () => {
+const Alliance: React.FC = () => {
     return (
         <>
         </>
