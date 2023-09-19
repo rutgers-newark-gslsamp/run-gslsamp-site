@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import axios from "axios";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
     res.status(200).json(req.body)    
@@ -7,7 +8,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     
     //javascript
     const sgMail = require('@sendgrid/mail')
-    sgMail.setApiKey('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')
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     const msg = {
         to: `${email}`, // Change to your recipient
         from: 'chrislorenzo09@gmail.com', // Change to your verified sender
