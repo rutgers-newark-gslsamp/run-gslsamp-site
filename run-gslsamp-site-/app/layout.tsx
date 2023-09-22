@@ -1,3 +1,5 @@
+//layout of content included on EVERY page
+
 import './globals.css'
 import type { Metadata } from 'next'
 {/**Change to Poppins font */}

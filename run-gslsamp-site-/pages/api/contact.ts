@@ -1,11 +1,10 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-    res.status(200).json(req.body)    
-
+export default function handler(req: NextApiRequest, res: NextApiResponse) {   
+    //request body json and store into individual variables
     const {fname, lname, email, inquiry, message } = req.body;
     
-    //javascript
+    //sendgrid mail api
     const sgMail = require('@sendgrid/mail')
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     const msg = {
@@ -27,4 +26,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     .catch((error: any) => {
         console.error(error)
     })
+
+    //200 represents req was successful and it responds with a json which is message: "success"
+    res.status(200).json({message: "success"})
 }
