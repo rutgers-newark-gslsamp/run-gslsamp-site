@@ -62,7 +62,6 @@ export default function ContactForm() {
         if(!response.ok){
           alert("Error sending message")
           setLoading(false)
-          console.log(data)
         }
       }
     return (
