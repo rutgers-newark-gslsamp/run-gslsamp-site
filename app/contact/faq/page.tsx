@@ -1,5 +1,4 @@
 import question from "/public/question-mark-drop.png"
-import Title from "/wamp64/www/run-gslsamp-site-fork/run-gslsamp-site-/app/components/title.js"
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +6,7 @@ import Link from "next/link";
 export default function Faq() {
     return(
         <>
-            <Title title={"Frequently Asked Questions"}/>
+            <h1 className="text-[3.2em] m-[3rem] flex font-bold my-7 drop-shadow-xl">Frequently Asked Questions</h1>
             <div className="">
                 <div className="grid grid-cols-2 h-full">
                     <div className="border-indigo border-2 grid grid-flow-row text-center p-4 m-4 text-xl">
