@@ -32,7 +32,7 @@ export const config = {
             const myColl = myDB.collection("events");
 
             //query data
-            const query = { id: 1 };
+            const query = { type: "present" };
             const result = await myColl.find(query).toArray({});
 
             //return status and data
