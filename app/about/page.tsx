@@ -1,4 +1,8 @@
-import Title from "../components/title";
+import rabinovich from "../../public/staff-pictures/rabinovich.jpeg"
+import miguel from "/public/staff-pictures/miguel.png"
+import gates from "/public/staff-pictures/gates.png"
+
+import Image from "next/image";
 
 export default function About() {
 
@@ -31,9 +35,9 @@ export default function About() {
           <div className="staff-card-wrapper">
             <div className="staff-card">
               {/**refactor src */}
-              <img
+              <Image
                 className="staff-picture"
-                src="" 
+                src={gates} 
                 alt="Alexander Gates, PhD"
               />
               <div className="staff-content">
@@ -49,9 +53,9 @@ export default function About() {
               </div>
             </div>
             <div className="staff-card">
-              <img
+              <Image
                 className="staff-picture"
-                src="" alt="Cristiane San Miguel, Ph.D"
+                src={miguel} alt="Cristiane San Miguel, Ph.D"
               />
               <div className="staff-content" id="alliance-rutgers-newark">
                 <h3 className="staff-name">Cristiane San Miguel, Ph.D</h3>
@@ -66,9 +70,9 @@ export default function About() {
               </div>
             </div>
             <div className="staff-card">
-              <img
+              <Image
                 className="staff-picture"
-                src="../assets/images/staff-pictures/rabinovich.jpeg"
+                src={rabinovich}
                 alt=">Oren Rabinovich"
               />
               <div className="staff-content" id="alliance-rutgers-newark">

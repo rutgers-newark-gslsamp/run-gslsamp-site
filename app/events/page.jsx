@@ -48,10 +48,8 @@ export default function Events() {
     return (
       <>
         <Title title={"EVENTS & OPPORTUNITIES"} />
-        
-        <div className='grid grid-rows-3 m-8 p-4'>
-          {/**AUTO SCROLLING IMAGES */}
-          <div className='flex justify-center'>
+        {/**AUTO SCROLLING IMAGES */}
+        <div className='flex justify-center'>
             <Image
               src={placeHolder}
               alt='Placeholder Image'
@@ -59,29 +57,37 @@ export default function Events() {
               width={500}
             />
           </div>
+        
+        <div className='h-full m-8 p-4'>
 
-          <div className=''>
-            <span className='bg-white text-[2rem] flex pb-7 pt-10 font-bold'>Upcoming Events</span>
+            <span className='bg-white text-[2rem] flex pt-10 font-bold'>Upcoming Events</span>
+            <hr className='h-[.2rem] max-w-[35vw] bg-[#D9D9D9]'/>
+            <div className='grid grid-cols-3'>
               {
                 event.map((e) => (
-                <>
-                  <h1 className='underline text-xl p-7'>{e.title}</h1>
-                  <p className='font-bold px-9'>{e.location}</p>
-                  <p className='font-bold px-9'>{e.date}</p>
-                  <p className='font-bold px-9'>{e.startTime} - {e.endTime}</p>
-                  <p className='px-9'>
-                    {e.description}
-                  </p>
-                </>
+                  <div className='m-[25px] p-[15px] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] '>
+          
+                    <h1 className='underline text-xl p-5 text-[1.7rem]'>{e.title}</h1>
+                    <p className='font-bold px-9 text-[1.15rem]'>{e.location}</p>
+                    <p className='font-bold px-9 text-[1.15rem]'>{e.date}</p>
+                    <p className='font-bold px-9 text-[1.15rem]'>{e.startTime} - {e.endTime}</p>
+                    <p className='px-9 py-2 text-[1.30rem]'>
+                      {e.description}
+                    </p>
+
+                  </div>
                 ))
+              
               }
           </div>
           
           {/**RECENT EVENTS*/}
-          <div className='border'>
-            <span className='bg-white text-[2rem] flex pb-7 pt-10 font-bold'>Recent Events</span>
+          <div className=''>
+            <span className='bg-white text-[2rem] flex pt-10 font-bold'>Recent Events</span>
+            <hr className='h-[.2rem] max-w-[35vw] bg-[#D9D9D9]'/>
+
             {/**Placeholder */}
-            <p className='px-9 text-center'>
+            <p className='px-9 m-9 text-center'>
               <i>We're still working on this check back soon</i>
             </p>
             {/**
@@ -103,20 +109,20 @@ export default function Events() {
           {/**NEWSLETTER AND PAST EVENTS*/}
           <div className='grid grid-rows-2'>
 
-            <h1 className="text-[2rem]  flex font-bold my-7 hover:underline active:scale-90 transition delay-75">
+            <h1 className="text-[2rem]  flex font-bold mt-3 hover:underline hover:scale-105 transition delay-75 w-1/4">
                 <a href='https://dailystoic.com/daily-stoic-email/' target='_blank'>Weekly Newsletter</a>
-
-                
             </h1>
+            <hr className='h-[.2rem] max-w-[35vw] bg-[#D9D9D9]'/>
 
-            <p className='text-center py-4'>
+            <p className='text-center  text-[1.6rem]'>
               Learn about events, opportunities, workshops, access to tutoring and more!
             </p>
 
           </div>
 
-          <h1 className="text-[2rem] justify-center flex font-bold my-7 hover:underline active:scale-90 transition delay-75"><Link href='/events/pastevents'>Also check out our Past Events!</Link></h1>
-
+          <div className='flex justify-center'>
+            <h1 className="text-[2rem] justify-center flex font-bold mt-[4rem] p-7 w-1/3 hover:underline hover:scale-105 transition delay-75"><Link href='/events/pastevents'>Also check out our Past Events!</Link></h1>
+          </div>
         </div>
       </>
     );

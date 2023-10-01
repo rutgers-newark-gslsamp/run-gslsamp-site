@@ -1,6 +1,14 @@
 import Image from "next/image";
-import Title from "./components/title";
-import runLogo from "/wamp64/www/run-gslsamp-site-fork/run-gslsamp-site-/public/rutgers-logos/ru-n_logo.png"
+//images
+import runLogo from "/public/rutgers-logos/ru-n_logo.png"
+import rutgers from "/public/rutgers-logos/RUN.png"
+import fairleigh from "/public/alliance-logos/Fairleigh_Dickinson_University_Seal.png"
+import montclair from "/public/alliance-logos/montclair_state_university_seal.png"
+import william_p from "/public/alliance-logos/william_paterson_university.png"
+import kean from "/public/alliance-logos/kean-university-logo-1.png"
+import essex from "/public/alliance-logos/essex-county-college-squarelogo.png"
+import njit from "/public/alliance-logos/New_Jersey_IT_seal.png"
+import rutNb from "public/rutgers-logos/Rutgers_University_seal.png"
 
 export default function Home() {
   return (
@@ -35,9 +43,9 @@ export default function Home() {
 
       <section className="landing-about-container">
           {/*I think the names of these divs could be improved for clarity*/}
-          <img
+          <Image
             className="landing-about-logo"
-            src=""
+            src={runLogo}
             alt="Rutgers–Newark GS-LSAMP Logo"
           />  
           
@@ -77,9 +85,9 @@ export default function Home() {
           </div>
           <div className="alliance-card-container">
               <div className="alliance-card">
-                  <img
+                  <Image
                     className="alliance-university-logo"
-                    src=""
+                    src={rutgers}
                     alt="Rutgers University–Newark Logo"
                   />
                   <div className="alliance-university-content" id="alliance-rutgers-newark">
@@ -96,9 +104,9 @@ export default function Home() {
                   </div>
               </div>
               <div className="alliance-card">
-                  <img
+                  <Image
                     className="alliance-university-logo"
-                    src=""
+                    src={fairleigh}
                     alt="Fairleigh Dickinson University Logo"
                   />
                   <div className="alliance-university-content" id="alliance-fairleigh-dickinson">
@@ -115,9 +123,10 @@ export default function Home() {
                   </div>
               </div>
               <div className="alliance-card">
-                  <img
+                  <Image
                     className="alliance-university-logo"
-                    src="" alt="Montclair State University Logo"
+                    src={montclair}
+                    alt="Montclair State University Logo"
                   />
       
                   <div className="alliance-university-content" id="alliance-montclair">
@@ -134,9 +143,9 @@ export default function Home() {
                   </div>
               </div>
               <div className="alliance-card">
-                  <img
+                  <Image
                     className="alliance-university-logo"
-                    src=""
+                    src={william_p}
                     alt="William Paterson University Logo"
                   />
                   <div className="alliance-university-content" id="alliance-william-paterson">
@@ -153,9 +162,10 @@ export default function Home() {
                   </div>
               </div>
               <div className="alliance-card">
-                  <img
+                  <Image
                     className="alliance-university-logo"
-                    src="" alt="Kean University Logo"
+                    src={kean}
+                    alt="Kean University Logo"
                   />
                   <div className="alliance-university-content" id="alliance-kean">
                       <h3 className="alliance-university-name">Kean University</h3>
@@ -171,9 +181,9 @@ export default function Home() {
                   </div>
               </div>
               <div className="alliance-card">
-                  <img
+                  <Image
                     className="alliance-university-logo"
-                    src=""
+                    src={essex}
                     alt="Essex Count College Logo"
                   />
                   <div className="alliance-university-content" id="alliance-essex-county-college">
@@ -186,8 +196,9 @@ export default function Home() {
                   </div>
               </div>
               <div className="alliance-card">
-                  <img
-                    className="alliance-university-logo" src=""
+                  <Image
+                    className="alliance-university-logo"
+                    src={njit}
                     alt="New Jersey Institute of Technology Logo"
                   />
                   <div className="alliance-university-content" id="alliance-njit">
@@ -205,9 +216,10 @@ export default function Home() {
                   </div>
               </div>
               <div className="alliance-card">
-                  <img
+                  <Image
                     className="alliance-university-logo"
-                    src="" alt="Rutgers University Seal"
+                    src={rutNb}
+                    alt="Rutgers University Seal"
                   />
                   <div className="alliance-university-content" id="alliance-rutgers-new-brunswick">
                       <h3 className="alliance-university-name">Rutgers University - 
