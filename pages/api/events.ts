@@ -31,12 +31,16 @@ export const config = {
             //select cluster
             const myColl = myDB.collection("events");
 
-            //query data
-            const query = { type: "present" };
-            const result = await myColl.find(query).toArray({});
+            //query data for present and past
+            const queryPres = { past: "NO" };
+            const queryPast = { past: "YES" };
+
+            const resultPres = await myColl.find(queryPres).toArray({});
+            const resultPast = await myColl.find(queryPast).toArray({});
+
 
             //return status and data
-            return res.status(200).json({response: result, msg: "Success getting events"})
+            return res.status(200).json({responsePres: resultPres, responsePast: resultPast, msg: "Success getting events"})
         } catch(error) {
             return res.status(500).json({msg: "Error getting events."})
 

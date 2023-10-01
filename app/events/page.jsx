@@ -33,10 +33,10 @@ export default function Events() {
       console.log(resp.msg)
 
     } else {
-      console.log(resp.response)
+      console.log(resp.responsePres)
 
       //set event(s)
-      setEvent(resp.response)
+      setEvent(resp.responsePres)
     }
   }
   
