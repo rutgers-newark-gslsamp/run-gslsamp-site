@@ -45,14 +45,14 @@ export default function PastEvents(){
 
               {
                 pastEvent.map((e) => (
-                <>
+                <div className='ml-10'>
                   <h1 className='underline text-xl p-7 text-[1.7rem]'>{e.title}</h1>
                   <p className='font-bold px-9 text-[1.15rem]'>{e.location}</p>
                   <p className='font-bold px-9 text-[1.15rem]'>{e.date}</p>
                   <p className='px-9 text-[1.30rem]'>
                     {e.description}
                   </p>
-                </>
+                </div>
                 ))
               }   
     </>
