@@ -5,6 +5,7 @@ import Image from 'next/image';
 import placeHolder from '/public/placeholder.png'
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { dateConvert, timeConvert, checkDate } from '../components/dateConvert'
 
 {/**create component for events & pull data from database*/}
 
@@ -37,6 +38,9 @@ export default function Events() {
 
       //set event(s)
       setEvent(resp.responsePres)
+
+      //set recent events
+      setRecentEvent(checkDate(event))
     }
   }
   
@@ -75,8 +79,8 @@ export default function Events() {
                       <div className='relative bottom-[20rem] min-w-[15rem] min-h-[17rem] z-20 hover:opacity-0 transition delay-75 py-10 bg-white'>
                         <h1 className='underline text-xl p-5 text-[1.7rem] max-h-[7rem] min-h-[7rem]'>{e.title}</h1>
                         <p className='font-bold px-9 text-[1.15rem]'>{e.location}</p>
-                        <p className='font-bold px-9 text-[1.15rem]'>{e.date}</p>
-                        <p className='font-bold px-9 text-[1.15rem]'>{e.startTime} - {e.endTime}</p>
+                        <p className='font-bold px-9 text-[1.15rem]'>{dateConvert(e.date)}</p>
+                        <p className='font-bold px-9 text-[1.15rem]'>{timeConvert(e.startTime, e.date)} - {timeConvert(e.endTime,e.date)}</p>
                       </div>
                   </div>
                 ))
@@ -89,24 +93,31 @@ export default function Events() {
             <span className='bg-white text-[2rem] flex pt-10 font-bold'>Recent Events</span>
             <hr className='h-[.2rem] max-w-[35vw] bg-[#D9D9D9]'/>
 
-            {/**Placeholder */}
+            {/**Placeholder 
             <p className='px-9 m-9 text-center'>
               <i>We're still working on this check back soon</i>
-            </p>
-            {/**
-              recentEvent.map((e) => (
-              <>
-                <h1 className='underline text-xl p-7'>{e.title}</h1>
-                <p className='font-bold px-9'>{e.location}</p>
-                <p className='font-bold px-9'>{e.date}</p>
-                <p className='font-bold px-9'>{e.startTime} - {e.endTime}</p>
-                <p className='px-9'>
-                  {e.description}
-                </p>
-              </>
-              ))
-              */
-            }
+            </p>*/}
+            <div className='grid grid-flow-col grid-cols-4'>
+                {
+                  recentEvent.map((e) => (
+                    <div className='hover:scale-105 transition delay-75 m-[25px] p-[15px] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] max-w-[22rem] max-h-[22rem]'>
+                        <div className='relative z-10 min-w-[20rem] min-h-[20rem]'>
+                          <p className='px-3 py-1 text-md m-3'>
+                            {e.description}
+                          </p>
+                        </div>
+
+                        <div className='relative bottom-[20rem] min-w-[15rem] min-h-[17rem] z-20 hover:opacity-0 transition delay-75 py-10 bg-white'>
+                          <h1 className='underline text-xl p-5 text-[1.7rem] max-h-[7rem] min-h-[7rem]'>{e.title}</h1>
+                          <p className='font-bold px-9 text-[1.15rem]'>{e.location}</p>
+                          <p className='font-bold px-9 text-[1.15rem]'>{dateConvert(e.date)}</p>
+                          <p className='font-bold px-9 text-[1.15rem]'>{timeConvert(e.startTime, e.date)} - {timeConvert(e.endTime,e.date)}</p>
+                        </div>
+                    </div>
+                  ))
+                
+                }
+            </div>
           </div>
 
           {/**NEWSLETTER AND PAST EVENTS*/}
