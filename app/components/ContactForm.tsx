@@ -11,12 +11,6 @@ import mailIcon from '/public/mail-icon.png'
 import Link from 'next/link';
 
 export default function ContactForm() {
-    //loading state allows for programmer to choose what is displayed relative to loading state
-    //shows UI that the request is happening
-    //EX:
-    //setLoading(true)
-    //const res = await fetchData();
-    //setLoading(false)
     const [loading, setLoading] = useState(false);
 
     async function handleSubmit(event: any) {

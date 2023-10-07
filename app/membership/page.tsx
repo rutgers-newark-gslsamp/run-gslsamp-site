@@ -1,4 +1,4 @@
-import Title from "../components/title";
+import Title from "../components/Title";
 
 export default function Membership() {
     return (

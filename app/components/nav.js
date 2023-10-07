@@ -6,28 +6,28 @@ import Image from "next/image";
 {/**tailwind NOT implemented*/}
 export default function Nav() {
     return (
-      <nav class="desktop-nav">
-        <div class="top-nav-container">
-          <div class="top-nav-header">
-            <div class="nav-logo-wrapper">
+      <nav className="desktop-nav">
+        <div className="top-nav-container">
+          <div className="top-nav-header">
+            <div className="nav-logo-wrapper">
               {/**UPDATE image src */}
               <Image
-                class="nav-logo"
+                className="nav-logo"
                 src={seal}
                 alt="Rutgers Univesity–Newark Logo"
               />
               <Image
-                class="nav-logo"
+                className="nav-logo"
                 src={logo}
                 alt="Rutgers University–Newark Logo"
               />
             </div>
-            <hr class="nav-vertical-line"/>
-            <label class="nav-header-title">Louis Stokes Alliance for Minority Participation</label>
+            <hr className="nav-vertical-line"/>
+            <label className="nav-header-title">Louis Stokes Alliance for Minority Participation</label>
           </div> 
         </div>
-        <div class="bottom-nav-container">
-          <ul class="nav-page-list">
+        <div className="bottom-nav-container">
+          <ul className="nav-page-list">
               <li><Link href="/">Home</Link></li>
               <li><li><Link href="/about">About Us</Link></li></li>
               <li><Link href="/membership">Membership</Link></li>

@@ -25,7 +25,7 @@ body {
   top: 0;
   background-color: #FFFFFF;
   position: sticky;
-  z-index: 5;
+  z-index: 30;
 }
 .top-nav-container {
   display: flex;
@@ -92,6 +92,7 @@ body {
   text-align: center;
   background: linear-gradient(180deg, #BB002F 0%, #9D1739 100%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+  z-index: 30;
 }
 .nav-page-list, li {
   display: flex;

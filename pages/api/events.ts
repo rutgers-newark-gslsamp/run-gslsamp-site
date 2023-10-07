@@ -37,10 +37,14 @@ export const config = {
 
             const resultPres = await myColl.find(queryPres).toArray({});
             const resultPast = await myColl.find(queryPast).toArray({});
+            //to new file
+            //, responsePast: resultPast, msg: "Success getting events"
 
+            console.log("success!")
 
             //return status and data
-            return res.status(200).json({responsePres: resultPres, responsePast: resultPast, msg: "Success getting events"})
+            return res.status(200).json({resultPres, resultPast})
+
         } catch(error) {
             return res.status(500).json({msg: "Error getting events."})
 
