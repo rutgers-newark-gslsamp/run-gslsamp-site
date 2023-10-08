@@ -16,7 +16,7 @@ import pic3 from '../../public/event-photos/20221118_091611.jpg'
 
     return (
       <main>     
-        <Title title={"EVENTS & OPPORTUNITIES"} />
+        <Title name={"EVENTS & OPPORTUNITIES"} />
         {/**AUTO SCROLLING IMAGES */}
           <figure className='flex justify-center'>
             <Carousel images={images} />

@@ -1,9 +1,9 @@
-import Title from "../components/Title";
+import Title from "../components/Title.js";
 
 export default function Membership() {
     return (
       <>
-        <Title title={"Membership"}/>
+        <Title name={"Membership"}/>
       </>
     );
   }
