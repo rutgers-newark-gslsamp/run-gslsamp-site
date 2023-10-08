@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import Image from "next/image"
+import ImageWithLoadingState from '../components/ImageWithLoadingState'
 
 const Carousel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -30,11 +31,7 @@ const Carousel = ({ images }) => {
   return (
       <div>
         <div className="relative flex justify-center z-20">
-          <Image
-            src={images[currentImageIndex]}
-            alt="Carousel Item"
-            className="h-[75rem]"
-          />
+          <ImageWithLoadingState src={images[currentImageIndex]} alt={"Carousel Item"}/>
         </div>
       <div className=''>
         <button
