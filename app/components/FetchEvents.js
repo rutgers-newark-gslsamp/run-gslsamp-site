@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 export default function FetchEvents({isUpcoming}) {
     const [ loading, setLoading ] = useState(true);
-    const [ events, setEvents ] = useState([])
+    const [ events, setEvents ] = useState(null)
 
     //get today to filter recent and upcoming
     const today = new Date().toISOString().split('T')[0];
@@ -15,9 +15,7 @@ export default function FetchEvents({isUpcoming}) {
         fetch('/api/events')
             .then((response) => response.json())
             .then((result) => {
-                if(isUpcoming) {
-                    console.log("result",result.resultPres[0])
-                    
+                if(isUpcoming) {                    
                     setEvents(result.resultPres.filter((event) => event.date >= today))
                     setLoading(false)
                 } else {
@@ -35,6 +33,8 @@ export default function FetchEvents({isUpcoming}) {
             <ul className='grid grid-flow-col grid-cols-4'>
                 {loading ? (
                     <p>Loading...</p>
+                ) : events === null ? (
+                    <p>Events being planned, come back soon!</p>
                 ) : (
                     events.map((e) =>(
                         <li className='hover:scale-105 transition delay-75 m-[25px] p-[15px] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] max-w-[22rem] h-[22rem] text-black'>

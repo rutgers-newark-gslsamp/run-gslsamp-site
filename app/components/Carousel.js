@@ -28,25 +28,30 @@ const Carousel = ({ images }) => {
   }, [currentImageIndex]);
 
   return (
-    <div className="relative flex justify-center">
-      <Image
-        src={images[currentImageIndex]}
-        alt="Carousel Item"
-        className="w-[50rem] h-[50rem]"
-      />
-      <button
-        className="absolute left-0 mt-10 p-3 rounded-lg bg-[#cbcbcb] min-w-[6rem] top-[100%] transform -translate-y-1/2 border border-black"
-        onClick={previousImage}
-      >
-        Previous
-      </button>
-      <button
-        className="absolute right-0 mt-10 p-3 rounded-lg bg-[#cbcbcb] min-w-[6rem] top-[100%] transform -translate-y-1/2 border border-black"
-        onClick={nextImage}
-      >
-        Next
-      </button>
+      <div>
+        <div className="relative flex justify-center z-20">
+          <Image
+            src={images[currentImageIndex]}
+            alt="Carousel Item"
+            className="h-[75rem]"
+          />
+        </div>
+      <div className=''>
+        <button
+          className="m-3 absolute left-0 mt-10 p-3 rounded-lg bg-[#cbcbcb] min-w-[6rem] transform -translate-y-1/2 border border-black"
+          onClick={previousImage}
+        >
+          Previous
+        </button>
+        <button
+          className="m-3 absolute right-0 mt-10 p-3 rounded-lg bg-[#cbcbcb] min-w-[6rem] transform -translate-y-1/2 border border-black"
+          onClick={nextImage}
+        >
+          Next
+        </button>
+      </div>
     </div>
+    
   );
 };
 
