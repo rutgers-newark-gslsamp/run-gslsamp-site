@@ -28,7 +28,7 @@ export default function FetchEvents({isUpcoming}) {
               setLoading(false)
             });            
     }, []);
-
+ 
     return(
             <ul className='grid grid-flow-col grid-cols-4'>
                 {loading ? (
