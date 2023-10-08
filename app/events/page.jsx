@@ -1,44 +1,37 @@
 'use client'
 
 import Title from '../components/Title'
-import Image from 'next/image';
-import placeHolder from '/public/placeholder.png'
+import Carousel from '../components/Carousel'
 import Link from 'next/link';
 import FetchEvents from '../components/FetchEvents'
+import Subtitle from '../components/Subtitle'
+import pic1 from '../../public/event-photos/20221118_071909.jpg'
+import pic2 from '../../public/event-photos/20221118_090330.jpg'
+import pic3 from '../../public/event-photos/20221118_091611.jpg'
+
+
 
   export default function Events() {
+    const images = [pic1, pic2, pic3]
 
     return (
       <main>     
         <Title title={"EVENTS & OPPORTUNITIES"} />
         {/**AUTO SCROLLING IMAGES */}
-          <div className='flex justify-center'>
-            <Image
-              src={placeHolder}
-              alt='Placeholder Image'
-              height={500}
-              width={500}
-            />
-          </div>
+          <figure className='flex justify-center'>
+            <Carousel images={images} />
+          </figure>
         
         <div className='m-8 p-4'>
-
-            <span className='bg-white text-[2rem] flex pt-10 font-bold'>Upcoming Events</span>
-            <hr className='h-[.2rem] max-w-[35vw] bg-[#D9D9D9]'/>
-            <FetchEvents isUpcoming={true}/>
+          <Subtitle name="Upcoming Events"/>
+          <FetchEvents isUpcoming={true}/>
           
-            <span className='bg-white text-[2rem] flex pt-10 font-bold'>Recent Events</span>
-            <hr className='h-[.2rem] max-w-[35vw] bg-[#D9D9D9]'/>
-                <FetchEvents isUpcoming={false}/>
+          <Subtitle name="Recent Events"/>
+          <FetchEvents isUpcoming={false}/>
 
           {/**NEWSLETTER AND PAST EVENTS*/}
           <div className='grid grid-rows-2'>
-
-            <h1 className="text-[2rem]  flex font-bold mt-3 hover:underline hover:scale-105 transition delay-75 w-1/4">
-                <a href='https://dailystoic.com/daily-stoic-email/' target='_blank'>Weekly Newsletter</a>
-            </h1>
-            <hr className='h-[.2rem] max-w-[35vw] bg-[#D9D9D9]'/>
-
+            <Subtitle name="Newsletter" hasLink={true} link={"https://dailystoic.com/daily-stoic-email/"}/>
             <p className='text-center  text-[1.6rem]'>
               Learn about events, opportunities, workshops, access to tutoring and more!
             </p>
