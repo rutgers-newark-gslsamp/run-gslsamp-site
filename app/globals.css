@@ -233,7 +233,7 @@ a.inline-link{
   margin: 30px;
   padding: 15px;
   /* try to make the cards smaller*/
-  max-height: 25rem;
+  max-height: 28rem;
   width: auto;
   background: #FFFFFF;
   box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.4);
