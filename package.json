@@ -27,6 +27,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "@types/nodemailer": "^6.4.10"
+    "@types/nodemailer": "^6.4.10",
+    "@wixc3/react-board": "^2.3.0"
   }
 }

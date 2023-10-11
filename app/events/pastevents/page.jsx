@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import FetchPast from '../../components/FetchPast'
+import Title from '../../components/Title'
 
 
 
@@ -43,7 +44,7 @@ export default function PastEvents(){
 
     return (
       <>
-        <h1 className="text-[3.2em] m-[3rem] flex font-bold my-7 drop-shadow-xl">PAST EVENTS</h1>
+        <Title name={"Past Events"}/>
          <FetchPast />     
       </>
     )

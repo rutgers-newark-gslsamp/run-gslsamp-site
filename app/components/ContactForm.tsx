@@ -60,19 +60,19 @@ export default function ContactForm() {
       }
     return (
       <div>
-        <form className="bg-gray-300 grid" onSubmit={handleSubmit}>
+        <form className="bg-gray-300" onSubmit={handleSubmit}>
             <div className="grid grid-cols-3">
               <div className="p-4 col-span-2 m-3">
-                <div className="grid grid-cols-2 grid-rows-4">
-                  <div className="flex flex-col p-2 m-2">
+                <fieldset className="grid grid-cols-2 grid-rows-4">
+                  <div className="flex flex-col p-5 m-5">
                     <label className="w-2/6" htmlFor="fname">First Name</label>
                     <input className="w-3/4 rounded-lg p-3" type="text" autoComplete="off" id="fname"/>
                   </div>
-                  <div className="flex flex-col p-2 m-2">
+                  <div className="flex flex-col p-5 m-5">
                     <label className="w-2/6" htmlFor="lname">Last Name</label>
                     <input className="w-3/4 rounded-lg p-3" type="text" autoComplete="off" id="lname"/>
                   </div>
-                  <div className="flex flex-col p-2 m-2">
+                  <div className="flex flex-col p-5 m-5">
                     <label htmlFor="email">Email</label>
                     <input
                       className="w-3/4 rounded-lg p-3"
@@ -81,7 +81,7 @@ export default function ContactForm() {
                       id="email"
                     />
                   </div>
-                  <div className="flex flex-col p-2 m-2">
+                  <div className="flex flex-col p-5 m-5">
                     <label>Inquiry</label>
                       <select className="w-3/4 rounded-lg p-3" required id="inquiry" aria-label="inquiry">
                         <option value="General Question">General Question</option>
@@ -89,7 +89,7 @@ export default function ContactForm() {
                         <option value="Faculty Looking to Assist">Faculty Looking to Assist</option>
                       </select>
                   </div>
-                  <div className="flex flex-col p-2 m-2 col-span-2">
+                  <div className="flex flex-col pl-8 col-span-2">
                     <label htmlFor="message">Message</label>
                     <textarea
                       className='rounded-lg p-3'
@@ -108,9 +108,9 @@ export default function ContactForm() {
                       Send Message
                     </button>
                   </div>
-                </div>
+                </fieldset>
             </div>
-              <div className="p-4 col-span-1 m-3">
+              <figure className="p-4 col-span-1 m-3">
                 <Image
                   className='flex justify-center items-center'
                   src={mailIcon}
@@ -118,13 +118,13 @@ export default function ContactForm() {
                   width={700}
                   height={700}
                   />
-              </div>
+              </figure>
             </div>
           </form>
 
-          <div className='flex justify-center text-lg p-6 m-6 hover:underline'>
+          <nav className='flex justify-center text-lg p-6 m-6 hover:underline'>
             <Link href='/contact/faq'>Frequently Asked Questions</Link>
-          </div>
+          </nav>
       </div>         
     );
 }

@@ -17,27 +17,27 @@ export default function Home() {
       {/**<Title title={"Index Page"} />*/}
       <main className="landing-hero-container">
         {/*Later turn into hero-gallery*/}
-        <div className="hero-picture-wrapper">
+        <figure className="hero-picture-wrapper">
           {/*refactor src */}
             <img
               className="hero-picture"
               src="https://placehold.co/1500x600/png"
               alt="Placeholder image"
             />
-        </div>
-        <div className="hero-cta-block">
+        </figure>
+        <aside className="hero-cta-block">
             <div className="cta-headline">
                 <h2 id="landing-cta-headline">Increasing the retention, graduation and success of underrepresented minorities STEM.</h2>
             </div>
-            <div className="cta-button-wrapper">
+            <nav className="cta-button-wrapper">
                 <button className="cta-button" id="cta-learn-more-button">
                     <a className="cta-learn-more-anchor" href="membership.html">Eligibility</a>
                 </button>
                 <button className="cta-button" id="cta-join-now-button">
                     <a className="cta-join-now-anchor"href="membership.html">Join Now</a>
                 </button>
-            </div>
-        </div>  
+            </nav>
+        </aside>  
       </main>
 
 

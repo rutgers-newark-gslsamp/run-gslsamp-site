@@ -28,7 +28,7 @@ export default function FetchPast() {
                     <li className='hover:scale-105 transition delay-75 m-[25px] p-[15px] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] max-w-[22rem] h-[22rem] text-black'>
                         <article className='relative z-10 w-[20rem] min-h-[20rem]'>
                             <p className='px-3 py-1 text-md m-3'>
-                            {e.description}
+                                {e.description}
                             </p>
                         </article>
 
@@ -41,7 +41,6 @@ export default function FetchPast() {
                             </address>
                             <time>
                                 <p className='font-bold px-9 text-[1.15rem]'>{dateConvert(e.date)}</p>
-                                <p className='font-bold px-9 text-[1.15rem]'>{timeConvert(e.startTime, e.date)} - {timeConvert(e.endTime,e.date)}</p>
                             </time>
                         </article>
                     </li>

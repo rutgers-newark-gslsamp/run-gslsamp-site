@@ -18,30 +18,31 @@ import pic3 from '../../public/event-photos/20221118_091611.jpg'
       <main>     
         <Title name={"EVENTS & OPPORTUNITIES"} />
         {/**AUTO SCROLLING IMAGES */}
-          <figure className='flex justify-center'>
-            <Carousel images={images} />
-          </figure>
+        <section className='flex justify-center'>
+          <Carousel images={images} />
+        </section>
         
-        <div className='m-8 p-4'>
+        <section className='m-8 p-4'>
           <Subtitle name="Upcoming Events"/>
           <FetchEvents isUpcoming={true}/>
-          
+        </section>
+
+        <section className='m-8 p-4'>
           <Subtitle name="Recent Events"/>
           <FetchEvents isUpcoming={false}/>
+        </section>
 
           {/**NEWSLETTER AND PAST EVENTS*/}
-          <div className='grid grid-rows-2'>
+          <section className='grid grid-rows-2 m-8 p-4'>
             <Subtitle name="Weekly Newsletter" hasLink={true} link={"https://dailystoic.com/daily-stoic-email/"}/>
             <p className='pl-4 text-[1.6rem]'>
               Learn about events, opportunities, workshops, access to tutoring and more!
             </p>
+          </section>
 
-          </div>
-
-          <div className='flex justify-center'>
+          <section className='flex justify-center'>
             <h1 className="text-[2rem] justify-center flex font-bold mt-[4rem] w-1/3 hover:underline hover:scale-105 transition delay-75"><Link href='/events/pastevents'>Also check out our Past Events!</Link></h1>
-          </div>
-        </div>
+          </section>
     </main>
     );
   }
