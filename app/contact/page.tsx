@@ -1,12 +1,12 @@
 import Title from "../components/Title.js";
-import ContactForm from "../components/ContactForm";
+import ContactFormLayout from "../components/ContactFormLayout";
 
 export default function Contact() {
     return (
       <main>
         <Title name={"Contact Us!"}/>
         
-        <ContactForm />
+        <ContactFormLayout />
       </main>
     );
   }
