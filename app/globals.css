@@ -654,3 +654,18 @@ a.inline-link{
   }
 
 }
+
+/*FORM*/
+
+.form-label {
+  @apply block text-sm font-medium mb-2;
+}
+
+.form-input {
+  @apply w-5/6 sm:w-[350px] rounded-lg p-3;
+}
+
+.form-div {
+  @apply mb-4;
+}
+
