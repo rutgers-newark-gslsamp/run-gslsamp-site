@@ -1,13 +1,19 @@
 import Title from "../components/Title.js";
 import ContactFormLayout from "../components/ContactFormLayout";
+import Dropdown from "../components/Dropdown.js";
+import Nav from "../components/Nav.js";
 
 export default function Contact() {
     return (
-      <main>
+      <body>
+        {/**FIXME: Nav bar isn't rendering from layout */}
+        <Nav />
         <Title name={"Contact Us!"}/>
         
         <ContactFormLayout />
-      </main>
+
+        <Dropdown />
+      </body>
     );
   }
   
