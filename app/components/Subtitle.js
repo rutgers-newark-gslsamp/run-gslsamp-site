@@ -5,7 +5,7 @@ export default function Subtitle({name, hasLink="", link=null}) {
         <>
             {hasLink ? (
                 <>
-                    <h1 className="text-[2rem]  flex font-bold mt-3 hover:underline hover:scale-105 transition delay-75 w-1/4">
+                    <h1 className="text-[2rem] flex font-bold mt-3 hover:underline hover:scale-105 transition delay-75 w-1/4">
                         <a href={link} target='_blank'>
                             Weekly Newsletter
                         </a>

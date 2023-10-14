@@ -36,7 +36,7 @@ export default function ImageWithLoadingState({ src, alt }) {
             {/* Use the Next.js Image component alias */}
             <NextImage 
                 ref={imgRef}
-                className="h-[75rem]"
+                className="h-[15rem] sm:h-[55rem]"
                 src={src}
                 alt={alt}
                 style={{ display: isLoading ? 'none' : 'block' }}
