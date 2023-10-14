@@ -1,6 +1,6 @@
 import Title from "../components/Title.js";
 import ContactForm from "../components/ContactForm";
-import Dropdown from "../components/Dropdown.js";
+import Dropdown from "../components/Faq.js";
 import Nav from "../components/Nav.js";
 
 export default function Contact() {
