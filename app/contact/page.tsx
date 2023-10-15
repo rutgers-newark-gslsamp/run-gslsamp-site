@@ -6,7 +6,6 @@ import Nav from "../components/Nav.js";
 export default function Contact() {
     return (
       <>
-        {/**FIXME: Nav bar isn't rendering from layout */}
         <Title name={"Contact Us!"}/>
         
         <ContactForm />
