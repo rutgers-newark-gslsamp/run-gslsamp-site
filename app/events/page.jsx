@@ -15,7 +15,7 @@ import pic3 from '../../public/event-photos/20221118_091611.jpg'
     const images = [pic1, pic2, pic3]
 
     return (
-      <main>     
+      <main>
         <Title name={"EVENTS & OPPORTUNITIES"} />
         {/**AUTO SCROLLING IMAGES */}
         <section className='flex justify-center'>

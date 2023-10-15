@@ -27,7 +27,7 @@ export default function FetchPast() {
                 <p>Events being planned, come back soon!</p>
             ) : (
                 events.map((e) =>(
-                    <li className='min-w-[10rem] min-h-[5rem] m-[20px] p-[7px] focus:scale-105 sm:min-w-[15rem] sm:min-h-[10rem] sm:m-[25px] sm:p-[15px] sm:hover:scale-105 transition delay-75 shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] text-black'>
+                    <li className='min-w-[10rem] min-h-[5rem] m-[20px] p-[7px] focus:scale-105 sm:min-w-[15rem] sm:min-h-[22rem] sm:m-[25px] sm:p-[15px] sm:hover:scale-105 transition delay-75 shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] text-black'>
                         <article className='relative z-10 w-[10rem] min-h-[10rem] sm:w-[20rem] sm:min-h-[20rem]'>
                             <p className='px-1 text-sm sm:text-md m-3'>
                             {e.description}
