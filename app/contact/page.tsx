@@ -5,15 +5,14 @@ import Nav from "../components/Nav.js";
 
 export default function Contact() {
     return (
-      <body>
+      <>
         {/**FIXME: Nav bar isn't rendering from layout */}
-        <Nav />
         <Title name={"Contact Us!"}/>
         
         <ContactForm />
 
         <Dropdown />
-      </body>
+      </>
     );
   }
   
