@@ -52,7 +52,7 @@ export default function FetchEvents({isUpcoming}) {
                                     <p className='font-bold py-3 sm:px-9 text-xs sm:text-[1.15rem]'>{e.location}</p>
                                 </address>
                                 <time>
-                                    <p className='font-bold px-9 text-xs sm:text-[1.15rem]'>{dateConvert(e.date)}</p>
+                                    <p className='font-bold px-9 text-xs sm:text-[1.15rem] m-1'>{dateConvert(e.date)}</p>
                                     <p className='font-bold px-9 text-xs sm:text-[1.15rem]'>{timeConvert(e.startTime, e.date)} - {timeConvert(e.endTime,e.date)}</p>
                                 </time>
                             </article>
