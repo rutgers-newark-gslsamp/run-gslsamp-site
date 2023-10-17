@@ -60,7 +60,7 @@ function FAQSection() {
   ];
 
   return (
-    <div className="w-full max-w-xl mx-auto mt-10">
+    <div className="w-full max-w-xl mx-auto p-1 mt-10">
       <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
       {faqs.map((faq, index) => (
         <FAQItem key={index} question={faq.question} answer={faq.answer} />

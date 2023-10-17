@@ -3,7 +3,7 @@ import Title from "../components/Title.js";
 export default function Membership() {
     return (
       <>
-        <Title name={"Membership"}/>
+        <Title name={"MEMBERSHIP"}/>
       </>
     );
   }

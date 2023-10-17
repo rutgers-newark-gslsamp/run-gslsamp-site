@@ -35,13 +35,13 @@ const Carousel = ({ images }) => {
         </div>
       <div className=''>
         <button
-          className="m-3 absolute left-0 mt-10 p-3 rounded-lg bg-[#cbcbcb] min-w-[6rem] transform -translate-y-1/2 border border-black"
+          className="absolute font-medium left-0 bg-white min-w-[6rem] ml-10 mx-10 p-3 pb-3 rounded-lg border-[4px] border-[#9D1739] hover:border-[#d4375e] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
           onClick={previousImage}
         >
           Previous
         </button>
         <button
-          className="m-3 absolute right-0 mt-10 p-3 rounded-lg bg-[#cbcbcb] min-w-[6rem] transform -translate-y-1/2 border border-black"
+          className="absolute font-medium right-0 bg-white min-w-[6rem] ml-3 mx-10 p-3 pb-3 rounded-lg border-[4px] border-[#9D1739] hover:border-[#d4375e] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
           onClick={nextImage}
         >
           Next

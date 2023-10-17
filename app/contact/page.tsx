@@ -6,7 +6,7 @@ import Nav from "../components/Nav.js";
 export default function Contact() {
     return (
       <>
-        <Title name={"Contact Us!"}/>
+        <Title name={"CONTACT US"}/>
         
         <ContactForm />
 

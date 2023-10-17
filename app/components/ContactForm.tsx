@@ -1,28 +1,15 @@
 'use client';
-{/**turns component into a client component
-* meaning: requires client-side interactivity
-* MUST BE PLACE ON LINE 1 */}
-
-{/**MAKE FONT CONGRUENT*/}
 
 import { useState } from 'react';
-import Image from 'next/image';
-import mailIcon from '/public/mail-icon.png'
-import Link from 'next/link';
 
 export default function ContactForm() {
     const [loading, setLoading] = useState(false);
 
     async function handleSubmit(event: any) {
-        //the default action which belongs to the event will not occur
         event.preventDefault();
         setLoading(true);
       
-        //object data, with infered type of string 
         const data = {
-          //when the event occurs:
-          //stringify the value from event given it's id
-          //prop: "value"
           fname: String(event.target.fname.value),
           lname: String(event.target.lname.value),
           email: String(event.target.email.value),
@@ -30,10 +17,6 @@ export default function ContactForm() {
           message: String(event.target.message.value),
         };
         
-        //POST request to SERVER
-        //contains stringified json object from event
-        //await will wait for a PROMISE obj during async task
-        //fetch(resource, {options})
         const response = await fetch('/api/contact', {
           method: 'POST',
           headers: {
@@ -66,12 +49,12 @@ export default function ContactForm() {
                     <fieldset>
                         <div className='form-div'>
                             <label className="form-label" htmlFor="fname">First Name</label>
-                            <input className="form-input" type="text" autoComplete="off" id="fname"/>
+                            <input className="form-input" type="text" required pattern="[a-zA-Z]{3,20}" id="fname"/>
                         </div>
 
                         <div className='form-div'>
                             <label className="form-label" htmlFor="lname">Last Name</label>
-                            <input className="form-input" type="text" autoComplete="off" id="lname"/>
+                            <input className="form-input" type="text" required pattern="[a-zA-Z]{3,20}" id="lname"/>
                         </div>
                     
                         <div className='form-div'>
@@ -79,7 +62,8 @@ export default function ContactForm() {
                             <input
                                 className="form-input"
                                 type="text"
-                                autoComplete="off"
+                                required
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
                                 id="email"
                             />
                         </div>
@@ -99,7 +83,8 @@ export default function ContactForm() {
                                 className='form-input'
                                 rows={5}
                                 placeholder="How can we help you?"
-                                required id="message"
+                                required 
+                                id="message"
                                 minLength={10}
                                 maxLength={250}
                             />
@@ -115,16 +100,6 @@ export default function ContactForm() {
                         </button>
                     </div>
                 </form>
-
-             {/*<figure className="border hidden">
-                    <Image
-                        className=''
-                        src={mailIcon}
-                        alt='Mail Icon'
-                        width={500}
-                        height={500}
-                    />
-                </figure>*/}
             </section>
         </div>         
     );

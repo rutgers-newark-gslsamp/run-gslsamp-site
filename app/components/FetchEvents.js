@@ -26,7 +26,7 @@ export default function FetchEvents({isUpcoming}) {
             .catch((error) => {
               console.log('Error:', error)
               setLoading(false)
-            });            
+            });
     }, []);
  
     return(
