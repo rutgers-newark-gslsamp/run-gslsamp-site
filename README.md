@@ -14,18 +14,35 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
 - oren.rabinovich@rutgers.edu
 - (973) 353-3562
 ***
-  
+
+## How to use the project
+1. **Run** `git clone <url>` in terminal 
+
+2. **Open folder in vscode**
+
+3. **Open package.json**
+
+4. **Click debug and on the dropdown which follows press dev**
+
+5. **Open new terminal**
+
+7. **Run** `npm install`
+
+8. **Run** `npx tailwindcss init -p`
+
+9. **Run** `npm run dev`
+
 ## MOCKUPS
 ### Screenshots
 <div align="center">
-  <img width="600" src="mockups/run-lsamp-landingpage.png">
+  <img width="600" src="../mockups/run-lsamp-landingpage.png">
   <br>
   <p>
     Designed by <a href="https://github.com/RiosNicholas"> Nicholas Rios</a>.
   </p>
   <br>
  
-  <img width="600" src="mockups/run-lsamp-contact.png">
+  <img width="600" src="../mockups/run-lsamp-contact.png">
   <br>
   <p>
   Designed by <a href="https://github.com/https://github.com/christinolb"> Christino Barbosa</a>.
