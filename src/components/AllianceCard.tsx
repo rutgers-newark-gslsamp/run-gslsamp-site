@@ -1,6 +1,14 @@
 import Image from "next/image";
 
-const AllianceCard: React.FC = ({ logo, universityName, contactName, contactEmail, contactPhone }) => {
+interface AllianceCardProps {
+    logo: StaticImageData;
+    universityName: string;
+    contactName: string;
+    contactEmail: string;
+    contactPhone: string;
+}
+
+const AllianceCard: React.FC<AllianceCardProps> = ({ logo, universityName, contactName, contactEmail, contactPhone }) => {
     return (
         <div className="bg-white flex flex-col items-center justify-between align-middle p-1 m-1 max-h-56 max-w-56 shadow rounded-lg hover:bg-gray-300 hover:cursor-copy hover:transition duration-500">
             <Image
