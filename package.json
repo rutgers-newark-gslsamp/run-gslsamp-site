@@ -9,13 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<<< HEAD:run-gslsamp-site/package.json
-    "@types/node": "20.6.2",
-========
     "@sendgrid/mail": "^7.7.0",
-    "@types/node": "20.6.0",
->>>>>>>> bee7227116c0be0d49577611d975f92454ce77c9:package.json
-    "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
     "axios": "^1.5.0",
@@ -26,14 +20,13 @@
     "postcss": "8.4.29",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
-<<<<<<<< HEAD:run-gslsamp-site/package.json
-========
+    "tailwindcss": "3.3.3"
   },
   "devDependencies": {
+    "@types/node": "20.8.7",
     "@types/nodemailer": "^6.4.10",
-    "@wixc3/react-board": "^2.3.0"
->>>>>>>> bee7227116c0be0d49577611d975f92454ce77c9:package.json
+    "@types/react": "18.2.31",
+    "@wixc3/react-board": "^2.3.0",
+    "typescript": "5.2.2"
   }
 }
