@@ -4,7 +4,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 {/**Change to Poppins font */}
 import { Inter } from 'next/font/google'
-import Nav from './components/Nav'
+import Nav from '../src/components/Nav'
 
 const inter = Inter({ 
   subsets: ['latin'],

@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import Image from "next/image"
-import ImageWithLoadingState from '../components/ImageWithLoadingState'
+import ImageWithLoadingState from './ImageWithLoadingState'
 
 const Carousel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
