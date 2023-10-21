@@ -1,7 +1,7 @@
 //images
 import Image from "next/image";
 import runLogo from "../public/rutgers-logos/ru-n_logo.png"
-import Alliance from "../src/components/Alliance";
+import AllianceGrid from "../src/components/AllianceGrid";
 
 export default function Home() {
   return (
@@ -64,12 +64,19 @@ export default function Home() {
               </div>
         </div>
       </section>
+      <section id='lsamp-alliance-container'>
+        <div className="section-header">
+            <h2 className="lsamp-alliance-header">GS-LSAMP Alliance</h2>
+            <hr className="section-horizontal-line"/>
+        </div>
+        <AllianceGrid />
+
+      </section>
 
       <section className="landing-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TW7sWDVw_wM" title="YouTube video player" /*frameborder="0"*/ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
       </section>
 
-    <Alliance />
 
     </>
   );
