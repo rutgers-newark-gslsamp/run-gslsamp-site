@@ -3,16 +3,17 @@ import runLogo from "../../public/rutgers-logos/ru-n_logo.png"
 
 const LandingAbout: React.FC = () => {
     return (
-        <section className="landing-about-container">
+        <section className="flex flex-wrap justify-center items-center my-12">
             <Image
-                className="landing-about-logo"
+                id="landing-about-logo"
+                className="max max-w-xs h-auto rounded-3xl shadow-lg shadow-black/20"
                 src={runLogo}
                 alt="Rutgers–Newark GS-LSAMP Logo"
             />  
             
-            <div className="landing-about-card">
-                <div className="landing-about-content">
-                    <h2 className="landing-about-title">What is GS-LSAMP?</h2>
+            <div className="landing-about-card flex flex-col items-center py-3 px-4 ml-10 rounded-3xl shadow-lg max-w-lg shadow-black/20">
+                <div className="landing-about-content flex flex-col items-start text-base">
+                    <h2 className="uppercase text-3xl font-bold my-1 mx-0 pt-1 pb-0 px-1">What is GS-LSAMP?</h2>
                     <p className="landing-about-body">
                         The Louis Stokes Alliance for Minority Participation (LSAMP) is an 
                         <a className="landing-about-anchor-body m-1" href="https://www.nsf.gov/" target="blank">
