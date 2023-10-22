@@ -12,7 +12,7 @@ const NavBar: React.FC = () => {
         <nav className='flex flex-col w-full bg-white sticky z-30 top-0'>
             <div className='flex flex-wrap items-center justify-between' id='top-nav-container'>
                 <header className='flex items-center'>
-                    <div className='flex mt-1 mb-4' id='nav-logo-wrapper'>
+                    <div className='flex my-1' id='nav-logo-wrapper'>
                         <Image 
                             className='flex h-14 w-auto py-3 px-2 drop-shadow'
                             src={rutgersLogo}
