@@ -35,8 +35,8 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
 11. **Run** `npx next dev` or `npm run dev`
 
 ## Common Errors/Fixes
-1. Tailwind CSS not working as intended
-   a. **Solution: Update tailwind config module export content ** 
+1. Tailwind CSS not working as intended.
+`**Solution: Update tailwind config module export content **`
 
 ## MOCKUPS
 ### Screenshots
