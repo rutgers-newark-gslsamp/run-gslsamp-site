@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { StaticImageData } from "next/image";
+import Image from "next/legacy/image";
+import { StaticImageData } from "next/legacy/image";
 
 interface AllianceCardProps {
     logo: StaticImageData;

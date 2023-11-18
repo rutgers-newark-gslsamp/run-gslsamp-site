@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import NextImage from 'next/image';  // Import with alias
+import NextImage from "next/legacy/image";  // Import with alias
 
 export default function ImageWithLoadingState({ src, alt }) {
     const [isLoading, setIsLoading] = useState(true);

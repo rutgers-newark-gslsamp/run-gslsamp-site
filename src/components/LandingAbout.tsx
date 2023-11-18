@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import runLogo from "../../public/rutgers-logos/ru-n_logo.png"
 import Link from "next/link";
 

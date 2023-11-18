@@ -1,5 +1,5 @@
 //images
-import Image from "next/image";
+import Image from "next/legacy/image";
 import runLogo from "../public/rutgers-logos/ru-n_logo.png"
 import AllianceGrid from "../src/components/AllianceGrid";
 import LandingAbout from "../src/components/LandingAbout";

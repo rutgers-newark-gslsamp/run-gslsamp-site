@@ -2,7 +2,7 @@ import rabinovich from "../../public/staff-pictures/rabinovich.jpeg"
 import miguel from "/public/staff-pictures/miguel.png"
 import gates from "/public/staff-pictures/gates.png"
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function About() {
 

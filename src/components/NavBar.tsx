@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 // IMAGES
 import nsfLogo from '../../public/lsamp-nsf-logos/NSF-clear.png';
