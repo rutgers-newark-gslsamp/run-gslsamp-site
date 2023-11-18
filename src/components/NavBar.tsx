@@ -14,19 +14,19 @@ const NavBar: React.FC = () => {
                 <header className='flex items-center'>
                     <div className='flex my-1' id='nav-logo-wrapper'>
                         <Image 
-                            className='flex h-14 w-auto py-3 px-2 drop-shadow'
+                            className='flex w-auto py-3 px-2 drop-shadow'
                             src={rutgersLogo}
                             alt="Rutgers Univesity–Newark Logo" 
-                            width={500}
-                            height={500}
-                            />
+                            width={160}
+                            height={50}
+                        />
                         <Image
-                            className='flex h-14 w-auto py-3 px-2 drop-shadow'
+                            className='flex w-auto py-3 px-2 drop-shadow'
                             src={nsfLogo}
                             alt="NSF Logo"
-                            width={500}
-                            height={500}
-                            />
+                            width={50}
+                            height={50}
+                        />
                     </div>
                     <hr className="text-gray-200 h-10 border-l-2 border-solid border-gray-200" />
                     <label className='flex ml-4 text-lg font-normal'>Louis Stokes Alliance for Minority Participation</label>  
