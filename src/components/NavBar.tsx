@@ -12,7 +12,7 @@ const NavBar: React.FC = () => {
         <nav className='flex flex-col w-full bg-white sticky z-30 top-0'>
             <div className='flex flex-wrap items-center justify-between' id='top-nav-container'>
                 <header className='flex items-center'>
-                    <div className='flex my-1' id='nav-logo-wrapper'>
+                    <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
                         <Image 
                             className='flex w-auto py-3 px-2 drop-shadow'
                             src={rutgersLogo}
@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
                         />
                     </div>
                     <hr className="text-gray-200 h-10 border-l-2 border-solid border-gray-200" />
-                    <label className='flex ml-4 text-lg font-normal'>Louis Stokes Alliance for Minority Participation</label>  
+                    <h1 className='flex ml-4 text-lg font-normal'>Louis Stokes Alliance for Minority Participation</h1>  
                 </header>
             </div>
             <div className='flex justify-center items-center text-center z-30 shadow-md bg-gradient-to-t from-red-900 to-red-700' id='bottom-nav-container'>
