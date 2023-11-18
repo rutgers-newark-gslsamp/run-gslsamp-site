@@ -22,7 +22,6 @@ const AllianceGrid: React.FC = () => {
                 contactName='Mr. Oren Rabinovich' 
                 contactEmail='oren.rabinovich@rutgers.edu' 
                 contactPhone='(973) 353-3562'
-                id="alliance-rutgers-newark"
             />
             <AllianceCard
                 logo={fduLogo}
@@ -30,7 +29,6 @@ const AllianceGrid: React.FC = () => {
                 contactName='Dr. Marion McClary' 
                 contactEmail='mcclary@fdu.edu' 
                 contactPhone='(201) 692-2606 '
-                id="alliance-fairleigh-dickinson"
             />
             <AllianceCard
                 logo={montclairLogo}
@@ -38,7 +36,6 @@ const AllianceGrid: React.FC = () => {
                 contactName='Dr. Yvonne Gindt' 
                 contactEmail='gindty@montclair.edu' 
                 contactPhone='(973) 655-3469'
-                id="alliance-montclair"
             />
             <AllianceCard
                 logo={williamPatLogo}
@@ -46,7 +43,6 @@ const AllianceGrid: React.FC = () => {
                 contactName='Dr. Eliana Antoniou' 
                 contactEmail='antonioue@wpunj.edu' 
                 contactPhone='(973) 720-3715'
-                id='alliance-william-paterson'
             />
             <AllianceCard
                 logo={keanLogo}
@@ -54,7 +50,6 @@ const AllianceGrid: React.FC = () => {
                 contactName='Dr. Juyoung Ha' 
                 contactEmail='haj@kean.edu' 
                 contactPhone='(908) 737-3739'
-                id='alliance-kean'
             />
             <AllianceCard
                 logo={essexLogo}
@@ -62,7 +57,6 @@ const AllianceGrid: React.FC = () => {
                 contactName='' 
                 contactEmail='gslsamp@essex.edu' 
                 contactPhone=''
-                id="alliance-essex"
             />
             <AllianceCard
                 logo={njitLogo}
@@ -70,7 +64,6 @@ const AllianceGrid: React.FC = () => {
                 contactName='Dr. Crystal Smith' 
                 contactEmail='smithcs@njit.edu' 
                 contactPhone='(973) 596-3690'
-                id='alliance-njit'
             />
             <AllianceCard
                 logo={runbLogo}
@@ -78,7 +71,6 @@ const AllianceGrid: React.FC = () => {
                 contactName='Dr. Beverely Gaines' 
                 contactEmail='bag104@echo.rutgers.edu' 
                 contactPhone='(848) 932-2559'
-                id=''
             />
         </div>
           
