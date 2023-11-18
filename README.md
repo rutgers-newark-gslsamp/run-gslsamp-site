@@ -36,7 +36,8 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
 
 ## Common Errors/Fixes
 1. Tailwind CSS not working as intended.
-`**Solution: Update tailwind config module export content **`
+   
+`Solution: Update tailwind config module export content`
 
 ## MOCKUPS
 ### Screenshots
