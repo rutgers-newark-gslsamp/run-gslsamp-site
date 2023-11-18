@@ -416,57 +416,6 @@ a.inline-link{
   text-transform: uppercase;
   margin: 0;
 }
-.alliance-card-container {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  flex: 1;
-  margin: 3rem 3rem 2rem;
-}
-
-.alliance-card {
-  display: flex;
-  flex: 1 0 14rem;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
-  padding: 1rem;
-  /* try to make the cards smaller*/
-  max-height: 14rem;
-  max-width: 14rem;
-  background: #FFFFFF;
-  box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-}
-.alliance-card:hover {
-  background-color: #e7e7e7;
-  cursor: copy;
-  transition: .5s;
-}
-
-.alliance-university-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  object-fit: contain;
-  padding: 0.2rem;
-}
-
-.alliance-university-content {
-  height: 50%;
-}
-
-.alliance-university-content, .alliance-university-name, .alliance-university-contact  {
-  font-size: 0.8rem;
-  text-align: center;
-  margin: 0;
-  padding: 0.1rem;
-  overflow: hidden; /* Add overflow property to contain the text */
-  text-overflow: ellipsis; /* Add ellipsis for long text */
-  white-space: nowrap; /* Prevent text from wrapping */
-}
 
 /* Section header for smaller screens */
 @media (max-width: 768px) { 
