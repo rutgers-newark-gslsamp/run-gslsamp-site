@@ -348,93 +348,15 @@ a.inline-link{
 }
 
 .hero-cta-block {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  max-width: 50%;
-  width: 35%;
-  background: radial-gradient(50% 50% at 50% 50%, #CC0033 0%, #9D1739 100%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 10px 20px;
-  right: 3%; /* Position the right of the CTA block 3% from the right of the view */
   transform: translateY(-90%);
 }
-@media (max-width: 768px) {
-  .hero-cta-block {
-      width: 100%;
-      /* no translation */
-  }
-}
 
-@media (max-width: 480px) {
-  .hero-cta-block {
-     /* no translation */
-  }
-}
-
-.cta-headline {
-  display: flex;
-  font-size: 1.25rem;
-  font-weight: 700;
-  text-align: left;
-  margin-right: 10%;
-  color: white;
-  margin-bottom: 0;
-}
-
-.cta-button-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 10px;
-}
-.cta-button {
-  width: 35%;
-  max-width: 100%;
-  height: 3.5rem;
-  text-transform: uppercase;
-}
 @media screen and (max-width: 768px) {
   .cta-button {
       width: 40rem;
       height: 40px;
       font-size: 10px;
   }
-}
-
-#cta-learn-more-button {
-  background: #9D1739;
-  border: 5px solid #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-}
-#cta-learn-more-button:hover {
-  background: #b41a41;
-  transition: .5s;
-}
-.cta-learn-more-anchor {
-  color: white;
-  font-weight: 800;
-  text-decoration: none;
-
-}
-#cta-join-now-button {
-  background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-}
-
-#cta-join-now-button:hover {
-  background: #ededed;
-  transition: .5s;
-}
-.cta-join-now-anchor {
-  color: black;
-  font-weight: 800;
-  text-decoration: none;
 }
 
 @media (max-width: 768px) {
