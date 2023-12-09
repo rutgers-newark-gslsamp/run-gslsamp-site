@@ -11,22 +11,22 @@
   "dependencies": {
     "@sendgrid/mail": "^7.7.0",
     "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.15",
     "axios": "^1.5.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "mongodb": "^6.1.0",
     "next": "^13.5.6",
-    "postcss": "8.4.29",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/node": "20.8.7",
     "@types/nodemailer": "^6.4.10",
     "@types/react": "18.2.31",
     "@wixc3/react-board": "^2.3.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
     "typescript": "5.2.2"
   }
 }
