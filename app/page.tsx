@@ -3,6 +3,7 @@ import Image from "next/legacy/image";
 import runLogo from "../public/rutgers-logos/ru-n_logo.png"
 import AllianceGrid from "../src/components/AllianceGrid";
 import LandingAbout from "../src/components/LandingAbout";
+import CtaBlock from "../src/components/CtaBlock";
 
 export default function Home() {
   return (
@@ -19,19 +20,7 @@ export default function Home() {
               alt="Placeholder image"
             />
         </figure>
-        <aside className="hero-cta-block">
-            <div className="cta-headline">
-                <h2 id="landing-cta-headline">Increasing the retention, graduation and success of underrepresented minorities STEM.</h2>
-            </div>
-            <nav className="cta-button-wrapper">
-                <button className="cta-button" id="cta-learn-more-button">
-                    <a className="cta-learn-more-anchor" href="membership.html">Eligibility</a>
-                </button>
-                <button className="cta-button" id="cta-join-now-button">
-                    <a className="cta-join-now-anchor"href="membership.html">Join Now</a>
-                </button>
-            </nav>
-        </aside>  
+        <CtaBlock />  
       </main>
 
 

@@ -30,9 +30,14 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
 
 8. **Run** `npm install -D tailwindcss`
 
-9. **Run** `npx tailwindcss init -p`
+9. **Run** `npx tailwindcss init -p` 
 
-10. **Run** `npx next dev` or `npm run dev`
+11. **Run** `npx next dev` or `npm run dev`
+
+## Common Errors/Fixes
+1. Tailwind CSS not working as intended.
+   
+`Solution: Update tailwind config module export content`
 
 ## MOCKUPS
 ### Screenshots
