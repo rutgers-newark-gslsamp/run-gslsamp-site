@@ -1,8 +1,9 @@
+import Image from "next/legacy/image";
 import rabinovich from "../../public/staff-pictures/rabinovich.jpeg"
 import miguel from "/public/staff-pictures/miguel.png"
 import gates from "/public/staff-pictures/gates.png"
+import StaffCard from "../../src/components/StaffCard";
 
-import Image from "next/legacy/image";
 
 export default function About() {
 
@@ -33,60 +34,31 @@ export default function About() {
             <hr/>
           </div>
           <div className="staff-card-wrapper">
-            <div className="staff-card">
-              {/**refactor src */}
-              <Image
-                className="staff-picture"
-                src={gates} 
-                alt="Alexander Gates, PhD"
-              />
-              <div className="staff-content">
-              <h3 className="staff-name">Alexander Gates, PhD</h3>
-                <div className="staff-contact">
-                  <p>
-                    Executive Director of GS-LSAMP<br/>
-                    Rutgers University - Newark<br/>
-                    agates@newark.rutgers.edu<br/>
-                    (973) 353-5034
-                  </p>
-                </div> 
-              </div>
-            </div>
-            <div className="staff-card">
-              <Image
-                className="staff-picture"
-                src={miguel} alt="Cristiane San Miguel, Ph.D"
-              />
-              <div className="staff-content" id="alliance-rutgers-newark">
-                <h3 className="staff-name">Cristiane San Miguel, Ph.D</h3>
-                <div className="staff-contact">
-                  <p>
-                    Assistant Director of GS-LSAMP<br/>
-                    Rutgers University - Newark<br/>
-                    csanmig@newark.rutgers.edu<br/>
-                    (973) 353-5846
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="staff-card">
-              <Image
-                className="staff-picture"
-                src={rabinovich}
-                alt=">Oren Rabinovich"
-              />
-              <div className="staff-content" id="alliance-rutgers-newark">
-                <h3 className="staff-name">Oren Rabinovich</h3>
-                <div className="staff-contact">
-                  <p>
-                    Director of GS-LSAMP<br/>
-                    Rutgers University - Newark<br/>
-                    oren.rabinovich@rutgers.edu <br/>
-                    (973) 353-3562
-                  </p>
-                </div>
-              </div>
-            </div>
+    
+            <StaffCard 
+              picture={gates}
+              name="Alexander Gates, PhD"
+              title="Executive Director of GS-LSAMP"
+              university="Rutgers University - Newark"
+              email="agates@newark.rutgers.edu"
+              phone="(973) 353-5034"
+            />
+            <StaffCard 
+              picture={miguel}
+              name="Cristiane San Miguel, Ph.D"
+              title="Assistant Director of GS-LSAMP"
+              university="Rutgers University - Newark"
+              email="csanmig@newark.rutgers.edu"
+              phone="(973) 353-5846"
+            />
+            <StaffCard 
+                picture={rabinovich}
+                name="Oren Rabinovich"
+                title="Director of GS-LSAMP"
+                university="Rutgers University - Newark"
+                email="oren.rabinovich@rutgers.edu"
+                phone="(973) 353-3562"
+            />
           </div>
         </div>
 
