@@ -12,15 +12,15 @@ interface StaffCardProps {
 
 const StaffCard: React.FC<StaffCardProps> = ({ picture, name, role, university, email, phone }) => {
     return (
-        <div className="bg-white flex flex-col items-center justify-center m-4 p-2 shadow rounded-lg">
+        <div className="md:w-64 h-64 flex flex-col items-center justify-center m-4 p-2 shadow rounded-lg bg-white">
             <Image
                 src={picture}
                 alt={name}
-                className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover"
+                className="w-32 h-32 rounded-full object-cover"
             />
             <div className="text-center">
-                <h3 className="text-lg font-bold">{name}</h3>
-                <div className="w-full">
+                <h3 className="text-base font-bold">{name}</h3>
+                <div className="w-full text-sm">
                     <p className="font-medium">{role}</p>
                     <p>{university}</p>
                     <i>{email}</i><br/>
