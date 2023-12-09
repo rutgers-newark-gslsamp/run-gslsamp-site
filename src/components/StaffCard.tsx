@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface StaffCardProps {
-    picture: string;
+    picture: StaticImageData;
     name: string;
     title: string;
     university: string;
