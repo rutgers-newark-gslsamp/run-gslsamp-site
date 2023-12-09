@@ -33,12 +33,11 @@ export default function About() {
             <h2 className="about-us-page-subtitle">Staff</h2>
             <hr/>
           </div>
-          <div className="staff-card-wrapper">
-    
+          <div className="grid md:grid-cols-3">
             <StaffCard 
               picture={gates}
               name="Alexander Gates, PhD"
-              title="Executive Director of GS-LSAMP"
+              role="Executive Director of GS-LSAMP"
               university="Rutgers University - Newark"
               email="agates@newark.rutgers.edu"
               phone="(973) 353-5034"
@@ -46,18 +45,18 @@ export default function About() {
             <StaffCard 
               picture={miguel}
               name="Cristiane San Miguel, Ph.D"
-              title="Assistant Director of GS-LSAMP"
+              role="Assistant Director of GS-LSAMP"
               university="Rutgers University - Newark"
               email="csanmig@newark.rutgers.edu"
               phone="(973) 353-5846"
             />
             <StaffCard 
-                picture={rabinovich}
-                name="Oren Rabinovich"
-                title="Director of GS-LSAMP"
-                university="Rutgers University - Newark"
-                email="oren.rabinovich@rutgers.edu"
-                phone="(973) 353-3562"
+              picture={rabinovich}
+              name="Oren Rabinovich"
+              role="Director of GS-LSAMP"
+              university="Rutgers University - Newark"
+              email="oren.rabinovich@rutgers.edu"
+              phone="(973) 353-3562"
             />
           </div>
         </div>
