@@ -38,7 +38,7 @@ export default function ImageWithLoadingState({ src, alt }) {
                 <NextImage 
                     ref={imgRef}
                     className="h-[15rem] sm:h-[45rem] sm:w-[90rem] rounded-lg border-2 border-white"
-                    src={src}
+                    src={src} 
                     alt={alt}
                     style={{ display: isLoading ? 'none' : 'block' }}
                 />

@@ -1,10 +1,10 @@
 'use client'
 
-import Title from '../components/Title'
-import Carousel from '../components/Carousel'
+import Title from '../../src/components/Title'
+import Carousel from '../../src/components/Carousel'
 import Link from 'next/link';
-import FetchEvents from '../components/FetchEvents'
-import Subtitle from '../components/Subtitle'
+import FetchEvents from '../../src/components/FetchEvents'
+import Subtitle from '../../src/components/Subtitle'
 import pic1 from '../../public/event-photos/20221118_071909.jpg'
 import pic2 from '../../public/event-photos/20221118_090330.jpg'
 import pic3 from '../../public/event-photos/20221118_091611.jpg'

@@ -455,3 +455,39 @@ a.inline-link{
   @apply mb-4;
 }
 
+/* Student Resources */
+.sr-container {
+  display: none; /* Initially hide the containers */
+  width: calc(33.33% - 20px); /* 20px for margin */
+  margin: 10px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.sr-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.sr-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #9D1739;
+  color:#FFFFFF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 20px;
+  width: 15.4375rem;
+  height: 4.8125rem;
+  white-space: normal;
+}
