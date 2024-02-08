@@ -12,7 +12,7 @@ import pic3 from '../../public/event-photos/20221118_091611.jpg'
 
 
   export default function Events() {
-    const images = [pic1, pic2, pic3]
+    const images = [pic2, pic3]
 
     return (
       <main>

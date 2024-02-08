@@ -4,18 +4,15 @@ import miguel from "/public/staff-pictures/miguel.png"
 import gates from "/public/staff-pictures/gates.png"
 import StaffCard from "../../src/components/StaffCard";
 import EventInfoCard from "../../src/components/EventInfoCard";
+import Title from "../../src/components/Title";
 
 
 export default function About() {
   return (
     <>
       {/*Title component*/}
-      {/**<Title title={"ABOUT US"} />*/}
       <main className="about-description-container">
-        <div className="section-header">
-          <h1 className="text-4xl uppercase font-extrabold">About Us</h1>
-          <hr/>
-        </div>
+        <Title name={"ABOUT US"} />
         <p id="about-paragraph" className="subsection-paragraph">
           The Louis Stokes Alliance for Minority Participation (LSAMP) program at Rutgers University–Newark is a non-medical science program sponsored by the National Science Foundation. The program is designed to increase the interest, retention, graduation, and success of students from racial and ethnic groups that are historically underrepresented in non-medical (STEM) fields (i.e. Black/African American, Hispanic/Latinx, Native American/Alaskan, Pacific Islander). Now in phase III of funding, the primary focus is to promote undergraduate research and post-baccalaureate studies in STEM fields.  The RUN - GSLSAMP program is one of the nine members of the <a href="" className="inline-link">Garden State Louis Strokes Alliance for Minority Participation (GS-LSAMP)</a>
         </p>

@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <NavBar />
         {children}
-        <footer><p>Copyright ©2023, Rutgers, The State University of New Jersey</p>
+        <footer className='mt-full'><p>Copyright ©2023, Rutgers, The State University of New Jersey</p>
         </footer>
       </body>
     </html>
