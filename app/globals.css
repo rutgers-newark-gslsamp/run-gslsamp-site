@@ -472,23 +472,55 @@ a.inline-link{
 
 .sr-button {
   display: block;
-  width: 100%;
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
   background-color: #9D1739;
   color:#FFFFFF;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  color: #FFF;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin: 20px;
+  margin-top: 20px;    
+  margin-left: 20px;   
+  margin-right: 20px; 
   width: 15.4375rem;
   height: 4.8125rem;
   white-space: normal;
-  border-radius: 0.3125rem;
+  border-top-left-radius: 0.3125rem;
+  border-top-right-radius: 0.3125rem;
+}
+
+.description-container {
+  padding: 10px;
+  background-color: #f1f1f1;
+  width: 15.4375rem;
+  height: calc(26.375rem - 3.125rem);
+  margin-left: 20px;  
+  margin-right: 20px; 
+  text-align: center;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.link-button {
+  height: 3.125rem;
+  width: 15.4375rem;
+  background: rgb(105, 102, 102);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.825rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  margin-left: 20px;  
+  margin-right: 20px; 
 }
