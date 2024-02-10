@@ -4,7 +4,7 @@ import Image from "next/legacy/image";
 
 // IMAGES
 import nsfLogo from '../../public/lsamp-nsf-logos/NSF-clear.png';
-import rutgersLogo from "../../public/Rutgers_University_Newark_logo.png"
+import rutgersLogo from "../../public/rutgers-logos/RN_H_RED_BLACK_RGB.png"
 import seal from "../../public/Rutgers_University_seal.png"
 
 const NavBar: React.FC = () => {

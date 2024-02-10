@@ -1,7 +1,7 @@
 import React from "react";
 // LOGOS
 import lsampRUNLogo from "../../public/rutgers-logos/ru-n_logo.png"
-import runLogo from "../../public/rutgers-logos/RUN.png"
+import runLogo from "../../public/rutgers-logos/RN_V_RED_BLACK_RGB.png"
 import fduLogo from "../../public/alliance-logos/Fairleigh_Dickinson_University_Seal.png"
 import montclairLogo from "../../public/alliance-logos/montclair_state_university_seal.png"
 import williamPatLogo from "../../public/alliance-logos/william_paterson_university.png"
