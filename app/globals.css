@@ -384,30 +384,6 @@ a.inline-link{
 }
 
 
-/* VIDEO */
-.landing-video {
-  display: flex;
-  justify-content: center;
-  margin: 4rem 2rem
-}
-.landing-video iframe {
-  width: 65%;
-  height: 31rem;
-}
-
-@media (max-width: 768px) {
-  .landing-video {
-      flex-direction: column;
-      align-items: center;
-      margin: 3.25rem 0.5rem;
-  }
-
-  .landing-video iframe {
-      width: 100%;
-      height: 100%;
-  }
-}
-
 /* ALLIANCE */
 .lsamp-alliance-header {
   font-size: 2.5rem;

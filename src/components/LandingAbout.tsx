@@ -9,9 +9,11 @@ const LandingAbout: React.FC = () => {
         <section className="flex flex-wrap justify-center items-center my-12">
             <Image
                 id="landing-about-logo"
-                className="max max-w-xs h-auto rounded-3xl shadow-lg shadow-black/20"
+                className="max-w-xs w-48 h-auto rounded-3xl shadow-lg shadow-black/20"
                 src={runLogo}
                 alt="Rutgers–Newark GS-LSAMP Logo"
+                width={300}
+                height={300}
             />  
             
             <div className="flex flex-col items-center py-3 px-4 ml-10 rounded-3xl shadow-lg max-w-lg shadow-black/20">

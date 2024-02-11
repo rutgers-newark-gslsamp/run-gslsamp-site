@@ -10,10 +10,9 @@ export default function Home() {
     <>
       {/**Title components*/}
       {/**<Title title={"Index Page"} />*/}
-      <main className="landing-hero-container absolute inset-0">
-        {/*Later turn into hero-gallery*/}
-        
-        <figure className="relative md:h-[66vh] h-48 bg-black overflow-hidden ">
+      <main className="landing-hero-container">
+        {/*Later turn into hero-gallery*/}  
+        <figure className="md:h-[66vh] h-48 bg-black overflow-hidden ">
           {/*refactor src */}
             <Image
               className="hero-picture object-cover h-full opacity-75"
@@ -35,8 +34,8 @@ export default function Home() {
 
       </section>
 
-      <section className="landing-video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/TW7sWDVw_wM" title="YouTube video player" /*frameborder="0"*/ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
+      <section className="flex justify-center my-8 md:my-16 md:mx-8">
+        <iframe className="w-2/3 md:h-96" width="560" height="315" src="https://www.youtube.com/embed/TW7sWDVw_wM" title="YouTube video player" /*frameborder="0"*/ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
       </section>
 
 

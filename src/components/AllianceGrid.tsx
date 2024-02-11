@@ -15,7 +15,7 @@ import AllianceCard from "./AllianceCard";
 
 const AllianceGrid: React.FC = () => {
     return (
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 p-2 mx-6 mb-6 lg:mx-12 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-2 mx-6 mb-6 lg:mx-12 gap-4">
             <AllianceCard
                 logo={runLogo}
                 universityName='Rutgers University-Newark' 
