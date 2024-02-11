@@ -8,7 +8,7 @@ import williamPatLogo from "../../public/alliance-logos/william_paterson_univers
 import keanLogo from "../../public/alliance-logos/kean-university-logo-1.png"
 import essexLogo from "../../public/alliance-logos/essex-county-college-squarelogo.png"
 import njitLogo from "../../public/alliance-logos/New_Jersey_IT_seal.png"
-import runbLogo from "../../public/rutgers-logos/Rutgers_University_seal.png"
+import runbLogo from "../../public/rutgers-logos/RNB_V_RED_BLACK_RGB.png"
 
 // COMPONENTS
 import AllianceCard from "./AllianceCard";
