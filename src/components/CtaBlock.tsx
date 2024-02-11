@@ -2,7 +2,7 @@ import React from "react";
 
 const CtaBlock: React.FC = () => {
     return (
-        <aside className="hero-cta-block flex flex-col items-center justify-center absolute max-w-1/2 w-1/4 lg:w-1/3 lg:h-1/2 shadow-md rounded-3xl px-5 py-2 lg:right-5 bg-gradient-to-t from-red-900 to-red-600">
+        <aside className="hero-cta-block flex flex-col items-center justify-center absolute lg:max-w-1/2 w-full md:w-2/5 lg:w-1/3 md:h-1/2 shadow-md rounded-3xl px-5 py-2 md:right-5 bg-gradient-to-t from-red-900 to-red-600">
             <div className="flex text-xl lg:text-3xl text-white font-bold text-left mr-4 cta-headline">
                 <h2 id="landing-cta-headline">Increasing the retention, graduation and success of underrepresented minorities STEM.</h2>
             </div>

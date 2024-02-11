@@ -13,7 +13,7 @@ export default function Home() {
       <main className="landing-hero-container absolute inset-0">
         {/*Later turn into hero-gallery*/}
         
-        <figure className="relative lg:h-[66vh] bg-black overflow-hidden ">
+        <figure className="relative md:h-[66vh] h-48 bg-black overflow-hidden ">
           {/*refactor src */}
             <Image
               className="hero-picture object-cover h-full opacity-75"
