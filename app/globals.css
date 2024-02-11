@@ -4,6 +4,10 @@
 
 /**/
 
+:root {
+  --sr-container-width: 17.4375rem;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -438,6 +442,7 @@ a.inline-link{
   margin: 10px;
   float: left;
   box-sizing: border-box;
+
 }
 
 .sr-row::after {
@@ -447,38 +452,34 @@ a.inline-link{
 }
 
 .sr-button {
-  display: block;
+  display: grid;
+  place-items: center;
   padding: 10px;
   text-decoration: none;
-  cursor: pointer;
-  background-color: #9D1739;
   color:#FFFFFF;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  margin-top: 20px;    
-  margin-left: 20px;   
-  margin-right: 20px; 
-  width: 15.4375rem;
+  line-height: normal;    
+  width: var(--sr-container-width);
   height: 4.8125rem;
   white-space: normal;
   border-top-left-radius: 0.3125rem;
   border-top-right-radius: 0.3125rem;
+  background: #9D1739;
 }
 
 .description-container {
-  padding: 10px;
+  padding: 1rem;
   background-color: #f1f1f1;
-  width: 15.4375rem;
-  height: calc(26.375rem - 3.125rem);
-  margin-left: 20px;  
-  margin-right: 20px; 
-  text-align: center;
+  width: var(--sr-container-width);
+  height: calc(28.375rem - 3.125rem);
+  text-align: left;
   font-weight: 500;
-  line-height: normal;
+  line-height: 1.5;
+  font-size: small;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -487,8 +488,8 @@ a.inline-link{
 
 .link-button {
   height: 3.125rem;
-  width: 15.4375rem;
-  background: rgb(105, 102, 102);
+  width: var(--sr-container-width);
+  background: #d3d3d3;
   color: black;
   padding: 10px;
   text-align: center;
@@ -497,6 +498,6 @@ a.inline-link{
   font-weight: 700;
   line-height: normal;
   position: relative;
-  margin-left: 20px;  
-  margin-right: 20px; 
+  border-bottom-left-radius: 0.3125rem;
+  border-bottom-right-radius: 0.3125rem;
 }
