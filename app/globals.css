@@ -196,7 +196,7 @@ button {
 /* HERO SECTION */
 .hero-picture-wrapper{
   position: relative;
-  max-height: 25vh; /* adjust the max-height as desired */
+  max-height: 128rem; /* adjust the max-height as desired */
   overflow: hidden; /* crop the image to fit the wrapper */
 }
 .hero-picture {
