@@ -1,8 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react';
-import FetchPast from '../../../src/components/FetchPast'
-import Title from '../../../src/components/Title'
+import FetchPast from '../../../src/components/FetchPast.js'
+import Title from '../../../src/components/Title.js'
 
 
 
