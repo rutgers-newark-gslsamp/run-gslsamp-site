@@ -23,9 +23,9 @@ export default function Membership() {
                   </div>
 
                   <div className="align-items-center">
-                    <button className="bg-[#9D1739] rounded-[.2rem] p-[.7rem] mt-[2rem] col-span-1 text-white font-bold drop-shadow-md">
-                      <p className="drop-shadow-xl">APPLY NOW!</p>
-                    </button>
+                    <div className="w-[8rem] text-center bg-[#9D1739] rounded-[.2rem] p-[.7rem] mt-[2rem] col-span-1 text-white font-bold drop-shadow-md hover:scale-105 transition">
+                      <p className="drop-shadow-xl"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdPVNYfpvLnqMP5R4Kl8gzXeqNEDDrcF9bGsIx_HfRMaAFWrA/viewform">APPLY NOW!</a></p>
+                    </div>
                   </div>
                   
                 </div>
