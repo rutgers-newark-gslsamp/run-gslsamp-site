@@ -3,12 +3,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
 {/**Change to Poppins font */}
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import NavBar from '../src/components/NavBar'
 
-const inter = Inter({ 
-  subsets: ['latin'],
- })
+const poppins = Poppins({ 
+  subsets: ['devanagari'],
+  weight: ['400']
+ });
 
 export const metadata: Metadata = {
   title: 'GS-LSAMP Rutgers–Newark',
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/**applying font Inter to body element */}
-      <body className={inter.className}>
+      <body className={poppins.className}>
         <NavBar />
         {children}
         <footer className='mt-full'><p>Copyright ©2023, Rutgers, The State University of New Jersey</p>

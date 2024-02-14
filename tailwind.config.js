@@ -9,6 +9,9 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Poppins', 'ui-sans-serif', 'system-ui'],
+    },
     extend: {},
   },
   plugins: [],
