@@ -6,7 +6,7 @@ export default function StudentResources() {
     return (
         <>
             <Title name={"STUDENT RESOURCES"} />
-            <main className="flex justify-center flex-grow">
+            <main className="">
                 <div className="bg-gray-200 p-6 w-3/4 flex flex-col justify-center rounded-lg">
                     <section className="grid grid-cols-3 justify-items-center place-items-center gap-8 mt-2">
                         <div className='hover:scale-105 transition-transform duration-300 ease-in-out shadow-md ml-20 mr-20'>

@@ -31,16 +31,16 @@ export default function ImageWithLoadingState({ src, alt }) {
     }, [src]);
 
     return (
-        <div>
+        <div className='flex justify-center'>
             {isLoading && <p>Loading...</p>}
             {/* Use the Next.js Image component alias */}
-            <div className='flex justify-center items-center rounded-lg bg-gradient-to-r from-[#BB002F] to-[#9D1739] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] h-[20rem] sm:w-[95rem] sm:h-[50rem]'>
+            <div className='max-w-[65%] max-h-[40vw] p-[3rem] flex justify-center items-center rounded-lg bg-gradient-to-r from-[#BB002F] to-[#9D1739] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] h-[20rem] sm:w-[95rem] sm:h-[50rem]'>
                 <NextImage 
                     ref={imgRef}
-                    className="h-[15rem] sm:h-[45rem] sm:w-[90rem] rounded-lg border-2 border-white"
+                    className="m-[3rem] rounded-lg border-2 border-white"
                     src={src} 
                     alt={alt}
-                    style={{ display: isLoading ? 'none' : 'block' }}
+                    style={{ display: isLoading ? 'none' : 'block', width: '100%' }}
                 />
             </div>
         </div>

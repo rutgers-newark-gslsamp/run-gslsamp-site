@@ -33,20 +33,22 @@ const Carousel = ({ images }) => {
         <div className="relative flex justify-center z-20">
           <ImageWithLoadingState src={images[currentImageIndex]} alt={"Carousel Item"}/>
         </div>
-      <div className=''>
-        <button
-          className="absolute font-medium left-0 bg-white min-w-[6rem] ml-10 mx-10 p-3 pb-3 rounded-lg border-[4px] border-[#9D1739] hover:border-[#d4375e] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
-          onClick={previousImage}
-        >
-          Previous
-        </button>
-        <button
-          className="absolute font-medium right-0 bg-white min-w-[6rem] ml-3 mx-10 p-3 pb-3 rounded-lg border-[4px] border-[#9D1739] hover:border-[#d4375e] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
-          onClick={nextImage}
-        >
-          Next
-        </button>
-      </div>
+
+        <div className='pt-[2rem]'>
+          <button
+            className="absolute font-medium left-0 bg-white min-w-[6rem] ml-[7rem] mx-10 p-3 pb-3 rounded-lg border-[4px] border-[#9D1739] hover:border-[#d4375e] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
+            onClick={previousImage}
+          >
+            Previous
+          </button>
+
+          <button
+            className="absolute font-medium right-0 bg-white min-w-[6rem] mr-[7rem] mx-10 p-3 pb-3 rounded-lg border-[4px] border-[#9D1739] hover:border-[#d4375e] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
+            onClick={nextImage}
+          >
+            Next
+          </button>
+        </div>
     </div>
     
   );
