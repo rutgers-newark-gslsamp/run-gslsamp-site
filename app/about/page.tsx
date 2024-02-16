@@ -67,7 +67,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-neutral-700">Events</h2>
           <hr/>
         </div>
-        <div id="event-container" className="grid md:grid-cols-3 mx-4 md:mx-16">
+        <div id="event-container" className="grid gap-3 md:grid-cols-3 mx-4 md:mx-16">
           <EventInfoCard 
             title="2nd LSAMP Meeting"
             time="11:30AM - 12:50PM"
