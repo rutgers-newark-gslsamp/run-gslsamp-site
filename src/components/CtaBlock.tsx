@@ -4,7 +4,7 @@ const CtaBlock: React.FC = () => {
     return (
         <aside className="md:translate-y-[-90%] flex flex-col items-center justify-center absolute lg:max-w-1/2 w-full md:w-2/5 md:h-1/2 lg:w-1/3 shadow-md md:rounded-3xl px-5 py-2 md:right-5 bg-gradient-to-t from-red-900 to-red-600">
             <div className="flex text-white font-bold text-left mr-4 cta-headline">
-                <h2 className="text-xl lg:text-2xl" id="landing-cta-headline">Increasing the retention, graduation and success of underrepresented minorities STEM.</h2>
+                <h2 className="text-base md:text-xl lg:text-2xl" id="landing-cta-headline">Increasing the retention, graduation and success of underrepresented minorities STEM.</h2>
             </div>
             <nav className="flex justify-center m-2 gap-3 cta-button-wrapper">
                 <button className="w-1/2 h-12 lg:h-14 p-2 lg:w-full bg-white hover:bg-neutral-300 rounded shadow-md" id="cta-join-now-button">
