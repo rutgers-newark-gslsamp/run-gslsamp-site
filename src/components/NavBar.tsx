@@ -29,7 +29,7 @@ const NavBar: React.FC = () => {
                         />
                     </div>
                     <hr className="text-gray-200 h-10 border-l-2 border-solid border-gray-200" />
-                    <h1 className='flex ml-4 text-lg font-normal'>Louis Stokes Alliance for Minority Participation</h1>  
+                    <h1 className='flex ml-4 text-sm sm:text-base md:text-lg font-normal'>Louis Stokes Alliance for Minority Participation</h1>  
                 </header>
             </div>
             <div className='flex justify-center items-center text-center z-30 shadow-md bg-gradient-to-t from-red-900 to-red-700' id='bottom-nav-container'>
