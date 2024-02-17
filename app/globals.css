@@ -162,7 +162,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 2rem 4rem 0rem;
+  margin-top: 2rem;
 }
 .section-subheader hr {
   display: flex;
@@ -193,7 +193,6 @@ button {
   color: #3e3e3e;
 }
 .subsection-paragraph {
-  font-size: 1.15rem;
   padding: 0px 5%;
 }
 

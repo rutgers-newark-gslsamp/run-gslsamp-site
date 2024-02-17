@@ -8,8 +8,8 @@ export default function Contact() {
         <Title name={"CONTACT US"}/>
         
         <ContactForm />
-
         <Dropdown />
+
       </>
     );
   }
