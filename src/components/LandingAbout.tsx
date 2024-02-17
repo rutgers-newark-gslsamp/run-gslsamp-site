@@ -6,15 +6,17 @@ import Link from "next/link";
 // TODO: Replace anchor tag with Link component that implements the router  
 const LandingAbout: React.FC = () => {
     return (
-        <section className="flex flex-wrap justify-center items-center my-12">
-            <Image
-                id="landing-about-logo"
-                className="max-w-xs w-48 h-auto rounded-3xl shadow-lg shadow-black/20"
-                src={runLogo}
-                alt="Rutgers–Newark GS-LSAMP Logo"
-                width={300}
-                height={300}
-            />  
+        <section className="flex flex-wrap justify-center items-center my-3 md:my-6">
+            <div>
+                <Image
+                    id="landing-about-logo"
+                    className="max-w-xs w-48 h-auto rounded-3xl shadow-lg shadow-black/20"
+                    src={runLogo}
+                    alt="Rutgers–Newark GS-LSAMP Logo"
+                    width={300}
+                    height={300}
+                />  
+            </div>
             
             <div className="flex flex-col items-center py-3 px-4 ml-10 rounded-3xl shadow-lg max-w-lg shadow-black/20">
                 <div className="flex flex-col items-start text-base">
