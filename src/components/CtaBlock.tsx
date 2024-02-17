@@ -7,19 +7,11 @@ const CtaBlock: React.FC = () => {
                 <h2 className="text-base md:text-xl lg:text-2xl" id="landing-cta-headline">Increasing the retention, graduation and success of underrepresented minorities STEM.</h2>
             </div>
             <nav className="flex justify-center m-2 gap-3 cta-button-wrapper">
-<<<<<<< HEAD
-                <button className="w-1/3 h-14 p-2 lg:w-full bg-white hover:bg-neutral-300 rounded shadow-md" id="cta-join-now-button">
-                    <a className="text-black font-bold uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSdPVNYfpvLnqMP5R4Kl8gzXeqNEDDrcF9bGsIx_HfRMaAFWrA/viewform">Join Now</a>
-                </button>
-                <button className="w-1/3 h-14 p-2 lg:w-full hover:underline bg-red-700 hover:bg-red-800 rounded border-4 border-white shadow-md " id="cta-learn-more-button">
-                    <a className="font-bold text-white uppercase" href="/membership">Eligibility</a>
-=======
                 <button className="w-1/2 h-12 lg:h-14 p-2 lg:w-full bg-white hover:bg-neutral-300 rounded shadow-md" id="cta-join-now-button">
                     <a className="text-black font-bold uppercase text-sm lg:text-base" href="membership.html">Join Now</a>
                 </button>
                 <button className="w-1/2 h-12 lg:h-14 p-2 lg:w-full hover:underline bg-red-700 hover:bg-red-800 rounded border-4 border-white shadow-md " id="cta-learn-more-button">
                     <a className="font-bold text-white uppercase text-sm lg:text-base" href="membership.html">Eligibility</a>
->>>>>>> 7ec58562d75e1f5f9171b7eb215d6e1b31d4def3
                 </button>
             </nav>
         </aside>  
