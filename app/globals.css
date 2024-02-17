@@ -130,6 +130,7 @@ footer {
   font-size: 14px;
   background-color: #646464;
   color: #FFFFFF;
+  z-index: 100;
 }
 
 /* MISC */
@@ -484,6 +485,7 @@ a.inline-link{
   align-items: center;
   position: relative;
   border-radius: 0.375rem;
+  overflow: auto;
 }
 
 .link-button {
@@ -522,6 +524,35 @@ a.inline-link{
   }
 
   #mem-top-layout-pc {
+    display: none;
+  }
+
+  #student-resources {
+    display: none;
+  }
+
+  #mobile-footer {
+    bottom: 0;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    background-color: #646464;
+    color: #FFFFFF;
+    z-index: 100;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media (min-width: 641px){
+  #mem-top-layout-mobile {
+    display: none;
+  }
+
+  #mobile-footer {
     display: none;
   }
 }

@@ -25,9 +25,12 @@ export default function RootLayout({
     <html lang="en">
       {/**applying font Inter to body element */}
       <body className={poppins.className}>
-        <NavBar />
-        {children}
-        <footer className='mt-full'><p>Copyright ©2023, Rutgers, The State University of New Jersey</p>
+        <div className='min-h-screen flex flex-col flex-grow'>
+          <NavBar />
+          {children}
+        </div>
+        <footer className='mt-full'>
+          <p>Copyright ©2023, Rutgers, The State University of New Jersey</p>
         </footer>
       </body>
     </html>
