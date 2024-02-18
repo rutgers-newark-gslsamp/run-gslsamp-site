@@ -98,7 +98,7 @@ const NavBar: React.FC<{}> = () => {
                 </div>
             </nav>
             {isVisible && (
-                <div id='mobile-nav' className='fixed left-0 top-0 w-4/6 bg-[#EDEDED] z-10 mt-[7.5rem] h-[186vw]'>
+                <div id='mobile-nav' className='fixed left-0 top-0 w-4/6 bg-[#EDEDED] z-10 mt-[7.5rem] h-[150vw]'>
                     <div className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline drop-shadow-md' id="bottom-nav-page-list">
                         {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                         <div className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>

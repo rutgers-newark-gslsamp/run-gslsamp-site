@@ -596,11 +596,6 @@ a.inline-link{
   }
 }
 
-
-
-
-
-
 @media (max-width: 640px) {
   #contact-cta-pc {
     display: none;
