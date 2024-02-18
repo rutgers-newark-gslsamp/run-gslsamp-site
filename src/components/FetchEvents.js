@@ -34,7 +34,7 @@ export default function FetchEvents({isUpcoming}) {
                 {loading ? (
                     <p>Loading...</p>
                 ) : events === null ? (
-                    <p>Events being planned, come back soon!</p>
+                    <p className='text-lg'>Events being planned, come back soon!</p>
                 ) : (
                     events.map((e) =>(
                         <li className='min-w-[10rem] max-h-[10rem] m-[20px] p-[7px] focus:scale-105 sm:min-w-[15rem] sm:min-h-[22rem] sm:m-[25px] sm:p-[15px] sm:hover:scale-105 transition delay-75 shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] text-black'>

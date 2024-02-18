@@ -15,6 +15,24 @@ body {
   margin: 0px;
 }
 
+/*MOBILE NAVIGATION*/
+@media (max-width: 640px) {
+  #navigation-pc {
+    display: none;
+  }
+
+  .blurry {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent white */
+    backdrop-filter: blur(10px); /* Adjust blur radius as needed */
+  }
+}
+
+@media (min-width: 641px) {
+  #navigation-mobile {
+    display: none;
+  }
+}
+
 /* NAVIGATION MENU */
 /* Top Nav*/
 .mobile-nav {
@@ -553,6 +571,45 @@ a.inline-link{
   }
 
   #mobile-footer {
+    display: none;
+  }
+}
+
+/*Events & Opportunities*/
+@media (max-width: 640px) {
+  #events-carousel-pc {
+    display: none;
+  }
+
+  #newsletter-cta-pc {
+    display: none;
+  }
+}
+
+@media (min-width: 641px){
+  #events-carousel-mobile {
+    display: none;
+  }
+
+  #newsletter-cta-mobile {
+    display: none;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 640px) {
+  #contact-cta-pc {
+    display: none;
+  }
+
+}
+
+@media (min-width: 641px){
+  #contact-cta-mobile {
     display: none;
   }
 }

@@ -31,17 +31,48 @@ import pic3 from '../../public/event-photos/20221118_091611.jpg'
           <FetchEvents isUpcoming={false}/>
         </section>
 
-          {/**NEWSLETTER AND PAST EVENTS*/}
-          <section className='grid grid-rows-2 m-8 p-4'>
-            <Subtitle name="Weekly Newsletter" hasLink={true} link={"https://dailystoic.com/daily-stoic-email/"}/>
-            <p className='pl-4 text-sm sm:text-[1.6rem]'>
-              Learn about events, opportunities, workshops, access to tutoring and more!
-            </p>
-          </section>
+        {/**NEWSLETTER AND PAST EVENTS*/}
+        <section id='newsletter-cta-pc' className='flex justify-center'>
+          <div className="flex flex-col items-center py-3 px-4 ml-10 rounded-3xl shadow-lg max-w-lg shadow-black/20 border">
+              <div className="flex flex-col items-start text-base">
+                  <h2 className="text-4xl font-bold my-1 px-1">Don't Miss An Event!</h2>
+                  <p className="p-2 text-base">
+                    Join our vibrant community and unlock a wealth of knowledge with our weekly newsletter! 
+                    Discover exciting events, unique opportunities, transformative workshops, dedicated tutoring, and so much more, 
+                    all tailored to fuel your growth. Don't miss out!
+                  </p>
+              </div>    
+              <div className="flex justify-evenly items-center">
+                  <button className="bg-gray-300 border-4 border-gray-300 rounded text-xs max-w-sm max-h-12 mx-1 shadow-sm shadow-black/40">
+                      <a className="text-base text-black font-semibold hover:underline px-2 py-1" href="https://docs.google.com/forms/d/e/1FAIpQLSdPVNYfpvLnqMP5R4Kl8gzXeqNEDDrcF9bGsIx_HfRMaAFWrA/viewform">Join now!</a>
+                  </button>
+                  <button className="bg-gray-50 border-4 border-gray-300 rounded text-xs max-w-sm max-h-12 mx-1 shadow-sm shadow-black/40">
+                      <a className="text-base text-black font-semibold hover:underline px-2 py-1" href="/events/pastevents">Past Events</a>
+                  </button>
+              </div>
+          </div>
+        </section>
 
-          <section className='flex justify-center'>
-            <h1 className="text-[1rem] sm:text-[2rem] justify-center flex font-bold mt-[4rem] w-1/3 hover:underline hover:scale-105 transition delay-75"><Link href='/events/pastevents'>Also check out our Past Events!</Link></h1>
-          </section>
-    </main>
+        <section id='newsletter-cta-mobile' className='flex justify-center mb-[2rem] mr-[2rem]'>
+          <div className="flex flex-col items-center py-3 px-4 ml-10 rounded-3xl shadow-lg max-w-lg shadow-black/20 border">
+              <div className="flex flex-col items-start text-base">
+                  <h2 className="text-4xl font-bold my-1 px-1">Don't Miss An Event!</h2>
+                  <p className="p-2 text-base">
+                    Join our vibrant community and unlock a wealth of knowledge with our weekly newsletter! 
+                    Discover exciting events, unique opportunities, transformative workshops, dedicated tutoring, and so much more, 
+                    all tailored to fuel your growth. Don't miss out!
+                  </p>
+              </div>    
+              <div className="flex justify-evenly items-center">
+                  <button className="bg-gray-300 border-4 border-gray-300 rounded text-xs max-w-sm max-h-12 mx-1 shadow-sm shadow-black/40">
+                      <a className="text-base text-black font-semibold hover:underline px-2 py-1" href="https://docs.google.com/forms/d/e/1FAIpQLSdPVNYfpvLnqMP5R4Kl8gzXeqNEDDrcF9bGsIx_HfRMaAFWrA/viewform">Join now!</a>
+                  </button>
+                  <button className="bg-gray-50 border-4 border-gray-300 rounded text-xs max-w-sm max-h-12 mx-1 shadow-sm shadow-black/40">
+                      <a className="text-base text-black font-semibold hover:underline px-2 py-1" href="/events/pastevents">Past Events</a>
+                  </button>
+              </div>
+          </div>
+        </section>
+      </main>
     );
   }
