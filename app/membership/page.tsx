@@ -14,7 +14,7 @@ export default function Membership() {
               <Image id='grad-image' className="relative w-full h-[50vw]" src={diploma} alt="Graduation Diploma" />
               <div id="mem-top-layout-mobile" className="absolute inset-0 bg-[#9D1739] bg-opacity-40 shadow-lg rounded-lg">
                 <div id="" className="flex justify-center text-white">
-                  <h2 className="drop-shadow-lg font-bold italic text-2xl p-[1rem]">
+                  <h2 className="drop-shadow-lg font-bold italic text-xl sm:text-2xl md:text-2xl p-[1rem]">
                     As an LSAMP Scholar, you will have outstanding 
                     opportunities to help you complete your undergraduate!
                   </h2>
