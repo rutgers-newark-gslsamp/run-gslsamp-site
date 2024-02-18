@@ -2,7 +2,6 @@
 
 import Title from '../../src/components/Title'
 import Carousel from '../../src/components/Carousel'
-import Link from 'next/link';
 import FetchEvents from '../../src/components/FetchEvents'
 import Subtitle from '../../src/components/Subtitle'
 import pic2 from '../../public/event-photos/20221118_090330.jpg'
