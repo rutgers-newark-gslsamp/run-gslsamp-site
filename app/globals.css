@@ -529,8 +529,7 @@ a.inline-link{
 }
 
 /*Mobile responsive Layout*/
-@media (max-width: 640px) {
-  /*css here*/
+/*@media (max-width: 640px) {
   #grad-image {
     width: 100%;
     height: 50vw;
@@ -573,7 +572,11 @@ a.inline-link{
   #mobile-footer {
     display: none;
   }
-}
+
+  #admission-section {
+    display: none;
+  }
+}*/
 
 /*Events & Opportunities*/
 @media (max-width: 640px) {
