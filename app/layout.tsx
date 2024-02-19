@@ -8,7 +8,7 @@ import NavBar from '../src/components/NavBar'
 
 const poppins = Poppins({ 
   subsets: ['devanagari'],
-  weight: ['500']
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
  });
 
 export const metadata: Metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/**applying font Inter to body element */}
-      <body className={poppins.className}>
+      <body>
         <div className='min-h-screen flex flex-col flex-grow'>
           <NavBar />
           {children}
