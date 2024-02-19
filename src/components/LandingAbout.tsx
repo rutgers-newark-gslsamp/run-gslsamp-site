@@ -6,7 +6,7 @@ import Link from "next/link";
 // TODO: Replace anchor tag with Link component that implements the router  
 const LandingAbout: React.FC = () => {
     return (
-        <section className="flex flex-wrap justify-center items-center gap-2 my-3 md:my-6">
+        <section className="flex flex-wrap-reverse justify-center items-center gap-6 sm:gap-2 my-0 sm:my-3 md:my-6">
             <Image
                 id="landing-about-logo"
                 className="w-16 sm:w-48  rounded-3xl shadow-lg shadow-black/20"
