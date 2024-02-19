@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Membership() {
     return (
       <>
-        <main className="overflow-auto">
+        <main id='admission-application' className="overflow-auto">
           <Title name={"MEMBERSHIP"}/>
           <div className="flex justify-center"> 
             <section className="relative w-[90vw] lg:w-[75vw]">  
@@ -69,9 +69,23 @@ export default function Membership() {
         <section id="student-benefits" className="section-subheader mx-4 md:mx-8 lg:mx-16">
           <h2 className="text-3xl font-bold text-neutral-700">Student Benefits</h2>
           <hr/>
-          <ol className="">
-            <li>hi</li>
-          </ol>
+          <div id="benefits-info">
+            <p>
+              LSAMP Scholars have outstanding opportunities to help them complete a degree in STEM fields, including:
+            </p>
+            <ol id='member-benefits-list' className="list-decimal bg-gray-100 rounded-lg py-1 my-1 font-medium">
+              <li>Be part of a Learning Community of students who help each other succeed in classes.</li>
+              <li>Have counselors who will personally help you choose courses and programs to best suit your interests.</li>
+              <li>Earn stipends for tutoring, leading study groups, doing research, etc.</li>
+              <li>Have research experiences in your area of interest in faculty laboratories.</li>
+              <li>Attend LSAMP conferences to be part of the greater LSAMP community.</li>
+              <li>Graduate with a solid degree and have opportunities for careers or graduate school.</li>
+              <li>Tutoring and group learning opportunities to help you succeed in your studies.</li>
+            </ol>
+            <p>
+              Being an LSAMP scholar also gives you opportunities to have experiences at laboratories through special programs that will provide financial support to you. You also qualify for the Bridges to the Doctorate program which allows you to attend any one of a number of universities.
+            </p>
+          </div>
         </section>
     
         <section id="student-resources" className="section-subheader mx-4 md:mx-8 lg:mx-16">
