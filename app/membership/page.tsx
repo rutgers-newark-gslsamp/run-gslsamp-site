@@ -81,7 +81,7 @@ export default function Membership() {
                 <section className="mt-[2rem]">
 
                   {/**LAPTOP LAYOUT*/}
-                  <div className="lg:grid lg:grid-cols-3">
+                  <div className="lg:grid lg:grid-cols-3 sm:hidden md:hidden">
 
                     <div className="flex justify-center">
                       <div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
@@ -102,7 +102,7 @@ export default function Membership() {
                     </div>
 
                     <div className="flex justify-center">
-                      <div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem]'>
+                      <div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem] lg:pl-0'>
                         <div className="sr-button">Visit the RU-Newark Learning Center</div>
                         <div className='description-container'>
                             <p>
@@ -141,7 +141,7 @@ export default function Membership() {
                     </div>
 
                     <div className="flex justify-center">
-                    <div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem]'>
+                    <div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem] lg:pl-0'>
                           <div className="sr-button">GRE Prep & Applying to Graduate School</div>
                           <div className='description-container'>
                               <p>
@@ -185,7 +185,7 @@ export default function Membership() {
                       </div>
 
                       <div className="flex justify-center">
-                        <div className='hover:scale-105 transition-transform duration-300 ease-in-out mb-[2rem] md:pl-[2rem]'>
+                        <div className='hover:scale-105 transition-transform duration-300 ease-in-out mb-[2rem] md:pl-[2rem] lg:pl-0'>
                             <div className="sr-button">How to Find your Academic Advisor(s)</div>
                             <div className='description-container'>
                                 <p>
@@ -205,9 +205,6 @@ export default function Membership() {
 
                   {/**MOBILE LAYOUTS */}
                   <div className="lg:hidden">
-
-
-
 
                       <div className="md:flex md:justify-center">
                         <div className="flex justify-center">
