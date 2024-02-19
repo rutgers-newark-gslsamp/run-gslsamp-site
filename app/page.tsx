@@ -15,7 +15,7 @@ export default function Home() {
         <figure className="md:h-[66vh] h-48 bg-white overflow-hidden ">
           {/*refactor src */}
             <Image
-              className="hero-picture object-cover h-full opacity-90"
+              className="hero-picture object-cover h-full opacity-95"
               src={heroPicture}
               alt="Placeholder image"
             />
