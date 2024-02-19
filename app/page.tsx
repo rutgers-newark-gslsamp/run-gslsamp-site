@@ -12,10 +12,10 @@ export default function Home() {
       {/**<Title title={"Index Page"} />*/}
       <main className="landing-hero-container">
         {/*Later turn into hero-gallery*/}  
-        <figure className="md:h-[66vh] h-48 bg-black overflow-hidden ">
+        <figure className="md:h-[66vh] h-48 bg-white overflow-hidden ">
           {/*refactor src */}
             <Image
-              className="hero-picture object-cover h-full opacity-75"
+              className="hero-picture object-cover h-full opacity-90"
               src={heroPicture}
               alt="Placeholder image"
             />
