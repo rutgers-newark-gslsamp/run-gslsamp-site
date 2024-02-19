@@ -30,21 +30,12 @@ export default function Membership() {
                       Admission Requirements
                     </h1>
 
-                    <h3 className="text-center text-xs md:text-[1rem] text-[#9D1739] font-bold p-[.5rem] drop-shadow-md">
-                      To become a LSAMP Scholar you must exhibit the following criteria:
-                    </h3>
 
-                    <p className="text-[.6rem] md:text-[.75rem] font-bold pl-[.5rem] drop-shadow-md">
-                      1. Be an undergraduate student from an underrepresented ethnic or racial group.
-                      <br/>2. Fully matriculated.
-                      <br/>3. Majoring or intending to major in a non medical STEM field.
-                    </p>
+                    <ol className="text-[.6rem] md:text-[.75rem] font-bold pl-[.5rem] drop-shadow-md list-decimal text-black">
+                      <li className="list-decimal">Majoring or intending to major in a non medical STEM field.</li>
+                    </ol>
 
-                    <p className="text-[.9rem] text-[#9D1739] drop-shadow-md text-xs p-[.5rem]">
-                      *if you do not fit these criteria, click <a className="underline hover:text-[#62e8c6]" href="https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:4c0a5d4f-0a0f-4433-ac13-e1580520d415">here</a> for more resources.
-                    </p>
-
-                    <h3 className="text-xs md:text-md text-left text-[#9D1739] font-bold p-[.5rem] drop-shadow-md">
+                    <h3 className="text-xs md:text-md text-left text-[rgb(157,23,57)] font-bold p-[.5rem] drop-shadow-md">
                       Eligible Majors
                     </h3>
 
@@ -74,10 +65,16 @@ export default function Membership() {
             </section>
           </div>
 
-          <div className="mt-[3rem] pb-[rem]">
-            <Title name={"STUDENT RESOURCES"} />
+          <div id="student-benefits" className="section-subheader mx-4 md:mx-8 lg:mx-16">
+            <h2 className="text-3xl font-bold text-neutral-700">Student Benefits</h2>
+            <hr/>
+          </div>
+    
+          <div id="student-resources" className="section-subheader mx-4 md:mx-8 lg:mx-16">
+            <h2 className="text-3xl font-bold text-neutral-700">Student Resources</h2>
+            <hr/>
             <div className="flex justify-center align-items-center">
-              <div className="bg-gray-200 w-[90vw] flex flex-col justify-center rounded-lg shadow-md">
+              <div className="mt-5 bg-gray-200 w-[90vw] flex flex-col justify-center rounded-lg shadow-md">
                 <section className="mt-[2rem]">
 
                   {/**LAPTOP LAYOUT*/}
@@ -146,7 +143,6 @@ export default function Membership() {
                           <div className='description-container'>
                               <p>
                                   Free GRE prep is offered to juniors and seniors preparing for the GRE exam. Meetings/events hosted by LSAMP for GRE and graduate school include:
-
                                   <br/><br/>1. Strategies for Taking the GRE Exam
                                   <br/>2. Full Length Past GRE Exams
                                   <br/>3. National Research Fellowship Program Workshops
@@ -161,26 +157,6 @@ export default function Membership() {
                               </p>
                           </div>
                           <button className='link-button'><a href='/contact'>Learn More</a></button>
-                        </div>
-                      </div>
-
-                      <div className="flex justify-center">
-                        <div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
-                            <div className="sr-button">Bridge to the Doctorate</div>
-                            <div className='description-container'>
-                                <p>
-                                    The bridge to the Doctorate program is a fellowship which offers LSAMP graduates monetary support while they pursue a doctoral degree in STEM. The BD program provides LSAMP scholars financial support up to $32,000 for the first two years of graduate study including graduate school tuition and fees, as well as health insurance!
-
-                                    <br /><br />Eligibility includes:
-
-                                    <br /><br />Participation in LSAMP at an undergraduate institution. Bachelor's degree in a STEM field as well as being first time graduate student. 
-                                    <br />U.S. citizen or permanent resident.
-                                    <br />3.0 GPA 
-                                    <br />Plans to pursue doctoral degree in STEM.
-                                    <br />Gain admission to a STEM graduate program.
-                                </p>
-                            </div>
-                            <button className='link-button'><a href='/contact'>Learn More</a></button>
                         </div>
                       </div>
 
