@@ -8,8 +8,7 @@ import { useState } from 'react';
 // IMAGES
 import nsfLogo from '../../public/lsamp-nsf-logos/NSF-clear.png';
 import rutgersLogo from "../../public/rutgers-logos/RN_H_RED_BLACK_RGB.png"
-import burger from "../../public/icons/beef-burger.png"
-import rutgersMobile from "../../public/icons/rutgers-mobile-nav.png"
+import menuIcon from "../../public/icons/hamburger-menu-icon.svg"
 
 const NavBar: React.FC<{}> = () => {
     
@@ -46,8 +45,8 @@ const NavBar: React.FC<{}> = () => {
                         <a onClick={hideDiv} className='flex mx-2 justify-center items-center w-10 hover:cursor-pointer'>
                                 <Image
                                     className='w-auto px-2 drop-shadow grayscale sm:invisible'
-                                    src={burger}
-                                    alt="hamburger menu"
+                                    src={menuIcon}
+                                    alt="Hamburger Menu Icon"
                                     width={50}
                                     height={50}
                                 />
