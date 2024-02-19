@@ -40,7 +40,7 @@ const NavBar: React.FC<{}> = () => {
                             />
                         </div>
                         <hr className="text-gray-500 sm:text-gray-200 h-10 border-l-2 border-solid border-gray-500 sm:border-gray-200" />
-                        <h1 className='flex ml-4 text-sm text-black sm:text-base md:text-lg font-normal'>
+                        <h1 className='flex ml-4 text-sm text-black sm:text-base md:text-lg font-semibold sm:font-medium'>
                             Louis Stokes Alliance for Minority Participation
                         </h1>  
                         <a onClick={hideDiv} className='flex mx-2 justify-center items-center w-10'>
