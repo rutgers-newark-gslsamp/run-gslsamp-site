@@ -20,8 +20,8 @@ const NavBar: React.FC<{}> = () => {
     };
     return (
         <>        
-            <nav className='flex flex-col w-full bg-white sticky z-30 top-0'>
-                <div className='flex flex-wrap items-center justify-between' id='top-nav-container'>
+            <nav className='flex flex-col w-full bg-gray-300 sm:bg-white sticky z-30 top-0'>
+                <div className='flex flex-wrap items-center justify-between h-[8vh] sm:h-auto' id='top-nav-container'>
                     <header className='flex items-center'>
                         <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
                             <Image 
@@ -39,11 +39,11 @@ const NavBar: React.FC<{}> = () => {
                                 height={50}
                             />
                         </div>
-                        <hr className="text-gray-200 h-10 border-l-2 border-solid border-gray-200" />
-                        <h1 className='flex ml-4 text-sm sm:text-base md:text-lg font-normal'>
+                        <hr className="text-gray-500 sm:text-gray-200 h-10 border-l-2 border-solid border-gray-500 sm:border-gray-200" />
+                        <h1 className='flex ml-4 text-sm text-black sm:text-base md:text-lg font-normal'>
                             Louis Stokes Alliance for Minority Participation
                         </h1>  
-                        <a onClick={hideDiv} className='block w-10'>
+                        <a onClick={hideDiv} className='flex mx-2 justify-center items-center w-10'>
                                 <Image
                                     className='w-auto px-2 drop-shadow grayscale sm:invisible'
                                     src={burger}
@@ -81,7 +81,7 @@ const NavBar: React.FC<{}> = () => {
                 </div>
             </nav>
             {isVisible && (
-                <div id='mobile-nav' className='fixed left-0 top-0 w-full bg-[#EDEDED] z-50 mt-14 h-[162vw]'>
+                <div id='mobile-nav' className='fixed left-0 top-0 w-full bg-[#EDEDED] z-50 mt-14 h-[92vh]'>
                     <div className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline drop-shadow-md' id="bottom-nav-page-list">
                         {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                         <div className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
