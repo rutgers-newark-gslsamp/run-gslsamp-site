@@ -6,22 +6,20 @@ import Link from "next/link";
 // TODO: Replace anchor tag with Link component that implements the router  
 const LandingAbout: React.FC = () => {
     return (
-        <section className="flex flex-wrap justify-center items-center my-3 md:my-6">
-            <div>
-                <Image
-                    id="landing-about-logo"
-                    className="max-w-xs w-48 h-auto rounded-3xl shadow-lg shadow-black/20"
-                    src={runLogo}
-                    alt="Rutgers–Newark GS-LSAMP Logo"
-                    width={300}
-                    height={300}
-                />  
-            </div>
+        <section className="flex flex-wrap justify-center items-center gap-2 my-3 md:my-6">
+            <Image
+                id="landing-about-logo"
+                className="w-16 sm:w-48  rounded-3xl shadow-lg shadow-black/20"
+                src={runLogo}
+                alt="Rutgers–Newark GS-LSAMP Logo"
+                width={250}
+                height={250}
+            />  
             
             <div className="flex flex-col items-center py-3 px-4 ml-10 rounded-3xl shadow-lg max-w-lg shadow-black/20">
                 <div className="flex flex-col items-start text-base">
-                    <h2 className="uppercase text-4xl font-bold my-1 px-1">What is GS-LSAMP?</h2>
-                    <p className="p-2 text-base">
+                    <h2 className="uppercase text-2xl sm:text-3xl md:text-4xl font-extrabold my-1 px-1">What is GS-LSAMP?</h2>
+                    <p className="p-2 text-sm md:text-base">
                         The Louis Stokes Alliance for Minority Participation (LSAMP) is an 
                         <a className="text-black shadow-none m-1 hover:bg-neutral-300 rounded transition duration-200 font-medium" href="https://www.nsf.gov/" target="blank">
                             <i>NSF-funded</i>
