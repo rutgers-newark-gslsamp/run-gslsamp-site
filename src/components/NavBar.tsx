@@ -40,7 +40,18 @@ const NavBar: React.FC<{}> = () => {
                             />
                         </div>
                         <hr className="text-gray-200 h-10 border-l-2 border-solid border-gray-200" />
-                        <h1 className='flex ml-4 text-sm sm:text-base md:text-lg font-normal'>Louis Stokes Alliance for Minority Participation</h1>  
+                        <h1 className='flex ml-4 text-sm sm:text-base md:text-lg font-normal'>
+                            Louis Stokes Alliance for Minority Participation
+                        </h1>  
+                        <a onClick={hideDiv} className='block w-10'>
+                                <Image
+                                    className='w-auto px-2 drop-shadow grayscale sm:invisible'
+                                    src={burger}
+                                    alt="hamburger menu"
+                                    width={50}
+                                    height={50}
+                                />
+                        </a>
                     </header>
                 </div>
                 <div id='navigation-pc'>
@@ -68,37 +79,9 @@ const NavBar: React.FC<{}> = () => {
                         </ul>
                     </div>
                 </div>
-
-                <div id='navigation-mobile'>
-                    <div className='flex text-center z-30 shadow-md bg-gradient-to-t from-red-900 to-red-700' id='bottom-nav-container'>
-                        <div className='mt-2 mx-5 drop-shadow-md' id="bottom-nav-page-list">
-                            <a onClick={hideDiv} className='block'><Image
-                                className='w-auto px-2 drop-shadow'
-                                src={burger}
-                                alt="hamburger menu"
-                                width={50}
-                                height={50}
-                            /></a>
-                        </div>
-                        <div className='flex flex-col pt-1'>
-                            <div className='w-[50%] ml-[3.3rem] mt-[.5rem]'>
-                                <Image
-                                    className='drop-shadow'
-                                    src={rutgersMobile}
-                                    alt="hamburger menu"
-                                    width={200}
-                                    height={50}
-                                />
-                            </div>
-                            <div className='flex justify-center'>
-                                <h1 className='flex text-[.6rem] sm:text-base md:text-lg font-normal text-white mr-[1rem] pb-[.1rem]'>Louis Stokes Alliance for Minority Participation</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </nav>
             {isVisible && (
-                <div id='mobile-nav' className='fixed left-0 top-0 w-4/6 bg-[#EDEDED] z-10 mt-[7.5rem] h-[150vw]'>
+                <div id='mobile-nav' className='fixed left-0 top-0 w-full bg-[#EDEDED] z-50 mt-14 h-[162vw]'>
                     <div className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline drop-shadow-md' id="bottom-nav-page-list">
                         {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                         <div className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
