@@ -1,7 +1,7 @@
 import Image from "next/legacy/image";
 import rabinovich from "../../public/staff-pictures/rabinovich.jpeg"
-import miguel from "/public/staff-pictures/miguel.png"
-import gates from "/public/staff-pictures/gates.png"
+import sanMiguel from "../../public/staff-pictures/Dr_San_Miguel.jpg"
+import gates from "../../public/staff-pictures/Dr_Gates.jpg"
 import StaffCard from "../../src/components/StaffCard";
 import EventInfoCard from "../../src/components/EventInfoCard";
 import Title from "../../src/components/Title";
@@ -33,7 +33,7 @@ export default function About() {
             phone="(973) 353-5034"
           />
           <StaffCard 
-            picture={miguel}
+            picture={sanMiguel}
             name="Cristiane San Miguel, Ph.D"
             role="Assistant Director of GS-LSAMP"
             university="Rutgers University - Newark"
