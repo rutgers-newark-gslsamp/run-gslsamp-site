@@ -31,9 +31,9 @@ export default function Membership() {
                     </h1>
 
 
-                    <ol className="text-[.6rem] md:text-[.75rem] font-bold pl-[.5rem] drop-shadow-md list-decimal text-black">
-                      <li className="list-decimal">Majoring or intending to major in a non medical STEM field.</li>
-                    </ol>
+                    <div className="text-[.6rem] md:text-[.75rem] font-bold pl-[.5rem] drop-shadow-md list-decimal text-black">
+                      <div className="list-decimal">Majoring or intending to major in a non medical STEM field.</div>
+                    </div>
 
                     <h3 className="text-xs md:text-md text-left text-[rgb(157,23,57)] font-bold p-[.5rem] drop-shadow-md">
                       Eligible Majors
@@ -73,15 +73,17 @@ export default function Membership() {
             <p>
               LSAMP Scholars have outstanding opportunities to help them complete a degree in STEM fields, including:
             </p>
-            <ol id='member-benefits-list' className="list-decimal bg-gray-100 rounded-lg py-1 my-1 font-medium">
-              <li>Be part of a Learning Community of students who help each other succeed in classes.</li>
-              <li>Have counselors who will personally help you choose courses and programs to best suit your interests.</li>
-              <li>Earn stipends for tutoring, leading study groups, doing research, etc.</li>
-              <li>Have research experiences in your area of interest in faculty laboratories.</li>
-              <li>Attend LSAMP conferences to be part of the greater LSAMP community.</li>
-              <li>Graduate with a solid degree and have opportunities for careers or graduate school.</li>
-              <li>Tutoring and group learning opportunities to help you succeed in your studies.</li>
-            </ol>
+              <div id='member-benefits-list' className="list-decimal bg-gray-100 rounded-lg py-1 my-1 font-medium text-black">
+                <div className="p-2">Be part of a Learning Community of students who help each other succeed in classes.</div>
+                <div className="p-2">Have counselors who will personally help you choose courses and programs to best suit your interests.</div>
+                <div className="p-2">Earn stipends for tutoring, leading study groups, doing research, etc.</div>
+                <div className="p-2">Have research experiences in your area of interest in faculty laboratories.</div>
+                <div className="p-2">Attend LSAMP conferences to be part of the greater LSAMP community.</div>
+                <div className="p-2">Graduate with a solid degree and have opportunities for careers or graduate school.</div>
+                <div className="p-2">Tutoring and group learning opportunities to help you succeed in your studies.</div>
+              </div>
+
+
             <p>
               Being an LSAMP scholar also gives you opportunities to have experiences at laboratories through special programs that will provide financial support to you. You also qualify for the Bridges to the Doctorate program which allows you to attend any one of a number of universities.
             </p>
