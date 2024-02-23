@@ -195,18 +195,19 @@ export default function Membership() {
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out mb-[2rem] md:pl-[2rem] lg:pl-0'>
 								<h3 className="sr-button">How to Find your Academic Advisor(s)</h3>
 								<div className='description-container'>
-									<ul>
-										<li>
-											For students enrolled in Newark College of Arts and Science(NCAS) or University College Newark(UCN), the Office of Academic Services(OAS) will see students according to there last name. See the Advisor breakdown and how to make an appointment by clicking <a href='https://sasn.rutgers.edu/support'>HERE!</a>.
-										</li>
-										<li>
-											For students in the Honors College, please contact the Honors College for information about your adviser assignment. Find contact information for the honors college <a className='text-[#007bff] hover:underline' href='https://sasn.rutgers.edu/honors-college'>HERE!</a>.
-										</li>
-										<li>
-											To meet with your adviser for your declared major(s) and minor(s), please visit the respective department. Contact the <Link className='text-[#007bff] hover:underline' href='/contact'>LSAMP office</Link> for assistance.
-										</li>
-									</ul>
-								</div>
+										<p className="p-1">
+											For students enrolled in Newark College of Arts and Science(NCAS) or University College Newark(UCN), the Office of Academic Services(OAS) will see students according to there last name. 
+										</p>
+										<b className="px-4 mb-2">See the Advisor breakdown and how to make an appointment by clicking <a className='text-blue-500 hover:underline' href='https://sasn.rutgers.edu/support'>HERE!</a></b>
+										<p className="p-1">
+											For students in the Honors College, please contact the Honors College for information about your adviser assignment. 
+										</p>
+										<b className="px-4 mb-2">Find contact information for the honors college <a className='text-blue-500 hover:underline' href='https://sasn.rutgers.edu/honors-college'>HERE!</a>.</b>
+										<p className="p-1">
+											To meet with your adviser for your declared major(s) and minor(s), please visit the respective department. 
+										</p>
+										<b className="px-4 mb-2">Contact the <Link className='text-blue-500 hover:underline' href='/contact'>LSAMP office</Link> for assistance.</b>
+									</div>
 								<button className='link-button'><a href='/contact'>Learn More</a></button>
 							</div>
 						</div>
