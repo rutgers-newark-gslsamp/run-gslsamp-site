@@ -72,7 +72,7 @@ export default function Membership() {
             <p>
               LSAMP Scholars have outstanding opportunities to help them complete a degree in STEM fields, including:
             </p>
-              <ul id='member-benefits-list' className="list-decimal bg-gray-100 rounded-lg py-1 my-1 font-medium text-black">
+              <ol id='member-benefits-list' className=" list-decimal list-inside bg-gray-100 rounded-lg py-1 my-1 font-medium text-black">
                 <li className="p-2">Be part of a Learning Community of students who help each other succeed in classes.</li>
                 <li className="p-2">Have counselors who will personally help you choose courses and programs to best suit your interests.</li>
                 <li className="p-2">Earn stipends for tutoring, leading study groups, doing research, etc.</li>
@@ -80,7 +80,7 @@ export default function Membership() {
                 <li className="p-2">Attend LSAMP conferences to be part of the greater LSAMP community.</li>
                 <li className="p-2">Graduate with a solid degree and have opportunities for careers or graduate school.</li>
                 <li className="p-2">Tutoring and group learning opportunities to help you succeed in your studies.</li>
-              </ul>
+              </ol>
 
             <p>
               Being an LSAMP scholar also gives you opportunities to have experiences at laboratories through special programs that will provide financial support to you. You also qualify for the Bridges to the Doctorate program which allows you to attend any one of a number of universities.
