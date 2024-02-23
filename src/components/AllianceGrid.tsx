@@ -26,6 +26,7 @@ const AllianceGrid: React.FC = () => {
             <AllianceCard
                 logo={fduLogo}
                 universityName='Fairleigh Dickinson University' 
+                universityURL="http://view2.fdu.edu/academics/university-college/school-of-natural-sciences/lsamp/"
                 contactName='Dr. Marion McClary' 
                 contactEmail='mcclary@fdu.edu' 
                 contactPhone='(201) 692-2606 '
@@ -33,6 +34,7 @@ const AllianceGrid: React.FC = () => {
             <AllianceCard
                 logo={montclairLogo}
                 universityName='Montclair State University' 
+                universityURL="http://www.montclair.edu/csam/lsamp/"
                 contactName='Dr. Yvonne Gindt' 
                 contactEmail='gindty@montclair.edu' 
                 contactPhone='(973) 655-3469'
@@ -40,6 +42,7 @@ const AllianceGrid: React.FC = () => {
             <AllianceCard
                 logo={williamPatLogo}
                 universityName='William Paterson University' 
+                universityURL="http://www.wpunj.edu/lsamp/"
                 contactName='Dr. Eliana Antoniou' 
                 contactEmail='antonioue@wpunj.edu' 
                 contactPhone='(973) 720-3715'
@@ -47,6 +50,9 @@ const AllianceGrid: React.FC = () => {
             <AllianceCard
                 logo={keanLogo}
                 universityName='Kean University'
+                universityURL="https://www.kean.edu/offi
+                ces/student-success-and-
+                retention/lsamp-program"
                 contactName='Dr. Juyoung Ha' 
                 contactEmail='haj@kean.edu' 
                 contactPhone='(908) 737-3739'
@@ -54,13 +60,17 @@ const AllianceGrid: React.FC = () => {
             <AllianceCard
                 logo={essexLogo}
                 universityName='Essex County College' 
-                contactName='' 
+                universityURL="https://www.essex.edu/gs-
+                lsamp/"
+                contactName='Prof. Emmanuel Aouad & Prof. Kanji Ojelade' 
                 contactEmail='gslsamp@essex.edu' 
                 contactPhone=''
             />
             <AllianceCard
                 logo={njitLogo}
                 universityName='New Jersey Institute of Technology' 
+                universityURL="https://www.njit.edu/gsls
+                amp"
                 contactName='Dr. Crystal Smith' 
                 contactEmail='smithcs@njit.edu' 
                 contactPhone='(973) 596-3690'
@@ -68,12 +78,12 @@ const AllianceGrid: React.FC = () => {
             <AllianceCard
                 logo={runbLogo}
                 universityName='Rutgers University-New Brunswick' 
+                universityURL="https://lsamp-nb.rutgers.edu/"
                 contactName='Dr. Beverely Gaines' 
                 contactEmail='bag104@echo.rutgers.edu' 
                 contactPhone='(848) 932-2559'
             />
         </div>
-          
     );
 };
 
