@@ -1,6 +1,7 @@
 import Title from "../../src/components/Title.js";
 import diploma from "../../public/diploma.png"
 import Image from 'next/image';
+import Link from "next/link.js";
 
 export default function Membership() {
     return (
@@ -121,17 +122,19 @@ export default function Membership() {
 								<div className='description-container'>
 									<p>
 										Active and collaborative place to learn through a variety of peer-led academic support services that will enhance the success of students. We offer the following core support programs:
-
-										<br/><br/>Peer-Led Tutoring:
-
-										<br/>Walk-in Group Tutoring: Available on all campuses.
-										<br/>One-on-One Tutoring: Available through our partnership with the SAS Honors Program.
-										<br/>Academic Coaching:
-
-										<br/><br/>Time Management
-										<br/>Critical Thinking
-										<br/>Study skills
 									</p>
+									<b>Peer-Led Tutoring:</b>
+									<ul>
+										<li>Walk-in Group Tutoring: Available on all campuses.</li>
+										<li>One-on-One Tutoring: Available through our partnership with the SAS Honors Program.</li>
+									</ul>
+
+									<b>Academic Coaching:</b>
+									<ul>
+										<li>Time Management</li>
+										<li>Critical Thinking</li>
+										<li>Study Skills</li>
+									</ul>
 								</div>
 								<button className='link-button'><a href='/contact'>Visit Today!</a></button>
 							</div>
@@ -181,23 +184,29 @@ export default function Membership() {
 										</li>
 									</ul>
 								</div>
-								<button className='link-button'><a href='/contact'>Learn More</a></button>
-								</div>
+								<button className='link-button'>
+									<Link href="/contact">Learn More</Link>
+								</button>
+							</div>
 						</div>
 						<div className="flex justify-center">
-								<div className='hover:scale-105 transition-transform duration-300 ease-in-out mb-[2rem] md:pl-[2rem] lg:pl-0'>
-									<h3 className="sr-button">How to Find your Academic Advisor(s)</h3>
-									<div className='description-container'>
-										<p>
+							<div className='hover:scale-105 transition-transform duration-300 ease-in-out mb-[2rem] md:pl-[2rem] lg:pl-0'>
+								<h3 className="sr-button">How to Find your Academic Advisor(s)</h3>
+								<div className='description-container'>
+									<ul>
+										<li>
 											For students enrolled in Newark College of Arts and Science(NCAS) or University College Newark(UCN), the Office of Academic Services(OAS) will see students according to there last name. See the Advisor breakdown and how to make an appointment by clicking <a href='https://sasn.rutgers.edu/support'>HERE!</a>.
-
-											<br /><br />For students in the Honors College, please contact the Honors College for information about your adviser assignment. Find contact information for the honors college <a className='text-[#007bff] hover:underline' href='https://sasn.rutgers.edu/honors-college'>HERE!</a>.
-
-											<br /><br />To meet with your adviser for your declared major(s) and minor(s), please visit the respective department. Contact the <a className='text-[#007bff] hover:underline' href='/contact'>LSAMP office</a> for assistance.
-										</p>
-									</div>
-									<button className='link-button'><a href='/contact'>Learn More</a></button>
+										</li>
+										<li>
+											For students in the Honors College, please contact the Honors College for information about your adviser assignment. Find contact information for the honors college <a className='text-[#007bff] hover:underline' href='https://sasn.rutgers.edu/honors-college'>HERE!</a>.
+										</li>
+										<li>
+											To meet with your adviser for your declared major(s) and minor(s), please visit the respective department. Contact the <Link className='text-[#007bff] hover:underline' href='/contact'>LSAMP office</Link> for assistance.
+										</li>
+									</ul>
 								</div>
+								<button className='link-button'><a href='/contact'>Learn More</a></button>
+							</div>
 						</div>
 					</div>
 
@@ -206,21 +215,24 @@ export default function Membership() {
 
 						<div className="md:flex md:justify-center">
 							<div className="flex justify-center">
-							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
-								<h3 className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</h3>
-								<div className='description-container'>
-									<p>
-										ALEKS trains students based on their performance on an initial pre-test.
-										As they complete the training daily, the math level gradually progresses to their desired level of achievement.
-										Scores are recorded and displayed until mastery is reached. To participate in the LSAMP ALEKS boot camp, please contact a LSAMP coordinator.<br /><br />
-										The academic success boot camp is a unique program designed for students who may be struggling academically. This boot camp helps students develop the following skills:
-										<br /><br />Time Management
-										<br />Increasing GPA
-										<br />Essential Study Skills
-									</p>
+								<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
+									<h3 className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</h3>
+									<div className='description-container'>
+										<p>
+											ALEKS trains students based on their performance on an initial pre-test.
+											As they complete the training daily, the math level gradually progresses to their desired level of achievement.
+											Scores are recorded and displayed until mastery is reached. To participate in the LSAMP ALEKS boot camp, please contact a LSAMP coordinator.<br /><br />
+											The academic success boot camp is a unique program designed for students who may be struggling academically. 
+										</p>
+										<b>This boot camp helps students develop the following skills:</b>
+										<ol className="list-decimal list-inside">
+											<li>Time Management</li>
+											<li>Increasing GPA</li>
+											<li>Essential Study Skills</li>
+										</ol>
+									</div>
+									<button className='link-button'><a href='/contact'>Learn More</a></button>
 								</div>
-								<button className='link-button'><a href='/contact'>Learn More</a></button>
-							</div>
 							</div>
 
 							<div className="flex justify-center">
