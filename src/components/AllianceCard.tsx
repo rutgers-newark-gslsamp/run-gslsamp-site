@@ -34,7 +34,7 @@ const AllianceCard: React.FC<AllianceCardProps> = ({ logo, universityName, unive
                     height={100}
                 /> 
             }   
-            <div className="h-1/2 text-sm text-center m-0 p-1 overflow-hidden overflow-ellipsis whitespace-nowrap">
+            <div className="h-1/2 text-sm text-center m-0 p-1 overflow-hidden overflow-ellipsis whitespace-wrap">
                 <h3>{universityName}</h3>
                 <div>
                     <p>
