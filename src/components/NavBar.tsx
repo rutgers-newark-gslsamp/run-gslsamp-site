@@ -55,7 +55,7 @@ const NavBar: React.FC<{}> = () => {
                 </div>
                 <div id='navigation-pc'>
                     <div className='flex justify-center items-center text-center z-30 shadow-md bg-gradient-to-t from-red-900 to-red-700' id='bottom-nav-container '>
-                        <ul className='flex text-base justify-center place-items-center flex-wrap text-white font-medium my-1 mx-5 list-none no-underline drop-shadow-md' id="bottom-nav-page-list">
+                        <ul className='flex text-base justify-center place-items-center flex-wrap text-white font-medium my-1 mx-5 list-none no-underline drop-shadow-md nav-page-list' id="bottom-nav-page-list">
                             {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                             <li>
                                 <Link href="/">Home</Link>
@@ -81,27 +81,27 @@ const NavBar: React.FC<{}> = () => {
             </nav>
             {isVisible && (
                 <div id='mobile-nav' className='fixed left-0 top-0 w-full bg-gray-100 z-50 mt-14 h-[92vh]'>
-                    <div className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline drop-shadow-md' id="bottom-nav-page-list">
+                    <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline drop-shadow-md nav-page-list' id="bottom-nav-page-list">
                         {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
-                        <div className='w-screen h-full flex justify-center items-center border-b border-[#D4D4D4]'>
+                        <li className='w-screen h-full flex justify-center items-center border-b border-[#D4D4D4]'>
                             <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/">Home</Link>
-                        </div>
-                        <div className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
+                        </li>
+                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
                             <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/about">About Us</Link>
-                        </div>
-                        <div className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
+                        </li>
+                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
                             <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/faculty">Faculty</Link>
-                        </div>
-                        <div className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
+                        </li>
+                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
                             <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/membership">Membership</Link>
-                        </div>
-                        <div className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
+                        </li>
+                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
                             <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/events">Events & Opportunities</Link>
-                        </div>
-                        <div className='w-full h-full flex justify-center items-center'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/contact">Contact Us</Link>
-                        </div>
-                    </div>
+                        </li>
+                        <li className='w-full h-full flex justify-center items-center'>
+                                <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/contact">Contact Us</Link>
+                        </li>
+                    </ul>
                 </div>
             )}
         </>

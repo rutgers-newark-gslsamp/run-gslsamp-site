@@ -73,15 +73,15 @@ export default function Membership() {
             <p>
               LSAMP Scholars have outstanding opportunities to help them complete a degree in STEM fields, including:
             </p>
-              <div id='member-benefits-list' className="list-decimal bg-gray-100 rounded-lg py-1 my-1 font-medium text-black">
-                <div className="p-2">Be part of a Learning Community of students who help each other succeed in classes.</div>
-                <div className="p-2">Have counselors who will personally help you choose courses and programs to best suit your interests.</div>
-                <div className="p-2">Earn stipends for tutoring, leading study groups, doing research, etc.</div>
-                <div className="p-2">Have research experiences in your area of interest in faculty laboratories.</div>
-                <div className="p-2">Attend LSAMP conferences to be part of the greater LSAMP community.</div>
-                <div className="p-2">Graduate with a solid degree and have opportunities for careers or graduate school.</div>
-                <div className="p-2">Tutoring and group learning opportunities to help you succeed in your studies.</div>
-              </div>
+              <ul id='member-benefits-list' className="list-decimal bg-gray-100 rounded-lg py-1 my-1 font-medium text-black">
+                <li className="p-2">Be part of a Learning Community of students who help each other succeed in classes.</li>
+                <li className="p-2">Have counselors who will personally help you choose courses and programs to best suit your interests.</li>
+                <li className="p-2">Earn stipends for tutoring, leading study groups, doing research, etc.</li>
+                <li className="p-2">Have research experiences in your area of interest in faculty laboratories.</li>
+                <li className="p-2">Attend LSAMP conferences to be part of the greater LSAMP community.</li>
+                <li className="p-2">Graduate with a solid degree and have opportunities for careers or graduate school.</li>
+                <li className="p-2">Tutoring and group learning opportunities to help you succeed in your studies.</li>
+              </ul>
 
 
             <p>
