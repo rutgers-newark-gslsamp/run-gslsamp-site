@@ -73,7 +73,7 @@ export default function Membership() {
             <p>
               LSAMP Scholars have outstanding opportunities to help them complete a degree in STEM fields, including:
             </p>
-			<ol id='member-benefits-list' className=" list-decimal list-inside bg-gray-100 rounded-lg py-1 my-1 font-medium text-black">
+			<ol id='member-benefits-list' className=" list-decimal list-inside bg-gray-100 rounded-lg py-1 my-1 px-4 font-medium text-black md:text-base text-sm">
 				<li className="p-2">Be part of a Learning Community of students who help each other succeed in classes.</li>
 				<li className="p-2">Have counselors who will personally help you choose courses and programs to best suit your interests.</li>
 				<li className="p-2">Earn stipends for tutoring, leading study groups, doing research, etc.</li>
@@ -99,14 +99,15 @@ export default function Membership() {
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
 								<h3 className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</h3>
 								<div className='description-container'>
-									<p>
+									<p className="p-1">
 										ALEKS trains students based on their performance on an initial pre-test.
 										As they complete the training daily, the math level gradually progresses to their desired level of achievement.
 										Scores are recorded and displayed until mastery is reached. To participate in the LSAMP ALEKS boot camp, please contact a LSAMP coordinator.
-										<br/><br/>
-										The academic success boot camp is a unique program designed for students who may be struggling academically. This boot camp helps students develop the following skills:
+										<br/>
+										The academic success boot camp is a unique program designed for students who may be struggling academically. 
 									</p>
-									<ul>
+									<b className="p-1">This bootcamp helps students develop the following skills:</b>
+									<ul className="list-disc list-inside">
 										<li>Time Management</li>
 										<li>Increasing GPA</li>
 										<li>Essential Study Skills</li>
@@ -120,17 +121,17 @@ export default function Membership() {
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem] lg:pl-0'>
 								<h3 className="sr-button">Visit the RU-Newark Learning Center</h3>
 								<div className='description-container'>
-									<p>
-										Active and collaborative place to learn through a variety of peer-led academic support services that will enhance the success of students. We offer the following core support programs:
+									<p className="p-1">
+										Active and collaborative place to learn through a variety of peer-led academic support services that will enhance the success of students. 
 									</p>
-									<b>Peer-Led Tutoring:</b>
-									<ul>
+									<b className="underline p-1">We offer the following core support programs:</b>
+									<h4 className="p-1 font-bold">Peer-Led Tutoring:</h4>
+									<ul className="list-disc list-inside px-4">
 										<li>Walk-in Group Tutoring: Available on all campuses.</li>
 										<li>One-on-One Tutoring: Available through our partnership with the SAS Honors Program.</li>
 									</ul>
-
-									<b>Academic Coaching:</b>
-									<ul>
+									<h4 className="p-1 font-bold">Academic Coaching:</h4>
+									<ul className="list-disc list-inside px-4">
 										<li>Time Management</li>
 										<li>Critical Thinking</li>
 										<li>Study Skills</li>
@@ -144,7 +145,7 @@ export default function Membership() {
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
 								<h3 className="sr-button">PLTL & Study Groups</h3>
 								<div className='description-container'>
-									<p>
+									<p className="p-1">
 										A Peer Led Team Leader is an LSAMP upperclassman assigned to a group of students who
 										require guidance on how to navigate a STEM-related major, get help with homework assignments, 
 										receive test review/prep for STEM courses, study skills, and progression and retention in a major. 
@@ -161,18 +162,19 @@ export default function Membership() {
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem] lg:pl-0'>
 								<h3 className="sr-button">GRE Prep & Applying to Graduate School</h3>
 								<div className='description-container'>
-									<p>
-										Free GRE prep is offered to juniors and seniors preparing for the GRE exam. Meetings/events hosted by LSAMP for GRE and graduate school include:
+									<p className="p-1">
+										Free GRE prep is offered to juniors and seniors preparing for the GRE exam.
 									</p>  
-									<ol>
+									<b className="p-1">Meetings/events hosted by LSAMP for GRE and graduate school include:</b>
+									<ol className="px-4 list-disc list-inside">
 										<li>Strategies for Taking the GRE Exam</li>
 										<li>Full Length Past GRE Exams</li> 
 										<li>National Research Fellowship Program Workshops</li>
 										<li>How to Apply to the NRFP</li>
 										<li>Career Development Workshops</li>
 									</ol>
-									<p>For more GRE prep visit these popular sites:</p>
-									<ul>
+									<b className="p-1">For more GRE prep visit these popular sites:</b>
+									<ul className="list-disc list-inside px-4">
 										<li>
 											<a className='text-[#007bff] hover:underline' href='https://www.ets.org/gre.html'>ETS</a>
 										</li>
@@ -221,10 +223,11 @@ export default function Membership() {
 										<p>
 											ALEKS trains students based on their performance on an initial pre-test.
 											As they complete the training daily, the math level gradually progresses to their desired level of achievement.
-											Scores are recorded and displayed until mastery is reached. To participate in the LSAMP ALEKS boot camp, please contact a LSAMP coordinator.<br /><br />
+											Scores are recorded and displayed until mastery is reached. 
+											To participate in the LSAMP ALEKS boot camp, please contact a LSAMP coordinator.
 											The academic success boot camp is a unique program designed for students who may be struggling academically. 
 										</p>
-										<b>This boot camp helps students develop the following skills:</b>
+										<b className="p-1">This bootcamp helps students develop the following skills:</b>
 										<ol className="list-decimal list-inside">
 											<li>Time Management</li>
 											<li>Increasing GPA</li>
@@ -234,27 +237,27 @@ export default function Membership() {
 									<button className='link-button'><a href='/contact'>Learn More</a></button>
 								</div>
 							</div>
-
 							<div className="flex justify-center">
-							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem]'>
-								<h3 className="sr-button">Visit the RU-Newark Learning Center</h3>
-								<div className='description-container'>
-									<p>
-										Active and collaborative place to learn through a variety of peer-led academic support services that will enhance the success of students. We offer the following core support programs:
-
-										<br/><br/>Peer-Led Tutoring:
-
-										<br/>Walk-in Group Tutoring: Available on all campuses.
-										<br/>One-on-One Tutoring: Available through our partnership with the SAS Honors Program.
-										<br/>Academic Coaching:
-
-										<br/><br/>Time Management
-										<br/>Critical Thinking
-										<br/>Study skills
-									</p>
+								<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem]'>
+									<h3 className="sr-button">Visit the RU-Newark Learning Center</h3>
+									<div className='description-container'>
+										<p className="p-1">
+											Active and collaborative place to learn through a variety of peer-led academic support services that will enhance the success of students. We offer the following core support programs:
+										</p>
+										<b className="p-1">Peer-Led Tutoring:</b>	
+										<ul className="px-4 list-inside list-disc">
+											<li>Walk-in Group Tutoring: Available on all campuses.</li>
+											<li>One-on-One Tutoring: Available through our partnership with the SAS Honors Program.</li>
+										</ul>
+										<b className="p-1">Academic Coaching:</b>
+										<ul className="px-1 list-inside list-disc">
+											<li>Time Management</li>
+											<li>Critical Thinking</li>
+											<li>Study Skills</li>
+										</ul>
+									</div>
+									<button className='link-button'><a href='/contact'>Visit Today!</a></button>
 								</div>
-								<button className='link-button'><a href='/contact'>Visit Today!</a></button>
-							</div>
 							</div>
 						</div>
 					
@@ -263,7 +266,7 @@ export default function Membership() {
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
 								<h3 className="sr-button">PLTL & Study Groups</h3>
 								<div className='description-container'>
-									<p>
+									<p className="p-1">
 										A Peer Led Team Leader is an LSAMP upperclassman assigned to a group of students who
 										require guidance on how to navigate a STEM-related major, get help with homework assignments, 
 										receive test review/prep for STEM courses, study skills, and progression and retention in a major. 
