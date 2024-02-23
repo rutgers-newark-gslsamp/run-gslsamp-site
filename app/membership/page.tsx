@@ -65,7 +65,6 @@ export default function Membership() {
             </section>
           </div>
         </main>
-
         <section id="student-benefits" className="section-subheader mx-4 md:mx-8 lg:mx-16">
           <h2 className="text-3xl font-bold text-neutral-700">Student Benefits</h2>
           <hr/>
@@ -83,7 +82,6 @@ export default function Membership() {
                 <li className="p-2">Tutoring and group learning opportunities to help you succeed in your studies.</li>
               </ul>
 
-
             <p>
               Being an LSAMP scholar also gives you opportunities to have experiences at laboratories through special programs that will provide financial support to you. You also qualify for the Bridges to the Doctorate program which allows you to attend any one of a number of universities.
             </p>
@@ -91,32 +89,33 @@ export default function Membership() {
         </section>
     
         <section id="student-resources" className="section-subheader mx-4 md:mx-8 lg:mx-16">
-          <h2 className="text-3xl font-bold text-neutral-700">Student Resources</h2>
-          <hr/>
-          <div className="flex justify-center align-items-center">
-            <div className="mt-5 bg-gray-200 w-[90vw] flex flex-col justify-center rounded-lg shadow-md">
-              <section className="mt-[2rem]">
-
-                {/**LAPTOP LAYOUT*/}
-                <div className="lg:grid lg:grid-cols-3 sm:hidden md:hidden">
-
-                  <div className="flex justify-center">
-                    <div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
-                      <div className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</div>
-                      <div className='description-container'>
-                          <p>
-                              ALEKS trains students based on their performance on an initial pre-test.
-                              As they complete the training daily, the math level gradually progresses to their desired level of achievement.
-                              Scores are recorded and displayed until mastery is reached. To participate in the LSAMP ALEKS boot camp, please contact a LSAMP coordinator.<br /><br />
-                              The academic success boot camp is a unique program designed for students who may be struggling academically. This boot camp helps students develop the following skills:
-                              <br /><br />Time Management
-                              <br />Increasing GPA
-                              <br />Essential Study Skills
-                          </p>
-                      </div>
-                      <button className='link-button'><a href='/contact'>Learn More</a></button>
+            <h2 className="text-3xl font-bold text-neutral-700">Student Resources</h2>
+            <hr/>
+            <div className="flex justify-center align-items-center">
+                <div className="mt-5 bg-gray-200 w-[90vw] flex flex-col justify-center rounded-lg shadow-md">
+                    <div className="mt-[2rem]">
+                    {/**LAPTOP LAYOUT*/}
+                    <div className="lg:grid lg:grid-cols-3 sm:hidden md:hidden">
+                        <div className="flex justify-center">
+                            <div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
+                                <h2 className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</h2>
+                                <div className='description-container'>
+                                    <p>
+                                      ALEKS trains students based on their performance on an initial pre-test.
+                                      As they complete the training daily, the math level gradually progresses to their desired level of achievement.
+                                      Scores are recorded and displayed until mastery is reached. To participate in the LSAMP ALEKS boot camp, please contact a LSAMP coordinator.
+                                      <br/><br/>
+                                      The academic success boot camp is a unique program designed for students who may be struggling academically. This boot camp helps students develop the following skills:
+                                    </p>
+                                    <ul>
+                                        <li>Time Management</li>
+                                        <li>Increasing GPA</li>
+                                        <li>Essential Study Skills</li>
+                                    </ul>
+                                </div>
+                          <button className='link-button'><a href='/contact'>Learn More</a></button>
+                          </div>
                     </div>
-                  </div>
 
                   <div className="flex justify-center">
                     <div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem] lg:pl-0'>
@@ -163,23 +162,30 @@ export default function Membership() {
                         <div className='description-container'>
                             <p>
                                 Free GRE prep is offered to juniors and seniors preparing for the GRE exam. Meetings/events hosted by LSAMP for GRE and graduate school include:
-                                <br/><br/>1. Strategies for Taking the GRE Exam
-                                <br/>2. Full Length Past GRE Exams
-                                <br/>3. National Research Fellowship Program Workshops
-                                <br/>4. How to Apply to the NRFP
-                                <br/>5. Career Development Workshops
-                                <br/><br/>For more GRE prep visit these popular sites:
-                                
-                                <br/>
-                                <br/><a className='text-[#007bff] hover:underline' href='https://www.ets.org/gre.html'>ETS</a>
-                                <br/><a className='text-[#007bff] hover:underline' href='https://www.princetonreview.com/grad/gre-test-prep'>The Princeton Review</a>
-                                <br/><a className='text-[#007bff] hover:underline' href='https://www.manhattanprep.com/gre/'>Manhattan Prep</a>
-                            </p>
+                            </p>  
+                            <ol>
+                                <li>Strategies for Taking the GRE Exam</li>
+                                <li>Full Length Past GRE Exams</li> 
+                                <li>National Research Fellowship Program Workshops</li>
+                                <li>How to Apply to the NRFP</li>
+                                <li>Career Development Workshops</li>
+                            </ol>
+                            <p>For more GRE prep visit these popular sites:</p>
+                            <ul>
+                                <li>
+                                    <a className='text-[#007bff] hover:underline' href='https://www.ets.org/gre.html'>ETS</a>
+                                </li>
+                                <li>
+                                  <a className='text-[#007bff] hover:underline' href='https://www.princetonreview.com/grad/gre-test-prep'>The Princeton Review</a>
+                                </li>
+                                <li>
+                                  <a className='text-[#007bff] hover:underline' href='https://www.manhattanprep.com/gre/'>Manhattan Prep</a>
+                                </li>
+                            </ul>
                         </div>
                         <button className='link-button'><a href='/contact'>Learn More</a></button>
                       </div>
                     </div>
-
                     <div className="flex justify-center">
                       <div className='hover:scale-105 transition-transform duration-300 ease-in-out mb-[2rem] md:pl-[2rem] lg:pl-0'>
                           <div className="sr-button">How to Find your Academic Advisor(s)</div>
@@ -327,10 +333,11 @@ export default function Membership() {
                   </div>
 
                 </div>              
-              </section>
-            </div>
-          </div>
-        </section>
+					</div>
+				</div>
+			</div>
+		</section>
       </>
     );
-  }
+
+}
