@@ -50,9 +50,7 @@ const AllianceGrid: React.FC = () => {
             <AllianceCard
                 logo={keanLogo}
                 universityName='Kean University'
-                universityURL="https://www.kean.edu/offi
-                ces/student-success-and-
-                retention/lsamp-program"
+                universityURL="https://www.kean.edu/offices/student-success-and-retention/lsamp-program"
                 contactName='Dr. Juyoung Ha' 
                 contactEmail='haj@kean.edu' 
                 contactPhone='(908) 737-3739'
@@ -60,8 +58,7 @@ const AllianceGrid: React.FC = () => {
             <AllianceCard
                 logo={essexLogo}
                 universityName='Essex County College' 
-                universityURL="https://www.essex.edu/gs-
-                lsamp/"
+                universityURL="https://www.essex.edu/gs-lsamp/"
                 contactName='Prof. Emmanuel Aouad & Prof. Kanji Ojelade' 
                 contactEmail='gslsamp@essex.edu' 
                 contactPhone=''
@@ -69,8 +66,7 @@ const AllianceGrid: React.FC = () => {
             <AllianceCard
                 logo={njitLogo}
                 universityName='New Jersey Institute of Technology' 
-                universityURL="https://www.njit.edu/gsls
-                amp"
+                universityURL="https://www.njit.edu/gslsamp"
                 contactName='Dr. Crystal Smith' 
                 contactEmail='smithcs@njit.edu' 
                 contactPhone='(973) 596-3690'
