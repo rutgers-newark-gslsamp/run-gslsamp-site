@@ -96,7 +96,7 @@ export default function Membership() {
 					<div className="lg:grid lg:grid-cols-3 sm:hidden md:hidden">
 						<div className="flex justify-center">
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
-								<h2 className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</h2>
+								<h3 className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</h3>
 								<div className='description-container'>
 									<p>
 										ALEKS trains students based on their performance on an initial pre-test.
@@ -117,7 +117,7 @@ export default function Membership() {
 
 						<div className="flex justify-center">
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem] lg:pl-0'>
-								<div className="sr-button">Visit the RU-Newark Learning Center</div>
+								<h3 className="sr-button">Visit the RU-Newark Learning Center</h3>
 								<div className='description-container'>
 									<p>
 										Active and collaborative place to learn through a variety of peer-led academic support services that will enhance the success of students. We offer the following core support programs:
@@ -139,7 +139,7 @@ export default function Membership() {
 
 						<div className="flex justify-center">
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
-								<div className="sr-button">PLTL & Study Groups</div>
+								<h3 className="sr-button">PLTL & Study Groups</h3>
 								<div className='description-container'>
 									<p>
 										A Peer Led Team Leader is an LSAMP upperclassman assigned to a group of students who
@@ -156,7 +156,7 @@ export default function Membership() {
 
 						<div className="flex justify-center">
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem] lg:pl-0'>
-								<div className="sr-button">GRE Prep & Applying to Graduate School</div>
+								<h3 className="sr-button">GRE Prep & Applying to Graduate School</h3>
 								<div className='description-container'>
 									<p>
 										Free GRE prep is offered to juniors and seniors preparing for the GRE exam. Meetings/events hosted by LSAMP for GRE and graduate school include:
@@ -186,7 +186,7 @@ export default function Membership() {
 						</div>
 						<div className="flex justify-center">
 								<div className='hover:scale-105 transition-transform duration-300 ease-in-out mb-[2rem] md:pl-[2rem] lg:pl-0'>
-									<div className="sr-button">How to Find your Academic Advisor(s)</div>
+									<h3 className="sr-button">How to Find your Academic Advisor(s)</h3>
 									<div className='description-container'>
 										<p>
 											For students enrolled in Newark College of Arts and Science(NCAS) or University College Newark(UCN), the Office of Academic Services(OAS) will see students according to there last name. See the Advisor breakdown and how to make an appointment by clicking <a href='https://sasn.rutgers.edu/support'>HERE!</a>.
@@ -207,7 +207,7 @@ export default function Membership() {
 						<div className="md:flex md:justify-center">
 							<div className="flex justify-center">
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
-								<div className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</div>
+								<h3 className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</h3>
 								<div className='description-container'>
 									<p>
 										ALEKS trains students based on their performance on an initial pre-test.
@@ -225,7 +225,7 @@ export default function Membership() {
 
 							<div className="flex justify-center">
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem]'>
-								<div className="sr-button">Visit the RU-Newark Learning Center</div>
+								<h3 className="sr-button">Visit the RU-Newark Learning Center</h3>
 								<div className='description-container'>
 									<p>
 										Active and collaborative place to learn through a variety of peer-led academic support services that will enhance the success of students. We offer the following core support programs:
@@ -246,44 +246,52 @@ export default function Membership() {
 							</div>
 						</div>
 					
-					<div className="md:flex md:justify-center">
-						<div className="flex justify-center">
-						<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
-							<div className="sr-button">PLTL & Study Groups</div>
-							<div className='description-container'>
-								<p>
-									A Peer Led Team Leader is an LSAMP upperclassman assigned to a group of students who
-									require guidance on how to navigate a STEM-related major, get help with homework assignments, 
-									receive test review/prep for STEM courses, study skills, and progression and retention in a major. 
-									Your PLTL will be available during scheduled PLTL sessions to assist with the STEM courses you may be 
-									struggling with. The PLTL student will also be assigned to students who have been newly admitted in 
-									LSAMP to assist throughout the semester.
-								</p>
+						<div className="md:flex md:justify-center">
+							<div className="flex justify-center">
+							<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
+								<h3 className="sr-button">PLTL & Study Groups</h3>
+								<div className='description-container'>
+									<p>
+										A Peer Led Team Leader is an LSAMP upperclassman assigned to a group of students who
+										require guidance on how to navigate a STEM-related major, get help with homework assignments, 
+										receive test review/prep for STEM courses, study skills, and progression and retention in a major. 
+										Your PLTL will be available during scheduled PLTL sessions to assist with the STEM courses you may be 
+										struggling with. The PLTL student will also be assigned to students who have been newly admitted in 
+										LSAMP to assist throughout the semester.
+									</p>
+								</div>
+								<button className='link-button'><a href='/contact'>Learn More</a></button>
 							</div>
-							<button className='link-button'><a href='/contact'>Learn More</a></button>
-						</div>
 						</div>
 				
 
 					<div className="flex justify-center">
 						<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem] md:pl-[2rem]'>
-							<div className="sr-button">GRE Prep & Applying to Graduate School</div>
+							<h3 className="sr-button">GRE Prep & Applying to Graduate School</h3>
 							<div className='description-container'>
 								<p>
 									Free GRE prep is offered to juniors and seniors preparing for the GRE exam. Meetings/events hosted by LSAMP for GRE and graduate school include:
-
-									<br/><br/>1. Strategies for Taking the GRE Exam
-									<br/>2. Full Length Past GRE Exams
-									<br/>3. National Research Fellowship Program Workshops
-									<br/>4. How to Apply to the NRFP
-									<br/>5. Career Development Workshops
-									<br/><br/>For more GRE prep visit these popular sites:
-									
-									<br/>
-									<br/><a className='text-[#007bff] hover:underline' href='https://www.ets.org/gre.html'>ETS</a>
-									<br/><a className='text-[#007bff] hover:underline' href='https://www.princetonreview.com/grad/gre-test-prep'>The Princeton Review</a>
-									<br/><a className='text-[#007bff] hover:underline' href='https://www.manhattanprep.com/gre/'>Manhattan Prep</a>
 								</p>
+								<ol>
+									<li>Strategies for Taking the GRE Exam</li>
+									<li>Full Length Past GRE Exams</li>
+									<li>National Research Fellowship Program Workshops</li>
+									<li>How to Apply to the NRFP</li>
+									<li>Career Development Workshops</li>
+								</ol>
+								<b className="font-bold">For more GRE prep visit these popular sites:</b>
+								<ul>
+									<li>
+										<a className='text-[#007bff] hover:underline' href='https://www.ets.org/gre.html'>ETS</a>
+									</li>
+									<li>
+										<a className='text-[#007bff] hover:underline' href='https://www.manhattanprep.com/gre/'>Manhattan Prep</a>
+									</li>
+									<li>
+										<a className='text-[#007bff] hover:underline' href='https://www.princetonreview.com/grad/gre-test-prep'>The Princeton Review</a>
+									</li>
+								</ul>
+									
 							</div>
 							<button className='link-button'><a href='/contact'>Learn More</a></button>
 							</div>
@@ -293,7 +301,7 @@ export default function Membership() {
 					<div className="md:flex md:justify-center">
 						<div className="flex justify-center">
 						<div className='hover:scale-105 transition-transform duration-300 ease-in-out pb-[3rem]'>
-							<div className="sr-button">Bridge to the Doctorate</div>
+							<h3 className="sr-button">Bridge to the Doctorate</h3>
 							<div className='description-container'>
 								<p>
 									The bridge to the Doctorate program is a fellowship which offers LSAMP graduates monetary support while they pursue a doctoral degree in STEM. The BD program provides LSAMP scholars financial support up to $32,000 for the first two years of graduate study including graduate school tuition and fees, as well as health insurance!
@@ -313,7 +321,7 @@ export default function Membership() {
 
 						<div className="flex justify-center">
 							<div className='hover:scale-105 transition-transform duration-300 ease-in-out mb-[2rem] md:pl-[2rem]'>
-								<div className="sr-button">How to Find your Academic Advisor(s)</div>
+								<h3 className="sr-button">How to Find your Academic Advisor(s)</h3>
 								<div className='description-container'>
 									<p>
 										For students enrolled in Newark College of Arts and Science(NCAS) or University College Newark(UCN), the Office of Academic Services(OAS) will see students according to there last name. See the Advisor breakdown and how to make an appointment by clicking <a href='https://sasn.rutgers.edu/support'>HERE!</a>.
