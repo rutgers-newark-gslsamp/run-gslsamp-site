@@ -34,23 +34,21 @@ export default function ImageWithLoadingState({ src, alt }) {
         <div className='flex justify-center'>
             {isLoading && <p>Loading...</p>}
             {/* Use the Next.js Image component alias */}
-            <div id='events-carousel-pc' className='py-[1rem] rounded-lg w-3/5 flex justify-center items-center bg-gradient-to-r from-[#BB002F] to-[#9D1739] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] '>
+            <div style={{display: 'none'}} className='py-[1rem] rounded-lg w-3/5 flex justify-center items-center bg-gradient-to-r from-[#BB002F] to-[#9D1739] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] '>
                 <NextImage 
                     ref={imgRef}
-                    className="border-2 border-black"
                     src={src} 
                     alt={alt}
                     style={{ display: isLoading ? 'none' : 'block', width: '100%'}}
                 />
             </div>
 
-            <div id='events-carousel-mobile' className='py-[1rem] flex justify-center items-center bg-gradient-to-r from-[#BB002F] to-[#9D1739] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] '>
+            <div className='py-[1rem] flex justify-center items-center bg-gradient-to-r from-[#BB002F] to-[#9D1739] shadow-[0_5px_20px_1px_rgba(0,0,0,0.3)] '>
                 <NextImage 
                     ref={imgRef}
-                    className="border-2 border-black"
                     src={src} 
                     alt={alt}
-                    style={{ display: isLoading ? 'none' : 'block', width: '100%'}}
+                    style={{ display: isLoading ? 'none' : 'block', width: '80%'}}
                 />
             </div>
         </div>
