@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import FetchPast from '../../../src/components/FetchPast.js'
 import Title from '../../../src/components/Title.js'
+import BackArrow from '../../../src/components/BackArrow.js';
 
 
 
@@ -44,7 +45,10 @@ export default function PastEvents(){
 
     return (
       <>
+    <div className='flex flex-cols flex items-center'>
+          <BackArrow />
         <Title name={"Past Events"}/>
+      </div>
          <FetchPast />     
       </>
     )
