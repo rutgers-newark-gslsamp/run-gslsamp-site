@@ -31,10 +31,13 @@ export default function About() {
         <div className="flex flex-rows justify-center py-[.3rem]">
           <p className="p-[.5rem] m-[.3rem] text-xl font-bold">Follow Us:</p>
           <div className="bg-[#0A66C2] rounded-lg m-[.3rem]">
-            <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://www.linkedin.com/company/rutgers-newark-gs-lsamp/mycompany/">LinkedIn</a></h3>
+            <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://www.linkedin.com/company/rutgers-newark-gs-lsamp/mycompany/" target="_blank">LinkedIn</a></h3>
           </div>
           <div className="bg-gradient-to-b from-purple-600 via-pink-600 to-yellow-400 rounded-lg m-[.3rem]">
-            <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://www.instagram.com/lsamp.newark/">Instagram</a></h3>
+            <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://www.instagram.com/lsamp.newark/" target="_blank">Instagram</a></h3>
+          </div>
+          <div className="bg-[#9D1739] rounded-lg m-[.3rem]">
+            <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://raiderlink.newark.rutgers.edu/organization/lsamp" target="_blank">Raider Link</a></h3>
           </div>
         </div>
       </main>

@@ -27,7 +27,7 @@ export default function Membership() {
                 <div className=" flex justify-center mb-[2rem]">
                   <article className="overflow-auto w-[90%] h-[48vw] md:h-[35vw] lg:h-[20vw] bg-white border-2 border-[#9D1739] rounded-lg shadow-md row-span-3 mt-[2rem]">
                     <h1 className="text-center p-1 bg-[#9D1739] text-white text-sm md:text-xl font-bold drop-shadow-md rounded-tl-xlg rounded-tr-xlg">
-                      Admission Requirements
+                      Eligibility
                     </h1>
 
 
@@ -41,22 +41,22 @@ export default function Membership() {
 
                     <div className="text-[.6rem] md:text-[.8rem] grid grid-cols-3 pl-[.5rem]">
                       <p className="">
-                        <a className="majors" href="https://sasn.rutgers.edu/biology">Biology</a>
-                        <br/> <a className="majors" href="https://sasn.rutgers.edu/chemistry">Chemistry</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science">Computer Science</a>
-                        <br/><a className="majors" href="https://soe.rutgers.edu/">Engineering</a>
+                        <a className="majors" href="https://sasn.rutgers.edu/biology" target="_blank">Biology</a>
+                        <br/> <a className="majors" href="https://sasn.rutgers.edu/chemistry" target="_blank">Chemistry</a>
+                        <br/><a className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Computer Science</a>
+                        <br/><a className="majors" href="https://soe.rutgers.edu/" target="_blank">Engineering</a>
                       </p>
                       <p className="">
-                        <a  className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences">Environmental Science</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences">Environmental Geology</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/earth-environmental-science/ba-geoscience-geology">Geology</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/geoscience-geology-minor">Geoscience Engineering</a>
+                        <a  className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Science</a>
+                        <br/><a className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Geology</a>
+                        <br/><a className="majors" href="https://sasn.rutgers.edu/earth-environmental-science/ba-geoscience-geology" target="_blank">Geology</a>
+                        <br/><a className="majors" href="https://sasn.rutgers.edu/geoscience-geology-minor" target="_blank">Geoscience Engineering</a>
                       </p>
                       <p className="">
-                        <a  className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science">Mathematics</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/center-molecular-and-behavioral-neuroscience">Neuroscience and Behavior</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/academics/undergraduate-majors-minors">Science Education</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/node/318">Physics</a>
+                        <a  className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Mathematics</a>
+                        <br/><a className="majors" href="https://sasn.rutgers.edu/center-molecular-and-behavioral-neuroscience" target="_blank">Neuroscience and Behavior</a>
+                        <br/><a className="majors" href="https://sasn.rutgers.edu/academics/undergraduate-majors-minors" target="_blank">Science Education</a>
+                        <br/><a className="majors" href="https://sasn.rutgers.edu/node/318" target="_blank">Physics</a>
                       </p>
                     </div>
                   </article>

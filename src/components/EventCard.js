@@ -3,7 +3,7 @@
 import { dateConvert, timeConvert } from './dateTime'
 import React, { useState, useEffect } from 'react';
 
-export default function EventCard({ isUpcoming, location="location", description="description", link="link", linkName="Link Name" }) {
+export default function EventCard({ isUpcoming, link="#", linkName="Link Name" }) {
     const [loading, setLoading] = useState(true);
     const [events, setEvents] = useState(null);
     const [showDescriptions, setShowDescriptions] = useState([]);
@@ -53,6 +53,8 @@ export default function EventCard({ isUpcoming, location="location", description
                             <div className="bg-[#F1F1F1] p-[.5rem]">
                                 <p className='font-bold'>{timeConvert(e.startTime, e.date)} - {timeConvert(e.endTime, e.date)} | {dateConvert(e.date)}</p>
                                 <p>{e.location}</p>
+                                {/**<p>{e.building}, {e.room}</p>*/}
+                                {/**<p>{e.location}</p>*/}
                             </div>
                             {showDescriptions[index] && (
                                 <div className="text-black bg-[#F1F1F1] border-t-2 p-[.5rem]">
@@ -60,6 +62,7 @@ export default function EventCard({ isUpcoming, location="location", description
                                     <div className="flex justify-end">
                                         <button className="bg-[#767676] px-[1rem] py-[.5rem] rounded-lg text-white font-bold">
                                             <a href={link}>{linkName}</a>
+                                            {/**<a href={e.link}>{e.linkName}</a>*/}
                                         </button>
                                     </div>
                                 </div>
