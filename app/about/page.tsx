@@ -96,27 +96,7 @@ export default function About() {
           <hr/>
         </div>
         <div id="event-container" className="grid md:grid-cols-3 mx-4  md:mx-16 gap-2">
-          <EventInfoCard 
-            title="2nd LSAMP Meeting"
-            time="11:30AM - 12:50PM"
-            date="May 26, 2020"
-            room="Hill Hall, Room 210"
-            location="Rutgers Newark"
-          />
-          <EventInfoCard 
-            title="2nd LSAMP Meeting"
-            time="11:30AM - 12:50PM"
-            date="May 26, 2020"
-            room="Hill Hall, Room 210"
-            location="Rutgers Newark"
-          />
-          <EventInfoCard 
-            title="2nd LSAMP Meeting"
-            time="11:30AM - 12:50PM"
-            date="May 26, 2020"
-            room="Hill Hall, Room 210"
-            location="Rutgers Newark"
-          />
+          <EventInfoCard isUpcoming={true}/>
         </div> 
       </section>
     </>

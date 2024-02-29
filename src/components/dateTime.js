@@ -16,19 +16,19 @@ export const timeConvert = (inTime, inDate) => {
     const hours = date.getHours()
     if (hours > 12){
         if (date.getMinutes() == "0"){
-            const time = hours - 12 +" pm"
+            const time = hours - 12 +"PM"
             return(time)
         }else{
-            const time = hours - 12 +":"+date.getMinutes()+" pm"
+            const time = hours - 12 +":"+date.getMinutes()+"PM"
             return(time)
         }
     }
     if (hours < 12) {
         if (date.getMinutes() == "0"){
-            const time = hours +" pm"
+            const time = hours +"AM"
             return(time)
         }else{
-            const time = hours +":"+date.getMinutes()+" pm"
+            const time = hours +":"+date.getMinutes()+"AM"
             return(time)
         }
 
