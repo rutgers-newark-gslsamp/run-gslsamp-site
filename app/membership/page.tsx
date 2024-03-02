@@ -21,7 +21,7 @@ export default function Membership() {
 
                 <div className="flex justify-center mt-1 md:pl-[30rem] lg:pl-[35rem]">
                   <div className="w-[8rem] p-[.3rem] md:w-[9rem] md:p-[.7rem] text-xs md:text-sm text-center text-white font-bold drop-shadow-md hover:scale-105 transition bg-[#9D1739] rounded-[.2rem]">
-                    <p className="drop-shadow-xl"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdPVNYfpvLnqMP5R4Kl8gzXeqNEDDrcF9bGsIx_HfRMaAFWrA/viewform">JOIN NOW!</a></p>
+                    <p className="drop-shadow-xl"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdPVNYfpvLnqMP5R4Kl8gzXeqNEDDrcF9bGsIx_HfRMaAFWrA/viewform" target="_blank">JOIN NOW!</a></p>
                   </div>
                 </div>
                   
