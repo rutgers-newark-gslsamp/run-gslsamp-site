@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = process.env.MONGODB_URI;
+const uri = "mongodb+srv://christinobarbosa09:jerrysiceparty77@cluster0.6zcmnen.mongodb.net/?retryWrites=true&w=majority";
 
 //solves response bug
 export const config = {
