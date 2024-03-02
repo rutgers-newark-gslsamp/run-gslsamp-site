@@ -23,7 +23,9 @@ export default function Home() {
         <CtaBlock />  
       </main>
 
-
+      <section className="flex justify-center my-8 md:my-16 md:mx-8">
+        <iframe className="w-5/6 sm:w-2/3 h-64 md:h-96" width="560" height="315" src="https://www.youtube.com/embed/TW7sWDVw_wM" title="YouTube video player" /*frameborder="0"*/ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
+      </section>
       <LandingAbout />
       <section id='lsamp-alliance-container'>
         <div className="section-header">
@@ -31,14 +33,7 @@ export default function Home() {
             <hr className="section-horizontal-line"/>
         </div>
         <AllianceGrid />
-
       </section>
-
-      <section className="flex justify-center my-8 md:my-16 md:mx-8">
-        <iframe className="w-5/6 sm:w-2/3 h-64 md:h-96" width="560" height="315" src="https://www.youtube.com/embed/TW7sWDVw_wM" title="YouTube video player" /*frameborder="0"*/ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"></iframe>
-      </section>
-
-
     </>
   );
 }
