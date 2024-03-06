@@ -528,7 +528,7 @@ a.inline-link{
   @apply hover:underline;
 }
 
-.list-decimal::before {
+.list-decimal-m::before {
   content: "\2022"; /* Unicode character for bullet point */
   display: inline-block;
   margin-right: 5px; /* Adjust the spacing between the bullet point and the text */

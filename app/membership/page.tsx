@@ -33,10 +33,10 @@ export default function Membership() {
 
 
                     <div className="text-[.6rem] md:text-[.75rem] font-bold pl-[.5rem] drop-shadow-md text-black pt-[.7rem]">        
-					  <div className="list-decimal">A US citizen or permanent resident.</div>
-					  <div className="list-decimal">Improves participation of racial and ethnic underserved groups in STEM.</div>
-					  <div className="list-decimal">Fully matriculated in Rutgers Newark. (If you are matriculated in another alliance school, apply to GS-LSAMP there)</div>
-					  <div className="list-decimal">Majoring or intending to major in a non medical STEM field.</div>
+					  <div className="list-decimal-m">A US citizen or permanent resident.</div>
+					  <div className="list-decimal-m">Improves participation of racial and ethnic underserved groups in STEM.</div>
+					  <div className="list-decimal-m">Fully matriculated in Rutgers Newark. (If you are matriculated in another alliance school, apply to GS-LSAMP there)</div>
+					  <div className="list-decimal-m">Majoring or intending to major in a non medical STEM field.</div>
                     </div>
 
                     <h3 className="text-xs md:text-md text-left text-[rgb(157,23,57)] font-bold p-[.5rem] drop-shadow-md">
