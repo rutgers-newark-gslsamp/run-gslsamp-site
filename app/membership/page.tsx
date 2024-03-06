@@ -28,12 +28,15 @@ export default function Membership() {
                 <div className=" flex justify-center mb-[2rem]">
                   <article className="overflow-auto w-[90%] h-[48vw] md:h-[35vw] lg:h-[20vw] bg-white border-2 border-[#9D1739] rounded-lg shadow-md row-span-3 mt-[2rem]">
                     <h1 className="text-center p-1 bg-[#9D1739] text-white text-sm md:text-xl font-bold drop-shadow-md rounded-tl-xlg rounded-tr-xlg">
-                      Eligibility
+						Eligibility for Rutgers Newark GS-LSAMP
                     </h1>
 
 
-                    <div className="text-[.6rem] md:text-[.75rem] font-bold pl-[.5rem] drop-shadow-md list-decimal text-black">
-                      <div className="list-decimal">Majoring or intending to major in a non medical STEM field.</div>
+                    <div className="text-[.6rem] md:text-[.75rem] font-bold pl-[.5rem] drop-shadow-md text-black pt-[.7rem]">        
+					  <div className="list-decimal">A US citizen or permanent resident.</div>
+					  <div className="list-decimal">Improves participation of racial and ethnic underserved groups in STEM.</div>
+					  <div className="list-decimal">Fully matriculated in Rutgers Newark. (If you are matriculated in another alliance school, apply to GS-LSAMP there)</div>
+					  <div className="list-decimal">Majoring or intending to major in a non medical STEM field.</div>
                     </div>
 
                     <h3 className="text-xs md:text-md text-left text-[rgb(157,23,57)] font-bold p-[.5rem] drop-shadow-md">
