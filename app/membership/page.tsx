@@ -59,7 +59,7 @@ export default function Membership() {
                       <p className="">
                         <a  className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Mathematics</a>
                         <br/><a className="majors" href="https://sasn.rutgers.edu/center-molecular-and-behavioral-neuroscience" target="_blank">Neuroscience and Behavior</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/academics/undergraduate-majors-minors" target="_blank">Science Education</a>
+                        <br/><a className="majors" href="https://sasn.rutgers.edu/urban-education-urban-secondary-education-ba" target="_blank">Science Education</a>
                         <br/><a className="majors" href="https://sasn.rutgers.edu/node/318" target="_blank">Physics</a>
                       </p>
                     </div>

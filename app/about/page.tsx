@@ -37,7 +37,7 @@ export default function About() {
             <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://www.instagram.com/lsamp.newark/" target="_blank">Instagram</a></h3>
           </div>
           <div className="bg-[#9D1739] rounded-lg m-[.3rem]">
-            <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://raiderlink.newark.rutgers.edu/organization/lsamp" target="_blank">Raider Link</a></h3>
+            <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://raiderlink.newark.rutgers.edu/organization/lsamp" target="_blank">Raiderlink</a></h3>
           </div>
         </div>
       </main>
