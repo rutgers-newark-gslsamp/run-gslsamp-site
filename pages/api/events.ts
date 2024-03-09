@@ -26,24 +26,23 @@ export const config = {
             await client.connect();
 
             //select db
-            const myDB = client.db('web_content_test');
+            const myDB = client.db('GS-LSAMP');
 
             //select cluster
             const myColl = myDB.collection("events");
+            const myCollpast = myDB.collection("events-past");
 
             //query data for present and past
             const queryPres = { past: "NO" };
             const queryPast = { past: "YES" };
 
             const resultPres = await myColl.find(queryPres).toArray({});
-            const resultPast = await myColl.find(queryPast).toArray({});
-            //to new file
-            //, responsePast: resultPast, msg: "Success getting events"
-
-            console.log("success!")
+            const resultPast = await myColl.find(queryPast).toArray({}); //recents events
+            const resultPastEvents = await myCollpast.find({}).toArray({}); //past events page
+            
 
             //return status and data
-            return res.status(200).json({resultPres, resultPast})
+            return res.status(200).json({resultPres, resultPast, resultPastEvents})
 
         } catch(error) {
             return res.status(500).json({msg: "Error getting events."})

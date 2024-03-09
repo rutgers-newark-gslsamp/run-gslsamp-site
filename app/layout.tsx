@@ -1,6 +1,6 @@
 //layout of content included on EVERY page
 
-import './globals.css'
+import '../app/styles/globals.css'
 import type { Metadata } from 'next'
 {/**Change to Poppins font */}
 import { Poppins } from 'next/font/google'

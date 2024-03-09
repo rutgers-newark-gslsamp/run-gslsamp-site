@@ -40,6 +40,7 @@ export default function ImageWithLoadingState({ src, alt }) {
                     src={src} 
                     alt={alt}
                     style={{ display: isLoading ? 'none' : 'block'}}
+                    onError={handleError}
                     
                 />
             </div>

@@ -3,15 +3,14 @@
 import Title from '../../src/components/Title'
 import Carousel from '../../src/components/Carousel'
 import Subtitle from '../../src/components/Subtitle'
-import pic2 from '../../public/event-photos/20221118_090330.jpg'
-import pic3 from '../../public/event-photos/20221118_091611.jpg'
+import pic2 from '../../public/event-photos/image5.jpg'
+import pic3 from '../../public/event-photos/image3.jpg'
 import EventCard from '../../src/components/EventCard'
 
 
 
   export default function Events() {
     const images = [pic2, pic3]
-
     return (
       <main>
         <Title name={"EVENTS & OPPORTUNITIES"} />

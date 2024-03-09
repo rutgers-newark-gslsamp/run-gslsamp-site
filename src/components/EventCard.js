@@ -17,9 +17,10 @@ export default function EventCard({isUpcoming}) {
                 if (isUpcoming) {
                     setLoading(false);
                     setEvents(result.resultPres.filter((event) => event.date >= today));
+                    console.log(result)
                 } else {
                     setLoading(false);
-                    setEvents(result.resultPres.filter((event) => event.date < today));
+                    setEvents(result.resultPast.filter((event) => event.date < today));
                 }
                 // Initialize showDescriptions array with false values for each event
                 setShowDescriptions(Array(result.resultPres.length).fill(false));
@@ -43,7 +44,7 @@ export default function EventCard({isUpcoming}) {
         <div className="">
             {loading ? (
                 <p>Loading...</p>
-            ) : events === null ? (
+            ) : events.length === 0 ? (
                 <p className="text-lg">Events being planned, come back soon!</p>
             ) : (
                 events.map((e, index) => (

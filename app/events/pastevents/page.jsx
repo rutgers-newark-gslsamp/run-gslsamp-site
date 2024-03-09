@@ -3,13 +3,15 @@
 import { useEffect, useState } from 'react';
 import FetchPast from '../../../src/components/FetchPast.js'
 import Title from '../../../src/components/Title.js'
+import pic2 from '../../../public/event-photos/image2.jpg'
+import pic3 from '../../../public/event-photos/image3.jpg'
+import Carousel from '../../../src/components/Carousel.js';
 import BackArrow from '../../../src/components/BackArrow.js';
-
 
 
 export default function PastEvents(){
     const [ pastEvent, setPastEvent ] = useState([])
-
+    const images = [pic2, pic3];
 
     /**QUERY EVENTS */
     async function getEvents(){
@@ -33,7 +35,8 @@ export default function PastEvents(){
         console.log(resp.responsePast)
 
         //set event(s)
-        setPastEvent(resp.resultPast)
+        setPastEvent(resp.resultPastEvents)
+        console.log(pastEvent)
       }
     }
 
@@ -45,10 +48,16 @@ export default function PastEvents(){
 
     return (
       <>
-    <div className='flex flex-cols flex items-center'>
-          <BackArrow />
-        <Title name={"Past Events"}/>
-      </div>
+        <div className='flex flex-cols flex items-center'>
+          <div className='pt-[1rem]'>
+            <BackArrow isVisible={true}/>
+          </div>
+          <Title name={"Past Events"}/>
+        </div>
+
+        <section className='border-2 border-gray-300 p-[1rem] rounded-xl bg-gradient-to-r from-gray-200 to-gray-400'>
+          <Carousel images={images} />
+        </section>
          <FetchPast />     
       </>
     )
