@@ -1,5 +1,4 @@
 /**LOADS THE RESOURCE SELECTED BY THE USER */
-
 import { NextApiRequest, NextApiResponse } from "next";
 import { MongoClient } from 'mongodb';
 
@@ -12,6 +11,12 @@ export const config = {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {   
+  // Check if the environment variable is defined
+  if (!uri) {
+    console.error('MONGODB_URI environment variable is not defined');
+    return res.status(500).json({ response: "Failed to load event. MONGODB_URI environment variable is not defined" });
+  }
+
   try {
     const client = new MongoClient(uri);
     await client.connect();

@@ -5,8 +5,6 @@ import { MongoClient } from 'mongodb';
 
 const uri = process.env.MONGODB_URI;
 
-const client = new MongoClient(uri);
-
 export const config = {
   api: {
     externalResolver: true,
@@ -14,23 +12,31 @@ export const config = {
 }
 
 export default async function GetTitles(req: NextApiRequest, res: NextApiResponse) {
+  let client;
+
   try {
-      const client = new MongoClient(uri);
-      await client.connect();
+    // Check if the environment variable is defined
+    if (!uri) {
+      console.error('MONGODB_URI environment variable is not defined');
+      return res.status(500).json({ response: "Failed to load titles. MONGODB_URI environment variable is not defined" });
+    }
 
-      const myDB = client.db("GS-LSAMP");
-      const myColl = myDB.collection("resources");
+    client = new MongoClient(uri);
+    await client.connect();
 
-      const result = await myColl.find({}).toArray();
+    const myDB = client.db("GS-LSAMP");
+    const myColl = myDB.collection("resources");
 
-      res.status(200).json({ response: result });
+    const result = await myColl.find({}).toArray();
+
+    res.status(200).json({ response: result });
   } catch (error) {
-      console.error("Error:", error);
-      res.status(500).json({ msg: "Error getting titles." });
+    console.error("Error:", error);
+    res.status(500).json({ msg: "Error getting titles." });
   } finally {
-      if (client) {
-          await client.close();
-      }
+    if (client) {
+      await client.close();
+    }
   }
 }
 

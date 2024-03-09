@@ -10,12 +10,19 @@ export const config = {
 }
 
 export default async function handleRemove(req: NextApiRequest, res: NextApiResponse) {
-  const client = new MongoClient(uri);
+  let client;
 
   try {
-    const { selection } = req.body;
+    // Check if the environment variable is defined
+    if (!uri) {
+      console.error('MONGODB_URI environment variable is not defined');
+      return res.status(500).json({ response: "Failed to remove resource. MONGODB_URI environment variable is not defined" });
+    }
+
+    client = new MongoClient(uri);
     await client.connect();
 
+    const { selection } = req.body;
     const myDB = client.db("GS-LSAMP");
     const myColl = myDB.collection("resources");
     

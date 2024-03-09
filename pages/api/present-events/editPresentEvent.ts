@@ -9,11 +9,14 @@ export const config = {
   },
 }
 
+if (!uri) {
+  console.error('MONGODB_URI environment variable is not defined');
+  throw new Error('MONGODB_URI environment variable is not defined');
+}
+const client = new MongoClient(uri);
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  let client;
-
   try {
-    client = new MongoClient(uri);
+    
     await client.connect();
 
     const data = req.body;

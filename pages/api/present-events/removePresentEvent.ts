@@ -10,6 +10,12 @@ export const config = {
 }
 
 export default async function handleRemove(req: NextApiRequest, res: NextApiResponse) {
+  // Check if the environment variable is defined
+  if (!uri) {
+    console.error('MONGODB_URI environment variable is not defined');
+    return res.status(500).json({ response: "Failed to remove event. MONGODB_URI environment variable is not defined" });
+  }
+
   const client = new MongoClient(uri);
 
   try {
@@ -27,8 +33,6 @@ export default async function handleRemove(req: NextApiRequest, res: NextApiResp
     console.error("Error:", error);
     res.status(500).json({ msg: "Failed to remove event." });
   } finally {
-    if (client) {
-      await client.close();
-    }
+    await client.close();
   }
 }

@@ -10,6 +10,12 @@ export const config = {
 }
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  // Check if the environment variable is defined
+  if (!uri) {
+    console.error('MONGODB_URI environment variable is not defined');
+    return res.status(500).json({ response: "Failed to update resource. MONGODB_URI environment variable is not defined" });
+  }
+
   let client;
 
   try {
