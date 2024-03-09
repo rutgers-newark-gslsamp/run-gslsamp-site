@@ -1,0 +1,332 @@
+/*Setting main font*/
+/* Import Inter font */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../src/fonts/Inter-Regular.ttf') format('truetype');
+  }
+  
+/* Apply Inter font to entire site */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/** HEADER */
+.title {
+  margin: 2rem;
+  padding-left: 2rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+/** BACK ARROW */
+.arrow-div {
+  width: 3rem;
+  height: 2.5rem;
+}
+
+.back-arrow.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.back-arrow .back-arrow-icon {
+  width: 3rem;
+  height: 2.5rem;
+  fill: currentColor; /* Ensure the arrow color inherits the text color */
+}
+
+.back-arrow:hover {
+  opacity: 0.8; /* Adjust opacity on hover if desired */
+}
+
+/**SELECTION BUTTON */
+.selection-button-cms {
+  background-color: #DE1A1A;
+  border: 1.5px solid #565554;
+  color: white;
+  padding: 1rem 2rem;
+  width: 15rem;
+  font-size: 1rem;
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.selection-button-cms:hover {
+  cursor: pointer;
+}
+
+/**FORM BUTTON */
+.cms-btn {
+  display: inline-block;
+  padding: .5rem 1.8rem;
+  background-color: #2E86AB;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect */
+.cms-btn:hover {
+  background-color: #266d90;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/*text input*/
+.cms-text-input label{
+  display: block;
+}
+
+.cms-text-input input[type="text"] {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 15rem;
+  height: 2.4rem;
+}
+
+.cms-text-input input[type="file"] {
+  box-sizing: border-box;
+  width: 15rem;
+  height: 2.4rem;
+}
+
+.cms-text-input input[type="password"] {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 15rem;
+  height: 2.4rem;
+}
+
+.cms-text-input input[type="password"] {
+  box-sizing: border-box;
+  width: 15rem;
+  height: 2.4rem;
+}
+
+/*LOGIN PAGE*/
+#login-main {
+  margin-left: 4rem;
+}
+
+.container {
+  margin-bottom: 5rem;
+  background-color: #F7F7FF;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-rows: 15rem 2rem;
+  width: 22rem;
+  height: 20rem;
+}
+
+.container-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.center-divs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  height: 20rem;
+}
+
+.top-div {
+  margin-bottom: 1.2rem;
+}
+
+.text-input label{
+  display: block;
+}
+
+.text-input input[type="text"] {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 15rem;
+  height: 2.4rem;
+}
+
+.text-input input[type="date"] {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 15rem;
+  height: 2.4rem;
+}
+
+.text-input input[type="month"] {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 15rem;
+  height: 2.4rem;
+}
+
+.text-input input[type="time"] {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 7rem;
+  height: 2.4rem;
+}
+
+.text-input textarea {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 15rem;
+  max-width: 15rem;
+  height: 5rem;
+}
+
+#login-button {
+margin-left: 5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: .5rem 1.8rem;
+  background-color: #2E86AB;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect */
+.btn:hover {
+  background-color: #266d90;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/** Modify: Student Resources: ADD*/
+
+.mod-stu-submit {
+  background-color: #DE1A1A;
+  border: 1.5px solid #565554;
+  color: white;
+  padding: 1rem 2rem;
+  width: 15rem;
+  font-size: 1rem;
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.mod-stu-submit:hover {
+  cursor: pointer;
+}
+
+.top-div span {
+  font-size: large;
+}
+
+.subheading {
+  padding-left: 7rem;
+  font-weight: bold;
+}
+
+.input1 {
+  border: 1px solid black;
+  height: fit-content;
+}
+
+.container-form {
+  background-color: #F7F7FF;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  width: 22rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.items {
+  padding-top: 1.5rem;
+}
+
+.item {
+  flex: 1;
+  padding-bottom: .5rem;
+}
+
+#stu-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+#red-btn {
+  background-color: #DE1A1A;
+}
+
+/** Modify: Student Resources: EDIT*/
+.select-title-container {
+  margin-bottom: 1rem;
+  background-color: #F7F7FF;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-rows: 15rem 2rem;
+  width: 22rem;
+  height: 10rem;
+}
+
+.select-dropdown {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-title {
+  width: 22rem;
+  height: 10rem;
+}
+
+.dropdown {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 15rem;
+  height: 2.4rem;
+}
+
+.dropdown-mini {
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  box-shadow: inset 1px 3px 4px rgba(0, 0, 0, 0.2);
+  width: 5rem;
+  height: 2.4rem;
+  text-align: center;
+}
+
+
+/** Events & Opportunities*/
+
+#side-by-side {
+  display: flex;
+}
+
+#start-time {
+  padding-right: .5rem;
+}
