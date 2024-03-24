@@ -1,10 +1,10 @@
 //layout of content included on EVERY page
-
 import '../app/styles/globals.css'
 import type { Metadata } from 'next'
 {/**Change to Poppins font */}
 import { Poppins } from 'next/font/google'
 import NavBar from '../src/components/NavBar'
+import Copyright from '../src/components/Copyright'
 
 const poppins = Poppins({ 
   subsets: ['devanagari'],
@@ -21,18 +21,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en">
-      {/**applying font Inter to body element */}
-      <body>
-        <div className='min-h-screen flex flex-col flex-grow'>
-          <NavBar />
-          {children}
-        </div>
-        <footer className='mt-full'>
-          <p>Copyright ©2023, Rutgers, The State University of New Jersey</p>
-        </footer>
-      </body>
-    </html>
-  )
+
+  const currentYear = new Date().getFullYear();
+return (
+  <html lang="en">
+    {/**applying font Inter to body element */}
+    <body>
+      <div className='min-h-screen flex flex-col flex-grow'>
+        <NavBar />
+        {children}
+      </div>
+      <footer className='mt-full text-left'>
+        <Copyright currentYear={currentYear}/>
+      </footer>
+    </body>
+  </html>
+)
 }

@@ -9,6 +9,7 @@ import { useState } from 'react';
 import nsfLogo from '../../public/lsamp-nsf-logos/NSF-clear.png';
 import rutgersLogo from "../../public/rutgers-logos/RN_H_RED_BLACK_RGB.png"
 import menuIcon from "../../public/icons/hamburger-menu-icon.svg"
+import searchIcon from "../../public/icons/search-icon.svg"
 
 const NavBar: React.FC<{}> = () => {
     
@@ -18,30 +19,47 @@ const NavBar: React.FC<{}> = () => {
         setIsVisible(!isVisible);
     };
     return (
-        <>        
+        <>
+            <div className='border-b black flex justify-end'>
+                <div className="flex justify-end">
+                    <a href="https://rutgers.edu" target='_blank' className="mr-[1rem] hover:underline">Visit Rutgers.edu</a>
+                    <a href="https://search.rutgers.edu" target='_blank' className="pt-[.3rem]">
+                        <Image
+                            className='w-auto p-2 drop-shadow grayscale'
+                            src={searchIcon}
+                            alt="Search Icon"
+                            width={20}
+                            height={20}
+                        />
+                    </a>
+                </div>
+            </div>
             <nav className='flex flex-col w-full bg-gray-300 sm:bg-white sticky z-30 top-0'>
                 <div className='flex flex-wrap items-center justify-between h-[8vh] sm:h-auto' id='top-nav-container'>
                     <header className='flex items-center'>
                         <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
-                            <Image 
-                                className='flex w-auto py-3 px-2 drop-shadow'
-                                src={rutgersLogo}
-                                alt="Rutgers Univesity–Newark Logo" 
-                                width={160}
-                                height={50}
-                            />
+                            <div>
+                                <Image 
+                                    className='flex w-auto py-3 px-2 drop-shadow'
+                                    src={rutgersLogo}
+                                    alt="Rutgers Univesity–Newark Logo" 
+                                    width={160}
+                                    height={50}
+                                />
+                                <p className='text-[.6rem]'>Rutgers the State University of New Jersey</p>
+                            </div>
                             <Image
                                 className='flex w-auto py-3 px-2 drop-shadow'
                                 src={nsfLogo}
                                 alt="NSF Logo"
-                                width={50}
-                                height={50}
+                                width={65}
+                                height={55}
                             />
                         </div>
                         <hr className="text-gray-500 sm:text-gray-200 h-10 border-l-2 border-solid border-gray-500 sm:border-gray-200" />
                         <h1 className='flex ml-4 text-sm text-black sm:text-base md:text-lg font-semibold sm:font-medium'>
                             Louis Stokes Alliance for Minority Participation
-                        </h1>  
+                        </h1>
                         <a onClick={hideDiv} className='flex mx-2 justify-center items-center w-10 hover:cursor-pointer'>
                                 <Image
                                     className='w-auto px-2 drop-shadow grayscale sm:invisible'
