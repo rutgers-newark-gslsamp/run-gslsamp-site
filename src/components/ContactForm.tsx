@@ -47,15 +47,15 @@ export default function ContactForm() {
                 <form onSubmit={handleSubmit} className="flex flex-col justify-center bg-neutral-200 rounded shadow-lg w-full md:w-4/5 lg:w-3/5">
                     <legend className='text-2xl p-4 font-extrabold text-left text-neutral-800 mb-2'>Contact Inquiry</legend>
                     <fieldset className='flex flex-col items-center justify-center'>
-                        <div className="grid lg:grid-cols-2 w-full lg:w-5/6 xl:w-3/4 lg:mx-4">
+                        <div className="lg:flex w-full lg:w-4/5 xl:w-3/5 lg:gap-4">
                             <div className='form-div'>
-                                <label className="form-label" htmlFor="fname">First Name</label>
-                                <input className="w-4/5 lg:w-3/4 rounded-lg p-3 flex justify-center" type="text" required pattern="[a-zA-Z]{3,20}" id="fname"/>
+                                <label className="form-label lg:text-left lg:w-full" htmlFor="fname">First Name</label>
+                                <input className="w-4/5 lg:w-full rounded-lg p-3 flex justify-center" type="text" required pattern="[a-zA-Z]{3,20}" id="fname"/>
                             </div>
 
                             <div className='form-div'>
-                                <label className="form-label" htmlFor="lname">Last Name</label>
-                                <input className="w-4/5 lg:w-3/4 rounded-lg p-3 flex justify-center" type="text" required pattern="[a-zA-Z]{3,20}" id="lname"/>
+                                <label className="form-label lg:text-left lg:w-full" htmlFor="lname">Last Name</label>
+                                <input className="w-4/5 lg:w-full rounded-lg p-3 flex justify-center" type="text" required pattern="[a-zA-Z]{3,20}" id="lname"/>
                             </div>
                         
                         </div>
