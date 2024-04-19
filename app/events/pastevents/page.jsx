@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import FetchPast from '../../../src/components/FetchPast.js'
-import Title from '../../../src/components/Title.js'
+import Title from '../../../src/components/Title.tsx'
 import pic2 from '../../../public/event-photos/image2.jpg'
 import pic3 from '../../../public/event-photos/image3.jpg'
 import Carousel from '../../../src/components/Carousel.js';

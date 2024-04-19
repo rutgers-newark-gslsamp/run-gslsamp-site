@@ -1,6 +1,5 @@
-import Title from "../../src/components/Title.js";
+import Title from "../../src/components/Title.tsx";
 import ContactForm from "../../src/components/ContactForm.tsx";
-import Dropdown from "../../src/components/Faq.js";
 import FAQSection from "../../src/components/FaqSection.tsx";
 
 export default function Contact() {

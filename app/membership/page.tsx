@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect} from "react";
-import Title from "../../src/components/Title.js";
+import Title from "../../src/components/Title.tsx";
 import diploma from "../../public/diploma.png"
 import Image from 'next/image';
 import Link from "next/link.js";

@@ -1,6 +1,6 @@
 'use client'
 
-import Title from '../../src/components/Title'
+import Title from '../../src/components/Title.tsx'
 import Carousel from '../../src/components/Carousel'
 import Subtitle from '../../src/components/Subtitle'
 import pic2 from '../../public/event-photos/image5.jpg'

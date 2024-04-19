@@ -3,7 +3,7 @@ import sanMiguel from "../../public/staff-pictures/Dr_San_Miguel.jpg"
 import gates from "../../public/staff-pictures/Dr_Gates.jpg"
 import StaffCard from "../../src/components/StaffCard";
 import EventInfoCard from "../../src/components/EventInfoCard";
-import Title from "../../src/components/Title";
+import Title from "../../src/components/Title.tsx";
 import Carousel from "../../src/components/Carousel";
 
 import image1 from "../../public/club-carousel/image1.jpg";

@@ -1,6 +1,6 @@
 'use client'
 
-import Title from '../../src/components/Title';
+import Title from '../../src/components/Title.tsx';
 
 export default function Faculty() {
 
