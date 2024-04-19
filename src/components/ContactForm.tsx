@@ -45,20 +45,23 @@ export default function ContactForm() {
         <div>
             <section className="flex justify-center items-center h-screen">
                 <form onSubmit={handleSubmit} className="flex flex-col justify-center bg-neutral-200 rounded shadow-lg w-full md:w-4/5 lg:w-3/5">
-                    <legend className='text-2xl pt-3 font-extrabold text-left text-neutral-800 mx-4'>Contact Inquiry</legend>
+                    <legend className='text-2xl p-4 font-extrabold text-left text-neutral-800 mb-2'>Contact Inquiry</legend>
                     <fieldset className='flex flex-col items-center justify-center'>
-                        <div className='form-div'>
-                            <label className="form-label" htmlFor="fname">First Name</label>
-                            <input className="form-input" type="text" required pattern="[a-zA-Z]{3,20}" id="fname"/>
-                        </div>
+                        <div className="grid lg:grid-cols-2 lg:gap-4">
+                            <div className='form-div'>
+                                <label className="form-label" htmlFor="fname">First Name</label>
+                                <input className="form-input" type="text" required pattern="[a-zA-Z]{3,20}" id="fname"/>
+                            </div>
 
-                        <div className='form-div'>
-                            <label className="form-label" htmlFor="lname">Last Name</label>
-                            <input className="form-input" type="text" required pattern="[a-zA-Z]{3,20}" id="lname"/>
+                            <div className='form-div'>
+                                <label className="form-label" htmlFor="lname">Last Name</label>
+                                <input className="form-input" type="text" required pattern="[a-zA-Z]{3,20}" id="lname"/>
+                            </div>
+                        
                         </div>
-                    
                         <div className='form-div'>
                             <label className='form-label' htmlFor="email">Email</label>
+                            <div className="flex justify-center"></div>
                             <input
                                 className="form-input"
                                 type="text"

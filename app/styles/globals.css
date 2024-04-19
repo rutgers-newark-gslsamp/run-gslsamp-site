@@ -442,15 +442,15 @@ a.inline-link{
 /*FORM*/
 
 .form-label {
-  @apply block text-sm font-medium mb-2;
+  @apply text-base font-medium mx-4 mb-2 text-left  w-4/5 lg:w-4/5 xl:w-3/5;
 }
 
 .form-input {
-  @apply w-5/6 sm:w-[350px] rounded-lg p-3;
+  @apply w-4/5 lg:w-4/5 xl:w-3/5 rounded-lg mx-4 p-3 flex justify-center;
 }
 
 .form-div {
-  @apply mb-4;
+  @apply mb-4 w-full flex flex-col justify-center items-center;
 }
 
 /* Student Resources */
