@@ -11,7 +11,7 @@ export default function Contact() {
         <FAQSection />
       </div>
 
-      <h2 className="flex justify-center italic font-semibold p-3 text-neutral-800">
+      <h2 className="flex justify-center italic font-semibold p-3 mx-4 text-center text-neutral-800">
         Didn't find an answer in the FAQ above? Need to contact us? Please use the contact form below:
       </h2>
 
