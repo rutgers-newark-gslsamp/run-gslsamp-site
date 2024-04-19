@@ -44,8 +44,8 @@ export default function ContactForm() {
     return (
         <div>
             <section className="flex justify-center items-center h-screen">
-                <form onSubmit={handleSubmit} className="flex flex-col justify-center bg-neutral-200 rounded shadow-lg w-3/4 minw-[200px] sm:w-[800px] pl-[3rem]">
-                    <legend className='text-2xl pt-3 font-extrabold text-left text-neutral-800'>Contact Inquiry</legend>
+                <form onSubmit={handleSubmit} className="flex flex-col justify-center bg-neutral-200 rounded shadow-lg w-full md:w-4/5 lg:w-3/4">
+                    <legend className='text-2xl pt-3 font-extrabold text-left text-neutral-800 mx-4'>Contact Inquiry</legend>
                     <fieldset className='flex flex-col items-center justify-center'>
                         <div className='form-div'>
                             <label className="form-label" htmlFor="fname">First Name</label>
