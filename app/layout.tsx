@@ -22,7 +22,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  const currentYear = new Date().getFullYear();
 return (
   <html lang="en">
     {/**applying font Inter to body element */}
@@ -32,8 +31,8 @@ return (
         {children}
       </div>
       <footer className='mt-full text-left'>
-        <Copyright currentYear={currentYear}/>
-      </footer>
+        <Copyright currentDate={new Date()} />
+    </footer>
     </body>
   </html>
 )
