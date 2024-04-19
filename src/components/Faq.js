@@ -70,10 +70,11 @@ function FAQSection() {
   ];
 
   return (
-    <div className="w-full max-w-xl mx-auto p-1 mt-10">
+    <div className="w-full md:max-w-xl lg:max-w-3xl mx-auto p-1">
       <div className="border-b-2 border-gray-200 py-4 mb-[1rem] cursor-pointer" onClick={toggleSection}>
-        <div className='text-2xl font-bold flex jusify-between'>
-          Frequently Asked Questions {isSectionOpen ? '-' : '+'}
+        <div className='text-2xl font-bold flex justify-between'>
+          <h2>Frequently Asked Questions</h2>
+          <span>{isSectionOpen ? '-' : '+'}</span>
         </div>
       </div>
       {isSectionOpen && (

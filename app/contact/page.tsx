@@ -11,7 +11,7 @@ export default function Contact() {
         <Dropdown />
       </div>
 
-      <h2 className="flex justify-center font-bold p-[.5rem]">
+      <h2 className="flex justify-center italic font-semibold p-3 text-neutral-800">
         Didn't find an answer in the FAQ above? Need to contact us? Please use the contact form below:
       </h2>
 
