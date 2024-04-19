@@ -42,6 +42,23 @@ export default function About() {
         </div>
       </main>
 
+
+
+      <section className="club-section-container">
+          <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
+            <h2 className="text-3xl font-bold text-neutral-700">Club Info</h2>
+            <hr/>
+          </div>
+          <div className="flex flex-cols">
+            <p id="club-paragraph" className="subsection-paragraph text-base md:text-lg w-1/2">
+              The GS-LSAMP Club at Rutgers Newark is a student organization affiliated with GS-LSAMP. Its roots lie in the pursuit of academic excellence in science, technology, engineering, and mathematics (STEM) fields.
+            </p>
+
+            <div className="w-1/2 flex items-center">
+              <Carousel images={images} />
+            </div>
+          </div>
+      </section> 
       <section className="staff-section-container">
         <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
           <h2 className="text-3xl font-bold text-neutral-700">Staff</h2>
@@ -73,22 +90,6 @@ export default function About() {
             phone="(973) 353-3562"
           />
         </div>
-      </section>
-
-      <section className="club-section-container">
-          <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
-            <h2 className="text-3xl font-bold text-neutral-700">Club Info</h2>
-            <hr/>
-          </div>
-          <div className="flex flex-cols">
-            <p id="club-paragraph" className="subsection-paragraph text-base md:text-lg w-1/2">
-              The GS-LSAMP Club at Rutgers Newark is a student organization affiliated with GS-LSAMP. Its roots lie in the pursuit of academic excellence in science, technology, engineering, and mathematics (STEM) fields.
-            </p>
-
-            <div className="w-1/2 flex items-center">
-              <Carousel images={images} />
-            </div>
-          </div>
       </section>
       <section className="about-events-container">
         <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
