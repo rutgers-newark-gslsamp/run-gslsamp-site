@@ -4,77 +4,70 @@ import React, { useState } from 'react';
 import FAQItem from './FaqItem';
 
 interface FAQ {
-  question: string;
-  answer: string | JSX.Element;
+    question: string;
+    answer: string | JSX.Element;
 }
 
 const FAQSection: React.FC = () => {
-  const [isSectionOpen, setIsSectionOpen] = useState(false);
+    const [isSectionOpen, setIsSectionOpen] = useState(false);
 
-  const toggleSection = () => {
+    const toggleSection = () => {
     setIsSectionOpen(!isSectionOpen);
-  };
+    };
 
-  const faqs: FAQ[] = [
+const faqs: FAQ[] = [
     {
-      question: "Who is eligible to participate?",
-      answer: <p>You can find more information the participation information <a className='underline' href='/membership' target='_blank'>HERE</a></p>
+        question: "Who is eligible to participate in LSAMP?",
+        answer: <p>You can find the participation information in our <a className='underline' href='/membership' target='_blank' title='Find more details in our MEMBERSHIP page'>membership page</a></p>
     },
     {
-      question: "At what year can I join GS-LSAMP?",
-      answer: "As early as freshman year. Any student matriculated at Rutgers, Newark, enrolled in or planning to enroll " + 
-                "in a non medical STEM major can apply for the program at any point in their time at Rutgers Newark (some students " +
-                " joined right out of Admitted Student Day as freshman). " +
-                "We encourage you to enter the program as soon as possible, so we can support you as much as possible."
-    },
-    {
-      question: "What is the time commitment for participation?",
-      answer: "To maintain an active status and eligibility for stipends and other opportunities, students must attend several " +
-              " meetings during the semester and meet with the program coordinator twice a semester. Students are encouraged " +
-              " to take advantage of all the offered workshops and opportunities."
-    },
-    {
-      question: "What kind of academic support or tutoring is available through the program?",
-      answer: <p>RUN GSLSAMP offers tutoring based availability and demand, academic bootcamps, professional and career development opportunities,
-         and graduate school application support. Detailed information about resources can be found <a className='hover:underline' href='/membership' target='_blank'>HERE</a></p>
-    },
-    {
-      question: "Are there mentorship or networking opportunities available for participants?",
-      answer: <p>There are a plethora of events and opportunities to network, including program meetings, the STEM Conference held every fall, speakers events, and more. To see current upcoming events, visit the <a className='hover:underline' href='/events' target='_blank'>EVENTS PAGE</a></p>
-    },
-    {
-      question: "Does the program provide resources or support for job placement after graduation?",
-      answer: "Yes, in the weekly newsletter there are links to various job opportunites in STEM and plenty of" + 
-                " resume and job interview workshops during the semester to help prepare you."
-    },
-    {
-      question: "Are there any scholarships or financial aids associated with the program?",
-      answer: <p>
-                Educational experience stipends are available to active students. Stipends are awarded upon successful completion of research
-                experience with faculty, community outreach and leadership work (as a GS-LSAMP ambassador), Web development through RUN GS-LSAMP, 
-                and several internship opportunities at Rutgers University. Additionally, GS-LSAMP shares many opportunities for financial 
-                resources in the weekly newsletter and other announcements. GS-LSAMP scholars are provided support in the application process.
-              </p>
-    },
-  ];
+        question: "When can I join GS-LSAMP?",
+        answer: "You can join GS-LSAMP as early as your freshman year. Any student enrolled or planning to enroll in a non-medical STEM major at Rutgers, Newark, is eligible to apply at any point during their time here. Some students even join right after Admitted Student Day as freshmen. We encourage you to join the program as soon as possible so that we can provide you with the support you need."
 
-  return (
-    <div className="w-full md:max-w-xl lg:max-w-3xl mx-auto p-1">
-      <div className="border-b-2 border-gray-200 py-4 mb-[1rem] cursor-pointer" onClick={toggleSection}>
-        <div className='text-2xl font-bold flex justify-between'>
-          <h2>Frequently Asked Questions</h2>
-          <span>{isSectionOpen ? '-' : '+'}</span>
+    },
+    {
+        question: "What is the time commitment required for participation?",
+        answer: "To maintain an active status and eligibility for stipends and other opportunities, students are expected to attend several meetings per semester and meet with the program coordinator twice a semester. Additionally, students are encouraged to take full advantage of all workshops and opportunities offered by the program."
+    },
+    {
+        question: "What academic support and tutoring services does the program offer?",
+        answer: 
+        <p>
+            Rutgers University-Newark GS-LSAMP provides tutoring services based on availability and demand, academic bootcamps, professional and career development opportunities, and support for graduate school applications. For detailed information about these resources, please visit our <a className='underline' href='/membership' target='_blank' title='Find more details in our MEMBERSHIP page'>membership page</a>.
+        </p>
+        
+    },
+    {
+        question: "Are there mentorship or networking opportunities available for participants?",
+        answer: <p>Participants have access to a wide range of events and networking opportunities, including program meetings, the annual STEM Conference held every fall, speaker events, and more. To stay updated on current and upcoming events, please visit our <a className='underline' href='/events' target='_blank' title='Find more details in our EVENTS & OPPORTUNITIES page'>events page</a>.</p>
+    },
+    {
+        question: "Does the program offer resources or support for post-graduation job placement?",
+        answer: "Yes, the program provides extensive support for post-graduation job placement. Our weekly newsletter includes links to various job opportunities in STEM fields. Additionally, we offer resume workshops and job interview preparation sessions throughout the semester to help you succeed in your job search."
+    },
+    {
+        question: "Are there any scholarships or financial aid opportunities associated with the program?",
+        answer: "Yes, the program offers various financial aid opportunities to active students. Educational experience stipends are available and awarded upon successful completion of research projects with faculty, community outreach and leadership work (as a GS-LSAMP ambassador), web development through RUN GS-LSAMP, and participation in several internship opportunities at Rutgers University. Additionally, GS-LSAMP regularly shares information about financial resources in the weekly newsletter and other announcements. GS-LSAMP scholars also receive support throughout the application process."
+    },
+];
+
+    return (
+        <div className="w-full md:max-w-xl lg:max-w-3xl mx-auto p-1">
+            <div className="border-b-4 border-gray-300 py-4 mb-1 cursor-pointer" onClick={toggleSection}>
+                <div className='text-2xl font-extrabold flex justify-between'>
+                    <h2>Frequently Asked Questions</h2>
+                    <span>{isSectionOpen ? '-' : '+'}</span>
+                </div>
+            </div>
+            {isSectionOpen && (
+                <div>
+                    {faqs.map((faq, index) => (
+                        <FAQItem key={index} question={faq.question} answer={faq.answer} />
+                    ))}
+                </div>
+            )}
         </div>
-      </div>
-      {isSectionOpen && (
-        <div>
-          {faqs.map((faq, index) => (
-            <FAQItem key={index} question={faq.question} answer={faq.answer} />
-          ))}
-        </div>
-      )}
-    </div>
-  );
+    );
 }
 
 export default FAQSection;
