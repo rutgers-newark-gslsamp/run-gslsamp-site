@@ -442,7 +442,7 @@ a.inline-link{
 /*FORM*/
 
 .form-label {
-  @apply text-base font-medium mx-4 mb-2 text-left  w-4/5 lg:w-4/5 xl:w-3/5;
+  @apply text-base font-medium mx-4 mb-2 text-left w-4/5 lg:w-4/5 xl:w-3/5;
 }
 
 .form-input {
