@@ -1,35 +1,24 @@
-'use client'
+'use client' // Needed to avoid error message
 
-import { useState } from 'react';
+import React, { useState } from 'react';
+import FAQItem from './FaqItem';
 
-function FAQItem({ question, answer }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="border-b-2 border-gray-200 py-4">
-      <div className="cursor-pointer flex justify-between" onClick={() => setIsOpen(!isOpen)}>
-        <p className="text-lg font-medium">{question}</p>
-        <div>{isOpen ? '-' : '+'}</div>
-      </div>
-      {isOpen && (
-        <div className="mt-2 text-gray-600">
-          {answer}
-        </div>
-      )}
-    </div>
-  );
+interface FAQ {
+  question: string;
+  answer: string | JSX.Element;
 }
 
-function FAQSection() {
+const FAQSection: React.FC = () => {
   const [isSectionOpen, setIsSectionOpen] = useState(false);
 
   const toggleSection = () => {
     setIsSectionOpen(!isSectionOpen);
   };
-  const faqs = [
+
+  const faqs: FAQ[] = [
     {
       question: "Who is eligible to participate?",
-      answer: <p>See the participation information <a className='hover:underline' href='/membership' target='_blank'>HERE</a></p>
+      answer: <p>You can find more information the participation information <a className='underline' href='/membership' target='_blank'>HERE</a></p>
     },
     {
       question: "At what year can I join GS-LSAMP?",

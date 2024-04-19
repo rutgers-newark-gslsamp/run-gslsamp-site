@@ -1,6 +1,7 @@
 import Title from "../../src/components/Title.js";
 import ContactForm from "../../src/components/ContactForm.tsx";
 import Dropdown from "../../src/components/Faq.js";
+import FAQSection from "../../src/components/FaqSection.tsx";
 
 export default function Contact() {
   return (
@@ -8,7 +9,7 @@ export default function Contact() {
       <Title name={"CONTACT US"}/>
       
       <div id="faq">
-        <Dropdown />
+        <FAQSection />
       </div>
 
       <h2 className="flex justify-center italic font-semibold p-3 text-neutral-800">
