@@ -10,7 +10,7 @@ const Title: React.FC<TitleProps> = ({ name }) => {
             <hr />
             */}
             <div className="section-header">
-                <h1 className="text-4xl uppercase font-extrabold">{name}</h1>
+                <h1 className="text-4xl uppercase font-extrabold py-1">{name}</h1>
                 <hr />
             </div>
         </>

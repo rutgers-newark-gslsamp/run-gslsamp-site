@@ -46,7 +46,7 @@ export default function About() {
 
       <section className="club-section-container">
           <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
-            <h2 className="text-3xl font-bold text-neutral-700">Club Info</h2>
+            <h2 className="text-3xl font-bold text-neutral-800">Club Info</h2>
             <hr/>
           </div>
           <div className="flex flex-cols">
@@ -58,10 +58,19 @@ export default function About() {
               <Carousel images={images} />
             </div>
           </div>
+      </section>
+      <section className="about-events-container">
+        <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
+          <h2 className="text-3xl font-bold text-neutral-800">Events</h2>
+          <hr/>
+        </div>
+        <div id="event-container" className="grid md:grid-cols-3 mx-4  md:mx-16 gap-2">
+          <EventInfoCard isUpcoming={true}/>
+        </div> 
       </section> 
       <section className="staff-section-container">
         <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
-          <h2 className="text-3xl font-bold text-neutral-700">Staff</h2>
+          <h2 className="text-3xl font-bold text-neutral-800">Staff</h2>
           <hr/>
         </div>
         <div id="staff-card-container" className="grid md:grid-cols-3 mx-4 md:mx-16">
@@ -91,15 +100,7 @@ export default function About() {
           />
         </div>
       </section>
-      <section className="about-events-container">
-        <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
-          <h2 className="text-3xl font-bold text-neutral-700">Events</h2>
-          <hr/>
-        </div>
-        <div id="event-container" className="grid md:grid-cols-3 mx-4  md:mx-16 gap-2">
-          <EventInfoCard isUpcoming={true}/>
-        </div> 
-      </section>
+   
     </>
   );
 }

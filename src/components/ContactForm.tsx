@@ -10,20 +10,20 @@ export default function ContactForm() {
         setLoading(true);
       
         const data = {
-          fname: String(event.target.fname.value),
-          lname: String(event.target.lname.value),
-          email: String(event.target.email.value),
-          inquiry: String(event.target.inquiry.value),
-          message: String(event.target.message.value),
+            fname: String(event.target.fname.value),
+            lname: String(event.target.lname.value),
+            email: String(event.target.email.value),
+            inquiry: String(event.target.inquiry.value),
+            message: String(event.target.message.value),
         };
         
         const response = await fetch('/api/contact', {
-          method: 'POST',
-          headers: {
-            'Accept': 'application/json',
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
         })
 
         if (response.ok) {
@@ -37,16 +37,16 @@ export default function ContactForm() {
             
         }
         if(!response.ok){
-          alert("Error sending message")
-          setLoading(false)
+            alert("Error sending message")
+            setLoading(false)
         }
-      }
+    }
     return (
-      <div>
+        <div>
             <section className="flex justify-center items-center h-screen">
-                <form onSubmit={handleSubmit} className="bg-gray-300 rounded shadow-lg w-3/4 minw-[200px] sm:w-[800px] pl-[3rem]">
-                    <legend className='text-xl pt-3'>Contact Inquiry</legend>
-                    <fieldset>
+                <form onSubmit={handleSubmit} className="flex flex-col justify-center bg-neutral-200 rounded shadow-lg w-3/4 minw-[200px] sm:w-[800px] pl-[3rem]">
+                    <legend className='text-2xl pt-3 font-extrabold text-left text-neutral-800'>Contact Inquiry</legend>
+                    <fieldset className='flex flex-col items-center justify-center'>
                         <div className='form-div'>
                             <label className="form-label" htmlFor="fname">First Name</label>
                             <input className="form-input" type="text" required pattern="[a-zA-Z]{3,20}" id="fname"/>
@@ -70,7 +70,7 @@ export default function ContactForm() {
                         
                         <div className='form-div'>
                             <label className='form-label'>Inquiry</label>
-                            <select className="form-input" required id="inquiry" aria-label="inquiry">
+                            <select className="form-input bg-white hover:cursor-pointer" required id="inquiry" aria-label="inquiry">
                                 <option value="General Question">General Question</option>
                                 <option value="Looking for Opportunities">Looking for Opportunities</option>
                                 <option value="Faculty Looking to Assist">Faculty Looking to Assist</option>
@@ -91,10 +91,10 @@ export default function ContactForm() {
                         </div>
                     </fieldset>
 
-                    <div className='form-div'>
+                    <div className='form-div flex justify-center'>
                         <button
                             type="submit"
-                            className="py-2 w-40 rounded-lg bg-red-700 text-white border-r-2 hover:scale-105 transition delay-50 active:scale-95 disabled:bg-red-300 "
+                            className="py-2 w-40 rounded-lg font-bold bg-blue-600 text-white border-r-2 hover:scale-105 transition delay-50 active:scale-95 disabled:bg-blue-300"
                             >
                             Send Message
                         </button>

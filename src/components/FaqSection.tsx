@@ -52,9 +52,9 @@ const faqs: FAQ[] = [
 ];
 
     return (
-        <div className="w-full md:max-w-xl lg:max-w-3xl mx-auto p-1">
-            <div className="border-b-4 border-gray-300 py-4 mb-1 cursor-pointer" onClick={toggleSection}>
-                <div className='text-2xl font-extrabold flex justify-between'>
+        <div className="w-full md:max-w-2xl lg:max-w-3xl mx-auto p-1">
+            <div className="border-b-2 border-neutral-300 pt-4 pb-3 mb-1 cursor-pointer" onClick={toggleSection}>
+                <div className='text-2xl font-extrabold flex justify-between text-neutral-800'>
                     <h2>Frequently Asked Questions</h2>
                     <span>{isSectionOpen ? '-' : '+'}</span>
                 </div>
