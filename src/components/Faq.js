@@ -42,8 +42,8 @@ function FAQSection() {
     },
     {
       question: "What kind of academic support or tutoring is available through the program?",
-      answer: "Tutoring is always offered in our learning center. In the weeklynewsletter you will have access to available" + 
-                "tutors."
+      answer: "Tutoring is always offered in our learning center. In the weekly newsletter you will have access to available" + 
+                " tutors."
     },
     {
       question: "Are there mentorship or networking opportunities available for participants?",
@@ -52,7 +52,7 @@ function FAQSection() {
     },
     {
       question: "Does the program provide resources or support for job placement after graduation?",
-      answer: "Yes, in the weeklynewsletter there are links to various job opportunites in STEM and plenty of" + 
+      answer: "Yes, in the weekly newsletter there are links to various job opportunites in STEM and plenty of" + 
                 " resume and job interview workshops during the semester to help prepare you."
     },
     {
@@ -64,9 +64,10 @@ function FAQSection() {
 
   return (
     <div className="w-full max-w-xl mx-auto p-1 mt-10">
-      <div className="border-b-2 border-gray-200 py-4 cursor-pointer" onClick={toggleSection}>
-        <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
-        <div>{isSectionOpen ? '-' : '+'}</div>
+      <div className="border-b-2 border-gray-200 py-4 mb-[1rem] cursor-pointer" onClick={toggleSection}>
+        <div className='text-2xl font-bold flex jusify-between'>
+          Frequently Asked Questions {isSectionOpen ? '-' : '+'}
+        </div>
       </div>
       {isSectionOpen && (
         <div>

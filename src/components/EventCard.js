@@ -3,7 +3,7 @@
 import { dateConvert, timeConvert } from './dateTime'
 import React, { useState, useEffect } from 'react';
 
-export default function EventCard({isUpcoming}) {
+export default function EventCard({ isUpcoming }) {
     const [loading, setLoading] = useState(true);
     const [events, setEvents] = useState(null);
     const [showDescriptions, setShowDescriptions] = useState([]);
@@ -14,16 +14,14 @@ export default function EventCard({isUpcoming}) {
         fetch('/api/events')
             .then((response) => response.json())
             .then((result) => {
+                setLoading(false);
                 if (isUpcoming) {
-                    setLoading(false);
-                    setEvents(result.resultPres.filter((event) => event.date >= today));
-                    console.log(result)
+                    setEvents(result.resultPres?.filter((event) => event.date >= today) || []);
                 } else {
-                    setLoading(false);
-                    setEvents(result.resultPast.filter((event) => event.date < today));
+                    setEvents(result.resultPast?.filter((event) => event.date < today) || []);
                 }
                 // Initialize showDescriptions array with false values for each event
-                setShowDescriptions(Array(result.resultPres.length).fill(false));
+                setShowDescriptions(Array(result.resultPres?.length || 0).fill(false));
             })
             .catch((error) => {
                 setLoading(false);
@@ -44,8 +42,10 @@ export default function EventCard({isUpcoming}) {
         <div className="">
             {loading ? (
                 <p>Loading...</p>
-            ) : events.length === 0 ? (
+            ) : events === null ? (
                 <p className="text-lg">Events being planned, come back soon!</p>
+            ) : events.length === 0 ? (
+                <p className="text-lg">No events found.</p>
             ) : (
                 events.map((e, index) => (
                     <div className="max-w-[20rem]" key={index}>

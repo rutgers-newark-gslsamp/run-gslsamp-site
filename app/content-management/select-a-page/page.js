@@ -11,11 +11,15 @@ export default function Selection(){
                 <div className="container">
                     <div className="center-divs">
                         <div className="top-div">
-                            <SelectionButton label={"Student Resources"} page="/content-management/student-resources"/>
+                            <SelectionButton label={"Events & Opportunities"} page="/content-management/events-and-opportunities"/>
+                        </div>
+
+                        <div className="top-div">
+                            <SelectionButton label={"Change Application Link"} page="/content-management/change-link"/>
                         </div>
 
                         <div>
-                            <SelectionButton label={"Events & Opportunities"} page="/content-management/events-and-opportunities"/>
+                            <SelectionButton label={"Change Hero Image"} page="/content-management/change-hero"/>
                         </div>
                     </div>
                 </div>

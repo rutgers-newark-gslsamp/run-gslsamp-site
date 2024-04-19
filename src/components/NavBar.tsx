@@ -20,21 +20,21 @@ const NavBar: React.FC<{}> = () => {
     };
     return (
         <>
-            <div className='border-b black flex justify-end'>
-                <div className="flex justify-end">
-                    <a href="https://rutgers.edu" target='_blank' className="mr-[1rem] hover:underline">Visit Rutgers.edu</a>
-                    <a href="https://search.rutgers.edu" target='_blank' className="pt-[.3rem]">
-                        <Image
-                            className='w-auto p-2 drop-shadow grayscale'
-                            src={searchIcon}
-                            alt="Search Icon"
-                            width={20}
-                            height={20}
-                        />
-                    </a>
-                </div>
-            </div>
             <nav className='flex flex-col w-full bg-gray-300 sm:bg-white sticky z-30 top-0'>
+                <div className='border-b black flex justify-end'>
+                    <div className="flex justify-end">
+                        <a href="https://rutgers.edu" target='_blank' className="mr-[1rem] hover:underline">Visit Rutgers.edu</a>
+                        <a href="https://search.rutgers.edu" target='_blank' className="pt-[.3rem]">
+                            <Image
+                                className='w-auto p-2 drop-shadow grayscale'
+                                src={searchIcon}
+                                alt="Search Icon"
+                                width={20}
+                                height={20}
+                            />
+                        </a>
+                    </div>
+                </div>
                 <div className='flex flex-wrap items-center justify-between h-[8vh] sm:h-auto' id='top-nav-container'>
                     <header className='flex items-center'>
                         <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>

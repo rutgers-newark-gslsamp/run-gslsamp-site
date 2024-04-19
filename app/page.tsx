@@ -3,7 +3,7 @@ import Image from "next/legacy/image";
 import AllianceGrid from "../src/components/AllianceGrid";
 import LandingAbout from "../src/components/LandingAbout";
 import CtaBlock from "../src/components/CtaBlock";
-import heroPicture from "../public/event-photos/20230424_140148_2024-02-03 16.25.37.jpg"
+import heroPicture from "../public/hero/hero.jpg"
 
 export default function Home() {
   return (
