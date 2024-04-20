@@ -36,7 +36,7 @@ export default function About() {
           <div className="bg-gradient-to-b from-purple-600 via-pink-600 to-yellow-400 rounded-lg m-[.3rem]">
             <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://www.instagram.com/lsamp.newark/" target="_blank">Instagram</a></h3>
           </div>
-          <div className="bg-] rounded-lg m-[.3rem]">
+          <div className="bg-] rounded-lg m-[.3rem] bg-red-600">
             <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://raiderlink.newark.rutgers.edu/organization/lsamp" target="_blank">Raiderlink</a></h3>
           </div>
         </div>
