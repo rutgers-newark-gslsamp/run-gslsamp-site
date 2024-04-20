@@ -36,7 +36,7 @@ export default function About() {
           <div className="bg-gradient-to-b from-purple-600 via-pink-600 to-yellow-400 rounded-lg m-[.3rem]">
             <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://www.instagram.com/lsamp.newark/" target="_blank">Instagram</a></h3>
           </div>
-          <div className="bg-[#9D1739] rounded-lg m-[.3rem]">
+          <div className="bg-] rounded-lg m-[.3rem]">
             <h3 className="p-[.5rem] hover:underline text-lg text-white"><a href="https://raiderlink.newark.rutgers.edu/organization/lsamp" target="_blank">Raiderlink</a></h3>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function About() {
           <h2 className="text-3xl font-bold text-neutral-800">Staff</h2>
           <hr/>
         </div>
-        <div id="staff-card-container" className="grid md:grid-cols-3 mx-4 md:mx-16">
+        <div id="staff-card-container" className="grid md:grid-cols-2 lg:grid-cols-3 mx-4 md:mx-16">
           <StaffCard 
             picture={gates}
             name="Alexander Gates, PhD"
