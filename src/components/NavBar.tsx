@@ -85,25 +85,25 @@ const NavBar: React.FC<{}> = () => {
             </nav>
             {isVisible && (
                 <div id='mobile-nav' className='fixed left-0 top-0 w-full bg-gray-100 z-50 mt-14 h-[92vh]'>
-                    <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline drop-shadow-md nav-page-list' id="bottom-nav-page-list">
+                    <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline nav-page-list' id="bottom-nav-page-list">
                         {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                         <li className='w-screen h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/">Home</Link>
+                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/">Home</Link>
                         </li>
                         <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/about">About Us</Link>
+                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/about">About Us</Link>
                         </li>
                         <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/faculty">Faculty</Link>
+                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/faculty">Faculty</Link>
+                        </li>
+                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4] '>
+                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/membership">Membership</Link>
                         </li>
                         <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/membership">Membership</Link>
-                        </li>
-                        <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/events">Events & Opportunities</Link>
+                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/events">Events & Opportunities</Link>
                         </li>
                         <li className='w-full h-full flex justify-center items-center'>
-                                <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center' href="/contact">Contact Us</Link>
+                                <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/contact">Contact Us</Link>
                         </li>
                     </ul>
                 </div>
