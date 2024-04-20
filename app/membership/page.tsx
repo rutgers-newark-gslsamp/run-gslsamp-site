@@ -34,32 +34,26 @@ export default function Membership() {
                     opportunities to help you complete your undergraduate!
                   </h2>
                 </div>
-
-                <div className="flex justify-center mt-1 md:pl-[30rem] lg:pl-[35rem]">
-                  <div className="w-[8rem] p-[.3rem] md:w-[9rem] md:p-[.7rem] text-xs md:text-sm text-center text-white font-bold drop-shadow-md hover:scale-105 transition bg-[#9D1739] rounded-[.2rem]">
-                    <p className="drop-shadow-xl"><a href={link} target="_blank">JOIN NOW!</a></p>
-                  </div>
-                </div>
                   
-                <div className=" flex justify-center mb-[2rem]">
-                  <article className="overflow-auto w-[90%] h-[48vw] md:h-[35vw] lg:h-[20vw] bg-white border-2 border-[#9D1739] rounded-lg shadow-md row-span-3 mt-[2rem]">
-                    <h1 className="text-center p-1 bg-[#9D1739] text-white text-sm md:text-xl font-bold drop-shadow-md rounded-tl-xlg rounded-tr-xlg">
+                <div className=" flex justify-center mb-2">
+                  <article className="overflow-auto w-[90%] h-[48vw] md:h-[35vw] lg:h-[20vw] bg-white border-2 border-red-800 rounded-lg shadow-md row-span-3 mt-[2rem]">
+                    <h1 className="text-center p-1 bg-red-800 text-white text-sm md:text-xl font-bold drop-shadow-md rounded-tl-xlg rounded-tr-xlg">
 						Eligibility for Rutgers Newark GS-LSAMP
                     </h1>
 
 
-                    <div className="text-[.6rem] md:text-[.75rem] font-bold pl-[.5rem] drop-shadow-md text-black pt-[.7rem]">        
+                    <div className="text-sm md:text-base font-semibold px-2 drop-shadow-md text-black py-2">        
 					  <div className="list-decimal-m">A US citizen or permanent resident.</div>
 					  <div className="list-decimal-m">Improves participation of racial and ethnic underserved groups in STEM.</div>
 					  <div className="list-decimal-m">Fully matriculated in Rutgers Newark. (If you are matriculated in another alliance school, apply to GS-LSAMP there)</div>
 					  <div className="list-decimal-m">Majoring or intending to major in a non medical STEM field.</div>
                     </div>
 
-                    <h3 className="text-xs md:text-md text-left text-[rgb(157,23,57)] font-bold p-[.5rem] drop-shadow-md">
+                    <h3 className="text-base md:text-lg text-left text-red-800 font-bold px-2 drop-shadow-md underline">
                       Eligible Majors
                     </h3>
 
-                    <div className="text-[.6rem] md:text-[.8rem] grid grid-cols-3 pl-[.5rem]">
+                    <div className="text-sm md:text-base grid grid-cols-3 px-2">
                       <p className="">
                         <a className="majors" href="https://sasn.rutgers.edu/biology" target="_blank">Biology</a>
                         <br/> <a className="majors" href="https://sasn.rutgers.edu/chemistry" target="_blank">Chemistry</a>
@@ -80,6 +74,12 @@ export default function Membership() {
                       </p>
                     </div>
                   </article>
+                </div>
+
+                <div className="flex justify-center">
+                  <div className="w-[8rem] p-[.3rem] md:w-[9rem] md:p-[.7rem] text-xs md:text-sm text-center text-white font-bold drop-shadow-md hover:scale-105 transition bg-red-800 rounded">
+                    <p className="drop-shadow-xl"><a href={link} target="_blank">JOIN NOW!</a></p>
+                  </div>
                 </div>
               </div>
             </section>
@@ -195,13 +195,13 @@ export default function Membership() {
 									<b className="p-1">For more GRE prep visit these popular sites:</b>
 									<ul className="list-disc list-inside px-4">
 										<li>
-											<a className='text-[#007bff] hover:underline' href='https://www.ets.org/gre.html'>ETS</a>
+											<a className='text-blue-600 hover:underline' href='https://www.ets.org/gre.html'>ETS</a>
 										</li>
 										<li>
-											<a className='text-[#007bff] hover:underline' href='https://www.princetonreview.com/grad/gre-test-prep'>The Princeton Review</a>
+											<a className='text-blue-600 hover:underline' href='https://www.princetonreview.com/grad/gre-test-prep'>The Princeton Review</a>
 										</li>
 										<li>
-											<a className='text-[#007bff] hover:underline' href='https://www.manhattanprep.com/gre/'>Manhattan Prep</a>
+											<a className='text-blue-600 hover:underline' href='https://www.manhattanprep.com/gre/'>Manhattan Prep</a>
 										</li>
 									</ul>
 								</div>
@@ -217,15 +217,15 @@ export default function Membership() {
 										<p className="p-1">
 											For students enrolled in Newark College of Arts and Science(NCAS) or University College Newark(UCN), the Office of Academic Services(OAS) will see students according to there last name. 
 										</p>
-										<b className="px-4 mb-2">See the Advisor breakdown and how to make an appointment by clicking <a className='text-blue-500 hover:underline' href='https://sasn.rutgers.edu/support'>HERE!</a></b>
+										<b className="px-4 mb-2">See the Advisor breakdown and how to make an appointment by clicking <a className='text-blue-600 hover:underline' href='https://sasn.rutgers.edu/support'>HERE!</a></b>
 										<p className="p-1">
 											For students in the Honors College, please contact the Honors College for information about your adviser assignment. 
 										</p>
-										<b className="px-4 mb-2">Find contact information for the honors college <a className='text-blue-500 hover:underline' href='https://sasn.rutgers.edu/honors-college'>HERE!</a>.</b>
+										<b className="px-4 mb-2">Find contact information for the honors college <a className='text-blue-600 hover:underline' href='https://sasn.rutgers.edu/honors-college'>HERE!</a>.</b>
 										<p className="p-1">
 											To meet with your adviser for your declared major(s) and minor(s), please visit the respective department. 
 										</p>
-										<b className="px-4 mb-2">Contact the <Link className='text-blue-500 hover:underline' href='/contact'>LSAMP office</Link> for assistance.</b>
+										<b className="px-4 mb-2">Contact the <Link className='text-blue-600 hover:underline' href='/contact'>LSAMP office</Link> for assistance.</b>
 									</div>
 								<button className='link-button'><a href='/contact'>Learn More</a></button>
 							</div>
@@ -317,13 +317,13 @@ export default function Membership() {
 								<b className="font-bold">For more GRE prep visit these popular sites:</b>
 								<ul>
 									<li>
-										<a className='text-[#007bff] hover:underline' href='https://www.ets.org/gre.html'>ETS</a>
+										<a className='text-blue-600 hover:underline' href='https://www.ets.org/gre.html'>ETS</a>
 									</li>
 									<li>
-										<a className='text-[#007bff] hover:underline' href='https://www.manhattanprep.com/gre/'>Manhattan Prep</a>
+										<a className='text-blue-600 hover:underline' href='https://www.manhattanprep.com/gre/'>Manhattan Prep</a>
 									</li>
 									<li>
-										<a className='text-[#007bff] hover:underline' href='https://www.princetonreview.com/grad/gre-test-prep'>The Princeton Review</a>
+										<a className='text-blue-600 hover:underline' href='https://www.princetonreview.com/grad/gre-test-prep'>The Princeton Review</a>
 									</li>
 								</ul>
 									
@@ -361,9 +361,9 @@ export default function Membership() {
 									<p>
 										For students enrolled in Newark College of Arts and Science(NCAS) or University College Newark(UCN), the Office of Academic Services(OAS) will see students according to there last name. See the Advisor breakdown and how to make an appointment by clicking <a href='https://sasn.rutgers.edu/support'>HERE!</a>.
 
-										<br /><br />For students in the Honors College, please contact the Honors College for information about your adviser assignment. Find contact information for the honors college <a className='text-[#007bff] hover:underline' href='https://sasn.rutgers.edu/honors-college'>HERE!</a>.
+										<br /><br />For students in the Honors College, please contact the Honors College for information about your adviser assignment. Find contact information for the honors college <a className='text-blue-600 hover:underline' href='https://sasn.rutgers.edu/honors-college'>HERE!</a>.
 
-										<br /><br />To meet with your adviser for your declared major(s) and minor(s), please visit the respective department. Contact the <a className='text-[#007bff] hover:underline' href='/contact'>LSAMP office</a> for assistance.
+										<br /><br />To meet with your adviser for your declared major(s) and minor(s), please visit the respective department. Contact the <a className='text-blue-600 hover:underline' href='/contact'>LSAMP office</a> for assistance.
 									</p>
 								</div>
 								<button className='link-button'><a href='/contact'>Learn More</a></button>
