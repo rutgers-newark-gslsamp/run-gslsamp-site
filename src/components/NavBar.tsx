@@ -20,21 +20,8 @@ const NavBar: React.FC<{}> = () => {
     };
     return (
         <>
+
             <nav className='flex flex-col w-full bg-gray-300 sm:bg-white sticky z-30 top-0'>
-                <div className='border-b black flex justify-end'>
-                    <div className="flex justify-end">
-                        <a href="https://rutgers.edu" target='_blank' className="mr-[1rem] hover:underline">Visit Rutgers.edu</a>
-                        <a href="https://search.rutgers.edu" target='_blank' className="pt-[.3rem]">
-                            <Image
-                                className='w-auto p-2 drop-shadow grayscale'
-                                src={searchIcon}
-                                alt="Search Icon"
-                                width={20}
-                                height={20}
-                            />
-                        </a>
-                    </div>
-                </div>
                 <div className='flex flex-wrap items-center justify-between h-[8vh] sm:h-auto' id='top-nav-container'>
                     <header className='flex items-center'>
                         <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
@@ -46,10 +33,9 @@ const NavBar: React.FC<{}> = () => {
                                     width={160}
                                     height={50}
                                 />
-                                <p className='text-[.6rem]'>Rutgers the State University of New Jersey</p>
                             </div>
                             <Image
-                                className='flex w-auto py-3 px-2 drop-shadow'
+                                className='flex h-auto py-3 px-2 drop-shadow'
                                 src={nsfLogo}
                                 alt="NSF Logo"
                                 width={65}
@@ -61,12 +47,12 @@ const NavBar: React.FC<{}> = () => {
                             Louis Stokes Alliance for Minority Participation
                         </h1>
                         <a onClick={hideDiv} className='flex mx-2 justify-center items-center w-10 hover:cursor-pointer'>
-                                <Image
-                                    className='w-auto px-2 drop-shadow grayscale sm:invisible'
-                                    src={menuIcon}
-                                    alt="Hamburger Menu Icon"
-                                    width={50}
-                                    height={50}
+                            <Image
+                                className='w-auto px-2 drop-shadow grayscale sm:invisible'
+                                src={menuIcon}
+                                alt="Hamburger Menu Icon"
+                                width={50}
+                                height={50}
                                 />
                         </a>
                     </header>
