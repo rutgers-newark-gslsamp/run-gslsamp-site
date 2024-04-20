@@ -62,22 +62,22 @@ const NavBar: React.FC<{}> = () => {
                         <ul className='flex text-base justify-center place-items-center flex-wrap text-white font-medium my-1 mx-5 list-none no-underline drop-shadow-md nav-page-list' id="bottom-nav-page-list">
                             {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                             <li>
-                                <Link href="/">Home</Link>
+                                <Link className='hover:underline font-medium' href="/">Home</Link>
                             </li>
                             <li>
-                                <Link href="/about">About Us</Link>
+                                <Link className='hover:underline font-medium' href="/about">About Us</Link>
                             </li>
                             <li>
-                                <Link href="/faculty">Faculty</Link>
+                                <Link className='hover:underline font-medium' href="/faculty">Faculty</Link>
                             </li>
                             <li>
-                                <Link href="/membership">Membership</Link>
+                                <Link className='hover:underline font-medium' href="/membership">Membership</Link>
                             </li>
                             <li>
-                                <Link href="/events">Events & Opportunities</Link>
+                                <Link className='hover:underline font-medium' href="/events">Events & Opportunities</Link>
                             </li>
                             <li>
-                                <Link href="/contact">Contact Us</Link>
+                                <Link className='hover:underline font-medium' href="/contact">Contact Us</Link>
                             </li>
                         </ul>
                     </div>
@@ -88,7 +88,7 @@ const NavBar: React.FC<{}> = () => {
                     <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline nav-page-list' id="bottom-nav-page-list">
                         {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                         <li className='w-screen h-full flex justify-center items-center border-b border-[#D4D4D4]'>
-                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/">Home</Link>
+                            <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase ' href="/">Home</Link>
                         </li>
                         <li className='w-full h-full flex justify-center items-center border-b border-[#D4D4D4]'>
                             <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase' href="/about">About Us</Link>
