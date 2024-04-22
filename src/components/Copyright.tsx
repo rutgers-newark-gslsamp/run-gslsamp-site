@@ -23,9 +23,9 @@ const Copyright: React.FC<CopyrightProps> = ({ currentDate }) => {
         Rutgers University Search
         <Image className='w-4 mx-1 ' src={searchIcon} alt="Search Icon" width={20} height={20} />
       </a>
-      <p>
-        Copyright © {currentDate.getFullYear()}, Rutgers, The State University of New Jersey
-      </p>
+      <span className="text-xs">
+        <a className='text-xs underline hover:cursor-pointer' href="https://www.rutgers.edu/copyright-information" target="_blank">Copyright © {currentDate.getFullYear()}</a>, <a className="underline hover:cursor-pointer" href="https://www.rutgers.edu/" target="_blank">Rutgers, The State University of New Jersey</a>
+      </span>
       <p className='text-xs text-balance md:mx-16 lg:mx-64 text-neutral-200'>Rutgers is an equal access/equal opportunity institution. Individuals with disabilities are encouraged to direct suggestions, comments, or complaints concerning any accessibility issues with Rutgers websites to accessibility@rutgers.edu or complete the Report Accessibility Barrier / Provide Feedback Form.</p>
     </div>
   );
