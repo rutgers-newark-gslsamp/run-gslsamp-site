@@ -8,7 +8,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const sgMail = require('@sendgrid/mail')
     sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     const msg = {
-        to: `${email}`, // CHANGE: gs-lsamp contact email address
+        to: `oren.rabinovich@rutgers.edu`, // CHANGE: gs-lsamp contact email address
         from: 'chrislorenzo09@gmail.com', // Change to your verified sender
         subject: `Contact Form GS-LSAMP: ${inquiry}`,
         html: `
