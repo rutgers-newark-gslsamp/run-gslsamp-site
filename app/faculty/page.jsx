@@ -18,9 +18,9 @@ export default function Faculty() {
             </p>
 
             <div className='md:ml-[4rem] lg:ml-[4rem] xl:ml-[4rem] flex justify-center'>
-                <button className=" min-w-[7rem] sm:w-[12rem] md:w-[12rem] lg:w-[12rem] xl:w-[12rem] text-center align-items-center bg-red-800 rounded-[.2rem] p-[.7rem] mt-[2rem] col-span-1 text-white font-bold drop-shadow-md hover:scale-105 transition">
-                    <p className="drop-shadow-xl"><a href="/contact" target='_blank'>REGISTER TODAY!</a></p>
-                </button>
+                {/* <button className=" min-w-[7rem] sm:w-[12rem] md:w-[12rem] lg:w-[12rem] xl:w-[12rem] text-center align-items-center bg-red-800 rounded-[.2rem] p-[.7rem] mt-[2rem] col-span-1 text-white font-bold drop-shadow-md hover:scale-105 transition">
+                    <p className="drop-shadow-xl"><a href="/membership" target='_blank'>REGISTER TODAY!</a></p>
+                </button> */}
 
                 <div className='pl-[1rem]'>
                     <button className="w-[7rem] sm:w-[12rem] md:w-[12rem] lg:w-[12rem] min-h-[3rem] p-[.7rem] mt-[2rem] hover:underline rounded border-4 border-red-800 drop-shadow-md hover:scale-105 transition">
