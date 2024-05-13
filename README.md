@@ -16,23 +16,17 @@ Since its inception in 2009, the mission of the Garden State LSAMP has been to i
 ***
 
 ## How to use the project
-1. **Run** `git clone <url>` in terminal 
+1. Open new terminal instance and clone repository
 
 2. **Run** `cd run-gslsamp-site` or **Open folder in editor** 
 
-3. **Open package.json**
+3. **Run** `npm install`
 
-4. **Click debug and on the dropdown which follows press dev**
+4. **Run** `npm install -D tailwindcss`
 
-5. **Open new terminal instance in the current directory**
+5. **Run** `npx tailwindcss init -p` 
 
-7. **Run** `npm install`
-
-8. **Run** `npm install -D tailwindcss`
-
-9. **Run** `npx tailwindcss init -p` 
-
-11. **Run** `npx next dev` or `npm run dev`
+6. **Run** `npx next dev` or `npm run dev`
 
 ## Common Errors/Fixes
 1. Tailwind CSS not working as intended.
