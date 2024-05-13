@@ -46,9 +46,6 @@ export default function Faculty() {
                 <button className="flex-1 max-w-xs w-1/2 h-12 p-2 mt-8 hover:underline rounded-md border-4 border-red-800 shadow-md hover:scale-105 transition h-22">
                     <a className="flex items-center justify-center font-bold text-red-800 uppercase" href="/about" target='_blank'>Learn More</a>
                 </button>
-                <button className="flex-1 max-w-xs w-1/2 h-12 p-2 mt-8 hover:underline rounded-md border-4 border-red-800 shadow-md hover:scale-105 transition h-22">
-                    <a className="flex items-center justify-center font-bold text-red-800 uppercase" href="/about" target='_blank'>Learn More</a>
-                </button>
             </div>
             
             
