@@ -48,7 +48,7 @@ import EventCard from '../../src/components/EventCard'
                           <a className="text-base text-black font-semibold hover:underline px-2 py-1" href="/membership" target='_blank'>Join now!</a>
                       </button>
                       <button className="bg-gray-50 border-4 border-gray-300 rounded text-xs max-w-sm max-h-12 mx-1 shadow-sm shadow-black/40">
-                          <a className="text-base text-black font-semibold hover:underline px-2 py-1" href="/events/pastevents">Past Events</a>
+                          <a className="text-base text-black font-semibold hover:underline px-2 py-1" href="/events/pastevents" target='_blank'>Past Events</a>
                       </button>
                   </div>
               </div>
