@@ -51,6 +51,7 @@ body {
   width: 15rem;
   font-size: 1rem;
   box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.4);
+  overflow-wrap: break-word;
 }
 
 .selection-button-cms:hover {

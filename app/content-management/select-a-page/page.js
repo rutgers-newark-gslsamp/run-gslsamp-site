@@ -21,6 +21,10 @@ export default function Selection(){
                         <div>
                             <SelectionButton label={"Change Hero Image"} page="/content-management/change-hero"/>
                         </div>
+
+                        <div className="pt-[1.1rem] break-words">
+                            <SelectionButton label={"Change About Us Carousel"} page="/content-management/change-about-carousel"/>
+                        </div>
                     </div>
                 </div>
             </main>
