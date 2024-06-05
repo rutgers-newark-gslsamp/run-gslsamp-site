@@ -44,7 +44,7 @@ export default function Membership() {
 
                     <div className="text-sm md:text-base font-semibold px-2 drop-shadow-md text-black py-2">        
 					  <div className="list-decimal-m">A US citizen or permanent resident.</div>
-					  <div className="list-decimal-m">Improves participation of racial and ethnic underserved groups in STEM.</div>
+					  <div className="list-decimal-m">Improves participation of underserved racial and ethnic groups in STEM.</div>
 					  <div className="list-decimal-m">Fully matriculated in Rutgers Newark. (If you are matriculated in another alliance school, apply to GS-LSAMP there)</div>
 					  <div className="list-decimal-m">Majoring or intending to major in a non medical STEM field.</div>
                     </div>
@@ -95,7 +95,7 @@ export default function Membership() {
 			<ol id='member-benefits-list' className=" list-decimal list-inside bg-gray-100 rounded-lg py-1 my-1 px-4 font-medium text-black md:text-base text-sm">
 				<li className="p-2">Be part of a Learning Community of students who help each other succeed in classes.</li>
 				<li className="p-2">Have counselors who will personally help you choose courses and programs to best suit your interests.</li>
-				<li className="p-2">Earn stipends for tutoring, leading study groups, doing research, etc.</li>
+				<li className="p-2">Stipends awarded for tutoring, leading study groups, doing research, and peer mentoring.</li>
 				<li className="p-2">Have research experiences in your area of interest in faculty laboratories.</li>
 				<li className="p-2">Attend LSAMP conferences to be part of the greater LSAMP community.</li>
 				<li className="p-2">Graduate with a solid degree and have opportunities for careers or graduate school.</li>

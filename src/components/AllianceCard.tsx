@@ -35,7 +35,7 @@ const AllianceCard: React.FC<AllianceCardProps> = ({ logo, universityName, unive
                 /> 
             }   
             <div className="h-1/2 text-sm text-center m-0 p-1 overflow-hidden overflow-ellipsis whitespace-wrap">
-                <h3>{universityName}</h3>
+                <h3><b>{universityName}</b></h3>
                 <div>
                     <p>
                         {contactName}

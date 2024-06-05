@@ -47,7 +47,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Are there any scholarships or financial aid opportunities associated with the program?",
-        answer: "Yes, the program offers various financial aid opportunities to active students. Educational experience stipends are available and awarded upon successful completion of research projects with faculty, community outreach and leadership work (as a GS-LSAMP ambassador), web development through RUN GS-LSAMP, and participation in several internship opportunities at Rutgers University. Additionally, GS-LSAMP regularly shares information about financial resources in the weekly newsletter and other announcements. GS-LSAMP scholars also receive support throughout the application process."
+        answer: "The program offers various financial aid opportunities to active students. Educational experience stipends are available and awarded upon successful completion of research projects with faculty, community outreach and leadership work (as a GS-LSAMP ambassador), web development through RUN GS-LSAMP, and participation in several internship opportunities at Rutgers University. Additionally, GS-LSAMP regularly shares information about financial resources in the weekly newsletter and other announcements. GS-LSAMP scholars also receive support throughout the application process."
     },
 ];
 

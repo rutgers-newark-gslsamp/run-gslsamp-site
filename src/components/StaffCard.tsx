@@ -16,7 +16,7 @@ const StaffCard: React.FC<StaffCardProps> = ({ picture, name, role, university, 
             <Image
                 src={picture}
                 alt={name}
-                className="w-32 h-32 rounded-full object-cover"
+                className="w-32 h-32 rounded-full object-cover object-top"
             />
             <div className="text-center">
                 <h3 className="text-base font-bold">{name}</h3>
