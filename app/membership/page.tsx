@@ -35,7 +35,7 @@ export default function Membership() {
                   </h2>
                 </div>
                   
-                <div className=" flex justify-center mb-2">
+                <div className="flex justify-center mb-2">
                   <article className="overflow-auto w-[90%] h-[48vw] md:h-[35vw] lg:h-[20vw] bg-white border-2 border-red-800 rounded-lg shadow-md row-span-3 mt-[2rem]">
                     <h1 className="text-center p-1 bg-red-800 text-white text-sm md:text-xl font-bold drop-shadow-md rounded-tl-xlg rounded-tr-xlg">
 						Eligibility for Rutgers Newark GS-LSAMP
@@ -53,26 +53,48 @@ export default function Membership() {
                       Eligible Majors
                     </h3>
 
-                    <div className="text-sm md:text-base grid grid-cols-3 px-2">
-                      <p className="">
+                    <table className="text-sm md:text-base w-full px-2">
+						<tr className="">
+							<td className="major_cell pl-2 w-1/3"><a className="majors" href="https://sasn.rutgers.edu/biology" target="_blank">Biology</a></td>
+							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Science</a></td>
+							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Mathematics</a></td>
+						</tr>
+						<tr className="">
+							<td className="major_cell pl-2 w-1/3"><a className="majors" href="https://sasn.rutgers.edu/chemistry" target="_blank">Chemistry</a></td>
+							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Geology</a></td>
+							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/center-molecular-and-behavioral-neuroscience" target="_blank">Neuroscience and Behavior</a></td>
+						</tr>
+						<tr className="">
+							<td className="major_cell pl-2 w-1/3"><a className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Computer Science</a></td>
+							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/earth-environmental-science/ba-geoscience-geology" target="_blank">Geology</a></td>
+							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/urban-education-urban-secondary-education-ba" target="_blank">Science Education</a></td>
+						</tr>
+						<tr className="">
+							<td className="major_cell pl-2"><a className="majors" href="https://soe.rutgers.edu/" target="_blank">Engineering</a></td>
+							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/geoscience-geology-minor" target="_blank">Geoscience Engineering</a></td>
+							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/node/318" target="_blank">Physics</a></td>
+						</tr>
+
+                      {/* <p className="">
                         <a className="majors" href="https://sasn.rutgers.edu/biology" target="_blank">Biology</a>
-                        <br/> <a className="majors" href="https://sasn.rutgers.edu/chemistry" target="_blank">Chemistry</a>
+                        <br/><a className="majors" href="https://sasn.rutgers.edu/chemistry" target="_blank">Chemistry</a>
                         <br/><a className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Computer Science</a>
                         <br/><a className="majors" href="https://soe.rutgers.edu/" target="_blank">Engineering</a>
-                      </p>
-                      <p className="">
-                        <a  className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Science</a>
+						
+					  </p> */}
+                      {/* <p className="">
+                        <a className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Science</a>
                         <br/><a className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Geology</a>
                         <br/><a className="majors" href="https://sasn.rutgers.edu/earth-environmental-science/ba-geoscience-geology" target="_blank">Geology</a>
                         <br/><a className="majors" href="https://sasn.rutgers.edu/geoscience-geology-minor" target="_blank">Geoscience Engineering</a>
                       </p>
                       <p className="">
-                        <a  className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Mathematics</a>
+                        <a className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Mathematics</a>
                         <br/><a className="majors" href="https://sasn.rutgers.edu/center-molecular-and-behavioral-neuroscience" target="_blank">Neuroscience and Behavior</a>
                         <br/><a className="majors" href="https://sasn.rutgers.edu/urban-education-urban-secondary-education-ba" target="_blank">Science Education</a>
                         <br/><a className="majors" href="https://sasn.rutgers.edu/node/318" target="_blank">Physics</a>
-                      </p>
-                    </div>
+                      </p> */}
+                    </table>
                   </article>
                 </div>
 

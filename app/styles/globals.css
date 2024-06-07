@@ -524,6 +524,14 @@ a.inline-link{
   @apply hover:underline;
 }
 
+.major_cell {
+  padding-bottom: 0.5rem;
+  vertical-align: top;
+  @media (min-width: 768px) {
+    padding-bottom: 0px;
+  }
+}
+
 .list-decimal-m::before {
   content: "\2022"; /* Unicode character for bullet point */
   display: inline-block;
