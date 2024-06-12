@@ -74,26 +74,6 @@ export default function Membership() {
 							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/geoscience-geology-minor" target="_blank">Geoscience Engineering</a></td>
 							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/node/318" target="_blank">Physics</a></td>
 						</tr>
-
-                      {/* <p className="">
-                        <a className="majors" href="https://sasn.rutgers.edu/biology" target="_blank">Biology</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/chemistry" target="_blank">Chemistry</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Computer Science</a>
-                        <br/><a className="majors" href="https://soe.rutgers.edu/" target="_blank">Engineering</a>
-						
-					  </p> */}
-                      {/* <p className="">
-                        <a className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Science</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Geology</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/earth-environmental-science/ba-geoscience-geology" target="_blank">Geology</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/geoscience-geology-minor" target="_blank">Geoscience Engineering</a>
-                      </p>
-                      <p className="">
-                        <a className="majors" href="https://sasn.rutgers.edu/mathematics-and-computer-science" target="_blank">Mathematics</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/center-molecular-and-behavioral-neuroscience" target="_blank">Neuroscience and Behavior</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/urban-education-urban-secondary-education-ba" target="_blank">Science Education</a>
-                        <br/><a className="majors" href="https://sasn.rutgers.edu/node/318" target="_blank">Physics</a>
-                      </p> */}
                     </table>
                   </article>
                 </div>

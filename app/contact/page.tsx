@@ -6,16 +6,16 @@ export default function Contact() {
   return (
     <>
       <Title name={"CONTACT US"}/>
-      
+
       <div id="faq">
         <FAQSection />
       </div>
 
       <h2 className="flex justify-center italic font-semibold p-3 mx-4 text-center text-neutral-800">
-        Didn't find an answer in the FAQ above? Need to contact us? Please use the contact form below:
+        Didn't find an answer in the FAQ above? Need to contact us? Please send any queries to oren.rabinovich@rutgers.edu.
       </h2>
 
-      <ContactForm />
+      {/*<ContactForm />*/}
     </>
   );
 }
