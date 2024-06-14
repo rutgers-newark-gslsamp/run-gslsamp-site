@@ -12,7 +12,11 @@ export default function Contact() {
       </div>
 
       <h2 className="flex justify-center italic font-semibold p-3 mx-4 text-center text-neutral-800">
-        Didn't find an answer in the FAQ above? Need to contact us? Please send any queries to oren.rabinovich@rutgers.edu.
+        Didn't find an answer in the FAQ above? Need to contact us?
+      </h2>
+
+      <h2 className="flex text-2xl justify-center">
+        <b>Please send any queries to oren.rabinovich@rutgers.edu.</b>
       </h2>
 
       {/*<ContactForm />*/}
