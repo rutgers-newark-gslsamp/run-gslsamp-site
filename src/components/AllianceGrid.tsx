@@ -1,14 +1,14 @@
 import React from "react";
+
 // LOGOS
-import lsampRUNLogo from "../../public/rutgers-logos/ru-n_logo.png"
-import runLogo from "../../public/rutgers-logos/RN_V_RED_BLACK_RGB.png"
-import fduLogo from "../../public/alliance-logos/Fairleigh_Dickinson_University_Seal.png"
-import montclairLogo from "../../public/alliance-logos/montclair_state_university_seal.png"
-import williamPatLogo from "../../public/alliance-logos/william_paterson_university.png"
-import keanLogo from "../../public/alliance-logos/kean-university-logo-1.png"
-import essexLogo from "../../public/alliance-logos/essex-county-college-squarelogo.png"
-import njitLogo from "../../public/alliance-logos/New_Jersey_IT_seal.png"
-import runbLogo from "../../public/rutgers-logos/RNB_V_RED_BLACK_RGB.png"
+import runLogo from "../../public/alliance-logos/run_logo_24.png"
+import fduLogo from "../../public/alliance-logos/fdu_logo_24.jpg"
+import montclairLogo from "../../public/alliance-logos/montclair_logo_24.png"
+import williamPatLogo from "../../public/alliance-logos/wp_logo_24.png"
+import keanLogo from "../../public/alliance-logos/kean_logo_24.png"
+import essexLogo from "../../public/alliance-logos/essex_logo_24.png"
+import njitLogo from "../../public/alliance-logos/njit_logo_24.png"
+import runbLogo from "../../public/alliance-logos/runb_logo_24.png"
 
 // COMPONENTS
 import AllianceCard from "./AllianceCard";

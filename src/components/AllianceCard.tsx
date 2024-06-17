@@ -19,7 +19,7 @@ const AllianceCard: React.FC<AllianceCardProps> = ({ logo, universityName, unive
                         className="flex justify-center align-middle object-contain p-1 rounded-lg"
                         src={logo}
                         alt={`${universityName} Logo`}
-                        width={100}
+                        width={200}
                         layout="fixed"
                         height={100}
                     />
@@ -29,7 +29,7 @@ const AllianceCard: React.FC<AllianceCardProps> = ({ logo, universityName, unive
                     className="flex justify-center align-middle object-contain p-1 rounded-lg"
                     src={logo}
                     alt={`${universityName} Logo`}
-                    width={100}
+                    width={200}
                     layout="fixed"
                     height={100}
                 /> 
