@@ -12,7 +12,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
     <div className="border-b-2 border-gray-200 py-4 mx-4">
       <div className="cursor-pointer flex justify-between" onClick={() => setIsOpen(!isOpen)}>
         <p className="text-lg font-medium">{question}</p>
-        <div>{isOpen ? '-' : '+'}</div>
+        <div className='text-2xl'>{isOpen ? '-' : '+'}</div>
       </div>
       {isOpen && (
         <div className="mt-2 text-gray-600">

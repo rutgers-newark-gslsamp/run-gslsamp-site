@@ -56,9 +56,9 @@ const faqs: FAQ[] = [
             <div className="mx-4 border-b-2 border-neutral-300 pt-4 pb-3 mb-1 cursor-pointer" onClick={toggleSection}>
                 <div className='text-2xl font-extrabold flex justify-between text-neutral-800'>
                     <h2>Frequently Asked Questions</h2>
-                    <span>{isSectionOpen && <p>&#9661;</p>}</span>
+                    <span>{isSectionOpen && <p>&#11167;</p>}</span>
 
-                    {!isSectionOpen && <p>&#9665;</p>}
+                    {!isSectionOpen && <p>&#11164;</p>}
                 </div>
             </div>
             {isSectionOpen && (
