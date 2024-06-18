@@ -16,7 +16,9 @@ export default function Contact() {
       </h2>
 
       <h2 className="flex text-2xl justify-center">
-        <b>Please send any queries to oren.rabinovich@rutgers.edu.</b>
+        <button className="flex-1 max-w-xs w-1/2 text-center bg-red-800 rounded-md p-2 mt-8 col-span-1 text-white font-bold shadow-md hover:scale-105 transition h-22">
+          <a href="https://rutgers.ca1.qualtrics.com/jfe/form/SV_bluhi716z4Plfi6" target='_blank' className="text-lg break-words">Submit Your Questions Here</a>
+        </button>
       </h2>
 
       {/*<ContactForm />*/}
