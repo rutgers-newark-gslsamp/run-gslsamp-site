@@ -2,7 +2,6 @@
 Official Rutgers University–Newark GS-LSAMP website maintained by its student-run web development team.
 ***
 
-## 🚧UNDER-CONSTRUCTION🚧
 ### About LSAMP
 The Louis Stokes Alliance for Minority Participation (LSAMP) program, funded by the National Science Foundation, is designed to increase the number of professionals from minority groups that are traditionally underrepresented in non-medical STEM fields (science, technology, engineering and math). The program, which now includes over 50 alliances, provides support services at many levels to help interested students be successful in STEM majors and is considered one of the most successful programs of its kind.
 
