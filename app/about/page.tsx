@@ -4,8 +4,13 @@ import gates from "../../public/staff-pictures/Dr_Gates.jpg"
 import StaffCard from "../../src/components/StaffCard";
 import EventInfoCard from "../../src/components/EventInfoCard";
 import Title from "../../src/components/Title.tsx";
-import Carousel from "../../src/components/Carousel";
 
+// import Carousel from "../../src/components/Carousel";
+
+import CarouselVideo from "../../src/components/CarouselVideo";
+
+
+// images
 import image1 from "../../public/club-carousel/image1.jpg";
 import image2 from "../../public/club-carousel/image2.jpg";
 import image3 from "../../public/club-carousel/image3.jpg";
@@ -13,6 +18,14 @@ import image4 from "../../public/club-carousel/image4.jpg";
 import image5 from "../../public/club-carousel/image5.jpg";
 
 export default function About() {
+
+  // Array of Youtube video URLS
+  const videos = [
+    'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    'https://www.youtube.com/watch?v=33p698xbtc8'
+  ];
+
+  // Array of images
   const images = [image1, image2, image3, image4, image5];
 
   return (
@@ -49,11 +62,22 @@ export default function About() {
               The GS-LSAMP Club at Rutgers Newark is a student organization affiliated with GS-LSAMP. Its roots lie in the pursuit of academic excellence in science, technology, engineering, and mathematics (STEM) fields.
             </p>
 
+
+            {/*}
             <div className="w-1/2 flex items-center">
               <Carousel images={images} />
             </div>
+            */}
+            
+
+
+            <div className="w-1/2 flex items-center">
+            <CarouselVideo videos={videos} /> {/* Use CarouselVideo with videos prop */}
+            </div>
+
           </div>
       </section>
+
       <section className="about-events-container">
         <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
           <h2 className="text-3xl font-bold text-neutral-800">Events</h2>
@@ -99,4 +123,3 @@ export default function About() {
     </>
   );
 }
-  
