@@ -81,22 +81,21 @@ const CarouselVideo = ({ videos }) => {
   };
 
   return (
-    <div className="p-4"> {/* Adding padding around the entire carousel */}
-      <div className="flex justify-center z-20">
-        <div className="p-4"> {/* Adding padding around the video */}
-          <VideoWithLoadingState url={videos[currentVideoIndex]} />
-        </div>
+    <div className="flex flex-col items-center bg-[#690500] rounded-lg p-4">
+      <div className="z-20 flex flex-col items-center mt-2">
+        <VideoWithLoadingState url={videos[currentVideoIndex]} />
       </div>
-      <div className="flex justify-center mt-4">
+
+      <div className="flex items-center my-4">
         <button
           onClick={previousVideo}
-          className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-2"
+          className="bg-white hover:bg-red-200 text-[#690500] font-bold py-2 px-4 rounded mr-2"
         >
           Previous Video
         </button>
         <button
           onClick={nextVideo}
-          className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-white hover:bg-red-200 text-[#690500] font-bold py-2 px-4 rounded"
         >
           Next Video
         </button>

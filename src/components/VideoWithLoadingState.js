@@ -55,7 +55,7 @@ const VideoWithLoadingState = ({ url }) => {
   };
 
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center react-player'>
       {isLoading && <p>Loading...</p>}
       <ReactPlayer
         url={url}
@@ -64,6 +64,9 @@ const VideoWithLoadingState = ({ url }) => {
         onReady={handleReady}
         onError={handleError}
         style={{ display: isLoading ? 'none' : 'block' }}
+        
+        height={320}
+        width={320}
       />
     </div>
   );

@@ -29,7 +29,7 @@ const Carousel = ({ images }) => {
 
   return (
       <div>
-        <div className="flex justify-center z-20">
+        <div className="flex justify-center">
           <ImageWithLoadingState src={images[currentImageIndex]} alt={"Carousel Item"}/>
         </div>
     </div>

@@ -177,8 +177,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 2rem;
 }
+
 .section-subheader hr {
   display: flex;
   height: .2rem;
@@ -191,6 +191,17 @@ button {
 }
 
 /*About Us*/
+
+@media (min-width: 1250px) {
+  .react-player {
+    width: 360px;
+    height: 360px;
+  }
+
+  .test {
+    color: red;
+  }
+}
 
 .about-us-page-title {
   font-size: 2.5rem;
