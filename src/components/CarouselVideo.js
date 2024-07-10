@@ -1,65 +1,3 @@
-/*
-
-
-// CarouselVideo.js
-'use client'
-import React, { useState, useEffect } from 'react';
-import VideoWithLoadingState from './VideoWithLoadingState';
-
-const CarouselVideo = ({ videos }) => {
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-
-  const nextVideo = () => {
-    setCurrentVideoIndex((prevIndex) =>
-      prevIndex === videos.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const previousVideo = () => {
-    setCurrentVideoIndex((prevIndex) =>
-      prevIndex === 0 ? videos.length - 1 : prevIndex - 1
-    );
-  };
-
-
-
-
-// This timer switched between videos. I suggest to turn it off with COMMENTS
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      nextVideo();
-    }, 60000); // Change video every 60 seconds
-
-    return () => {
-      clearInterval(intervalId); // Cleanup the interval on unmount
-    };
-  }, [currentVideoIndex]);
-
-
-
-
-  return (
-    <div>
-      <div className="flex justify-center z-20">
-        <VideoWithLoadingState url={videos[currentVideoIndex]} />
-      </div>
-      <button onClick={previousVideo}>Previous Video</button>
-      <button onClick={nextVideo}>Next Video</button>
-    </div>
-  );
-};
-
-export default CarouselVideo;
-
-
-
-*/
-
-
-
-
-
-
 // CarouselVideo.js
 'use client'
 import React, { useState } from 'react';
@@ -81,7 +19,7 @@ const CarouselVideo = ({ videos }) => {
   };
 
   return (
-    <div className="flex flex-col items-center bg-[#690500] rounded-lg p-4">
+    <div className="flex flex-col items-center bg-gradient-to-t from-red-900 to-red-700 rounded-lg p-4">
       <div className="z-20 flex flex-col items-center mt-2">
         <VideoWithLoadingState url={videos[currentVideoIndex]} />
       </div>

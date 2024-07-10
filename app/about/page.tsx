@@ -88,7 +88,7 @@ export default function About() {
 
             {/* RAIDERLINK BUTTON */}
             <div className="flex items-center justify-center">
-              <p className="p-[.5rem] m-[.3rem] text-xl font-bold text-center">JOIN:</p>
+              <p className="p-[.5rem] m-[.3rem] text-xl font-bold text-center">JOIN US:</p>
               <div className="rounded-lg m-[.3rem] bg-red-600 w-[150px] h-[50px]">
                 <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://raiderlink.newark.rutgers.edu/organization/lsamp" target="_blank">Raiderlink</a></h3>
               </div>
