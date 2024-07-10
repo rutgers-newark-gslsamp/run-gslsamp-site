@@ -51,21 +51,41 @@ export default function About() {
           <div className="flex flex-col sm:w-1/2 mt-0 mb-auto">
 
 
-            <div className="flex items-center">
+            <div className="flex flex-col sm:flex-row items-center">
               {/* FOLLOW US */}
-              <div className="flex flex-col items-center py-[.3rem] w-1/2">
-                <p className="p-[.5rem] m-[.3rem] text-xl font-bold text-center">Follow Us:</p>
+              <div className="flex flex-col items-center py-[.3rem] w-auto sm:w-1/2">
+                <div className="follow_us_container flex sm:flex-col items-center">
+                  <p className="p-[.5rem] m-[.3rem] text-xl font-bold text-center">Follow Us:</p>
 
-                {/* LINKEDIN & INSTAGRAM BUTTONS */}
-                <div className="bg-[#0A66C2] rounded-lg m-[.3rem] w-[150px]">
-                  <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://www.linkedin.com/company/rutgers-newark-gs-lsamp" target="_blank">LinkedIn</a></h3>
+                  {/* LINKEDIN & INSTAGRAM BUTTONS */}
+                  <div className="flex flex-row sm:flex-col items-center">
+                    <div className="bg-[#0A66C2] rounded-lg m-[.3rem] w-[150px]">
+                      <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://www.linkedin.com/company/rutgers-newark-gs-lsamp" target="_blank">LinkedIn</a></h3>
+                    </div>
+                    <div className="bg-gradient-to-b from-purple-600 via-pink-600 to-yellow-400 rounded-lg m-[.3rem] w-[150px]">
+                      <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://www.instagram.com/lsamp.newark/" target="_blank">Instagram</a></h3>
+                    </div>
+                  </div>
+                  
                 </div>
-                <div className="bg-gradient-to-b from-purple-600 via-pink-600 to-yellow-400 rounded-lg m-[.3rem] w-[150px]">
-                  <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://www.instagram.com/lsamp.newark/" target="_blank">Instagram</a></h3>
+                
+
+                {/* TESTIMONIALS - MOBILE */}
+                <div className="flex flex-col items-center testimonial_mobile">
+                  <div className="section-subheader">
+                    <h3 className="text-2xl font-semibold text-black pt-2">Testimonials</h3>
+                    <hr/>
+                  </div>
+
+                  <div className="w-1/2 flex flex-col items-center p-5">
+                    <CarouselVideo videos={videos} />
+                  </div>
                 </div>
               </div>
 
-              <div className="flex flex-col w-1/2">
+              
+              {/* CAROUSEL - PC */}
+              <div className="flex flex-col w-1/2 carousel_container">
                 <div className="w-[90%] p-4">
                   {/* IMAGES */}
                   <Carousel images={images} />
@@ -87,15 +107,19 @@ export default function About() {
             </div>
 
             {/* RAIDERLINK BUTTON */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center pt-4 ml-auto mr-8">
               <p className="p-[.5rem] m-[.3rem] text-xl font-bold text-center">JOIN US:</p>
               <div className="rounded-lg m-[.3rem] bg-red-600 w-[150px] h-[50px]">
                 <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://raiderlink.newark.rutgers.edu/organization/lsamp" target="_blank">Raiderlink</a></h3>
-              </div>
-              
-              
-              
+              </div>  
             </div>
+
+            <div className="flex flex-col carousel_mobile items-center">
+                <div className="w-[90%] p-4">
+                  {/* IMAGES */}
+                  <Carousel images={images} />
+                </div> 
+              </div>
 
             {/* EVENTS */}
             <section className="about-events-container pb-4">
@@ -113,8 +137,8 @@ export default function About() {
           {/* RIGHT BLOCK */}
           <div className="flex flex-col sm:w-1/2 m-2 items-center ">
 
-            {/* TESTIMONIALS */}
-            <div className="flex flex-col items-center sm:w-[50%]">
+            {/* TESTIMONIALS - PC */}
+            <div className="flex flex-col items-center sm:w-[50%] testimonial_container">
               <div className="section-subheader">
                 <h3 className="text-2xl font-semibold text-black pt-2">Testimonials</h3>
                 <hr/>
