@@ -43,28 +43,13 @@ export default function About() {
             The Louis Stokes Alliance for Minority Participation (LSAMP) program at Rutgers University–Newark is a non-medical science program sponsored by the National Science Foundation. The program is designed to increase the interest, retention, graduation, and success of students from racial and ethnic groups that are historically underrepresented in non-medical (STEM) fields (i.e. Black/African American, Hispanic/Latinx, American Indian/Alaska Native, Native Hawaiian/Pacific Islander). Now in Phase III of funding, the primary focus is to promote undergraduate research and post-baccalaureate studies in STEM fields.  The Rutgers Newark GS-LSAMP program is one of the eight members of the <a className="font-medium text-red-700 underline" href="http://gslsamp.rutgers.edu/" target="_blank">Garden State Louis Strokes Alliance for Minority Participation (GS-LSAMP)</a>
           </p>
 
-          {/* FOLLOW US */}
-          <div className="follow_us_container flex items-center subsection-paragraph pt-2">
-            <p className="p-[.5rem] m-[.3rem] text-lg md:text-xl font-bold text-center">Follow Us:</p>
-
-            {/* LINKEDIN & INSTAGRAM BUTTONS */}
-            <div className="flex flex-row items-center">
-              <div className="bg-[#0A66C2] rounded-lg m-[.3rem] w-[150px]">
-                <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://www.linkedin.com/company/rutgers-newark-gs-lsamp" target="_blank">LinkedIn</a></h3>
-              </div>
-              <div className="bg-gradient-to-b from-purple-600 via-pink-600 to-yellow-400 rounded-lg m-[.3rem] w-[150px]">
-                <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://www.instagram.com/lsamp.newark/" target="_blank">Instagram</a></h3>
-              </div>
-            </div>
-            
-          </div>
-
-          {/* TESTIMONIALS -MOBILE */}
+          {/* TESTIMONIALS - MOBILE */}
           <div className="flex flex-col items-center sm:hidden">
               <div className="section-subheader">
-                <h3 className="text-2xl font-semibold text-black pt-2">Testimonials</h3>
-                <hr/>
+                <h3 className="text-2xl font-semibold text-black pt-2">GS-LSAMP Scholars' Testimonials</h3>
               </div>
+              <hr className="mobile_bar"/>
+              
 
               <div className="w-1/2 flex flex-col items-center p-5">
                 <CarouselVideo videos={videos} />
@@ -73,11 +58,28 @@ export default function About() {
         </div>
         
         {/* Layer 2 */}
-        <div className="flex flex-col sm:flex-row w-full items-center w-full ">
+        <div className="flex flex-col sm:flex-row w-full items-center w-full sm:h-[672px]">
           
           {/* LEFT BLOCK */}
           <div className="flex flex-col sm:w-1/2 mt-0 mb-auto sm:w-[50%]">
+            
+            {/* FOLLOW US */}
+            <div className="follow_us_container flex items-center subsection-paragraph pt-2 w-fullsm:mx-4 md:mx-8 lg:mx-16">
+              <div className="flex items-center m-auto">
+              <p className="p-[.5rem] text-lg md:text-xl font-bold text-center">Follow Us:</p>
 
+              {/* LINKEDIN & INSTAGRAM BUTTONS */}
+              <div className="flex flex-row items-center">
+                <div className="bg-[#0A66C2] rounded-lg m-[.3rem] w-[100px]">
+                  <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://www.linkedin.com/company/rutgers-newark-gs-lsamp" target="_blank">LinkedIn</a></h3>
+                </div>
+                <div className="bg-gradient-to-b from-purple-600 via-pink-600 to-yellow-400 rounded-lg m-[.3rem] w-[100px]">
+                  <h3 className="p-[.5rem] hover:underline text-lg text-white text-center"><a href="https://www.instagram.com/lsamp.newark/" target="_blank">Instagram</a></h3>
+                </div>
+              </div>
+              </div>
+              
+            </div>
             
             <div className="flex flex-col items-center lg:flex-row">
               {/* CLUB INFO */}
@@ -116,7 +118,7 @@ export default function About() {
             {/* TESTIMONIALS - PC */}
             <div className="flex flex-col items-center testimonial_container">
               <div className="section-subheader">
-                <h3 className="text-2xl font-semibold text-black pt-2">Testimonials</h3>
+                <h3 className="text-2xl font-semibold text-black pt-2">GS-LSAMP Scholars' Testimonials</h3>
                 <hr/>
               </div>
 
