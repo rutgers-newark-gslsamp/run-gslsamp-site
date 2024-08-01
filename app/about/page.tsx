@@ -18,6 +18,10 @@ import image3 from "../../public/club-carousel/image3.jpg";
 import image4 from "../../public/club-carousel/image4.jpg";
 import image5 from "../../public/club-carousel/image5.jpg";
 
+import image11 from "../../public/club-carousel/Club_Carousel1.jpg";
+import image12 from "../../public/club-carousel/Club_Carousel2.jpg";
+import image13 from "../../public/club-carousel/Club_Carousel3.jpg";
+
 export default function About() {
 
   // Array of Youtube video URLS
@@ -28,7 +32,7 @@ export default function About() {
   ];
 
   // Array of images for carousel
-  const images = [image1, image2, image3, image4, image5];
+  const images = [image11, image12, image13];
 
   return (
     <>

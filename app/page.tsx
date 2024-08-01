@@ -5,7 +5,12 @@ import LandingAbout from "../src/components/LandingAbout";
 import CtaBlock from "../src/components/CtaBlock";
 import heroPicture from "../public/hero/hero.jpg";
 
-import image3 from "../public/club-carousel/image3.jpg"; //Test Image
+import image1 from "../public/hero/Hero_Carousel1.jpg";
+import image2 from "../public/hero/Hero_Carousel2.jpg";
+import image3 from "../public/hero/Hero_Carousel3.jpg";
+import image4 from "../public/hero/Hero_Carousel4.jpg";
+import image44 from "../public/hero/Hero_Carousel4NEW.jpg" //Original Sized photo
+import image5 from "../public/hero/Hero_Carousel5.jpg";
 
 // Components
 import CarouselHero from "../src/components/CarouselHero";
@@ -13,7 +18,7 @@ import CarouselHero from "../src/components/CarouselHero";
 export default function Home() {
  
   // Array of images for CarouselHero
-  const heroImages = [heroPicture, image3];
+  const heroImages = [image5, image2, image3, image4, image1]; //image4 switched with image44
 
   return (
     <>

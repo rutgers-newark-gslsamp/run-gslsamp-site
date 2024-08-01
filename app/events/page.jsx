@@ -3,14 +3,21 @@
 import Title from '../../src/components/Title.tsx'
 import Carousel from '../../src/components/Carousel'
 import Subtitle from '../../src/components/Subtitle'
+
 import pic2 from '../../public/event-photos/image5.jpg'
 import pic3 from '../../public/event-photos/image3.jpg'
+import pic4 from '../../public/event-photos/Events_Carousel1.jpg'
+import pic5 from '../../public/event-photos/Events_Carousel2.JPG'
+import pic6 from '../../public/event-photos/Events_Carousel3.JPG'
+import pic7 from '../../public/event-photos/Events_Carousel4.JPG'
+import pic8 from '../../public/event-photos/Events_Carousel5.JPG'
+
 import EventCard from '../../src/components/EventCard'
 
 
-
   export default function Events() {
-    const images = [pic2, pic3]
+    const images = [pic4, pic5, pic6, pic7, pic8];
+
     return (
       <main>
         <Title name={"EVENTS & OPPORTUNITIES"} />
