@@ -14,6 +14,8 @@ export const timeConvert = (inTime, inDate) => {
     //convert to "hh:mm (am/pm)"
     const date = new Date(inDate+" "+inTime)
     const hours = date.getHours()
+
+    // 1pm, ..., 11pm
     if (hours > 12){
         if (date.getMinutes() == "0"){
             const time = hours - 12 +"PM"
@@ -23,6 +25,8 @@ export const timeConvert = (inTime, inDate) => {
             return(time)
         }
     }
+
+    // 12am, ..., 11am
     if (hours < 12) {
         if (date.getMinutes() == "0"){
             const time = hours +"AM"
@@ -30,8 +34,10 @@ export const timeConvert = (inTime, inDate) => {
         }else{
             const time = hours +":"+date.getMinutes()+"AM"
             return(time)
-        }
-
+        } 
     }
-    
+
+    // hours == 12
+    const time = hours + "PM"
+    return(time)
 }
