@@ -61,7 +61,7 @@ export default function EventCard({ isUpcoming }) {
                                     {e.description}
                                     <div className="flex justify-end">
                                         <button className="bg-[#767676] px-[1rem] py-[.5rem] rounded-lg text-white font-bold">
-                                            <a href={e.link}>{e.linkName}</a>
+                                            <a href={e.link} target='_blank'>{e.linkName}</a>
                                         </button>
                                     </div>
                                 </div>
