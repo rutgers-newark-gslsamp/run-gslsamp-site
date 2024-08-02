@@ -39,7 +39,7 @@ export default function EventCard({ isUpcoming }) {
     };
 
     return (
-        <div className="">
+        <div className="flex">
             {loading ? (
                 <p>Loading...</p>
             ) : events === null ? (
