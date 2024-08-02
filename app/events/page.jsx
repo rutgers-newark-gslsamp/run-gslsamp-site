@@ -6,7 +6,7 @@ import Subtitle from '../../src/components/Subtitle'
 
 import pic2 from '../../public/event-photos/image5.jpg'
 import pic3 from '../../public/event-photos/image3.jpg'
-import pic4 from '../../public/event-photos/Events_Carousel1.jpg'
+import pic4 from '../../public/event-photos/Events_Carousel1.JPG'
 import pic5 from '../../public/event-photos/Events_Carousel2.JPG'
 import pic6 from '../../public/event-photos/Events_Carousel3.JPG'
 import pic7 from '../../public/event-photos/Events_Carousel4.JPG'
