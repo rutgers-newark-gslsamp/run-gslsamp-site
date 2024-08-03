@@ -29,9 +29,9 @@ export default function Home() {
        
         {/* Hero Gallery */}
         <figure
-          className="lg:h-96 xl:h-[38rem] md:h-72 h-44 overflow-hidden"
+          className="lg:h-96 xl:h-[35rem] md:h-72 h-44 overflow-hidden" //38rem originally, height of hero on website
           style={{
-            marginTop: '-0.99rem', // Horizontal of Hero
+            marginTop: '-0.99rem', // Horizontal of Hero image?
             width: '100%' // Width of Hero
           }}
         >
