@@ -140,7 +140,7 @@ export default function About() {
             <h2 className="text-3xl font-bold text-neutral-800">Events</h2>
             <hr/>
           </div>
-          <div id="event-container" className="grid md:grid-cols-3 mx-4  md:mx-16 gap-2">
+          <div id="event-container" className="grid md:grid-cols-3 mx-4 md:mx-16 gap-2">
             <EventInfoCard isUpcoming={true}/>
           </div> 
         </section> 
