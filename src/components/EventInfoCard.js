@@ -41,7 +41,7 @@ export default function EventInfoCard({isUpcoming}) {
     };
     return (
         <>
-            <div className="grid md:grid-cols-3">
+            <div className="flex">
             {loading ? (
                 <p>Loading...</p>
             ) : events === null ? (
