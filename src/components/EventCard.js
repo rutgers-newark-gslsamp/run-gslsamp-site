@@ -16,7 +16,9 @@ export default function EventCard({ isUpcoming }) {
             .then((result) => {
                 setLoading(false);
                 if (isUpcoming) {
-                    setEvents(result.resultPres?.filter((event) => event.date >= today) || []);
+                    const temp = result.resultPres?.filter((event) => event.date >= today);
+                    temp.sort((a, b) => a.date - b.date);
+                    setEvents(temp || []);
                 } else {
                     setEvents(result.resultPast?.filter((event) => event.date < today) || []);
                 }
