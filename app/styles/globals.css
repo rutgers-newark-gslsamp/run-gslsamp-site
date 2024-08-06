@@ -600,7 +600,7 @@ a.inline-link{
 
 .event_card_outer {
   max-width: 20rem;
-  max-height: 30rem;
+  min-height: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
