@@ -600,6 +600,7 @@ a.inline-link{
 
 .event_card_outer {
   max-width: 20rem;
+  max-height: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -609,7 +610,7 @@ a.inline-link{
   margin: 0.5rem;
   width: 200px;
   @media (min-width: 768px) {
-    width: 250px;
+    width: auto;
   }
 }
 
@@ -631,7 +632,6 @@ a.inline-link{
 .event_card_details {
   background-color: #F1F1F1;
   padding: 0.5rem;
-  white-space: nowrap;
 }
 
 .event_card_button {
