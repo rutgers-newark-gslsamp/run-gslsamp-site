@@ -39,8 +39,8 @@ import EventCard from '../../src/components/EventCard'
           </div>
 
           {/**NEWSLETTER AND PAST EVENTS*/}
-          <div className='border-2 flex flex-col items-center'>
-            <section id='newsletter-cta-pc' className='flex flex-col items-center mt-[5%]'>
+          <div className='flex flex-col items-center'>
+            <section id='newsletter-cta-pc' className='flex flex-col items-center mt-[10%] mx-auto sm:mr-[10%]'>
               <div className="flex flex-col items-center py-3 px-4 ml-auto sm:ml-10 rounded-3xl shadow-lg max-w-lg shadow-black/20 border">
                   
                   <div className="flex flex-col items-start text-base">
