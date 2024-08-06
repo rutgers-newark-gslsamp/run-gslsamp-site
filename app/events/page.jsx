@@ -1,18 +1,21 @@
 'use client'
 
+// COMPONENTS
 import Title from '../../src/components/Title.tsx'
 import Carousel from '../../src/components/Carousel'
 import Subtitle from '../../src/components/Subtitle'
+import EventCard from '../../src/components/EventCard'
+import Image from 'next/image';
 
-import pic2 from '../../public/event-photos/image5.jpg'
-import pic3 from '../../public/event-photos/image3.jpg'
+// CAROUSEL IMAGES
 import pic4 from '../../public/event-photos/Events_Carousel1.JPG'
 import pic5 from '../../public/event-photos/Events_Carousel2.JPG'
 import pic6 from '../../public/event-photos/Events_Carousel3.JPG'
 import pic7 from '../../public/event-photos/Events_Carousel4.JPG'
 import pic8 from '../../public/event-photos/Events_Carousel5.JPG'
 
-import EventCard from '../../src/components/EventCard'
+// TEST EVENT BANNER
+import testBanner from '../../public/test_event_banner.jpg'
 
 
   export default function Events() {
@@ -41,7 +44,59 @@ import EventCard from '../../src/components/EventCard'
 
                   <div className="event_card_outer">
                     <div className="event_card_inner">
-                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
+                      
+                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Plan For Success Workshop 8/14</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>10AM - 12PM<br /> August 13, 2024</p>
+                        <p>110 Warren St., Room 148</p>
+                        <p>Hybrid Zoom/In Person</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Plan For Success Workshop 8/26</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>11AM - 1PM <br /> August 26, 2024</p>
+                        <p>110 Warren Street, Room 148</p>
+                        <p>Hybrid: Zoom/In Person</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Plan For Success Workshop 8/13</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>10AM - 12PM <br /> August 11, 2024</p>
+                        <p>110 Warren St., Room 148</p>
+                        <p>Hybrid Zoom/In Person</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Academic Resources & Time Management Plan</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
+                        <p>110 Warren St., Room 140</p>
+                        <p>Learning Center</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Academic Resources & Time Management Plan</h3>
                       <div className="event_card_details">
                         <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
                         <p>110 Warren St., Room 140</p>
@@ -54,58 +109,7 @@ import EventCard from '../../src/components/EventCard'
 
                   <div className="event_card_outer">
                     <div className="event_card_inner">
-                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
-                      <div className="event_card_details">
-                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
-                        <p>110 Warren St., Room 140</p>
-                        <p>Learning Center</p>
-                      </div>
-                      <button className="event_card_button">Show Details</button>
-                    </div>
-                  </div>
-
-
-                  <div className="event_card_outer">
-                    <div className="event_card_inner">
-                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
-                      <div className="event_card_details">
-                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
-                        <p>110 Warren St., Room 140</p>
-                        <p>Learning Center</p>
-                      </div>
-                      <button className="event_card_button">Show Details</button>
-                    </div>
-                  </div>
-
-
-                  <div className="event_card_outer">
-                    <div className="event_card_inner">
-                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
-                      <div className="event_card_details">
-                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
-                        <p>110 Warren St., Room 140</p>
-                        <p>Learning Center</p>
-                      </div>
-                      <button className="event_card_button">Show Details</button>
-                    </div>
-                  </div>
-
-                  <div className="event_card_outer">
-                    <div className="event_card_inner">
-                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
-                      <div className="event_card_details">
-                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
-                        <p>110 Warren St., Room 140</p>
-                        <p>Learning Center</p>
-                      </div>
-                      <button className="event_card_button">Show Details</button>
-                    </div>
-                  </div>
-
-
-                  <div className="event_card_outer">
-                    <div className="event_card_inner">
-                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
+                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Academic Resources & Time Management Plan</h3>
                       <div className="event_card_details">
                         <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
                         <p>110 Warren St., Room 140</p>
@@ -117,6 +121,7 @@ import EventCard from '../../src/components/EventCard'
 
                 </div>
                 */}
+                
               </section>
 
               <section className='m-8 p-4'>

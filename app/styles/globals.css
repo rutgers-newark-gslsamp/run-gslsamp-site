@@ -589,17 +589,19 @@ a.inline-link{
 .events_container {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  
   width: 100%;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   @media (min-width: 1440px) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
-
-
 .event_card_outer {
   max-width: 20rem;
+  max-height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -607,13 +609,11 @@ a.inline-link{
 
 .event_card_inner {
   margin: 0.5rem;
-  width: 200px;
+  min-width: 14rem;
   @media (min-width: 768px) {
     width: auto;
   }
 }
-
-
 
 .event_card_title {
   border-top-left-radius: 0.75rem; /* 12px */
@@ -626,11 +626,20 @@ a.inline-link{
   padding-right: 1rem;
   padding-top: 0.5rem; /* 2px */
   padding-bottom: 0.5rem; /* 2px */
+  /* min-height: 10rem; */
+  /* display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: space-between; */
+  /* @media (min-width: 768px) {
+    min-height: 12.5rem;
+  } */
 }
 
 .event_card_details {
   background-color: #F1F1F1;
   padding: 0.5rem;
+  min-height: 5rem;
 }
 
 .event_card_button {
