@@ -584,3 +584,65 @@ a.inline-link{
   display: inline-block;
   margin-right: 5px; /* Adjust the spacing between the bullet point and the text */
 }
+
+/* EVENTS */
+.events_container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+
+
+.event_card_outer {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event_card_inner {
+  margin: 0.5rem;
+  width: 200px;
+  @media (min-width: 768px) {
+    width: 250px;
+  }
+}
+
+
+
+.event_card_title {
+  border-top-left-radius: 0.75rem; /* 12px */
+  border-top-right-radius: 0.75rem; /* 12px */
+  background-color: #9D1739;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem; /* 2px */
+  padding-bottom: 0.5rem; /* 2px */
+}
+
+.event_card_details {
+  background-color: #F1F1F1;
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+
+.event_card_button {
+  border-bottom-right-radius: 0.75rem; /* 12px */
+  border-bottom-left-radius: 0.75rem; /* 12px */
+  background-color: #D3D3D3;
+  width: 100%;
+  color: black;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem; /* 2px */
+  padding-bottom: 0.5rem; /* 2px */
+}

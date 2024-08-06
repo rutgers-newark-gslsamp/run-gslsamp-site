@@ -25,21 +25,109 @@ import EventCard from '../../src/components/EventCard'
         <section>
           <Carousel images={images} />
         </section>
-        <div className='lg:grid lg:grid-cols-2'>
-          <div>
-            <section className='m-8 p-4'>
-              <Subtitle name="Upcoming Events"/>
-              <EventCard isUpcoming={true}/>
-            </section>
 
-            <section className='m-8 p-4'>
-              <Subtitle name="Recent Events"/>
-              <EventCard isUpcoming={false}/>
-            </section>
+        <div className='flex flex-col lg:flex-row '>
+          {/** LEFT BLOCK: Events */}
+          <div className=' w-full lg:w-[60%]'>
+            <div className='w-[95%]'>
+              <section className='p-4 pl-8'>
+                <Subtitle name="Upcoming Events"/>
+                <EventCard isUpcoming={true}/>
+
+                {/** 
+                {/** Props for testing in dev 
+                <div className='events_container'>
+
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
+                        <p>110 Warren St., Room 140</p>
+                        <p>Learning Center</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
+                        <p>110 Warren St., Room 140</p>
+                        <p>Learning Center</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
+                        <p>110 Warren St., Room 140</p>
+                        <p>Learning Center</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
+                        <p>110 Warren St., Room 140</p>
+                        <p>Learning Center</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
+                        <p>110 Warren St., Room 140</p>
+                        <p>Learning Center</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
+                        <p>110 Warren St., Room 140</p>
+                        <p>Learning Center</p>
+                      </div>
+                      <button className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+                </div>
+                */}
+              </section>
+
+              <section className='m-8 p-4'>
+                <Subtitle name="Recent Events"/>
+                <EventCard isUpcoming={false}/>
+              </section>
+            </div>
           </div>
 
-          {/**NEWSLETTER AND PAST EVENTS*/}
-          <div className='flex flex-col items-center'>
+          {/** RIGHT BLOCK: NEWSLETTER AND PAST EVENTS*/}
+          <div className='flex flex-col items-center w-full lg:w-[40%]'>
             <section id='newsletter-cta-pc' className='flex flex-col items-center mt-[10%] mx-auto sm:mr-[10%]'>
               <div className="flex flex-col items-center py-3 px-4 ml-auto sm:ml-10 rounded-3xl shadow-lg max-w-lg shadow-black/20 border">
                   
@@ -65,6 +153,9 @@ import EventCard from '../../src/components/EventCard'
             </section>
           </div>
         </div>
+
+        
+        
       </main>
     );
   }

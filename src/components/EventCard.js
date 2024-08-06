@@ -41,7 +41,7 @@ export default function EventCard({ isUpcoming }) {
     };
 
     return (
-        <div className="flex">
+        <div className="events_container">
             {loading ? (
                 <p>Loading...</p>
             ) : events === null ? (
@@ -50,10 +50,10 @@ export default function EventCard({ isUpcoming }) {
                 <p className="text-lg">No events found.</p>
             ) : (
                 events.map((e, index) => (
-                    <div className="max-w-[20rem]" key={index}>
-                        <div className="m-[1rem]">
-                            <h3 className="rounded-t-xl bg-[#9D1739] text-white rounded-t-sm text-center font-bold px-[1rem] py-[.5rem]">{e.title}</h3>
-                            <div className="bg-[#F1F1F1] p-[.5rem]">
+                    <div className="event_card_outer" key={index}>
+                        <div className="event_card_inner">
+                            <h3 className="event_card_title">{e.title}</h3>
+                            <div className="event_card_details">
                                 <p className='font-bold'>{timeConvert(e.startTime, e.date)} - {timeConvert(e.endTime, e.date)} <br/> {dateConvert(e.date)}</p>
                                 <p>{e.building}, Room {e.room}</p>
                                 <p>{e.location}</p>
@@ -68,7 +68,7 @@ export default function EventCard({ isUpcoming }) {
                                     </div>
                                 </div>
                             )}
-                            <button onClick={() => toggleDescription(index)} className="rounded-b-xl bg-[#D3D3D3] w-full text-black font-bold px-[1rem] py-[.5rem]">
+                            <button onClick={() => toggleDescription(index)} className="event_card_button">
                                 {showDescriptions[index] ? 'Hide Details' : 'Show Details'}
                             </button>
                         </div>
