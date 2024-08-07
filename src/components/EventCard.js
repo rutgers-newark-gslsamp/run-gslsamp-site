@@ -1,6 +1,3 @@
-
-
-
 'use client'
 
 import { dateConvert, timeConvert } from './dateTime'
@@ -20,13 +17,15 @@ export default function EventCard({ isUpcoming }) {
                 setLoading(false);
                 if (isUpcoming) {
                     const temp = result.resultPres?.filter((event) => event.date >= today);
-                    temp.sort((a, b) => new Date(a.date) - new Date(b.date));
+                    temp.sort((a, b) => new Date(a.date) - new Date(b.date)); // Sort upcoming events in ascending order
                     setEvents(temp || []);
                 } else {
                     const temp = result.resultPast?.filter((event) => event.date < today);
                     temp.sort((a, b) => new Date(b.date) - new Date(a.date)); // Sort past events in descending order
                     setEvents(temp || []);
                 }
+
+                // Initialize showDescriptions array with false values for each event
                 setShowDescriptions(Array(result.resultPres?.length || 0).fill(false));
             })
             .catch((error) => {
@@ -35,7 +34,8 @@ export default function EventCard({ isUpcoming }) {
             });
     }, [isUpcoming, today]);
 
-    const toggleDescription = (index) => {
+
+    const toggleDescription = (index) => { // Toggle the value for the clicked event index
         setShowDescriptions((prev) => {
             const updatedDescriptions = [...prev];
             updatedDescriptions[index] = !updatedDescriptions[index];
@@ -81,3 +81,4 @@ export default function EventCard({ isUpcoming }) {
         </div>
     );
 }
+// If Failure occurs, I will restore code. cntrl + F, "Original EventCard.js", Notes Doc
