@@ -9,8 +9,14 @@ import image1 from "../public/hero/Hero_Carousel1.jpg";
 import image2 from "../public/hero/Hero_Carousel2.jpg";
 import image3 from "../public/hero/Hero_Carousel3.jpg";
 import image4 from "../public/hero/Hero_Carousel4.jpg";
-import image44 from "../public/hero/Hero_Carousel4NEW.jpg" //Original Sized photo
+import image4444 from "../public/hero/Hero_Carousel4NEW.jpg" //Original Sized photo
 import image5 from "../public/hero/Hero_Carousel5.jpg";
+
+import image11 from "../public/hero/Hero_Carousel1v2.jpg";
+import image22 from "../public/hero/Hero_Carousel2v2.jpg";
+import image33 from "../public/hero/Hero_Carousel3v2.jpg";
+import image44 from "../public/hero/Hero_Carousel4v2.jpg";
+
 
 // Components
 import CarouselHero from "../src/components/CarouselHero";
