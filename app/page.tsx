@@ -13,8 +13,8 @@ import image4 from "../public/hero/Hero_Carousel4.jpg";
 import image5 from "../public/hero/Hero_Carousel5.jpg";
 
 // Hero Images Version 2 8/9/2024
-import image11 from "../public/hero/Hero_Carousel1v2.JPG";
-import image22 from "../public/hero/Hero_Carousel2v2.JPG";
+import image11 from "../public/hero/Hero_Carousel1v2.jpg";
+import image22 from "../public/hero/Hero_Carousel2v2.jpg";
 import image33 from "../public/hero/Hero_Carousel3v2.jpg";
 import image44 from "../public/hero/Hero_Carousel4v2.jpg";
 
