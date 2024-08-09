@@ -13,7 +13,7 @@ import image4 from "../public/hero/Hero_Carousel4.jpg";
 import image5 from "../public/hero/Hero_Carousel5.jpg";
 
 // Hero Images Version 2 8/9/2024
-import image11 from "../public/hero/Hero_Carousel1v2FIX.jpg";
+import image11 from "../public/hero/Hero_Carousel1v2FIX.jpg"; //We should delete the original 2
 import image22 from "../public/hero/Hero_Carousel2v2FIX.jpg";
 import image33 from "../public/hero/Hero_Carousel3v2.jpg";
 import image44 from "../public/hero/Hero_Carousel4v2.jpg";
