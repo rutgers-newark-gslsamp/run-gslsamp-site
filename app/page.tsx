@@ -25,7 +25,7 @@ import CarouselHero from "../src/components/CarouselHero";
 export default function Home() {
  
   // Array of images for CarouselHero
-  const heroImages = [image1, image2, image3, image4, image5]; //image4 switched with image44
+  const heroImages = [image11, image22, image33, image44]; //image1 vs. image11 with different dimensions
 
   return (
     <>
