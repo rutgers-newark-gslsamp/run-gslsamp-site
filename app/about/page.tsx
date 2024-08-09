@@ -18,9 +18,12 @@ import image3 from "../../public/club-carousel/image3.jpg";
 import image4 from "../../public/club-carousel/image4.jpg";
 import image5 from "../../public/club-carousel/image5.jpg";
 
-import image11 from "../../public/club-carousel/Club_Carousel1.jpg";
-import image12 from "../../public/club-carousel/Club_Carousel2.jpg";
-import image13 from "../../public/club-carousel/Club_Carousel3.jpg";
+// Carousel images Updated 8/9/2024
+import image11 from "../../public/club-carousel/Club_Carousel1v2.jpg";
+import image12 from "../../public/club-carousel/Club_Carousel2v2.jpg";
+import image13 from "../../public/club-carousel/Club_Carousel3v2.jpg";
+
+
 
 export default function About() {
 
