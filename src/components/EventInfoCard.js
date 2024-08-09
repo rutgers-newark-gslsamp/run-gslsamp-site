@@ -1,7 +1,8 @@
+
+
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { dateConvert, timeConvert } from './dateTime';
 
 export default function EventInfoCard({ isUpcoming }) {
@@ -15,11 +16,10 @@ export default function EventInfoCard({ isUpcoming }) {
         fetch('/api/events')
             .then((response) => response.json())
             .then((result) => {
+                setLoading(false);
                 if (isUpcoming) {
-                    setLoading(false);
                     setEvents(result.resultPres.filter((event) => event.date >= today));
                 } else {
-                    setLoading(false);
                     setEvents(result.resultPres.filter((event) => event.date < today));
                 }
                 setShowDescriptions(Array(result.resultPres.length).fill(false));
@@ -30,12 +30,8 @@ export default function EventInfoCard({ isUpcoming }) {
             });
     }, [isUpcoming, today]);
 
-    const toggleDescription = (index) => {
-        setShowDescriptions((prev) => {
-            const updatedDescriptions = [...prev];
-            updatedDescriptions[index] = !updatedDescriptions[index];
-            return updatedDescriptions;
-        });
+    const handleCardClick = () => {
+        window.open('/events', '_blank');
     };
 
     return (
@@ -47,32 +43,29 @@ export default function EventInfoCard({ isUpcoming }) {
                     <p className="text-lg">Events being planned, come back soon!</p>
                 ) : (
                     events.map((e, index) => (
-                        <Link href="/events" key={index}>
-                            <a className="block max-w-[20rem] m-[1rem]">
-                                <div className="flex flex-rows ssitems-center m-2 md:m-4 p-2 bg-neutral-300 h-100 border-0 shadow rounded-lg">
-                                    <div>
-                                        <h3 className="text-lg font-bold">{e.title}</h3>
-                                        <p className="font-bold">
-                                            {timeConvert(e.startTime, e.date)} - {timeConvert(e.endTime, e.date)} | {dateConvert(e.date)}
-                                        </p>
-                                        <p>
-                                            {e.building}, Room {e.room}
-                                            <br />
-                                            {e.location}
-                                        </p>
-                                    </div>
+                        <div key={index} className="block max-w-[20rem] m-[1rem]" onClick={handleCardClick}>
+                            <div className="flex flex-rows items-center m-2 md:m-4 p-2 bg-neutral-300 h-100 border-0 shadow rounded-lg cursor-pointer">
+                                <div>
+                                    <h3 className="text-lg font-bold">{e.title}</h3>
+                                    <p className="font-bold">
+                                        {timeConvert(e.startTime, e.date)} - {timeConvert(e.endTime, e.date)} | {dateConvert(e.date)}
+                                    </p>
+                                    <p>
+                                        {e.building}, Room {e.room}
+                                        <br />
+                                        {e.location}
+                                    </p>
                                 </div>
-                                {/**<div className="card-footer">
+                            </div>
+                            {/**<div className="card-footer">
                                     <a href="https://docs.google.com/forms/d/e/1FAIpQLScCKgqYLB5U3uixbzyC1ljbrw7XIyHIrZV8szsDfQTqA6Nbpg/viewform" className="btn btn-primary">RSVP!</a>
                                 </div> **/}
-                            </a>
-                        </Link>
+                        </div>
                     ))
                 )}
             </div>
         </>
     );
 }
-
 
 //Testing this code! I'll push to test EventCard link, if FAILURE, I will restore this code!
