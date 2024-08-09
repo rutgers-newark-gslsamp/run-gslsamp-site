@@ -18,7 +18,6 @@ import image22 from "../public/hero/Hero_Carousel2v2.JPG";
 import image33 from "../public/hero/Hero_Carousel3v2.jpg";
 import image44 from "../public/hero/Hero_Carousel4v2.jpg";
 
-
 // Components
 import CarouselHero from "../src/components/CarouselHero";
 
