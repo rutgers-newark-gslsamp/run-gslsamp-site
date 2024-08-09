@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 'use client'
 
 import React, { useState, useEffect } from 'react';
@@ -26,10 +15,11 @@ export default function EventInfoCard({ isUpcoming }) {
         fetch('/api/events')
             .then((response) => response.json())
             .then((result) => {
-                setLoading(false);
                 if (isUpcoming) {
+                    setLoading(false);
                     setEvents(result.resultPres.filter((event) => event.date >= today));
                 } else {
+                    setLoading(false);
                     setEvents(result.resultPres.filter((event) => event.date < today));
                 }
                 setShowDescriptions(Array(result.resultPres.length).fill(false));
@@ -58,8 +48,8 @@ export default function EventInfoCard({ isUpcoming }) {
                 ) : (
                     events.map((e, index) => (
                         <Link href="/events" key={index}>
-                            <a target="_blank" className="block max-w-[20rem] m-[1rem]">
-                                <div className="flex flex-rows items-center m-2 md:m-4 p-2 bg-neutral-300 h-100 border-0 shadow rounded-lg">
+                            <a className="block max-w-[20rem] m-[1rem]">
+                                <div className="flex flex-rows ssitems-center m-2 md:m-4 p-2 bg-neutral-300 h-100 border-0 shadow rounded-lg">
                                     <div>
                                         <h3 className="text-lg font-bold">{e.title}</h3>
                                         <p className="font-bold">
@@ -83,4 +73,6 @@ export default function EventInfoCard({ isUpcoming }) {
         </>
     );
 }
+
+
 //Testing this code! I'll push to test EventCard link, if FAILURE, I will restore this code!
