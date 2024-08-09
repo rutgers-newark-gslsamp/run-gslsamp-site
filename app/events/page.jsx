@@ -8,18 +8,18 @@ import EventCard from '../../src/components/EventCard'
 import Image from 'next/image';
 
 // CAROUSEL IMAGES
-import pic4 from '../../public/event-photos/Events_Carousel1.JPG'
-import pic5 from '../../public/event-photos/Events_Carousel2.JPG'
-import pic6 from '../../public/event-photos/Events_Carousel3.JPG'
-import pic7 from '../../public/event-photos/Events_Carousel4.JPG'
-import pic8 from '../../public/event-photos/Events_Carousel5.JPG'
+import pic4 from '../../public/event-photos/Events_Carousel1v2.JPG'
+import pic5 from '../../public/event-photos/Events_Carousel2v2.JPG'
+import pic6 from '../../public/event-photos/Events_Carousel3v2.JPG'
+import pic7 from '../../public/event-photos/Events_Carousel4v2.JPG'
+import pic8 from '../../public/event-photos/Events_Carousel5.JPG'   // Taken out of rotation
 
 // TEST EVENT BANNER
 import testBanner from '../../public/test_event_banner.jpg'
 
 
   export default function Events() {
-    const images = [pic4, pic5, pic6, pic7, pic8];
+    const images = [pic4, pic5, pic6, pic7];
 
     return (
       <main>
