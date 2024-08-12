@@ -10,6 +10,7 @@ import CarouselVideo from "../../src/components/CarouselVideo";
 import StaffCard from "../../src/components/StaffCard";
 import EventInfoCard from "../../src/components/EventInfoCard";
 import Title from "../../src/components/Title.tsx";
+import Link from "next/link";
 
 // carousel images
 import image1 from "../../public/club-carousel/image1.jpg";
@@ -22,8 +23,6 @@ import image5 from "../../public/club-carousel/image5.jpg";
 import image11 from "../../public/club-carousel/Club_Carousel1v2.jpg";
 import image12 from "../../public/club-carousel/Club_Carousel2v2.jpg";
 import image13 from "../../public/club-carousel/Club_Carousel3v2.jpg";
-
-
 
 export default function About() {
 
@@ -65,10 +64,10 @@ export default function About() {
         </div>
         
         {/* Layer 2 */}
-        <div className="flex flex-col sm:flex-row w-full items-center w-full sm:h-[672px]">
+        <div className="flex flex-col md:flex-row items-center w-full">
           
           {/* LEFT BLOCK */}
-          <div className="flex flex-col sm:w-1/2 mt-0 mb-auto sm:w-[50%]">
+          <div className="flex flex-col sm:w-1/2 mt-0 mb-auto sm:w-[75%] md:w-[50%]">
             
             {/* FOLLOW US */}
             <div className="follow_us_container flex items-center subsection-paragraph pt-2 w-fullsm:mx-4 md:mx-8 lg:mx-16">
@@ -88,15 +87,15 @@ export default function About() {
               
             </div>
             
-            <div className="flex flex-col items-center lg:flex-row">
+            <div className="flex flex-col items-center xl:flex-row">
               {/* CLUB INFO */}
               <div>      
                 <div className="section-subheader pt-2 mx-4 md:mx-8 lg:mx-16">
-                  <h2 className="text-3xl font-bold text-neutral-800">Club Info</h2>
+                  <h2 className="text-xl sm:text-3xl font-bold text-neutral-800">Club Info</h2>
                   <hr/>
                 </div>
 
-                <p className="subsection-paragraph text-base mx-4 md:mx-8 lg:mx-16 md:text-lg">
+                <p className="subsection-paragraph text-base mx-4 md:mx-8 lg:mx-16 ">
                   The GS-LSAMP Club at Rutgers Newark is a student organization affiliated with GS-LSAMP. Its roots lie in the pursuit of academic excellence in science, technology, engineering, and mathematics (STEM) fields.
                 </p>
               </div>
@@ -120,7 +119,7 @@ export default function About() {
           </div>
 
           {/* RIGHT BLOCK */}
-          <div className="flex flex-col sm:w-1/2 m-2 items-center lg:w-[50%] h-full">
+          <div className="flex flex-col sm:w-1/2 m-2 items-center sm:w-[50%] h-full mt-0 mb-auto">
 
             {/* TESTIMONIALS - PC */}
             <div className="flex flex-col items-center testimonial_container">
@@ -137,16 +136,14 @@ export default function About() {
           </div>
         </div>
 
-        {/* EVENTS */}
-        <section className="about-events-container pb-4 pt-12 ml-0 mr-auto">
+      {/* EVENTS */}
+      <section className="about-events-container pb-10 ml-0 mr-auto">
           <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
-            <h2 className="text-3xl font-bold text-neutral-800">Events</h2>
+            <Link href="/events"><button className="text-3xl font-bold text-neutral-800 hover:text-red-700">Check out our events!</button></Link>
             <hr/>
           </div>
-          <div id="event-container" className="grid md:grid-cols-3 mx-4 md:mx-16 gap-2">
-            <EventInfoCard isUpcoming={true}/>
-          </div> 
         </section> 
+        
         
       </main>
 
