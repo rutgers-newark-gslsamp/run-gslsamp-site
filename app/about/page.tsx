@@ -136,13 +136,14 @@ export default function About() {
           </div>
         </div>
 
-      {/* EVENTS */}
+      {/* EVENTS 
       <section className="about-events-container pb-10 ml-0 mr-auto">
           <div className="section-subheader mx-4 md:mx-8 lg:mx-16">
             <Link href="/events"><button className="text-3xl font-bold text-neutral-800 hover:text-red-700">Check out our events!</button></Link>
             <hr/>
           </div>
         </section> 
+      */}
         
         
       </main>

@@ -6,6 +6,7 @@ import Carousel from '../../src/components/Carousel'
 import Subtitle from '../../src/components/Subtitle'
 import EventCard from '../../src/components/EventCard'
 import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
 
 // CAROUSEL IMAGES
 import pic4 from '../../public/event-photos/Events_Carousel1v2.JPG'
@@ -20,6 +21,8 @@ import testBanner from '../../public/test_event_banner.jpg'
 
   export default function Events() {
     const images = [pic4, pic5, pic6, pic7];
+
+    const [showDescriptions, setShowDescriptions] = useState(false);
 
     return (
       <main>
@@ -41,7 +44,6 @@ import testBanner from '../../public/test_event_banner.jpg'
                 {/** Props for testing in dev 
                 <div className='events_container'>
 
-
                   <div className="event_card_outer">
                     <div className="event_card_inner">
                       
@@ -51,7 +53,12 @@ import testBanner from '../../public/test_event_banner.jpg'
                         <p>110 Warren St., Room 148</p>
                         <p>Hybrid Zoom/In Person</p>
                       </div>
-                      <button className="event_card_button">Show Details</button>
+                      {showDescriptions && (
+                        <div className="text-black bg-[#F1F1F1] border-t-2 p-[.5rem]">
+                          Identify your goals based on the outcomes you seek for the coming year. Create an actionable plan for reaching your goals, academically and professionally. Advance yourself towards your post graduation aspirations! Held in hybrid format in person and on Zoom. Dates: 8/13,14,&26
+                        </div>
+                      )}
+                      <button onClick={() => setShowDescriptions(!showDescriptions)} className="event_card_button">Show Details</button>
                     </div>
                   </div>
 
