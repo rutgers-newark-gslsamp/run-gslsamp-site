@@ -36,7 +36,7 @@ import testBanner from '../../public/test_event_banner.jpg'
           {/** LEFT BLOCK: Events */}
           <div className=' w-full lg:w-[60%]'>
             <div className='w-[95%]'>
-              <section className='p-4 pl-8'>
+              <section className='p-4 pl-12'>
                 <Subtitle name="Upcoming Events"/>
                 <EventCard isUpcoming={true}/>
 
@@ -46,8 +46,7 @@ import testBanner from '../../public/test_event_banner.jpg'
 
                   <div className="event_card_outer">
                     <div className="event_card_inner">
-                      
-                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Plan For Success Workshop 8/14</h3>
+                      <h3 className="event_card_title">Plan For Success Workshop 8/14</h3>
                       <div className="event_card_details">
                         <p className='font-bold'>10AM - 12PM<br /> August 13, 2024</p>
                         <p>110 Warren St., Room 148</p>
@@ -65,7 +64,7 @@ import testBanner from '../../public/test_event_banner.jpg'
 
                   <div className="event_card_outer">
                     <div className="event_card_inner">
-                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Plan For Success Workshop 8/26</h3>
+                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
                       <div className="event_card_details">
                         <p className='font-bold'>11AM - 1PM <br /> August 26, 2024</p>
                         <p>110 Warren Street, Room 148</p>
@@ -78,10 +77,10 @@ import testBanner from '../../public/test_event_banner.jpg'
 
                   <div className="event_card_outer">
                     <div className="event_card_inner">
-                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Plan For Success Workshop 8/13</h3>
+                      <h3 className="event_card_title">YEAR OPENING MEETING</h3>
                       <div className="event_card_details">
-                        <p className='font-bold'>10AM - 12PM <br /> August 11, 2024</p>
-                        <p>110 Warren St., Room 148</p>
+                        <p className='font-bold'>10AM - 12PM <br /> September 24, 2024</p>
+                        <p>See Registration Form, Room TBA</p>
                         <p>Hybrid Zoom/In Person</p>
                       </div>
                       <button className="event_card_button">Show Details</button>
@@ -91,32 +90,7 @@ import testBanner from '../../public/test_event_banner.jpg'
 
                   <div className="event_card_outer">
                     <div className="event_card_inner">
-                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Academic Resources & Time Management Plan</h3>
-                      <div className="event_card_details">
-                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
-                        <p>110 Warren St., Room 140</p>
-                        <p>Learning Center</p>
-                      </div>
-                      <button className="event_card_button">Show Details</button>
-                    </div>
-                  </div>
-
-                  <div className="event_card_outer">
-                    <div className="event_card_inner">
-                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Academic Resources & Time Management Plan</h3>
-                      <div className="event_card_details">
-                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
-                        <p>110 Warren St., Room 140</p>
-                        <p>Learning Center</p>
-                      </div>
-                      <button className="event_card_button">Show Details</button>
-                    </div>
-                  </div>
-
-
-                  <div className="event_card_outer">
-                    <div className="event_card_inner">
-                      <h3 className="event_card_title"><Image src={testBanner} className='rounded-xl'></Image>Academic Resources & Time Management Plan</h3>
+                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
                       <div className="event_card_details">
                         <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
                         <p>110 Warren St., Room 140</p>
@@ -128,6 +102,7 @@ import testBanner from '../../public/test_event_banner.jpg'
 
                 </div>
                 */}
+                
                 
               </section>
 
