@@ -33,8 +33,7 @@ body {
 /* NAVIGATION MENU */
 /* Top Nav*/
 .mobile-nav {
-  display: none;
-  position: sticky;
+  display: flex;
 }
 .desktop-nav {
   display: flex;

@@ -48,7 +48,7 @@ const NavBar: React.FC<{}> = () => {
                         </h1>
                         <a onClick={hideDiv} className='flex mx-2 justify-center items-center w-10 hover:cursor-pointer'>
                             <Image
-                                className='w-auto px-2 drop-shadow grayscale sm:invisible'
+                                className='w-auto px-2 drop-shadow grayscale m:invisible lg:invisible'
                                 src={menuIcon}
                                 alt="Hamburger Menu Icon"
                                 width={50}
@@ -84,8 +84,8 @@ const NavBar: React.FC<{}> = () => {
                 </div>
             </nav>
             {isVisible && (
-                <div id='mobile-nav' className='fixed left-0 top-0 w-full bg-gray-100 z-50 mt-14 h-[92vh]'>
-                    <ul className='grid grid-col-6 h-full text-base justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline nav-page-list' id="bottom-nav-page-list">
+                <div id='mobile-nav' className='fixed m:hidden lg:hidden left-0 top-0 w-full bg-gray-100 z-50 mt-14 h-[85vh]'>
+                    <ul className='grid grid-col-6 h-full text-lg justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline nav-page-list' id="bottom-nav-page-list">
                         {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                         <li className='w-screen h-full flex justify-center items-center border-b border-[#D4D4D4]'>
                             <Link onClick={hideDiv} className='flex items-center justify-center hover:bg-gray-200 w-screen h-full text-center text-black font-bold uppercase ' href="/">Home</Link>
