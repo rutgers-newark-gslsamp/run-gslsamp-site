@@ -22,7 +22,10 @@ import testBanner from '../../public/test_event_banner.jpg'
   export default function Events() {
     const images = [pic4, pic5, pic6, pic7];
 
-    const [showDescriptions, setShowDescriptions] = useState(false);
+    const [showDescription1, setShowDescription1] = useState(false);
+    const [showDescription2, setShowDescription2] = useState(false);
+    const [showDescription3, setShowDescription3] = useState(false);
+    const [showDescription4, setShowDescription4] = useState(false);
 
     return (
       <main>
@@ -38,70 +41,103 @@ import testBanner from '../../public/test_event_banner.jpg'
             <div className='w-[95%]'>
               <section className='p-4 pl-12'>
                 <Subtitle name="Upcoming Events"/>
-                <EventCard isUpcoming={true}/>
+                {/* <EventCard isUpcoming={true}/> */}
 
                 {/** 
-                {/** Props for testing in dev 
+                {/** Props for testing in dev */}
                 <div className='events_container'>
 
                   <div className="event_card_outer">
                     <div className="event_card_inner">
-                      <h3 className="event_card_title">Plan For Success Workshop 8/14</h3>
+                      <h3 className="event_card_title">Plan For Success Workshop 8/26</h3>
                       <div className="event_card_details">
-                        <p className='font-bold'>10AM - 12PM<br /> August 13, 2024</p>
-                        <p>110 Warren St., Room 148</p>
-                        <p>Hybrid Zoom/In Person</p>
-                      </div>
-                      {showDescriptions && (
-                        <div className="text-black bg-[#F1F1F1] border-t-2 p-[.5rem]">
-                          Identify your goals based on the outcomes you seek for the coming year. Create an actionable plan for reaching your goals, academically and professionally. Advance yourself towards your post graduation aspirations! Held in hybrid format in person and on Zoom. Dates: 8/13,14,&26
-                        </div>
-                      )}
-                      <button onClick={() => setShowDescriptions(!showDescriptions)} className="event_card_button">Show Details</button>
-                    </div>
-                  </div>
-
-
-                  <div className="event_card_outer">
-                    <div className="event_card_inner">
-                      <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
-                      <div className="event_card_details">
-                        <p className='font-bold'>11AM - 1PM <br /> August 26, 2024</p>
+                        <p className='font-bold'>11AM - 1PM<br /> August 26, 2024</p>
                         <p>110 Warren Street, Room 148</p>
                         <p>Hybrid: Zoom/In Person</p>
                       </div>
-                      <button className="event_card_button">Show Details</button>
+                      {showDescription1 && (
+                        <div className="text-black bg-[#F1F1F1] border-t-2 p-[.5rem]">
+                          Identify your goals based on the outcomes you seek for the coming year. Create an actionable plan for reaching your goals, academically and professionally. Advance yourself towards your post graduation aspirations! Held in hybrid format in person and on Zoom. Dates: 8/13,14,&26
+                          <div className="flex justify-end">
+                              <button className="bg-[#767676] px-[1rem] py-[.5rem] rounded-lg text-white font-bold">
+                                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNY51RF_R4dEtK087DOw0dGNQThMHdGQ8s9HICRN-5li9y7A/viewform" target='_blank'>REGISTER HERE</a>
+                              </button>
+                          </div>
+                        </div>
+                      )}
+                      <button onClick={() => setShowDescription1(!showDescription1)} className="event_card_button">Show Details</button>
                     </div>
                   </div>
-
-
-                  <div className="event_card_outer">
-                    <div className="event_card_inner">
-                      <h3 className="event_card_title">YEAR OPENING MEETING</h3>
-                      <div className="event_card_details">
-                        <p className='font-bold'>10AM - 12PM <br /> September 24, 2024</p>
-                        <p>See Registration Form, Room TBA</p>
-                        <p>Hybrid Zoom/In Person</p>
-                      </div>
-                      <button className="event_card_button">Show Details</button>
-                    </div>
-                  </div>
-
 
                   <div className="event_card_outer">
                     <div className="event_card_inner">
                       <h3 className="event_card_title">Academic Resources & Time Management Plan</h3>
                       <div className="event_card_details">
-                        <p className='font-bold'>00:00PM - 00:00PM <br /> September 1, 2024</p>
-                        <p>110 Warren St., Room 140</p>
+                        <p className='font-bold'>11:30AM - 12PM<br />September 9, 2024</p>
+                        <p>110 Warren Street, Room 140</p>
                         <p>Learning Center</p>
                       </div>
-                      <button className="event_card_button">Show Details</button>
+                      {showDescription2 && (
+                        <div className="text-black bg-[#F1F1F1] border-t-2 p-[.5rem]">
+                          Take the semester by the horns: Learn about the resources for success offered on campus. Learn time management and prepare your work plan.
+                          <div className="flex justify-end">
+                            <button className="bg-[#767676] px-[1rem] py-[.5rem] rounded-lg text-white font-bold">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQWcXNf6BQJmGV7foKYH__RCo2vwa21fF27adT0lsGKnB5lg/viewform" target='_blank'>REGISTER HERE</a>
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                      <button onClick={() => setShowDescription2(!showDescription2)} className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title">Become a LinkedIn STAR</h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>11:30AM - 12PM<br />September 23, 2024</p>
+                        <p>TBA, Room TBA</p>
+                        <p>TBA</p>
+                      </div>
+                      {showDescription3 && (
+                        <div className="text-black bg-[#F1F1F1] border-t-2 p-[.5rem]">
+                          ~ Learn about networking ~ Make LinkedIn WORK FOR YOU! ~ Create a POWERFUL profile ~
+                          <div className="flex justify-end">
+                            <button className="bg-[#767676] px-[1rem] py-[.5rem] rounded-lg text-white font-bold">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSerVSgpL71AYH54xbFkhEjRsaqfFn8TLuWhLePy_4pCjQhdsQ/viewform" target='_blank'>REGISTER HERE</a>
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                      <button onClick={() => setShowDescription3(!showDescription3)} className="event_card_button">Show Details</button>
+                    </div>
+                  </div>
+
+                  <div className="event_card_outer">
+                    <div className="event_card_inner">
+                      <h3 className="event_card_title">YEAR OPENING MEETING
+                      </h3>
+                      <div className="event_card_details">
+                        <p className='font-bold'>9AM - 10:30AM<br />September 25, 2024</p>
+                        <p>See Registration Form, Room TBA</p>
+                        <p>Hybrid: Zoom/In Person</p>
+                      </div>
+                      {showDescription4 && (
+                        <div className="text-black bg-[#F1F1F1] border-t-2 p-[.5rem]">
+                          ~ Meet fellow GS-LSAMPers! ~ Learn about RESOURCES. ~ Maintain access to opportunities! ~
+                          <div className="flex justify-end">
+                            <button className="bg-[#767676] px-[1rem] py-[.5rem] rounded-lg text-white font-bold">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKfz0j6PbgOLTauO5vY4B1vgNkD7xfq9eOmcTSS27Oi_tqDw/viewform" target='_blank'>Detail + RSVP</a>
+                            </button>
+                          </div>
+                        </div>
+                      )}
+                      <button onClick={() => setShowDescription4(!showDescription4)} className="event_card_button">Show Details</button>
                     </div>
                   </div>
 
                 </div>
-                */}
+                
                 
                 
               </section>

@@ -157,7 +157,7 @@ export default function About() {
         <div id="staff-card-container" className="grid md:grid-cols-2 lg:grid-cols-3 mx-4 md:mx-16">
           <StaffCard 
             picture={gates}
-            name="Alexander Gates, PhD"
+            name="Alexander Gates, Ph.D."
             role="Executive Director of GS-LSAMP"
             university="Rutgers University - Newark"
             email="agates@newark.rutgers.edu"
@@ -165,7 +165,7 @@ export default function About() {
           />
           <StaffCard 
             picture={sanMiguel}
-            name="Cristiane San Miguel, Ph.D"
+            name="Cristiane San Miguel, Ph.D."
             role="Assistant Director of GS-LSAMP"
             university="Rutgers University - Newark"
             email="csanmig@newark.rutgers.edu"
