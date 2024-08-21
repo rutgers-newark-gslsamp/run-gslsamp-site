@@ -5,7 +5,7 @@ import Title from '../../src/components/Title.tsx';
 export default function Faculty() {
     return(
         <>
-            <Title name={"Faculty"} />
+            <Title name={"For Interested Faculty"} />
             <p className='whitespace-normal mx-8 md:mx-16 lg:mx-28'>
                 The Garden-State Louis Stokes Alliance for Minority Participation (GS-LSAMP) has been supported by the National Science Foundation since 2009. Its mission has been to increase the interest, retention, and graduation and success of students from racial and ethnic groups that are historically underrepresented in STEM fields. As part of Phase III of the program (2019-2024), one of the program goals is to increase the number of LSAMP scholars continuing to graduate school.
                 <br/><br/>

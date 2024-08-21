@@ -68,7 +68,7 @@ const NavBar: React.FC<{}> = () => {
                                 <Link className='hover:underline font-medium' href="/about">About Us</Link>
                             </li>
                             <li>
-                                <Link className='hover:underline font-medium' href="/faculty">Faculty</Link>
+                                <Link className='hover:underline font-medium' href="/faculty">Interested Faculty?</Link>
                             </li>
                             <li>
                                 <Link className='hover:underline font-medium' href="/membership">Membership</Link>
