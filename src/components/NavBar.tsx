@@ -58,7 +58,7 @@ const NavBar: React.FC<{}> = () => {
                     </header>
                 </div>
                 <div id='navigation-pc'>
-                    <div className='flex justify-center items-center text-center z-30 shadow-md bg-gradient-to-t from-red-900 to-red-700' id='bottom-nav-container '>
+                    <div className='max-sm:hidden flex justify-center items-center text-center z-30 shadow-md bg-gradient-to-t from-red-900 to-red-700' id='bottom-nav-container '>
                         <ul className='flex text-base justify-center place-items-center flex-wrap text-white font-medium my-1 mx-5 list-none no-underline drop-shadow-md nav-page-list' id="bottom-nav-page-list">
                             {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                             <li>

@@ -437,7 +437,7 @@ a.inline-link{
 
 @media screen and (max-width: 768px) {
   .landing-cta-headline {
-      font-size: 14px;
+      font-size: 15px;
       margin-right: 0;
   }
   .cta-button {

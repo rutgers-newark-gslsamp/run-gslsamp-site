@@ -2,18 +2,22 @@ import React from "react";
 
 const CtaBlock: React.FC = () => {
     return (
-        <aside className="lg:translate-y-[-90%] flex flex-col items-center justify-center lg:absolute lg:max-w-1/2 w-full md:h-1/2 lg:h-3/5 xl:h-[45%] lg:w-1/3 xl:w-1/3 shadow-md lg:rounded-3xl px-5 py-4 lg:right-5 bg-gradient-to-t from-red-900 to-red-600">
-            <div className="flex text-white font-bold text-left lg:mr-4 cta-headline">
-                <h2 className="text-base md:text-xl lg:text-2xl " id="landing-cta-headline">Increasing the retention, graduation and success of underrepresented minorities STEM.</h2>
+        <aside className="flex flex-row w-full h-1/3 flex-shrink px-5 pt-3 pb-2 lg:flex-col lg:absolute lg:bottom-5 lg:right-3 lg:max-w-1/2 lg:h-2/7 lg:w-1/3 lg:rounded-3xl xl:h-1/3 shadow-md bg-gradient-to-t from-red-900  to-red-600 gap-1 ">
+            {/*Box 1 */}
+            <div className="flex flex-shrink justify-center pr-3 lg:pr-0 w-4/5 md:w-3/4 lg:m-3 lg:w-auto lg:h-auto text-white font-bold text-base md:text-md xl:flex-grow cta-headline">
+                <h2 className="text-left text-lg flex-grow md:text-xl" id="landing-cta-headline">Increasing the retention, graduation and success of underrepresented minorities STEM.</h2>
             </div>
-            <nav className="flex justify-center m-2 gap-3 cta-button-wrapper">
-                <button className="w-1/2 h-12 lg:h-14 p-2 lg:w-full bg-white hover:bg-neutral-300 rounded shadow-md" id="cta-join-now-button">
-                    <a className="text-black font-bold uppercase text-sm lg:text-base" href="/membership">Join Now</a>
-                </button>
-                <button className="w-1/2 h-12 lg:h-14 p-2 lg:w-full hover:underline bg-red-700 hover:bg-red-800 rounded border-4 border-white shadow-md " id="cta-learn-more-button">
-                    <a className="font-bold text-white uppercase text-sm lg:text-base" href="/membership">Eligibility</a>
-                </button>
-            </nav>
+            {/*Box 2 */}
+            <div className="flex flex-shrink justify-center mr-3 md:mr-0 w-1/5 md:w-1/4 lg:w-full lg:h-1/3">
+                <nav className="flex flex-col flex-shrink justify-items-center lg:flex-row gap-2 cta-button-wrapper ">
+                    <button className="flex flex-shrink max-w-md h-auto p-1.5 md:p-4 lg:h-14 lg:w-full bg-white hover:bg-neutral-300 rounded shadow-md" id="cta-join-now-button">
+                        <a className="text-black font-bold uppercase text-sm flex-grow md:text-lg " href="/membership">Join Now</a>
+                    </button>
+                    <button className="flex max-w-md h-auto flex-shrink lg:h-14 p-1.5 md:p-3 lg:w-full hover:underline bg-red-700 hover:bg-red-800 rounded border-2 border-white shadow-md" id="cta-learn-more-button">
+                        <a className="font-bold text-white uppercase text-sm flex-grow md:text-lg flex-shrink" href="/membership">Eligibility</a>
+                    </button>
+                </nav>
+            </div>
         </aside>  
     );
 }

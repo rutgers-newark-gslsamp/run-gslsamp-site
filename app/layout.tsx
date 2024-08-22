@@ -30,7 +30,7 @@ return (
         <NavBar />
         {children}
       </div>
-      <footer className='mt-full text-left'>
+      <footer className='bottom-0 mt-full text-left'>
         <Copyright currentDate={new Date()} />
     </footer>
     </body>

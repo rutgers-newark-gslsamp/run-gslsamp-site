@@ -43,10 +43,8 @@ export default function Home() {
         >
           <CarouselHero images={heroImages} /> {/* Use CarouselHero */}
         </figure>
-        <CtaBlock />
       </main>
-
-
+      <CtaBlock />
       {/* Youtube Video */}
       <section className="flex justify-center my-8 md:my-16 md:mx-8">
         <iframe
