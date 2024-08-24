@@ -31,11 +31,11 @@ export default function Home() {
       {/**Title components*/}
 
       {/**<Title title={"Index Page"} />*/}  
-      <main className="landing-hero-container">
+      <main className="landing-hero-container lg:pb-7">
        
         {/* Hero Gallery */}
         <figure
-          className="lg:h-96 xl:h-[35rem] md:h-72 h-44 overflow-hidden" //38rem originally, height of hero on website
+          className="h-44 md:h-72 lg:h-96 xl:h-[35rem] overflow-hidden" //38rem originally, height of hero on website
           style={{
             marginTop: '-0.99rem', // Horizontal of Hero image?
             width: '100%' // Width of Hero
