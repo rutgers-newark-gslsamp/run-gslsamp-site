@@ -415,14 +415,6 @@ a.inline-link{
   transform: translateY(-90%);
 }
 
-@media screen and (max-width: 768px) {
-  .cta-button {
-      width: 40rem;
-      height: 40px;
-      font-size: 10px;
-  }
-}
-
 @media (max-width: 768px) {
   .hero-cta-block {
           width: 50%;
@@ -440,13 +432,7 @@ a.inline-link{
       font-size: 15px;
       margin-right: 0;
   }
-  .cta-button {
-      width: 30%;
-      height: 40px;
-      font-size: 10px;
-  }
 }
-
 
 /* ALLIANCE */
 .lsamp-alliance-header {
