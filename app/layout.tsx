@@ -26,7 +26,7 @@ return (
   <html lang="en">
     {/**applying font Inter to body element */}
     <body>
-      <div className='min-h-screen flex flex-col flex-grow'>
+      <div className='min-h-screen flex flex-col flex-grow flex-shrink'>
         <NavBar />
         {children}
       </div>

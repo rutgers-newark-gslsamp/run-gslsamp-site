@@ -34,17 +34,11 @@ export default function Home() {
       <main className="landing-hero-container lg:pb-7">
        
         {/* Hero Gallery */}
-        <figure
-          className="h-44 md:h-72 lg:h-96 xl:h-[35rem] overflow-hidden" //38rem originally, height of hero on website
-          style={{
-            marginTop: '-0.99rem', // Horizontal of Hero image?
-            width: '100%' // Width of Hero
-          }}
-        >
+        <figure id="hero-picture" className="md:mx-14 overflow-hidden">
           <CarouselHero images={heroImages} /> {/* Use CarouselHero */}
         </figure>
       </main>
-      <CtaBlock />
+      <CtaBlock/>
       {/* Youtube Video */}
       <section className="flex justify-center my-8 md:my-16 md:mx-8">
         <iframe

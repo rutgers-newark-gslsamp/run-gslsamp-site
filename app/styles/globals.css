@@ -398,15 +398,11 @@ a.inline-link{
 /* HOME */
 
 /* HERO */
+/*HeroImageSize height of pics 1056 x 576*/
 .landing-hero-container {
   position: relative;
-  margin-top: .5rem;
 }
 
-.hero-picture-wrapper{
-  max-height: 80vh;
-  overflow: hidden;
-}
 .hero-picture {
   width:100%;
   height: auto;
