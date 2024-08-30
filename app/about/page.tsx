@@ -67,7 +67,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row items-center w-full">
           
           {/* LEFT BLOCK */}
-          <div className="flex flex-col sm:w-1/2 mt-0 mb-auto sm:w-[75%] md:w-[50%]">
+          <div className="flex flex-col mt-0 mb-auto sm:w-[75%] md:w-[50%]">
             
             {/* FOLLOW US */}
             <div className="follow_us_container flex items-center subsection-paragraph pt-2 w-fullsm:mx-4 md:mx-8 lg:mx-16">
@@ -119,7 +119,7 @@ export default function About() {
           </div>
 
           {/* RIGHT BLOCK */}
-          <div className="flex flex-col sm:w-1/2 m-2 items-center sm:w-[50%] h-full mt-0 mb-auto">
+          <div className="flex flex-col sm:w-1/2 m-2 items-center h-full mt-0 mb-auto">
 
             {/* TESTIMONIALS - PC */}
             <div className="flex flex-col items-center testimonial_container">
