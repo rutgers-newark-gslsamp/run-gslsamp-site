@@ -31,11 +31,11 @@ export default function Home() {
       {/**Title components*/}
 
       {/**<Title title={"Index Page"} />*/}  
-      <main className="landing-hero-container lg:pb-7">
+      <main className="landing-hero-container bg-red-200">
        
         {/* Hero Gallery */}
-        <figure id="hero-picture" className="md:mx-14 overflow-hidden">
-          <CarouselHero images={heroImages} /> {/* Use CarouselHero */}
+        <figure id="hero-picture" className="overflow-hidden">
+          <CarouselHero images={heroImages}/> {/* Use CarouselHero */}
         </figure>
       </main>
       <CtaBlock/>

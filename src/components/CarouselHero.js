@@ -29,7 +29,7 @@ const CarouselHero = ({ images }) => {
 
   return (
     <div className="relative flex justify-center"> {/* Hero Image Container Remove Red Block */}
-      <HeroImageWithLoadingState src={images[currentImageIndex]} alt={"Carousel Hero Item"} />
+      <HeroImageWithLoadingState src={images[currentImageIndex]} alt={"Carousel Hero Item"}/>
       <div className="absolute top-7 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {images.map((_, index) => (
           <div
