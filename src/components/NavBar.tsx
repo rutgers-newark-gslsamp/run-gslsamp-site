@@ -21,9 +21,9 @@ const NavBar: React.FC<{}> = () => {
     return (
         <>
 
-            <nav className='flex flex-col w-full bg-gray-300 sm:bg-white sticky z-30 top-0'>
-                <div className='flex flex-wrap items-center justify-between h-[8vh] sm:h-auto' id='top-nav-container'>
-                    <header className='flex items-center'>
+            <nav className='flex flex-col w-full h-1/5 bg-gray-300 sm:bg-white sticky z-30 top-0'>
+                <div className='flex flex-wrap items-center justify-between h-fill sm:h-auto' id='top-nav-container'>
+                    <header className='flex items-center flex-shrink'>
                         <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
                             <div>
                                 <Image 
@@ -84,7 +84,7 @@ const NavBar: React.FC<{}> = () => {
                 </div>
             </nav>
             {isVisible && (
-                <div id='mobile-nav' className='fixed sm:invisible md:hidden  left-0 top-0 w-full bg-gray-100 z-50 mt-14 h-[85vh]'>
+                <div id='mobile-nav' className='fixed sm:invisible md:hidden left-0 top-0 w-full bg-gray-100 z-50 mt-14 h-[93vh]'>
                     <ul className='grid grid-col-6 h-full text-lg justify-center place-items-center flex-wrap text-black font-bold my-1 mx-5 list-none no-underline nav-page-list' id="bottom-nav-page-list">
                         {/* FIXME: GLOBAL CSS FOR HOVER EFFECT IS NOT WORKING */}
                         <li className='w-screen h-full flex justify-center items-center border-b border-[#D4D4D4]'>
