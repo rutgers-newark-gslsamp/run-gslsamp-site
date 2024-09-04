@@ -31,7 +31,7 @@ export default function Home() {
       {/**Title components*/}
 
       {/**<Title title={"Index Page"} />*/}  
-      <main className="landing-hero-container bg-red-200">
+      <main className="landing-hero-container bg-gray-200">{/* bg-gradient-to-b from-gray-500 via-gray-400 to-white bg-gray-200*/}
        
         {/* Hero Gallery */}
         <figure id="hero-picture" className="overflow-hidden">
