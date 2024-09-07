@@ -36,15 +36,18 @@ import testBanner from '../../public/test_event_banner.jpg'
         </section>
 
         <div className='flex flex-col lg:flex-row '>
-          {/** LEFT BLOCK: Events */}
+          {/** LEFT BLOCK: Events (UNDER CONSTRUCTION)*/}
           <div className=' w-full lg:w-[60%]'>
             <div className='w-[95%]'>
               <section className='p-4 pl-12'>
                 <Subtitle name="Upcoming Events"/>
+                Find all of our upcoming events <a href="https://afc.newark.rutgers.edu/events/tag/gs-lsamp/" target='_blank' className='underline text-lg'>here</a>!
+
+
                 {/* <EventCard isUpcoming={true}/> */}
 
                 {/** 
-                {/** Props for testing in dev */}
+                {/** Props for testing in dev 
                 <div className='events_container'>
 
                   <div className="event_card_outer">
@@ -137,15 +140,16 @@ import testBanner from '../../public/test_event_banner.jpg'
                   </div>
 
                 </div>
+                */}
                 
                 
                 
               </section>
 
-              <section className='m-8 p-4'>
+              {/* <section className='m-8 p-4'>
                 <Subtitle name="Recent Events"/>
                 <EventCard isUpcoming={false}/>
-              </section>
+              </section> */}
             </div>
           </div>
 
@@ -167,9 +171,9 @@ import testBanner from '../../public/test_event_banner.jpg'
                       <button className="bg-gray-300 border-4 border-gray-300 rounded text-xs max-w-sm max-h-12 mx-1 shadow-sm shadow-black/40">
                           <a className="text-base text-black font-semibold hover:underline px-2 py-1" href="/membership" target='_blank'>Join now!</a>
                       </button>
-                      <button className="bg-gray-50 border-4 border-gray-300 rounded text-xs max-w-sm max-h-12 mx-1 shadow-sm shadow-black/40">
+                      {/* <button className="bg-gray-50 border-4 border-gray-300 rounded text-xs max-w-sm max-h-12 mx-1 shadow-sm shadow-black/40">
                           <a className="text-base text-black font-semibold hover:underline px-2 py-1" href="/events/pastevents" target='_blank'>Past Events</a>
-                      </button>
+                      </button> */}
                   </div>
 
               </div>
