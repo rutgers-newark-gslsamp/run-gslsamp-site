@@ -39,14 +39,14 @@ import testBanner from '../../public/test_event_banner.jpg'
           {/** LEFT BLOCK: Events (UNDER CONSTRUCTION)*/}
           <div className=' w-full lg:w-[60%]'>
             <div className='w-[95%]'>
-              <section className='w-[46rem] ml-auto mr-2 mt-12'>
+              <section className='w-[30rem] md:w-[40rem] md:ml-auto md:mr-2 mt-12 pl-4'>
 
                 <Subtitle name="Upcoming Events"/>
-                  View all of our upcoming events at the Rutgers University&mdash;Newark Academic Foundations Center!
+                  View all of our upcoming events at the <br />Rutgers University&mdash;Newark Academic Foundations Center!
 
                   {/* Link to AFC GSLSAMP events page */}
                   <a href="https://afc.newark.rutgers.edu/events/tag/gs-lsamp/" target='_blank' className='text-base text-black font-semibold hover:underline'>
-                    <button className='rounded-lg border-4 border-gray-300 w-[10rem] h-[3rem] mr-5 ml-auto mt-5 shadow-sm shadow-black/40 bg-gray-300'>
+                    <button className='rounded-lg border-4 border-gray-300 w-[10rem] h-[3rem] mr-10 mr-5 ml-auto mt-5 shadow-sm shadow-black/40 bg-gray-300'>
                       View Our Events
                     </button>
                   </a>
