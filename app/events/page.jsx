@@ -47,7 +47,7 @@ import testBanner from '../../public/test_event_banner.jpg'
                   {/* Link to AFC GSLSAMP events page */}
                   <a href="https://afc.newark.rutgers.edu/events/tag/gs-lsamp/" target='_blank' className='text-base text-black font-semibold hover:underline'>
                     <button className='rounded-lg border-4 border-gray-300 w-[10rem] h-[3rem] mr-5 ml-auto mt-5 shadow-sm shadow-black/40 bg-gray-300'>
-                      Visit AFC
+                      View Our Events
                     </button>
                   </a>
                 
