@@ -511,14 +511,14 @@ a.inline-link{
   white-space: normal;
   border-top-left-radius: 0.3125rem;
   border-top-right-radius: 0.3125rem;
-  background-color: #9D1739;
+  background-color: rgb(153 27 27);
 }
 
 .description-container {
   padding: 1rem;
   background-color: #f1f1f1;
   width: var(--sr-container-width);
-  height: calc(28.375rem - 3.125rem);
+  height: auto;
   text-align: left;
   font-weight: 500;
   line-height: 1.5;
@@ -565,6 +565,33 @@ a.inline-link{
   content: "\2022"; /* Unicode character for bullet point */
   display: inline-block;
   margin-right: 5px; /* Adjust the spacing between the bullet point and the text */
+}
+
+/*SCROLL BAR 
+.description-container:-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track 
+.description-container:-webkit-scrollbar-track {
+  background: rgb(153 27 27);
+}
+
+/* Handle 
+.description-container:-webkit-scrollbar-thumb {
+  background:rgb(213, 135, 135);
+}*/
+
+.membership-box{
+  /* transition styles */
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.membership-box:hover {
+  /* hover styles */
+  transform: scale(1.05);
 }
 
 /* EVENTS */
