@@ -513,12 +513,13 @@ a.inline-link{
   border-top-right-radius: 0.3125rem;
   background-color: rgb(153 27 27);
 }
-
+/*min-height for membership resource cards height is auto for anything else*/
 .description-container {
   padding: 1rem;
   background-color: #f1f1f1;
   width: var(--sr-container-width);
   height: auto;
+  min-height: 120px;
   text-align: left;
   font-weight: 500;
   line-height: 1.5;
@@ -567,21 +568,6 @@ a.inline-link{
   margin-right: 5px; /* Adjust the spacing between the bullet point and the text */
 }
 
-/*SCROLL BAR 
-.description-container:-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track 
-.description-container:-webkit-scrollbar-track {
-  background: rgb(153 27 27);
-}
-
-/* Handle 
-.description-container:-webkit-scrollbar-thumb {
-  background:rgb(213, 135, 135);
-}*/
-
 .membership-box{
   /* transition styles */
   transition-property: transform;
@@ -592,6 +578,17 @@ a.inline-link{
 .membership-box:hover {
   /* hover styles */
   transform: scale(1.05);
+}
+
+.sm-btn-membership{
+  display: flex;
+  max-width: 28rem;
+  height: auto;
+  background-color:  #bb0c1f;
+  padding: .5rem;
+  border-radius: 0.5rem;
+  margin-top: .5rem;
+  text-align: center;
 }
 
 /* EVENTS */

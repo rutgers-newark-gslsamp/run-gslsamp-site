@@ -95,7 +95,7 @@ export default function Membership() {
           </div>
         </main>
         <section id="student-benefits" className="section-subheader mx-4 md:mx-8 lg:mx-16">
-          <h2 className="text-3xl font-bold text-neutral-700">Student Benefits</h2>
+          <h2 className="text-3xl font-bold text-neutral-700 mt-5">Student Benefits</h2>
           <hr/>
           <div id="benefits-info">
             <p>
@@ -110,7 +110,7 @@ export default function Membership() {
 				<li className="p-2">Graduate with a solid degree and have opportunities for careers or graduate school.</li>
 				<li className="p-2">Tutoring and group learning opportunities to help you succeed in your studies.</li>
 			</ol>
-            <p>
+            <p className="mt-5 mb-2">
               Being an LSAMP scholar also gives you opportunities to have experiences at laboratories through special programs that will provide financial support to you. You also qualify for the Bridges to the Doctorate program which allows you to attend any one of a number of universities.
             </p>
           </div>
@@ -120,7 +120,7 @@ export default function Membership() {
             <h2 className="text-3xl font-bold text-neutral-700">Student Resources</h2>
             <hr/>
 
-			<div className="container-resource-cards mt-5 p-6 bg-gray-200 w-[90vw] h-auto flex flex-row flex-wrap md:flex-nowrap md:overflow-x-auto justify-evenly rounded-lg shadow-md align-middle gap-8">
+			<div className="container-resource-cards mt-5 p-6 content-center bg-gray-200 w-[90vw] h-auto flex flex-row flex-wrap justify-evenly rounded-lg shadow-md align-middle gap-x-14 gap-y-6 flex-shrink flex-grow">
 					<div className="membership-box">
 						<h3 className="sr-button">ALEKS Boot Camp | Academic Success Boot Camp</h3>
 						<div className='description-container'>
@@ -139,10 +139,12 @@ export default function Membership() {
 								<li>Increasing GPA</li>
 								<li>Essential Study Skills</li>
 							</ul>
-							<a href='/contact' target='_blank' className="text-base text-red-700 pt-1 hover:underline">More Information</a>
+							<div className="sm-btn-membership">
+							<a href='/contact' target='_blank' className=" text-base text-white hover:underline">Get Started</a>
+							</div>
 						</div>
 						)}
-						<button onClick={() => setShowDescription1(!showDescription1)} className="event_card_button">Expand</button>
+						<button onClick={() => setShowDescription1(!showDescription1)} className="event_card_button">Click Here!</button>
 					</div>
 					
 					<div className="membership-box">
@@ -166,10 +168,12 @@ export default function Membership() {
 								<li>Critical Thinking</li>
 								<li>Study Skills</li>
 							</ul>
-							<a href='/contact' target='_blank' className="text-base text-red-700 pt-1 hover:underline">More Information</a>
+							<div className="sm-btn-membership">
+							<a href='/contact' target='_blank' className="text-base text-white hover:underline">Get Started</a>
+							</div>
 						</div>
 						)}
-						<button onClick={() => setShowDescription2(!showDescription2)} className="event_card_button">Expand</button>
+						<button onClick={() => setShowDescription2(!showDescription2)} className="event_card_button">Click Here!</button>
 					</div>
 
 					<div className="membership-box">
@@ -189,10 +193,12 @@ export default function Membership() {
 							struggling with. The PLTL student will also be assigned to students who have been newly admitted in 
 							LSAMP to assist throughout the semester.
 							</p>
-							<a href='/contact' target='_blank' className="text-base text-red-700 pt-1 hover:underline">More Information</a>
+							<div className="sm-btn-membership">
+							<a href='/contact' target='_blank' className="text-base text-white hover:underline">Get Started</a>
+							</div>
 						</div>
 						)}
-						<button onClick={() => setShowDescription3(!showDescription3)} className="event_card_button">Expand</button>
+						<button onClick={() => setShowDescription3(!showDescription3)} className="event_card_button">Click Here!</button>
 					</div>
 
 					<div className="membership-box">
@@ -224,22 +230,24 @@ export default function Membership() {
 										<a className='text-blue-600 hover:underline' href='https://www.manhattanprep.com/gre/'>Manhattan Prep</a>
 									</li>
 								</ul>
-								<a href='/contact' target='_blank' className="text-base text-red-700 pt-1 hover:underline">More Information</a>
+								<div className="sm-btn-membership">
+								<a href='/contact' target='_blank' className="text-base text-white hover:underline">Get Started</a>
+								</div>
 							</div>
 						)}
-						<button onClick={() => setShowDescription4(!showDescription4)} className="event_card_button">Expand</button>
+						<button onClick={() => setShowDescription4(!showDescription4)} className="event_card_button">Click Here!</button>
 					</div>
 
 					<div className="membership-box">
 						<h3 className="sr-button">How to Find your Academic Advisor(s)</h3>
 						<div className='description-container'>
 							<p className="p-1">
-								For students enrolled in Newark College of Arts and Science(NCAS) or University College Newark(UCN), the Office of Academic Services(OAS) will see students according to there last name. 
+								For students enrolled in Newark College of Arts and Science(NCAS) or University College Newark(UCN).
 							</p>
 						</div>
 						{showDescription5 && (
 							<div className="description-container collapsible-box">
-								<b className="px-4 mb-2">See the Advisor breakdown and how to make an appointment by clicking <a className='text-blue-600 hover:underline' href='https://sasn.rutgers.edu/support'>HERE!</a></b>
+								<b className="px-4 mb-2">The Office of Academic Services(OAS) will see students according to there last name. See the Advisor breakdown and how to make an appointment by clicking <a className='text-blue-600 hover:underline' href='https://sasn.rutgers.edu/support'>HERE!</a></b>
 								<p className="p-1">
 									For students in the Honors College, please contact the Honors College for information about your adviser assignment. 
 								</p>
@@ -248,10 +256,12 @@ export default function Membership() {
 									To meet with your adviser for your declared major(s) and minor(s), please visit the respective department. 
 								</p>
 								<b className="px-4 mb-2">Contact the <Link className='text-blue-600 hover:underline' href='/contact'>LSAMP office</Link> for assistance.</b>
-								<a href='/contact' target='_blank' className="text-base text-red-700 pt-1 hover:underline">More Information</a>
+								<div className="sm-btn-membership">
+								<a href='/contact' target='_blank' className="text-base text-white hover:underline">Get Started</a>
+								</div>
 							</div>
 						)}
-						<button onClick={() => setShowDescription5(!showDescription5)} className="event_card_button">Expand</button>
+						<button onClick={() => setShowDescription5(!showDescription5)} className="event_card_button">Click Here!</button>
 					</div>
 
 				</div>           
