@@ -35,7 +35,7 @@ const AllianceGrid: React.FC = () => {
                 logo={montclairLogo}
                 universityName='Montclair State University' 
                 universityURL="http://www.montclair.edu/csam/lsamp/"
-                contactName='Dr. Jaclyn Calatano' 
+                contactName='Dr. Jaclyn Catalano' 
                 contactEmail='catalanoja@montclair.edu' 
                 contactPhone='(973) 655-7118'
             />
