@@ -511,14 +511,15 @@ a.inline-link{
   white-space: normal;
   border-top-left-radius: 0.3125rem;
   border-top-right-radius: 0.3125rem;
-  background-color: #9D1739;
+  background-color: rgb(153 27 27);
 }
-
+/*min-height for membership resource cards height is auto for anything else*/
 .description-container {
   padding: 1rem;
   background-color: #f1f1f1;
   width: var(--sr-container-width);
-  height: calc(28.375rem - 3.125rem);
+  height: auto;
+  min-height: 120px;
   text-align: left;
   font-weight: 500;
   line-height: 1.5;
@@ -565,6 +566,29 @@ a.inline-link{
   content: "\2022"; /* Unicode character for bullet point */
   display: inline-block;
   margin-right: 5px; /* Adjust the spacing between the bullet point and the text */
+}
+
+.membership-box{
+  /* transition styles */
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.membership-box:hover {
+  /* hover styles */
+  transform: scale(1.05);
+}
+
+.sm-btn-membership{
+  display: flex;
+  max-width: 28rem;
+  height: auto;
+  background-color:  #bb0c1f;
+  padding: .5rem;
+  border-radius: 0.5rem;
+  margin-top: .5rem;
+  text-align: center;
 }
 
 /* EVENTS */

@@ -174,7 +174,7 @@ export default function About() {
           <StaffCard 
             picture={rabinovich}
             name="Oren Rabinovich"
-            role="Director of GS-LSAMP"
+            role="Coordinator of GS-LSAMP"
             university="Rutgers University - Newark"
             email="oren.rabinovich@rutgers.edu"
             phone="(973) 353-3562"

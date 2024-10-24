@@ -35,9 +35,9 @@ const AllianceGrid: React.FC = () => {
                 logo={montclairLogo}
                 universityName='Montclair State University' 
                 universityURL="http://www.montclair.edu/csam/lsamp/"
-                contactName='Dr. Yvonne Gindt' 
-                contactEmail='gindty@montclair.edu' 
-                contactPhone='(973) 655-3469'
+                contactName='Dr. Jaclyn Catalano' 
+                contactEmail='catalanoja@montclair.edu' 
+                contactPhone='(973) 655-7118'
             />
             <AllianceCard
                 logo={williamPatLogo}
@@ -51,9 +51,9 @@ const AllianceGrid: React.FC = () => {
                 logo={keanLogo}
                 universityName='Kean University'
                 universityURL="https://www.kean.edu/offices/student-success-and-retention/lsamp-program"
-                contactName='Dr. Juyoung Ha' 
-                contactEmail='haj@kean.edu' 
-                contactPhone='(908) 737-3739'
+                contactName='Dr. Derrick Swinton' 
+                contactEmail='dswinton@kean.edu' 
+                contactPhone='(908) 737-7223'
             />
             <AllianceCard
                 logo={essexLogo}

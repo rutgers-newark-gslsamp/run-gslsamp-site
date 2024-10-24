@@ -40,7 +40,7 @@ export default function Faculty() {
             
             <div className='md:ml-16 lg:ml-16 xl:ml-16 flex justify-center gap-4 mx-4 my-2'>
                 <button className="flex-1 max-w-xs w-1/2 text-center bg-red-800 rounded-md p-2 mt-8 col-span-1 text-white font-bold shadow-md hover:scale-105 transition h-22">
-                    <a href="https://forms.gle/1xEJTZD4w6PcFrzA7" target='_blank' className="text-xs md:text-sm break-words">Mentor a GS-LSAMP Scholar <br className="md:hidden"/> in your lab</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTgChA5iMoDNfKB6AEwei7fWAR1xoa6wA5niBYa78x0mCOIw/closedform" target='_blank' className="text-xs md:text-sm break-words">Mentor a GS-LSAMP Scholar <br className="md:hidden"/> in your lab</a>
                 </button>
 
                 <button className="flex-1 max-w-xs w-1/2 h-12 p-2 mt-8 hover:underline rounded-md border-4 border-red-800 shadow-md hover:scale-105 transition h-22">
