@@ -9,7 +9,7 @@ import { useState } from 'react';
 import nsfLogo from '../../public/lsamp-nsf-logos/NSF-clear.png';
 import rutgersLogo from "../../public/rutgers-logos/RN_H_RED_BLACK_RGB.png"
 import menuIcon from "../../public/icons/hamburger-menu-icon.svg"
-import searchIcon from "../../public/icons/search-icon.svg"
+import secretHamburger from "../../public/icons/mr_r_hamburger.png";
 
 const NavBar: React.FC<{}> = () => {
     
@@ -47,13 +47,25 @@ const NavBar: React.FC<{}> = () => {
                             Louis Stokes Alliance for Minority Participation
                         </h1>
                         <a onClick={hideDiv} className='flex mx-2 justify-center items-center w-10 hover:cursor-pointer'>
-                            <Image
+                            {   
+                                !isVisible &&
+                                <Image
                                 className='w-auto px-2 drop-shadow grayscale sm:invisible'
                                 src={menuIcon}
                                 alt="Hamburger Menu Icon"
                                 width={50}
                                 height={50}
                                 />
+                            }
+                            {
+                                isVisible && <Image
+                                className='w-auto px-2 drop-shadow sm:invisible'
+                                src={secretHamburger}
+                                alt="Hamburger Menu Icon"
+                                width={50}
+                                height={50}
+                            />
+                            }
                         </a>
                     </header>
                 </div>
