@@ -426,7 +426,7 @@ a.inline-link{
 
 @media screen and (max-width: 768px) {
   .landing-cta-headline {
-      font-size: 15px;
+      font-size: 14px;
       margin-right: 0;
   }
 }
@@ -668,4 +668,36 @@ a.inline-link{
   padding-right: 1rem;
   padding-top: 0.5rem; /* 2px */
   padding-bottom: 0.5rem; /* 2px */
+}
+
+/*CTA BLOCK*/
+.cta-block {
+  display: flex;
+  flex-direction: row; 
+  width: 100%;
+  height: 33.3333%;
+  align-items: center; 
+  justify-content: center; 
+}
+.cta-wrapper{
+  display:flex;
+  flex-shrink: 1;
+  justify-content: center;
+  align-items: center; 
+  font-size: 1rem;
+}
+.cta-button{
+  display:flex;
+  height: fit-content;
+  width: fit-content;
+  min-width: 5.25rem;
+  min-height: 3.25rem;
+  padding: 0.4rem;
+  max-width: 28rem;
+  justify-content: center;
+  align-items: center; 
+  font-size: 1rem;
+}
+.cta-button:hover{
+  text-decoration: underline;  
 }
