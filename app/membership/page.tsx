@@ -31,7 +31,9 @@ export default function Membership() {
       <>
         <main id='admission-application' className="overflow-auto">
           <Title name={"MEMBERSHIP"}/>
-          <div className="flex justify-center"> 
+		  <p className="mx-14 my-2">We appreciate your interest in joining the GSLSAMP program. While we await news on our funding renewal we have paused our application process.
+			<br /><b>Please check again in the coming weeks as we hope to resume accepting applications soon.</b></p>
+          <div className="flex justify-center"> 	
             <section className="relative w-[90vw] lg:w-[75vw]">  
               <Image className="relative w-[90vw] h-[90vw] md:h-[63vw] lg:w-[75vw] lg:h-[35vw]  rounded-lg " src={diploma} alt="Graduation Diploma" />
               <div className="absolute inset-0 shadow-lg rounded-lg">
