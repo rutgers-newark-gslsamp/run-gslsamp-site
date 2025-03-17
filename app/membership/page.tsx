@@ -31,13 +31,16 @@ export default function Membership() {
       <>
         <main id='admission-application' className="overflow-auto">
           <Title name={"MEMBERSHIP"}/>
-		  <p className="mx-14 my-2">We appreciate your interest in joining the GSLSAMP program. While we await news on our funding renewal we have paused our application process.
-			<br /><b>Please check again in the coming weeks as we hope to resume accepting applications soon.</b></p>
+		  
           <div className="flex justify-center"> 	
             <section className="relative w-[90vw] lg:w-[75vw]">  
-              <Image className="relative w-[90vw] h-[90vw] md:h-[63vw] lg:w-[75vw] lg:h-[35vw]  rounded-lg " src={diploma} alt="Graduation Diploma" />
+              <Image className="relative w-[90vw] h-[60vh] md:h-[63vw] lg:w-[75vw] lg:h-[35vw] rounded-lg " src={diploma} alt="Graduation Diploma" />
               <div className="absolute inset-0 shadow-lg rounded-lg">
-                <div className="flex justify-center text-white">
+	
+				<p className="mx-2 mt-2 border rounded-lg bg-white text-center">We appreciate your interest in joining the GSLSAMP program. While we await news on our funding renewal we have paused our application process.
+				<b> Please check again in the coming weeks as we hope to resume accepting applications soon.</b></p>
+                
+				<div className="flex justify-center text-white">
                   <h2 className="md:text-[1.5rem] lg:text-[1.8rem] drop-shadow-lg font-bold italic pl-[.5rem] lg:pl-[1.2rem]">
                     As an LSAMP Scholar, you will have outstanding 
                     opportunities to help you complete your undergraduate!
@@ -88,8 +91,11 @@ export default function Membership() {
                 </div>
 
                 <div className="flex justify-center">
-                  <div className="w-[8rem] p-[.3rem] md:w-[9rem] md:p-[.7rem] text-xs md:text-sm text-center text-white font-bold drop-shadow-md hover:scale-105 transition bg-red-800 rounded">
+                  {/* <div className="w-[8rem] p-[.3rem] md:w-[9rem] md:p-[.7rem] text-xs md:text-sm text-center text-white font-bold drop-shadow-md hover:scale-105 transition bg-red-800 rounded">
                     <p className="drop-shadow-xl"><a href={link} target="_blank">JOIN NOW!</a></p>
+                  </div> */}
+				  <div className="w-[8rem] p-[.3rem] md:w-[9rem] md:p-[.7rem] text-xs md:text-sm text-center text-white font-bold drop-shadow-md bg-red-800 rounded">
+                    <p className="drop-shadow-xl">Check back soon!</p>
                   </div>
                 </div>
               </div>
