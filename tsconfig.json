@@ -22,14 +22,18 @@
         "name": "next"
       }
     ],
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/components/EventCard.js", "src/components/EventInfoCard.js", "src/components/Faq.js"  ],
+    "**/*.tsx",
+    "src/components/EventCard.js",
+    "src/components/EventInfoCard.js",
+    "src/components/Faq.js"
+  ],
   "exclude": [
     "node_modules"
   ]

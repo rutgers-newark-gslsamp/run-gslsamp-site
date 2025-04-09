@@ -7,7 +7,7 @@ import NavBar from '../src/components/NavBar'
 import Copyright from '../src/components/Copyright'
 
 const poppins = Poppins({ 
-  subsets: ['devanagari'],
+  subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
  });
 

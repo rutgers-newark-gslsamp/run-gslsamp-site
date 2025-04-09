@@ -1,5 +1,5 @@
 // Images
-import Image from "next/legacy/image";
+import Image from "next/image";
 import AllianceGrid from "../src/components/AllianceGrid";
 import LandingAbout from "../src/components/LandingAbout";
 import CtaBlock from "../src/components/CtaBlock";

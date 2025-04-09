@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/legacy/image';
+import React, { useState } from 'react'; 
+import Image from 'next/image'; //next/legacy/image deprecated after next 13+ versions
 
-export default function HeroImageWithLoadingState({ src, alt }) {
+export default function HeroImageWithLoadingState({ src, alt, width =1056, height =576}) {
     const [isLoading, setIsLoading] = useState(true);
-    const imgRef = useRef(null);
+    //const imgRef = useRef(null); //next/image does not suppport ref
 
     const handleImageLoaded = () => {
         setIsLoading(false);
@@ -14,32 +14,17 @@ export default function HeroImageWithLoadingState({ src, alt }) {
         console.error('Failed to load image');
     };
 
-    useEffect(() => {
-        // Use native Image constructor for preloading
-        const img = new window.Image();
-
-        // If there's an image element and it's done loading
-        if (imgRef.current && imgRef.current.complete) {
-            handleImageLoaded();
-            return;
-        }
-        // When successfully loaded, fire function
-        img.onload = handleImageLoaded;
-        img.onerror = handleError;
-        img.src = src;
-
-    }, [src]);
-
     return (
         <div className='flex justify-center'>
-            {isLoading && <p>Loading...</p>}
             {/* Use the Next.js Image component alias */}
-            <div className='flex justify-center items-center'>{/*md:border-red-700 md:border-x-8 md:border-b-4*/}
-                <Image 
-                    ref={imgRef}
+            <div className='flex justify-center items-center'>
+                <Image
                     src={src} 
                     alt={alt}
-                    style={{ display: isLoading ? 'none' : 'block' }}
+                    width={width}
+                    height={height}
+                    onLoad={handleImageLoaded}
+                    placeholder='blur'
                     onError={handleError}
                 />
             </div>

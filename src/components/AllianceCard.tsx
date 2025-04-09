@@ -1,5 +1,5 @@
-import Image from "next/legacy/image";
-import { StaticImageData } from "next/legacy/image";
+import Image from "next/image";
+import { StaticImageData } from "next/image";
 
 interface AllianceCardProps {
     logo: StaticImageData;
@@ -20,7 +20,6 @@ const AllianceCard: React.FC<AllianceCardProps> = ({ logo, universityName, unive
                         src={logo}
                         alt={`${universityName} Logo`}
                         width={200}
-                        layout="fixed"
                         height={100}
                     />
                 </a>
@@ -30,7 +29,6 @@ const AllianceCard: React.FC<AllianceCardProps> = ({ logo, universityName, unive
                     src={logo}
                     alt={`${universityName} Logo`}
                     width={200}
-                    layout="fixed"
                     height={100}
                 /> 
             }   

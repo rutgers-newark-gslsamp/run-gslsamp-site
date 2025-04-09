@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import runLogo from "../../public/rutgers-logos/ru-n_logo.png"
 import Link from "next/link";
 
@@ -9,11 +9,12 @@ const LandingAbout: React.FC = () => {
         <section className="flex flex-wrap-reverse justify-center items-center gap-6 sm:gap-2 my-0 sm:my-3 md:my-6">
             <Image
                 id="landing-about-logo"
-                className="w-16 sm:w-48  rounded-3xl shadow-lg shadow-black/20"
+                className="w-16 sm:w-48 rounded-3xl shadow-lg shadow-black/20"
                 src={runLogo}
                 alt="Rutgers–Newark GS-LSAMP Logo"
                 width={250}
                 height={250}
+                priority={true} // will preload image, no lazy loading feature
             />  
             
             <div className="flex flex-col items-center py-3 px-4 ml-10 rounded-3xl shadow-lg max-w-lg shadow-black/20">

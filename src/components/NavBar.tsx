@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from "next/link";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useState } from 'react';
 
 // IMAGES
@@ -12,7 +12,7 @@ import menuIcon from "../../public/icons/hamburger-menu-icon.svg"
 import secretHamburger from "../../public/icons/mr_r_hamburger.png";
 
 const NavBar: React.FC<{}> = () => {
-    
+    //should add logo LSAMP logo to the nav bar
     const [isVisible, setIsVisible] = useState(false);
     
     const hideDiv = () => {
@@ -20,7 +20,6 @@ const NavBar: React.FC<{}> = () => {
     };
     return (
         <>
-
             <nav className='flex flex-col w-full h-1/5 bg-gray-300 sm:bg-white sticky z-30 top-0'>
                 <div className='flex flex-wrap items-center justify-between h-fill sm:h-auto' id='top-nav-container'>
                     <header className='flex items-center flex-shrink'>
@@ -32,6 +31,7 @@ const NavBar: React.FC<{}> = () => {
                                     alt="Rutgers Univesity–Newark Logo" 
                                     width={160}
                                     height={50}
+                                    priority={true} // will preload image, no lazy loading feature
                                 />
                             </div>
                             <Image
@@ -40,6 +40,7 @@ const NavBar: React.FC<{}> = () => {
                                 alt="NSF Logo"
                                 width={65}
                                 height={55}
+                                priority={true} // will preload image, no lazy loading feature
                             />
                         </div>
                         <hr className="text-gray-500 sm:text-gray-200 h-10 border-l-2 border-solid border-gray-500 sm:border-gray-200" />
