@@ -23,7 +23,6 @@ export default function ImageWithLoadingState({ src, alt, width =1056, height =5
                     width={width}
                     height={height}
                     onLoad={handleImageLoaded}
-                    placeholder='blur'
                     onError={handleError}
                 />
             </div>

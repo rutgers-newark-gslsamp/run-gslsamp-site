@@ -21,21 +21,19 @@ const NavBar: React.FC<{}> = () => {
     return (
         <>
             <nav className='flex flex-col w-full h-1/5 bg-gray-300 sm:bg-white sticky z-30 top-0'>
-                <div className='flex flex-wrap items-center justify-between h-fill sm:h-auto' id='top-nav-container'>
+                <div className='flex flex-wrap flex-shrink items-center justify-between h-fill sm:h-auto' id='top-nav-container'>
                     <header className='flex items-center flex-shrink'>
-                        <div className='flex my-1 p-2 gap-2' id='nav-logo-wrapper'>
-                            <div>
-                                <Image 
-                                    className='flex w-auto py-3 px-2 drop-shadow'
-                                    src={rutgersLogo}
-                                    alt="Rutgers Univesity–Newark Logo" 
-                                    width={160}
-                                    height={50}
-                                    priority={true} // will preload image, no lazy loading feature
-                                />
-                            </div>
+                        <div className='flex flex-shrink my-1' id='nav-logo-wrapper'>
+                            <Image 
+                                className='py-3 px-2 drop-shadow'
+                                src={rutgersLogo}
+                                alt="Rutgers Univesity–Newark Logo" 
+                                width={160}
+                                height={50}
+                                priority={true} // will preload image, no lazy loading feature
+                            />
                             <Image
-                                className='flex h-auto py-3 px-2 drop-shadow'
+                                className='py-3 px-2 drop-shadow '
                                 src={nsfLogo}
                                 alt="NSF Logo"
                                 width={65}
@@ -47,11 +45,11 @@ const NavBar: React.FC<{}> = () => {
                         <h1 className='flex ml-4 text-sm text-black sm:text-base md:text-lg font-semibold sm:font-medium'>
                             Louis Stokes Alliance for Minority Participation
                         </h1>
-                        <a onClick={hideDiv} className='flex mx-2 justify-center items-center w-10 hover:cursor-pointer'>
+                        <a onClick={hideDiv} className='flex flex-shrink-0 flex-grow mx-2 justify-center items-center w-10 hover:cursor-pointer'>
                             {   
                                 !isVisible &&
                                 <Image
-                                className='w-auto px-2 drop-shadow grayscale sm:invisible'
+                                className='px-2 drop-shadow grayscale sm:invisible'
                                 src={menuIcon}
                                 alt="Hamburger Menu Icon"
                                 width={50}
@@ -60,7 +58,7 @@ const NavBar: React.FC<{}> = () => {
                             }
                             {
                                 isVisible && <Image
-                                className='w-auto px-2 drop-shadow sm:invisible'
+                                className='px-2 drop-shadow sm:invisible'
                                 src={secretHamburger}
                                 alt="Hamburger Menu Icon"
                                 width={50}

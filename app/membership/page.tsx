@@ -66,6 +66,7 @@ export default function Membership() {
                     </h3>
 
                     <table className="text-sm md:text-base w-full px-2">
+						<tbody>
 						<tr className="">
 							<td className="major_cell pl-2 w-1/3"><a className="majors" href="https://sasn.rutgers.edu/biology" target="_blank">Biology</a></td>
 							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/earth-and-environmental-sciences" target="_blank">Environmental Science</a></td>
@@ -86,6 +87,7 @@ export default function Membership() {
 							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/geoscience-geology-minor" target="_blank">Geoscience Engineering</a></td>
 							<td className="major_cell"><a className="majors" href="https://sasn.rutgers.edu/node/318" target="_blank">Physics</a></td>
 						</tr>
+						</tbody>
                     </table>
                   </article>
                 </div>
@@ -94,7 +96,7 @@ export default function Membership() {
                   {/* <div className="w-[8rem] p-[.3rem] md:w-[9rem] md:p-[.7rem] text-xs md:text-sm text-center text-white font-bold drop-shadow-md hover:scale-105 transition bg-red-800 rounded">
                     <p className="drop-shadow-xl"><a href={link} target="_blank">JOIN NOW!</a></p>
                   </div> */}
-				  <div className="w-[8rem] p-[.3rem] md:w-[9rem] md:p-[.7rem] text-xs md:text-sm text-center text-white font-bold drop-shadow-md bg-red-800 rounded">
+				  <div className="w-fit p-[.5rem] md:p-[.7rem] text-xs md:text-sm text-center text-white font-bold drop-shadow-md bg-red-800 rounded">
                     <p className="drop-shadow-xl">Check back soon!</p>
                   </div>
                 </div>
